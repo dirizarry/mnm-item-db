@@ -13,7 +13,11 @@ from mnm_hardcore_detect import (
 def test_player_commit_is_magnificent():
     lines = [
         {"at": "2026-06-19 11:41:10", "speaker": "Onelife", "text": "I want to be hardcore."},
-        {"at": "2026-06-19 11:41:13", "speaker": "Magnificent Malkiyah", "text": "Walk the hardcore path!"},
+        {
+            "at": "2026-06-19 11:41:13",
+            "speaker": "Magnificent Malkiyah",
+            "text": "Walk the hardcore path!",
+        },
     ]
     status, at = classify_journal(lines, character="Onelife", server="betapvp")
     assert status == "magnificent"
@@ -22,7 +26,11 @@ def test_player_commit_is_magnificent():
 
 def test_npc_confirm_is_magnificent():
     lines = [
-        {"at": "2026-06-19 12:00:00", "speaker": "Magnificent Malkiyah", "text": "Your soul has committed. You are magnificent now."},
+        {
+            "at": "2026-06-19 12:00:00",
+            "speaker": "Magnificent Malkiyah",
+            "text": "Your soul has committed. You are magnificent now.",
+        },
     ]
     status, at = classify_journal(lines, character="Onelife", server="betapvp")
     assert status == "magnificent"
@@ -31,7 +39,11 @@ def test_npc_confirm_is_magnificent():
 
 def test_betapvp_malkiyah_without_commit_is_candidate():
     lines = [
-        {"at": "2026-06-19 11:38:41", "speaker": "Magnificent Malkiyah", "text": "If that doesn't deter you, say I want to be hardcore."},
+        {
+            "at": "2026-06-19 11:38:41",
+            "speaker": "Magnificent Malkiyah",
+            "text": "If that doesn't deter you, say I want to be hardcore.",
+        },
     ]
     status, at = classify_journal(lines, character="Onelife", server="betapvp")
     assert status == "candidate"
@@ -40,7 +52,11 @@ def test_betapvp_malkiyah_without_commit_is_candidate():
 
 def test_malkiyah_rejection_is_not_listed():
     lines = [
-        {"at": "2026-06-19 11:38:41", "speaker": "Magnificent Malkiyah", "text": "Only we, the magnificent few... and it's too late for you!"},
+        {
+            "at": "2026-06-19 11:38:41",
+            "speaker": "Magnificent Malkiyah",
+            "text": "Only we, the magnificent few... and it's too late for you!",
+        },
     ]
     status, _ = classify_journal(lines, character="Dhomina", server="betapvp")
     assert status == "rejected"
@@ -48,7 +64,11 @@ def test_malkiyah_rejection_is_not_listed():
 
 def test_non_betapvp_without_commit_is_none():
     lines = [
-        {"at": "2026-06-19 11:38:41", "speaker": "Magnificent Malkiyah", "text": "Only we, the magnificent few..."},
+        {
+            "at": "2026-06-19 11:38:41",
+            "speaker": "Magnificent Malkiyah",
+            "text": "Only we, the magnificent few...",
+        },
     ]
     status, _ = classify_journal(lines, character="Dhom", server="haradrel")
     assert status == "none"

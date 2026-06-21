@@ -17,30 +17,34 @@ def test_empirical_saturates():
 
 
 def test_score_edge_confirmed():
-    edge = score_edge({
-        "via_mob": True,
-        "via_item": True,
-        "via_client": False,
-        "via_ledger": True,
-        "via_crowd": False,
-        "observations": 5,
-        "contributors": 2,
-    })
+    edge = score_edge(
+        {
+            "via_mob": True,
+            "via_item": True,
+            "via_client": False,
+            "via_ledger": True,
+            "via_crowd": False,
+            "observations": 5,
+            "contributors": 2,
+        }
+    )
     assert edge["status"] == "confirmed"
     assert edge["confidence"] > 0.85
     assert edge["conflict"] is False
 
 
 def test_score_edge_crowd_candidate():
-    edge = score_edge({
-        "via_mob": False,
-        "via_item": False,
-        "via_client": False,
-        "via_ledger": False,
-        "via_crowd": True,
-        "observations": 3,
-        "contributors": 2,
-    })
+    edge = score_edge(
+        {
+            "via_mob": False,
+            "via_item": False,
+            "via_client": False,
+            "via_ledger": False,
+            "via_crowd": True,
+            "observations": 3,
+            "contributors": 2,
+        }
+    )
     assert edge["status"] == "crowd_candidate"
     assert edge["conflict"] is True
 

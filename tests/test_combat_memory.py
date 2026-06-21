@@ -2,14 +2,18 @@
 
 from __future__ import annotations
 
-import json
+import sys
 from pathlib import Path
 
 import pytest
 
+# Skip entire module on non-Windows (combat memory requires Win32 APIs)
+if sys.platform != "win32":
+    pytest.skip("Windows-only tests", allow_module_level=True)
+
 from client_re.combat_memory import scan_region_for_combat_lines
+from client_re.mnmlib.types import scan_metadata_types
 from client_re.signatures import load_signature_template, scan_file_string
-from client_re.mnmlib.types import generate_types_catalog, scan_metadata_types
 from mnm_combat_text import parse_message_list
 from mnm_combat_watch import resolve_capture_backend
 

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import contextlib
 import sys
 import tkinter as tk
 
@@ -13,12 +14,13 @@ def _virtual_screen() -> tuple[int, int, int, int]:
     """Return (left, top, width, height) covering all monitors when possible."""
     if sys.platform == "win32":
         import ctypes
+
         user32 = ctypes.windll.user32
         return (
-            user32.GetSystemMetrics(76),   # SM_XVIRTUALSCREEN
-            user32.GetSystemMetrics(77),   # SM_YVIRTUALSCREEN
-            user32.GetSystemMetrics(78),   # SM_CXVIRTUALSCREEN
-            user32.GetSystemMetrics(79),   # SM_CYVIRTUALSCREEN
+            user32.GetSystemMetrics(76),  # SM_XVIRTUALSCREEN
+            user32.GetSystemMetrics(77),  # SM_YVIRTUALSCREEN
+            user32.GetSystemMetrics(78),  # SM_CXVIRTUALSCREEN
+            user32.GetSystemMetrics(79),  # SM_CYVIRTUALSCREEN
         )
     tmp = tk.Tk()
     tmp.withdraw()
@@ -53,10 +55,8 @@ def pick_screen_region(
     overlay.geometry(f"{vw}x{vh}+{vx}+{vy}")
     overlay.configure(bg="#101010")
     overlay.attributes("-topmost", True)
-    try:
+    with contextlib.suppress(tk.TclError):
         overlay.attributes("-alpha", 0.35)
-    except tk.TclError:
-        pass
 
     canvas = tk.Canvas(
         overlay,
@@ -100,7 +100,10 @@ def pick_screen_region(
         if rect_id is not None:
             canvas.delete(rect_id)
         rect_id = canvas.create_rectangle(
-            left, top, right, bottom,
+            left,
+            top,
+            right,
+            bottom,
             outline="#60a5fa",
             width=3,
         )
@@ -129,7 +132,9 @@ def pick_screen_region(
         height = abs(y1 - y0)
         start = None
         if width < MIN_WIDTH or height < MIN_HEIGHT:
-            size_label.configure(text=f"Too small — drag a larger area (min {MIN_WIDTH}×{MIN_HEIGHT})")
+            size_label.configure(
+                text=f"Too small — drag a larger area (min {MIN_WIDTH}×{MIN_HEIGHT})"
+            )
             return
         result = {
             "left": left,

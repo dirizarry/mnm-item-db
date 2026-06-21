@@ -66,7 +66,7 @@ def main() -> int:
             print(f"    {raw!r} -> {canon!r}")
     print(f"  {ITEMS_PATH.name}")
     print(f"  {MOBS_PATH.name}")
-    print(f"  zones-audit.txt")
+    print("  zones-audit.txt")
     return 0
 
 

@@ -41,14 +41,16 @@ def _top_drop_rates(rows: list[dict], limit: int = 60) -> list[dict]:
     out = []
     for row in sorted(rows, key=lambda r: -r.get("kills", 0))[:limit]:
         items = sorted(row.get("items") or [], key=lambda i: -i.get("loot_count", 0))[:8]
-        out.append({
-            "mob_name": row.get("mob_name"),
-            "zone": row.get("zone"),
-            "kills": row.get("kills"),
-            "loot_events": row.get("loot_events"),
-            "loots_per_kill": row.get("loots_per_kill"),
-            "items": items,
-        })
+        out.append(
+            {
+                "mob_name": row.get("mob_name"),
+                "zone": row.get("zone"),
+                "kills": row.get("kills"),
+                "loot_events": row.get("loot_events"),
+                "loots_per_kill": row.get("loots_per_kill"),
+                "items": items,
+            }
+        )
     return out
 
 
@@ -59,8 +61,10 @@ def _scrub_heatmap(heatmap: list[dict], share_characters: bool) -> list[dict]:
     """
     if share_characters:
         return heatmap if isinstance(heatmap, list) else []
-    return [{k: v for k, v in cell.items() if k != "character"}
-            for cell in (heatmap if isinstance(heatmap, list) else [])]
+    return [
+        {k: v for k, v in cell.items() if k != "character"}
+        for cell in (heatmap if isinstance(heatmap, list) else [])
+    ]
 
 
 def _loot_confirmations(drops: list[dict], limit: int = 500) -> list[dict]:
@@ -131,7 +135,9 @@ def build_payload(*, share_characters: bool = False, share_hardcore: bool = Fals
         "heatmap": _scrub_heatmap(heatmap, share_characters),
         "drop_rates": _top_drop_rates(drop_rates if isinstance(drop_rates, list) else []),
         "loot_confirmations": _loot_confirmations(drops if isinstance(drops, list) else []),
-        "levelups_by_day": _levelups_by_day(levelups if isinstance(levelups, list) else [], share_characters),
+        "levelups_by_day": _levelups_by_day(
+            levelups if isinstance(levelups, list) else [], share_characters
+        ),
         "top_mobs": [
             {
                 "name": m.get("name"),
@@ -141,7 +147,9 @@ def build_payload(*, share_characters: bool = False, share_hardcore: bool = Fals
                 "zones": m.get("zones"),
                 "dedup_tokens": m.get("dedup_tokens") or [],
             }
-            for m in sorted(mobs if isinstance(mobs, list) else [], key=lambda m: -m.get("kill_count", 0))[:40]
+            for m in sorted(
+                mobs if isinstance(mobs, list) else [], key=lambda m: -m.get("kill_count", 0)
+            )[:40]
         ],
         "vendor_prices": sorted(
             vendor if isinstance(vendor, list) else [],
@@ -153,7 +161,9 @@ def build_payload(*, share_characters: bool = False, share_hardcore: bool = Fals
         payload["servers"] = manifest.get("servers", [])
     if share_characters and share_hardcore:
         hardcore = _load(DATA / "ledger-hardcore.json")
-        payload["hardcore_profiles"] = _hardcore_profiles(hardcore if isinstance(hardcore, list) else [])
+        payload["hardcore_profiles"] = _hardcore_profiles(
+            hardcore if isinstance(hardcore, list) else []
+        )
     return payload
 
 
@@ -188,10 +198,20 @@ def upload_payload(payload: dict, url: str, token: str | None = None) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Build / upload ledger analytics bundle")
-    ap.add_argument("--dry-run", action="store_true", help="Write payload only (default without --upload)")
-    ap.add_argument("--upload", action="store_true", help="POST payload when MNM_UPLOAD_URL is configured")
-    ap.add_argument("--share-characters", action="store_true", help="Include character names in payload")
-    ap.add_argument("--share-hardcore", action="store_true", help="Include Magnificent standings (requires --share-characters)")
+    ap.add_argument(
+        "--dry-run", action="store_true", help="Write payload only (default without --upload)"
+    )
+    ap.add_argument(
+        "--upload", action="store_true", help="POST payload when MNM_UPLOAD_URL is configured"
+    )
+    ap.add_argument(
+        "--share-characters", action="store_true", help="Include character names in payload"
+    )
+    ap.add_argument(
+        "--share-hardcore",
+        action="store_true",
+        help="Include Magnificent standings (requires --share-characters)",
+    )
     args = ap.parse_args()
 
     cfg = ledger_settings()

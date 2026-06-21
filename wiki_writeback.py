@@ -29,8 +29,11 @@ def main() -> int:
     args = ap.parse_args()
 
     db.migrate()
-    approved = [e for e in db.wiki_queue(state="approved")
-                if (e.get("confidence") or 0) >= args.min_confidence]
+    approved = [
+        e
+        for e in db.wiki_queue(state="approved")
+        if (e.get("confidence") or 0) >= args.min_confidence
+    ]
 
     manifest = {
         "schema": "mnm-wiki-writeback/v1",

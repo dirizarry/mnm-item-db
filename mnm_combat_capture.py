@@ -20,11 +20,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
-from mnm_chat_windows import load_layout, pick_character_dir, setup_recommendations
-from mnm_combat_ocr import available_backends, ocr_region, ocr_region_lines
+from mnm_chat_windows import load_layout, setup_recommendations
+from mnm_combat_ocr import available_backends, ocr_region_lines
 from mnm_combat_text import parse_lines
 from mnm_combat_watch import EVENTS_PATH, LIVE_PATH, reparse_state_frame, run_watch
 from mnm_local import default_locallow
@@ -42,9 +41,13 @@ def _print_layout(locallow: Path) -> int:
     print(f"Meter-relevant: {len(layout.get('combat_meter_channels') or [])} categories")
     est = layout.get("combat_region_estimate")
     if est:
-        print(f"Estimated region: left={est['left']} top={est['top']} "
-              f"width={est['width']} height={est['height']} ({est['source']})")
-    print(f"OCR backends: {', '.join(available_backends()) or 'NONE — install requirements-combat.txt'}")
+        print(
+            f"Estimated region: left={est['left']} top={est['top']} "
+            f"width={est['width']} height={est['height']} ({est['source']})"
+        )
+    print(
+        f"OCR backends: {', '.join(available_backends()) or 'NONE — install requirements-combat.txt'}"
+    )
     return 0
 
 
@@ -58,23 +61,44 @@ def _print_setup(locallow: Path) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Capture combat chat via OCR (Option C)")
     ap.add_argument("--path", type=Path, default=None, help="LocalLow root")
-    ap.add_argument("--layout", action="store_true", help="Show chat window layout + region estimate")
+    ap.add_argument(
+        "--layout", action="store_true", help="Show chat window layout + region estimate"
+    )
     ap.add_argument("--setup", action="store_true", help="Print in-game setup tips for OCR")
-    ap.add_argument("--region", nargs=4, type=int, metavar=("LEFT", "TOP", "WIDTH", "HEIGHT"),
-                    help="Screen capture rectangle (pixels)")
+    ap.add_argument(
+        "--region",
+        nargs=4,
+        type=int,
+        metavar=("LEFT", "TOP", "WIDTH", "HEIGHT"),
+        help="Screen capture rectangle (pixels)",
+    )
     ap.add_argument("--watch", action="store_true", help="Continuous OCR until interrupted")
-    ap.add_argument("--once", action="store_true", help="Single OCR pass (with --region or saved region)")
+    ap.add_argument(
+        "--once", action="store_true", help="Single OCR pass (with --region or saved region)"
+    )
     ap.add_argument("--interval", type=float, default=1.5, help="Poll interval seconds (--watch)")
     ap.add_argument("--backend", choices=["windows", "tesseract"], default=None)
     ap.add_argument("--parse-file", type=Path, help="Parse a text file (no OCR)")
-    ap.add_argument("--save-region", action="store_true",
-                    help="Save --region to client-settings.json as combat_region")
-    ap.add_argument("--pick-region", action="store_true",
-                    help="Open visual region picker and save to client-settings.json")
-    ap.add_argument("--export-filters", action="store_true",
-                    help="Write data/combat-filter-ui.json from in-game menu catalog")
-    ap.add_argument("--reparse-frame", action="store_true",
-                    help="Re-parse last OCR frame rows from combat-capture-state.json")
+    ap.add_argument(
+        "--save-region",
+        action="store_true",
+        help="Save --region to client-settings.json as combat_region",
+    )
+    ap.add_argument(
+        "--pick-region",
+        action="store_true",
+        help="Open visual region picker and save to client-settings.json",
+    )
+    ap.add_argument(
+        "--export-filters",
+        action="store_true",
+        help="Write data/combat-filter-ui.json from in-game menu catalog",
+    )
+    ap.add_argument(
+        "--reparse-frame",
+        action="store_true",
+        help="Re-parse last OCR frame rows from combat-capture-state.json",
+    )
     args = ap.parse_args()
 
     if args.export_filters:
@@ -82,12 +106,16 @@ def main() -> int:
 
         out = data_dir() / "combat-filter-ui.json"
         doc = write_filter_ui(out)
-        print(f"Wrote {out} ({len(doc.get('presets', {}))} presets, menu keys: {list(doc.get('menu', {}).keys())})")
+        print(
+            f"Wrote {out} ({len(doc.get('presets', {}))} presets, menu keys: {list(doc.get('menu', {}).keys())})"
+        )
         return 0
 
     if args.reparse_frame:
         summary = reparse_state_frame()
-        print(f"Raw OCR rows: {summary['raw_row_count']} -> merged lines: {summary['merged_line_count']}")
+        print(
+            f"Raw OCR rows: {summary['raw_row_count']} -> merged lines: {summary['merged_line_count']}"
+        )
         print(f"Parsed events: {summary['parsed_from_frame']}")
         print(f"Damage out: {summary['damage_out']}  in: {summary['damage_in']}")
         print(f"Heal out: {summary['heal_out']}  in: {summary['heal_in']}")
@@ -96,8 +124,8 @@ def main() -> int:
         return 0
 
     if args.pick_region:
-        from mnm_region_selector import pick_screen_region, region_to_str
         from mnm_game_window import attach_window_lock, game_window_status
+        from mnm_region_selector import pick_screen_region, region_to_str
 
         region = pick_screen_region()
         if not region:
@@ -131,8 +159,8 @@ def main() -> int:
     settings = load_settings()
     region = None
     if args.region:
-        l, t, w, h = args.region
-        region = {"left": l, "top": t, "width": w, "height": h, "source": "cli"}
+        left, top, width, height = args.region
+        region = {"left": left, "top": top, "width": width, "height": height, "source": "cli"}
     elif settings.get("combat_region"):
         region = dict(settings["combat_region"])
     else:
@@ -204,6 +232,7 @@ def main() -> int:
         print(f"Watching region {region} ({mode}) every {args.interval}s (Ctrl+C to stop)")
         print(f"Backends: {available_backends()}")
         import threading
+
         stop = threading.Event()
 
         def on_ev(ev):

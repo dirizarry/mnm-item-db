@@ -11,7 +11,8 @@ print(f"Session events: {len(sess)} (total {len(events)})")
 print("kinds:", dict(Counter(e["kind"] for e in sess)))
 
 json_ocr = [
-    e for e in sess
+    e
+    for e in sess
     if '"' in e.get("raw", "") or "kind" in e.get("raw", "") and ":" in e.get("raw", "")
 ]
 print(f"json-ish OCR lines: {len(json_ocr)}")
@@ -63,4 +64,11 @@ tests = [
 print("--- parse tests ---")
 for t in tests:
     p = parse_line(t)
-    print(repr(t[:50]), "->", p.get("kind"), p.get("actor"), p.get("target"), p.get("amount") if p else None)
+    print(
+        repr(t[:50]),
+        "->",
+        p.get("kind"),
+        p.get("actor"),
+        p.get("target"),
+        p.get("amount") if p else None,
+    )

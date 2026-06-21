@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Combat OCR session quality report (current workspace session)."""
+
 from __future__ import annotations
 
 import argparse
@@ -53,7 +54,9 @@ def _frame_lines(state: dict) -> list[str]:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Analyze combat OCR session in the active workspace")
     ap.add_argument("--data", type=Path, default=None, help="Override data directory")
-    ap.add_argument("--rebuild-site", action="store_true", help="Refresh site/stats/combat-stats.js")
+    ap.add_argument(
+        "--rebuild-site", action="store_true", help="Refresh site/stats/combat-stats.js"
+    )
     args = ap.parse_args()
 
     data = args.data or data_dir()
@@ -105,14 +108,22 @@ def main() -> int:
             ch = len(s.get("channels") or [])
             filt = f"{ch} filters" if ch else "all channels"
             r = s.get("region") or {}
-            reg = f"{r.get('left')},{r.get('top')} {r.get('width')}x{r.get('height')}" if r.get("width") else "no region"
+            reg = (
+                f"{r.get('left')},{r.get('top')} {r.get('width')}x{r.get('height')}"
+                if r.get("width")
+                else "no region"
+            )
             print(f"  [{s.get('id')}] {s.get('label')} window={s.get('window_id')} {reg} ({filt})")
 
     with_channel = sum(1 for e in events if e.get("channel"))
     with_outcome = sum(1 for e in events if e.get("outcome"))
     if events:
-        print(f"\nWith channel: {with_channel}/{len(events)} ({100 * with_channel / len(events):.0f}%)")
-        print(f"With outcome: {with_outcome}/{len(events)} ({100 * with_outcome / len(events):.0f}%)")
+        print(
+            f"\nWith channel: {with_channel}/{len(events)} ({100 * with_channel / len(events):.0f}%)"
+        )
+        print(
+            f"With outcome: {with_outcome}/{len(events)} ({100 * with_outcome / len(events):.0f}%)"
+        )
 
     print("\n=== By kind ===")
     for k, v in Counter(e.get("kind") for e in events).most_common():
@@ -126,16 +137,18 @@ def main() -> int:
     glued = []
     for e in events:
         raw = e.get("raw") or ""
-        if len(re.findall(r"for \d+ point", raw)) > 1:
-            glued.append(e)
-        elif "pet" in raw.lower() and raw.count(" for ") > 1:
+        if (
+            len(re.findall(r"for \d+ point", raw)) > 1
+            or "pet" in raw.lower()
+            and raw.count(" for ") > 1
+        ):
             glued.append(e)
     print(f"\n=== Glued/merged OCR lines: {len(glued)} ===")
     for e in glued[:10]:
         print(f"  amt={e.get('amount')} stream={e.get('stream_id')}")
         print(f"    {e['raw'][:110]}")
 
-    junk = [e for e in events if "{" in e.get("raw", "") or "pet\":" in e.get("raw", "")]
+    junk = [e for e in events if "{" in e.get("raw", "") or 'pet":' in e.get("raw", "")]
     print(f"\n=== JSON/editor junk: {len(junk)} ===")
 
     cnt = Counter(raw_lines)

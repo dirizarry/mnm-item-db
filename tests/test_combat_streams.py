@@ -1,5 +1,6 @@
 """Combat OCR stream config and channel filtering."""
 
+from mnm_combat_channels import build_filter_menu, infer_channel
 from mnm_combat_streams import (
     channels_from_filter_paths,
     event_allowed,
@@ -7,7 +8,6 @@ from mnm_combat_streams import (
     iter_filter_leaves,
     normalize_stream,
 )
-from mnm_combat_channels import build_filter_menu, infer_channel
 
 
 def test_iter_filter_leaves_melee_hits_me():
@@ -66,7 +66,7 @@ def test_event_allowed_ability_status_interrupt():
 
 def test_infer_channel_matches_filter_leaf():
     menu = build_filter_menu()
-    for path_id, _label, chs in iter_filter_leaves(menu):
+    for _path_id, _label, chs in iter_filter_leaves(menu):
         if not chs or len(chs) != 1:
             continue
         if not chs[0].startswith("CombatHit"):

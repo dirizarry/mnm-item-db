@@ -47,7 +47,7 @@ def read_client_manifest(root: Path | None = None) -> list[dict]:
 def fingerprint(root: Path | None = None) -> dict:
     root = install_root(root)
     manifest = read_client_manifest(root)
-    paths = [e.get("path", "") for e in manifest if e.get("path")]
+    [e.get("path", "") for e in manifest if e.get("path")]
     ga = game_assembly(root)
     meta = il2cpp_metadata(root)
     bdir = bundles_dir(root)

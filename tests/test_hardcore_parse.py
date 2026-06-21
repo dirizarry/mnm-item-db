@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from mnm_hardcore_parse import parse_char_select_text, profile_token
 
-
 SAMPLE_OCR = """
 Beta Server PvP
 Onidifs (4 Gnome Necromancer)

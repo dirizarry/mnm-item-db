@@ -1,8 +1,6 @@
 """build_combat_site bundles live session totals for the dashboard."""
 
-from pathlib import Path
-
-from build_combat_site import build_bundle, _live_totals
+from build_combat_site import _live_totals, build_bundle
 
 
 def test_live_totals_from_flat_live_json():

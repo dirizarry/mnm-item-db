@@ -4,10 +4,11 @@ from __future__ import annotations
 
 import ctypes
 import struct
-from ctypes import wintypes
-from typing import Iterator
+import sys
+from collections.abc import Iterator
 
-kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+# Windows-only module - stub on other platforms for import compatibility
+_IS_WINDOWS = sys.platform == "win32"
 
 PROCESS_QUERY_INFORMATION = 0x0400
 PROCESS_VM_READ = 0x0010
@@ -24,31 +25,46 @@ TH32CS_SNAPMODULE32 = 0x00000010
 PROCESS_NAME = "mnm.exe"
 
 
-class MEMORY_BASIC_INFORMATION(ctypes.Structure):
-    _fields_ = [
-        ("BaseAddress", ctypes.c_uint64),
-        ("AllocationBase", ctypes.c_uint64),
-        ("AllocationProtect", wintypes.DWORD),
-        ("RegionSize", ctypes.c_uint64),
-        ("State", wintypes.DWORD),
-        ("Protect", wintypes.DWORD),
-        ("Type", wintypes.DWORD),
-    ]
+def _require_windows() -> None:
+    if not _IS_WINDOWS:
+        raise OSError("This functionality requires Windows")
 
 
-class MODULEENTRY32W(ctypes.Structure):
-    _fields_ = [
-        ("dwSize", wintypes.DWORD),
-        ("th32ModuleID", wintypes.DWORD),
-        ("th32ProcessID", wintypes.DWORD),
-        ("GlblcntUsage", wintypes.DWORD),
-        ("ProccntUsage", wintypes.DWORD),
-        ("modBaseAddr", ctypes.c_uint64),
-        ("modBaseSize", wintypes.DWORD),
-        ("hModule", wintypes.HMODULE),
-        ("szModule", wintypes.WCHAR * 256),
-        ("szExePath", wintypes.WCHAR * 260),
-    ]
+# Define Windows structures only on Windows
+if _IS_WINDOWS:
+    from ctypes import wintypes
+
+    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+
+    class MEMORY_BASIC_INFORMATION(ctypes.Structure):
+        _fields_ = [
+            ("BaseAddress", ctypes.c_uint64),
+            ("AllocationBase", ctypes.c_uint64),
+            ("AllocationProtect", wintypes.DWORD),
+            ("RegionSize", ctypes.c_uint64),
+            ("State", wintypes.DWORD),
+            ("Protect", wintypes.DWORD),
+            ("Type", wintypes.DWORD),
+        ]
+
+    class MODULEENTRY32W(ctypes.Structure):
+        _fields_ = [
+            ("dwSize", wintypes.DWORD),
+            ("th32ModuleID", wintypes.DWORD),
+            ("th32ProcessID", wintypes.DWORD),
+            ("GlblcntUsage", wintypes.DWORD),
+            ("ProccntUsage", wintypes.DWORD),
+            ("modBaseAddr", ctypes.c_uint64),
+            ("modBaseSize", wintypes.DWORD),
+            ("hModule", wintypes.HMODULE),
+            ("szModule", wintypes.WCHAR * 256),
+            ("szExePath", wintypes.WCHAR * 260),
+        ]
+
+else:
+    kernel32 = None  # type: ignore[assignment]
+    MEMORY_BASIC_INFORMATION = None  # type: ignore[assignment,misc]
+    MODULEENTRY32W = None  # type: ignore[assignment,misc]
 
 
 def find_process(name: str = PROCESS_NAME) -> int | None:
@@ -61,6 +77,7 @@ def find_process(name: str = PROCESS_NAME) -> int | None:
 
 
 def open_process(pid: int, *, write: bool = False):
+    _require_windows()
     access = PROCESS_QUERY_INFORMATION | PROCESS_VM_READ
     if write:
         access |= 0x0020  # PROCESS_VM_WRITE — not used by combat harvest
@@ -71,7 +88,7 @@ def open_process(pid: int, *, write: bool = False):
 
 
 def close_process(handle) -> None:
-    if handle:
+    if handle and _IS_WINDOWS:
         kernel32.CloseHandle(handle)
 
 
@@ -80,6 +97,7 @@ def _readable(protect: int) -> bool:
 
 
 def read_memory(handle, address: int, size: int) -> bytes | None:
+    _require_windows()
     buf = (ctypes.c_char * size)()
     read = ctypes.c_size_t(0)
     if not kernel32.ReadProcessMemory(
@@ -90,6 +108,7 @@ def read_memory(handle, address: int, size: int) -> bytes | None:
 
 
 def iter_regions(handle) -> Iterator[tuple[int, int, int, int]]:
+    _require_windows()
     mbi = MEMORY_BASIC_INFORMATION()
     addr = 0
     while addr < 0x7FFFFFFFFFFF:
@@ -133,6 +152,7 @@ def iter_region_data(
 
 
 def list_modules(pid: int) -> list[dict]:
+    _require_windows()
     snap = kernel32.CreateToolhelp32Snapshot(TH32CS_SNAPMODULE | TH32CS_SNAPMODULE32, pid)
     if snap in (-1, 0xFFFFFFFF):
         raise OSError(f"CreateToolhelp32Snapshot failed: {ctypes.get_last_error()}")
@@ -142,12 +162,14 @@ def list_modules(pid: int) -> list[dict]:
         out: list[dict] = []
         if kernel32.Module32FirstW(snap, ctypes.byref(me)):
             while True:
-                out.append({
-                    "name": me.szModule,
-                    "path": me.szExePath,
-                    "base": me.modBaseAddr,
-                    "size": me.modBaseSize,
-                })
+                out.append(
+                    {
+                        "name": me.szModule,
+                        "path": me.szExePath,
+                        "base": me.modBaseAddr,
+                        "size": me.modBaseSize,
+                    }
+                )
                 if not kernel32.Module32NextW(snap, ctypes.byref(me)):
                     break
         return out

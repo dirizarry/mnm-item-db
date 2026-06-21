@@ -17,12 +17,8 @@ LOOT_DIR = DATA / "wiki-fixes" / "loot"
 SITE_REVIEW = ROOT / "site" / "wiki-review"
 WIKI_BASE = "https://monstersandmemories.miraheze.org/wiki/"
 
-REVIEW_HEADER_RE = re.compile(
-    r"<!--\s*mnm-review\s+(\{.*?\})\s*-->", re.DOTALL
-)
-LEGACY_HEADER_RE = re.compile(
-    r"<!--\s*mnm loot fix:\s*(.+?)\s+adds\s+(\d+)\s+(item|mob)", re.I
-)
+REVIEW_HEADER_RE = re.compile(r"<!--\s*mnm-review\s+(\{.*?\})\s*-->", re.DOTALL)
+LEGACY_HEADER_RE = re.compile(r"<!--\s*mnm loot fix:\s*(.+?)\s+adds\s+(\d+)\s+(item|mob)", re.I)
 
 
 def wiki_page_url(title: str) -> str:
@@ -159,7 +155,9 @@ def main() -> int:
     if not entries:
         print(f"No loot fixes found in {LOOT_DIR}")
         if stats["skipped_unchanged"]:
-            print(f"  {stats['skipped_unchanged']} on disk but already match live wiki (pushed or stale)")
+            print(
+                f"  {stats['skipped_unchanged']} on disk but already match live wiki (pushed or stale)"
+            )
         if stats["skipped_rejected"]:
             print(f"  {stats['skipped_rejected']} rejected")
         write_review_bundle([], stats=stats)

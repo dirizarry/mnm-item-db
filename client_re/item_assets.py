@@ -26,8 +26,20 @@ _RIG_SUFFIX = ("_Rig", "_rig")
 # Sprites that are clearly ability/class UI, not item icons.
 _ABILITY_PREFIXES = ("Ability_", "Debuff_", "Buff_")
 _CLASS_NAMES = (
-    "Druid", "Wizard", "Spellblade", "Shaman", "Archer", "Cleric", "Paladin",
-    "Necromancer", "Enchanter", "Monk", "Rogue", "Warrior", "Bard", "Ranger",
+    "Druid",
+    "Wizard",
+    "Spellblade",
+    "Shaman",
+    "Archer",
+    "Cleric",
+    "Paladin",
+    "Necromancer",
+    "Enchanter",
+    "Monk",
+    "Rogue",
+    "Warrior",
+    "Bard",
+    "Ranger",
 )
 
 
@@ -98,8 +110,21 @@ def extract_item_models(path: Path) -> list[dict]:
 
 
 _CATEGORY_SUFFIXES = {
-    "weapon", "food", "container", "tool", "cloth", "equipment", "material",
-    "idol", "drink", "potion", "armor", "ammo", "misc", "key", "quest",
+    "weapon",
+    "food",
+    "container",
+    "tool",
+    "cloth",
+    "equipment",
+    "material",
+    "idol",
+    "drink",
+    "potion",
+    "armor",
+    "ammo",
+    "misc",
+    "key",
+    "quest",
 }
 _WIKI_ITEMS = Path(__file__).resolve().parent.parent / "data" / "items.json"
 
@@ -148,21 +173,31 @@ def crosswalk_icons_to_wiki(icons: list[dict]) -> list[dict]:
                 matches.append((round(score, 3), title))
         matches.sort(reverse=True)
         if matches:
-            out.append({
-                "icon": ic["name"],
-                "tokens": sorted(toks),
-                "wiki_matches": [{"title": t, "score": s} for s, t in matches[:5]],
-            })
+            out.append(
+                {
+                    "icon": ic["name"],
+                    "tokens": sorted(toks),
+                    "wiki_matches": [{"title": t, "score": s} for s, t in matches[:5]],
+                }
+            )
     return out
 
 
 def build_item_assets(root: Path | None = None, export_icons: bool = False) -> dict:
     root = install_root(root)
     bdir = bundles_dir(root)
-    icon_dir = (Path(__file__).resolve().parent.parent / "data" / "client" / "icons") if export_icons else None
+    icon_dir = (
+        (Path(__file__).resolve().parent.parent / "data" / "client" / "icons")
+        if export_icons
+        else None
+    )
 
     sprites: list[dict] = []
-    for glob in ("defaultlocalgroup_*.bundle", "globalstructures_*.bundle", "contentupdate_*.bundle"):
+    for glob in (
+        "defaultlocalgroup_*.bundle",
+        "globalstructures_*.bundle",
+        "contentupdate_*.bundle",
+    ):
         p = _first(bdir, glob)
         if p:
             sprites.extend(extract_sprites(p, icon_dir))

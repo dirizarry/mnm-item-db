@@ -18,7 +18,7 @@ import json
 import re
 from pathlib import Path
 
-from mnm_wiki import fetch_contents, parse_params, session, strip_markup
+from mnm_wiki import fetch_contents, parse_params, session
 from mnm_zones import (
     canonical_zones,
     format_zone_param,
@@ -79,10 +79,12 @@ def classify_dropsfrom_links(
         if nz and nz in canon:
             if nz not in zones:
                 zones.append(nz)
-        elif link.strip().casefold() in mob_canon or re.match(r"^(a|an)\s+", link, re.I):
-            if link not in mobs:
-                mobs.append(link)
-        elif nz and nz not in canon:
+        elif (
+            link.strip().casefold() in mob_canon
+            or re.match(r"^(a|an)\s+", link, re.I)
+            or nz
+            and nz not in canon
+        ):
             if link not in mobs:
                 mobs.append(link)
     return zones, mobs
@@ -177,7 +179,7 @@ def gen_mob_fixes(limit: int | None) -> list[dict]:
 
     s = session()
     titles = [t for t, _ in targets]
-    zones_by_title = {t: z for t, z in targets}
+    zones_by_title = dict(targets)
     print(f"Fetching {len(titles)} mob pages ...")
     contents = fetch_contents(s, titles)
 
@@ -192,13 +194,15 @@ def gen_mob_fixes(limit: int | None) -> list[dict]:
         fname = f"mob-{slug(title)}.wiki"
         out_path = OUT_DIR / fname
         out_path.write_text(fixed, encoding="utf-8")
-        manifest.append({
-            "page": title,
-            "file": str(out_path.relative_to(ROOT)).replace("\\", "/"),
-            "kind": "mob_zone",
-            "zones": zones,
-            "summary": "Normalize Namedmobpage zone to plain canonical names",
-        })
+        manifest.append(
+            {
+                "page": title,
+                "file": str(out_path.relative_to(ROOT)).replace("\\", "/"),
+                "kind": "mob_zone",
+                "zones": zones,
+                "summary": "Normalize Namedmobpage zone to plain canonical names",
+            }
+        )
     write_manifest(manifest, OUT_DIR / "mob-zone-manifest.json")
     print(f"Wrote {len(manifest)} mob fixes -> {OUT_DIR}")
     return manifest
@@ -228,12 +232,14 @@ def gen_item_fixes(limit: int | None) -> list[dict]:
         fname = f"item-{slug(title)}.wiki"
         out_path = OUT_DIR / fname
         out_path.write_text(fixed, encoding="utf-8")
-        manifest.append({
-            "page": title,
-            "file": str(out_path.relative_to(ROOT)).replace("\\", "/"),
-            "kind": "item_dropsfrom",
-            "summary": "Normalize Itempage dropsfrom: zones on plain lines, mobs on * bullets",
-        })
+        manifest.append(
+            {
+                "page": title,
+                "file": str(out_path.relative_to(ROOT)).replace("\\", "/"),
+                "kind": "item_dropsfrom",
+                "summary": "Normalize Itempage dropsfrom: zones on plain lines, mobs on * bullets",
+            }
+        )
     write_manifest(manifest, OUT_DIR / "item-dropsfrom-manifest.json")
     print(f"Wrote {len(manifest)} item fixes -> {OUT_DIR}")
     return manifest

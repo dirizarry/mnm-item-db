@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Analyze combat-events.json for DPS meter viability (memory + message_blob)."""
+
 from __future__ import annotations
 
 import json
@@ -98,22 +99,24 @@ def main() -> int:
                 print(f"  {k}: {v}")
 
     # Bone carver encounter (user test fight)
-    bc = [
-        e for e in events
-        if "bone carver" in (e.get("raw") or "").lower() and outgoing_damage(e)
+    bc = [e for e in events if "bone carver" in (e.get("raw") or "").lower() and outgoing_damage(e)]
+    bc_you = [
+        e for e in bc if (e.get("actor") == "You" or (e.get("raw") or "").startswith("Your "))
     ]
-    bc_you = [e for e in bc if (e.get("actor") == "You" or (e.get("raw") or "").startswith("Your "))]
     wbc = dps_window(bc_you, "YOU vs bone carver (all session duplicates)")
     print(f"\n--- {wbc['label']} ---")
     for k, v in wbc.items():
         if k != "label":
             print(f"  {k}: {v}")
     print("  unique raw lines:", len({e.get("raw") for e in bc_you}))
-    print("  duplicate multiplier:", round(len(bc_you) / max(len({e.get("raw") for e in bc_you}), 1), 2))
+    print(
+        "  duplicate multiplier:",
+        round(len(bc_you) / max(len({e.get("raw") for e in bc_you}), 1), 2),
+    )
 
     print("\n  Last 15 You vs bone carver hits:")
     for e in bc_you[-15:]:
-        print(f"    {e.get('amount'):3} {e.get('memory_mode','?'):12} {(e.get('raw') or '')[:60]}")
+        print(f"    {e.get('amount'):3} {e.get('memory_mode', '?'):12} {(e.get('raw') or '')[:60]}")
 
     print("\n--- Ability breakdown (You outgoing, bone carver) ---")
     for name, cnt, total in ability_breakdown(bc_you)[:10]:

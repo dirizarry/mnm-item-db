@@ -113,7 +113,13 @@ def parse_currency_field(raw: str | None) -> dict[str, int] | None:
     text = decode_b64_text(raw) or raw
     if "," in text and all(p.strip().lstrip("-").isdigit() for p in text.split(",")):
         pp, gp, sp, cp = (int(x) for x in text.split(",", 3))
-        return {"pp": pp, "gp": gp, "sp": sp, "cp": cp, "copper_total": coins_to_copper(pp, gp, sp, cp)}
+        return {
+            "pp": pp,
+            "gp": gp,
+            "sp": sp,
+            "cp": cp,
+            "copper_total": coins_to_copper(pp, gp, sp, cp),
+        }
     m = re.search(
         r"(-?\d+)\s*platinum.*?(-?\d+)\s*gold.*?(-?\d+)\s*silver.*?(-?\d+)\s*copper",
         text,
@@ -121,7 +127,14 @@ def parse_currency_field(raw: str | None) -> dict[str, int] | None:
     )
     if m:
         pp, gp, sp, cp = (int(x) for x in m.groups())
-        return {"pp": pp, "gp": gp, "sp": sp, "cp": cp, "copper_total": coins_to_copper(pp, gp, sp, cp), "label": text}
+        return {
+            "pp": pp,
+            "gp": gp,
+            "sp": sp,
+            "cp": cp,
+            "copper_total": coins_to_copper(pp, gp, sp, cp),
+            "label": text,
+        }
     return {"label": text}
 
 
@@ -166,6 +179,4 @@ def character_context(path: Path, locallow: Path) -> dict[str, str]:
     return {"server": server, "character": character, "rel": str(rel)}
 
 
-JOURNAL_LINE = re.compile(
-    r"^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}): (.+?) says (.+)$"
-)
+JOURNAL_LINE = re.compile(r"^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}): (.+?) says (.+)$")

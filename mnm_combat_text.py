@@ -176,19 +176,19 @@ def split_glued_combat_line(raw: str) -> list[str]:
 
         m = _GLUE_MID_LINE.search(text)
         if m:
-            prefix = text[:m.start()].rstrip()
-            tail = text[m.end():].strip()
+            prefix = text[: m.start()].rstrip()
+            tail = text[m.end() :].strip()
             if len(prefix) >= 6 and len(tail) >= 6 and _GLUE_TAIL_START.match(tail):
-                amt_m = re.search(r"for (\d+) points?", text[m.start():m.end()], re.I)
+                amt_m = re.search(r"for (\d+) points?", text[m.start() : m.end()], re.I)
                 n = amt_m.group(1) if amt_m else "1"
                 return [f"{prefix} for {n} point of damage.", tail]
 
         m = _GLUE_INCOMPLETE.search(text)
         if m:
-            prefix = text[:m.start()].rstrip()
-            tail = text[m.end():].strip()
+            prefix = text[: m.start()].rstrip()
+            tail = text[m.end() :].strip()
             if len(prefix) >= 6 and len(tail) >= 6 and _GLUE_TAIL_START.match(tail):
-                amt_m = re.search(r"for (\d+) points?", text[m.start():m.end()], re.I)
+                amt_m = re.search(r"for (\d+) points?", text[m.start() : m.end()], re.I)
                 n = amt_m.group(1) if amt_m else "1"
                 return [f"{prefix} for {n} point of damage.", tail]
 
@@ -270,17 +270,26 @@ def _infer_damage_prefix(prefix: str) -> dict:
     if m:
         pet = m.group(1).strip()
         return {
-            "kind": "ability", "direction": "outgoing", "outcome": "hit",
-            "actor": pet, "pet": pet, "ability": m.group(2).strip(),
-            "target": m.group(3).strip(), "verb": "hit",
+            "kind": "ability",
+            "direction": "outgoing",
+            "outcome": "hit",
+            "actor": pet,
+            "pet": pet,
+            "ability": m.group(2).strip(),
+            "target": m.group(3).strip(),
+            "verb": "hit",
         }
 
     m = re.match(r"^Your pet (\S+) (\w+) ((?:a |an |the ).+)$", p, re.I)
     if m:
         pet = m.group(1).strip()
         return {
-            "kind": "melee", "direction": "outgoing", "outcome": "hit",
-            "actor": pet, "pet": pet, "target": m.group(3).strip(),
+            "kind": "melee",
+            "direction": "outgoing",
+            "outcome": "hit",
+            "actor": pet,
+            "pet": pet,
+            "target": m.group(3).strip(),
             "verb": m.group(2).strip(),
         }
 
@@ -288,33 +297,51 @@ def _infer_damage_prefix(prefix: str) -> dict:
     if m:
         pet = m.group(1).strip()
         return {
-            "kind": "melee", "direction": "outgoing", "outcome": "hit",
-            "actor": pet, "pet": pet, "target": m.group(2).strip(), "verb": "hit",
+            "kind": "melee",
+            "direction": "outgoing",
+            "outcome": "hit",
+            "actor": pet,
+            "pet": pet,
+            "target": m.group(2).strip(),
+            "verb": "hit",
         }
 
     m = re.match(r"^Your (.+?) hits? (.+)$", p, re.I)
     if m and not m.group(1).strip().lower().startswith("pet "):
         return {
-            "kind": "ability", "direction": "outgoing", "outcome": "hit",
-            "actor": "You", "ability": m.group(1).strip(),
-            "target": m.group(2).strip(), "verb": "hit",
+            "kind": "ability",
+            "direction": "outgoing",
+            "outcome": "hit",
+            "actor": "You",
+            "ability": m.group(1).strip(),
+            "target": m.group(2).strip(),
+            "verb": "hit",
         }
 
     m = re.match(r"^(.+?)'s (.+?) hits? your pet (.+)$", p, re.I)
     if m:
         pet = m.group(3).strip()
         return {
-            "kind": "ability", "direction": "incoming", "outcome": "hit",
-            "actor": m.group(1).strip(), "ability": m.group(2).strip(),
-            "target": pet, "pet": pet, "verb": "hit",
+            "kind": "ability",
+            "direction": "incoming",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "ability": m.group(2).strip(),
+            "target": pet,
+            "pet": pet,
+            "verb": "hit",
         }
 
     m = re.match(r"^(.+?)'s (.+?) hits? YOU$", p, re.I)
     if m:
         return {
-            "kind": "ability", "direction": "incoming", "outcome": "hit",
-            "actor": m.group(1).strip(), "ability": m.group(2).strip(),
-            "target": "You", "verb": "hit",
+            "kind": "ability",
+            "direction": "incoming",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "ability": m.group(2).strip(),
+            "target": "You",
+            "verb": "hit",
         }
 
     m = re.match(r"^(.+?)'s (.+?) hits? (.+)$", p, re.I)
@@ -322,32 +349,48 @@ def _infer_damage_prefix(prefix: str) -> dict:
         actor = m.group(1).strip()
         direction = "outgoing" if actor == "You" else "neutral"
         return {
-            "kind": "ability", "direction": direction, "outcome": "hit",
-            "actor": actor, "ability": m.group(2).strip(),
-            "target": m.group(3).strip(), "verb": "hit",
+            "kind": "ability",
+            "direction": direction,
+            "outcome": "hit",
+            "actor": actor,
+            "ability": m.group(2).strip(),
+            "target": m.group(3).strip(),
+            "verb": "hit",
         }
 
     m = re.match(r"^You (.+?) ((?:a |an |the ).+)$", p, re.I)
     if m:
         return {
-            "kind": "melee", "direction": "outgoing", "outcome": "hit",
-            "actor": "You", "verb": m.group(1).strip(), "target": m.group(2).strip(),
+            "kind": "melee",
+            "direction": "outgoing",
+            "outcome": "hit",
+            "actor": "You",
+            "verb": m.group(1).strip(),
+            "target": m.group(2).strip(),
         }
 
     m = re.match(r"^(.+?) (\w+) your pet (.+)$", p, re.I)
     if m:
         pet = m.group(3).strip()
         return {
-            "kind": "melee", "direction": "incoming", "outcome": "hit",
-            "actor": m.group(1).strip(), "verb": m.group(2).strip(),
-            "target": pet, "pet": pet,
+            "kind": "melee",
+            "direction": "incoming",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "verb": m.group(2).strip(),
+            "target": pet,
+            "pet": pet,
         }
 
     m = re.match(r"^(.+?) (\w+) YOU$", p, re.I)
     if m:
         return {
-            "kind": "melee", "direction": "incoming", "outcome": "hit",
-            "actor": m.group(1).strip(), "verb": m.group(2).strip(), "target": "You",
+            "kind": "melee",
+            "direction": "incoming",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "verb": m.group(2).strip(),
+            "target": "You",
         }
 
     m = re.match(r"^(.+?) hits? (.+)$", p, re.I)
@@ -355,44 +398,71 @@ def _infer_damage_prefix(prefix: str) -> dict:
         actor, target = m.group(1).strip(), m.group(2).strip()
         if _is_player_name(target) and not _MONSTER_START.match(target):
             return {
-                "kind": "melee", "direction": "neutral", "outcome": "hit",
-                "actor": actor, "target": target, "verb": "hit",
+                "kind": "melee",
+                "direction": "neutral",
+                "outcome": "hit",
+                "actor": actor,
+                "target": target,
+                "verb": "hit",
             }
         if _is_player_name(actor):
             return {
-                "kind": "melee", "direction": "neutral", "outcome": "hit",
-                "actor": actor, "target": target, "verb": "hit",
+                "kind": "melee",
+                "direction": "neutral",
+                "outcome": "hit",
+                "actor": actor,
+                "target": target,
+                "verb": "hit",
             }
         return {
-            "kind": "melee", "direction": "neutral", "outcome": "hit",
-            "actor": actor, "target": target, "verb": "hit",
+            "kind": "melee",
+            "direction": "neutral",
+            "outcome": "hit",
+            "actor": actor,
+            "target": target,
+            "verb": "hit",
         }
 
     m = re.match(r"^((?:a |an |the ).+?) (\w+) ([A-Za-z][A-Za-z']+)$", p, re.I)
     if m and _is_player_name(m.group(3)):
         return {
-            "kind": "melee", "direction": "neutral", "outcome": "hit",
-            "actor": m.group(1).strip(), "verb": m.group(2).strip(),
+            "kind": "melee",
+            "direction": "neutral",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "verb": m.group(2).strip(),
             "target": m.group(3).strip(),
         }
 
     m = re.match(r"^([A-Za-z][A-Za-z']+) (\w+) ((?:a |an |the ).+)$", p)
     if m and m.group(1) not in ("You", "Your"):
         return {
-            "kind": "melee", "direction": "neutral", "outcome": "hit",
-            "actor": m.group(1).strip(), "verb": m.group(2).strip(),
+            "kind": "melee",
+            "direction": "neutral",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "verb": m.group(2).strip(),
             "target": m.group(3).strip(),
         }
 
     m = re.match(r"^([A-Za-z][A-Za-z']+) (\w+) ([A-Za-z][A-Za-z']+)$", p)
     if m and m.group(1) not in ("You", "Your") and _is_player_name(m.group(3)):
         return {
-            "kind": "melee", "direction": "neutral", "outcome": "hit",
-            "actor": m.group(1).strip(), "verb": m.group(2).strip(),
+            "kind": "melee",
+            "direction": "neutral",
+            "outcome": "hit",
+            "actor": m.group(1).strip(),
+            "verb": m.group(2).strip(),
             "target": m.group(3).strip(),
         }
 
-    return {"kind": "damage", "direction": "neutral", "outcome": "hit", "actor": None, "target": None}
+    return {
+        "kind": "damage",
+        "direction": "neutral",
+        "outcome": "hit",
+        "actor": None,
+        "target": None,
+    }
 
 
 def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -> dict | None:
@@ -403,14 +473,19 @@ def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -
         return _event(line, ts, "status", "neutral", outcome="too_far", verb="too_far", **extra)
 
     if _RE_FACE.match(line):
-        return _event(line, ts, "status", "neutral", outcome="face_target", verb="face_target", **extra)
+        return _event(
+            line, ts, "status", "neutral", outcome="face_target", verb="face_target", **extra
+        )
 
     m = _RE_DAMAGE.match(line)
     if m:
         meta = _infer_damage_prefix(m.group("prefix"))
         dtype = (m.group("dtype") or "").strip() or None
         return _event(
-            line, ts, meta.get("kind", "damage"), meta["direction"],
+            line,
+            ts,
+            meta.get("kind", "damage"),
+            meta["direction"],
             outcome=meta.get("outcome", "hit"),
             amount=int(m.group("amount")),
             damage_type=dtype,
@@ -435,8 +510,16 @@ def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -
         else:
             direction = "neutral"
         return _event(
-            line, ts, "heal", direction, outcome="heal", amount=amount,
-            actor=actor, target=target, ability=ability, **extra,
+            line,
+            ts,
+            "heal",
+            direction,
+            outcome="heal",
+            amount=amount,
+            actor=actor,
+            target=target,
+            ability=ability,
+            **extra,
         )
 
     m = _RE_MISS_YOU.match(line) or _RE_MISS.match(line)
@@ -455,7 +538,11 @@ def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -
         if pet and actor != "You":
             direction = "incoming"
         return _event(
-            line, ts, "miss", direction, outcome=outcome,
+            line,
+            ts,
+            "miss",
+            direction,
+            outcome=outcome,
             actor=actor if actor != "You" else "You",
             pet=pet,
             verb=m.group("verb"),
@@ -467,8 +554,15 @@ def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -
     if m:
         pet = m.group(1).strip()
         return _event(
-            line, ts, "death", "outgoing", outcome="slain",
-            actor=pet, pet=pet, target=m.group(2).strip(), **extra,
+            line,
+            ts,
+            "death",
+            "outgoing",
+            outcome="slain",
+            actor=pet,
+            pet=pet,
+            target=m.group(2).strip(),
+            **extra,
         )
 
     m = _RE_SLAIN.match(line)
@@ -484,37 +578,81 @@ def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -
             actor = killer
         direction = "outgoing" if actor == "You" or pet else "neutral"
         return _event(
-            line, ts, "death", direction, outcome="slain",
-            actor=actor, pet=pet, target=m.group("victim").strip(), **extra,
+            line,
+            ts,
+            "death",
+            direction,
+            outcome="slain",
+            actor=actor,
+            pet=pet,
+            target=m.group("victim").strip(),
+            **extra,
         )
 
     m = _RE_SLAIN_BY.match(line)
     if m:
         return _event(
-            line, ts, "death", "neutral", outcome="slain",
-            target=m.group("victim").strip(), actor=m.group("killer").strip(), **extra,
+            line,
+            ts,
+            "death",
+            "neutral",
+            outcome="slain",
+            target=m.group("victim").strip(),
+            actor=m.group("killer").strip(),
+            **extra,
         )
 
     m = _RE_XP.match(line)
     if m:
-        return _event(line, ts, "experience", "neutral", outcome="gain", amount=int(m.group("amount")), **extra)
+        return _event(
+            line,
+            ts,
+            "experience",
+            "neutral",
+            outcome="gain",
+            amount=int(m.group("amount")),
+            **extra,
+        )
 
     m = _RE_CAST.match(line)
     if m:
         return _event(
-            line, ts, "cast", "outgoing", outcome="begin",
-            actor="You", ability=m.group("spell").strip(), verb="casting", **extra,
+            line,
+            ts,
+            "cast",
+            "outgoing",
+            outcome="begin",
+            actor="You",
+            ability=m.group("spell").strip(),
+            verb="casting",
+            **extra,
         )
 
     if _RE_CAST_INTERRUPT.match(line):
-        return _event(line, ts, "cast", "outgoing", outcome="interrupted", actor="You", verb="interrupted", **extra)
+        return _event(
+            line,
+            ts,
+            "cast",
+            "outgoing",
+            outcome="interrupted",
+            actor="You",
+            verb="interrupted",
+            **extra,
+        )
 
     m = _RE_SPELL_FIZZLE.match(line) or _RE_FIZZLE.match(line)
     if m:
         spell = m.groupdict().get("spell")
         return _event(
-            line, ts, "cast", "outgoing", outcome="fizzle",
-            actor="You", ability=(spell or "").strip() or None, verb="fizzle", **extra,
+            line,
+            ts,
+            "cast",
+            "outgoing",
+            outcome="fizzle",
+            actor="You",
+            ability=(spell or "").strip() or None,
+            verb="fizzle",
+            **extra,
         )
 
     m = _RE_RESISTED_BY.match(line) or _RE_RESIST_YOU.match(line) or _RE_YOU_RESIST.match(line)
@@ -524,42 +662,89 @@ def _parse_structural(line: str, ts: str | None, stream_id: str | None = None) -
         actor = m.groupdict().get("actor")
         if actor:
             return _event(
-                line, ts, "ability", "incoming", outcome="resist",
-                actor=actor.strip(), ability=spell, target="You", **extra,
+                line,
+                ts,
+                "ability",
+                "incoming",
+                outcome="resist",
+                actor=actor.strip(),
+                ability=spell,
+                target="You",
+                **extra,
             )
         if target:
             return _event(
-                line, ts, "ability", "outgoing", outcome="resist",
-                actor="You", ability=spell, target=target.strip(), **extra,
+                line,
+                ts,
+                "ability",
+                "outgoing",
+                outcome="resist",
+                actor="You",
+                ability=spell,
+                target=target.strip(),
+                **extra,
             )
         return _event(
-            line, ts, "ability", "incoming", outcome="resist",
-            actor="You", ability=spell, **extra,
+            line,
+            ts,
+            "ability",
+            "incoming",
+            outcome="resist",
+            actor="You",
+            ability=spell,
+            **extra,
         )
 
     m = _RE_STATUS_ATTACK.match(line)
     if m:
-        return _event(line, ts, "status", "neutral", outcome=m.group("status").lower(), verb=m.group("status").lower(), **extra)
+        return _event(
+            line,
+            ts,
+            "status",
+            "neutral",
+            outcome=m.group("status").lower(),
+            verb=m.group("status").lower(),
+            **extra,
+        )
 
     m = _RE_ABSORB.match(line)
     if m:
         return _event(
-            line, ts, "absorb", "neutral", outcome="absorb",
-            actor=m.group("actor").strip(), target=m.group("target").strip(), **extra,
+            line,
+            ts,
+            "absorb",
+            "neutral",
+            outcome="absorb",
+            actor=m.group("actor").strip(),
+            target=m.group("target").strip(),
+            **extra,
         )
 
     m = _RE_ANGRY.match(line)
     if m:
         return _event(
-            line, ts, "status", "neutral", outcome="angry",
-            actor=m.group("actor").strip(), target=m.group("target").strip(), verb="angry", **extra,
+            line,
+            ts,
+            "status",
+            "neutral",
+            outcome="angry",
+            actor=m.group("actor").strip(),
+            target=m.group("target").strip(),
+            verb="angry",
+            **extra,
         )
 
     m = _RE_STRUCK.match(line)
     if m:
         return _event(
-            line, ts, "ability", "neutral", outcome="hit",
-            target=m.group("target").strip(), source=m.group("source").strip(), **extra,
+            line,
+            ts,
+            "ability",
+            "neutral",
+            outcome="hit",
+            target=m.group("target").strip(),
+            source=m.group("source").strip(),
+            **extra,
         )
 
     return None

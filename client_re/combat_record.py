@@ -106,7 +106,9 @@ def read_blob_records(handle, view: MessageBlobView) -> list[tuple[int, str]]:
     return parse_blob_records(data, view.blob_ptr)
 
 
-def _score_blob_holder(handle, holder_ptr: int, *, full: bool = True) -> tuple[int, MessageBlobView, list[str]] | None:
+def _score_blob_holder(
+    handle, holder_ptr: int, *, full: bool = True
+) -> tuple[int, MessageBlobView, list[str]] | None:
     view = read_blob_view(handle, holder_ptr)
     if not view or view.used < 16:
         return None
@@ -150,7 +152,9 @@ def _find_holders_for_blob_ptr(handle, blob_ptr: int) -> list[int]:
     return holders
 
 
-def _scan_holder_candidates(handle, *, max_regions: int = 32) -> tuple[int, MessageBlobView, list[str]] | None:
+def _scan_holder_candidates(
+    handle, *, max_regions: int = 32
+) -> tuple[int, MessageBlobView, list[str]] | None:
     """Scan heap for native message-blob holder structs."""
     best: tuple[int, MessageBlobView, list[str]] | None = None
     seen_holders: set[int] = set()
@@ -270,7 +274,9 @@ def poll_blob_tail(
         st[key] = {"used": view.used, "tail_offset": 0, "holder": view.holder_ptr}
         return [], view
 
-    if view.used < prev_used or view.blob_ptr != int(st.get(key, {}).get("blob_ptr") or view.blob_ptr):
+    if view.used < prev_used or view.blob_ptr != int(
+        st.get(key, {}).get("blob_ptr") or view.blob_ptr
+    ):
         prev_tail = 0
         prev_used = 0
 

@@ -65,7 +65,7 @@ def scan_text_files(locallow: Path) -> list[tuple[str, str]]:
         if path.name == "chats.json":
             continue
         # journal/* holds NPC quest dialogue ("X says ..."), never combat text.
-        if SKIP_DIR_PARTS & set(p.lower() for p in path.parts):
+        if SKIP_DIR_PARTS & {p.lower() for p in path.parts}:
             continue
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
@@ -73,7 +73,7 @@ def scan_text_files(locallow: Path) -> list[tuple[str, str]]:
             continue
         m = COMBAT_TEXT.search(text)
         if m:
-            line = text[max(0, m.start() - 20): m.start() + 120].replace("\n", " ")
+            line = text[max(0, m.start() - 20) : m.start() + 120].replace("\n", " ")
             hits.append((str(path.relative_to(locallow)), line.strip()))
     return hits
 

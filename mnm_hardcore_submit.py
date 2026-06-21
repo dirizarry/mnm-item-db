@@ -29,7 +29,11 @@ def build_submission(
     submit_id: str | None = None,
     install_id: str | None = None,
 ) -> dict:
-    parsed = parse_char_select_text(ocr_text) if ocr_text else {"hardcore_detected": True, "parse_ok": True}
+    parsed = (
+        parse_char_select_text(ocr_text)
+        if ocr_text
+        else {"hardcore_detected": True, "parse_ok": True}
+    )
     now = datetime.now(timezone.utc).isoformat()
     sid = submit_id or str(uuid.uuid4())
     iid = install_id or hashlib.sha256(sid.encode()).hexdigest()[:16]
@@ -73,7 +77,11 @@ def main() -> int:
     ap.add_argument("--out", type=Path, default=DATA / "hardcore-submit-payload.json")
     args = ap.parse_args()
 
-    ocr = args.ocr_file.read_text(encoding="utf-8") if args.ocr_file and args.ocr_file.is_file() else ""
+    ocr = (
+        args.ocr_file.read_text(encoding="utf-8")
+        if args.ocr_file and args.ocr_file.is_file()
+        else ""
+    )
     payload = build_submission(
         character=args.character,
         server=args.server,

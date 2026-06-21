@@ -4,20 +4,16 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
-import struct
 from datetime import datetime, timezone
 from pathlib import Path
 
 from client_re.paths import DATA_CLIENT, ROOT, ensure_out, game_assembly, install_root
 from client_re.process_io import (
+    close_process,
     find_module,
     find_process,
     open_process,
-    close_process,
-    read_memory,
 )
-from client_re.version import fingerprint
 
 MNMLIB_DIR = Path(__file__).resolve().parent / "mnmlib"
 SIGNATURES_TEMPLATE = MNMLIB_DIR / "signatures.json"
@@ -168,9 +164,10 @@ def resolve_signatures(
 
         structured = template.get("structured_queue") or {}
         result["structured_enabled"] = bool(structured.get("enabled"))
-        result["ready"] = any(
-            e.get("ok") for e in result["resolved"] if e.get("kind") == "string"
-        ) or not result["structured_enabled"]
+        result["ready"] = (
+            any(e.get("ok") for e in result["resolved"] if e.get("kind") == "string")
+            or not result["structured_enabled"]
+        )
     finally:
         if handle:
             close_process(handle)
@@ -199,7 +196,7 @@ def verify_signatures(install=None) -> dict:
         stale = True
         reasons.append("Fingerprint changed since cache was built")
     else:
-        for old, new in zip(cache.get("resolved") or [], fresh.get("resolved") or []):
+        for old, new in zip(cache.get("resolved") or [], fresh.get("resolved") or [], strict=False):
             if old.get("file_hits") != new.get("file_hits"):
                 stale = True
                 reasons.append(f"Pattern {old.get('id')}: file hit count changed")

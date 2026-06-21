@@ -71,7 +71,10 @@ def detect_game_patch(data_dir: Path) -> StepResult:
 
         prev = load_previous()
         if not prev:
-            return "No client fingerprint baseline yet", {"patched": False, "baseline": str(FP_PATH)}
+            return "No client fingerprint baseline yet", {
+                "patched": False,
+                "baseline": str(FP_PATH),
+            }
 
         changes: list[str] = []
         manifest = read_client_manifest(install)
@@ -102,10 +105,14 @@ def detect_game_patch(data_dir: Path) -> StepResult:
 def extract_ledger(locallow: Path, data_dir: Path, *, incremental: bool, force: bool) -> StepResult:
     def run():
         import mnm_ledger_db
+
         mnm_ledger_db.OUT = data_dir
         stats = mnm_ledger_db.run(
-            locallow, ledger=True, journal=True,
-            incremental=incremental, force=force,
+            locallow,
+            ledger=True,
+            journal=True,
+            incremental=incremental,
+            force=force,
         )
         return (
             f"{stats['files']:,} files, {stats['kills']:,} kills, {stats['drops']:,} drops"
@@ -120,9 +127,9 @@ def run_client_re(data_dir: Path, *, force: bool, patch_detected: bool) -> StepR
     if not force and not patch_detected:
         return StepResult("client_re", "skipped", "No game patch detected")
     try:
-        from mnm_client_db import run_fingerprint, run_crosswalk
-        from client_re.paths import DATA_CLIENT, install_root
         import client_re.paths as cr_paths
+        from client_re.paths import install_root
+        from mnm_client_db import run_crosswalk, run_fingerprint
 
         cr_paths.DATA_CLIENT = data_dir / "client"
         install = install_root()
@@ -130,9 +137,9 @@ def run_client_re(data_dir: Path, *, force: bool, patch_detected: bool) -> StepR
             return StepResult("client_re", "skipped", "Game install not found")
         run_fingerprint(install)
         run_crosswalk(install)
-        from client_re.signatures import resolve_signatures
-        from client_re.mnmlib.types import generate_types_catalog
         from client_re.combat_memory import memory_capture_status
+        from client_re.mnmlib.types import generate_types_catalog
+        from client_re.signatures import resolve_signatures
 
         generate_types_catalog()
         sig = resolve_signatures(install)
@@ -141,7 +148,9 @@ def run_client_re(data_dir: Path, *, force: bool, patch_detected: bool) -> StepR
             f"Fingerprint + crosswalk; signatures {sum(1 for e in sig.get('resolved') or [] if e.get('ok'))} hits; "
             f"memory mode={mem.get('recommended_mode')}"
         )
-        return StepResult("client_re", "ok", detail, {"install": str(install), "combat_memory": mem})
+        return StepResult(
+            "client_re", "ok", detail, {"install": str(install), "combat_memory": mem}
+        )
     except Exception as exc:
         return StepResult("client_re", "warning", f"Partial: {exc}")
 
@@ -149,6 +158,7 @@ def run_client_re(data_dir: Path, *, force: bool, patch_detected: bool) -> StepR
 def refresh_wiki(data_dir: Path, site_dir: Path) -> StepResult:
     def run():
         import subprocess
+
         subprocess.run([sys.executable, str(ROOT / "mnm_item_db.py"), "--all"], check=True)
         subprocess.run([sys.executable, str(ROOT / "mnm_mob_db.py"), "--all"], check=True)
         return "Wiki crawl complete", {}
@@ -161,6 +171,7 @@ def build_relations(data_dir: Path) -> StepResult:
         return StepResult("relations", "skipped", "Missing data/items.json")
     try:
         import build_relations
+
         build_relations.DATA = data_dir
         build_relations.ITEMS_PATH = data_dir / "items.json"
         build_relations.MOBS_PATH = data_dir / "monsters.json"
@@ -169,7 +180,9 @@ def build_relations(data_dir: Path) -> StepResult:
         build_relations.GAME_DB = data_dir / "game.db"
         build_relations.main()
         drops_n = len(json.loads((data_dir / "drops.json").read_text(encoding="utf-8")))
-        return StepResult("relations", "ok", f"{drops_n:,} drop edges in game.db", {"drops": drops_n})
+        return StepResult(
+            "relations", "ok", f"{drops_n:,} drop edges in game.db", {"drops": drops_n}
+        )
     except Exception as exc:
         return StepResult("relations", "failed", str(exc))
 
@@ -179,22 +192,27 @@ def build_site_bundles(data_dir: Path, site_dir: Path) -> StepResult:
     changes: dict[str, Any] = {}
     try:
         import build_site
+
         build_site.DATA = data_dir
         build_site.SITE = site_dir
         build_site.main()
         details.append("item browser")
         import build_ledger_site
+
         build_ledger_site.DATA = data_dir
         build_ledger_site.SITE_STATS = site_dir / "stats"
         build_ledger_site.main()
         details.append("stats dashboard")
         import build_hardcore_site
+
         build_hardcore_site.main()
         details.append("hardcore board")
         import build_personal_site
+
         build_personal_site.main(data_dir=data_dir, site_dir=site_dir)
         details.append("personal overlay")
         import build_combat_site
+
         build_combat_site.main(data_dir=data_dir, site_dir=site_dir)
         details.append("combat stats")
         changes["bundles"] = details
@@ -210,6 +228,7 @@ def aggregate_crowd(data_dir: Path) -> StepResult:
 
     def run():
         import subprocess
+
         subprocess.run(
             [sys.executable, str(ROOT / "mnm_crowd_aggregate.py"), "--inbox", str(inbox)],
             check=True,
@@ -228,6 +247,7 @@ def package_upload(data_dir: Path, site_dir: Path, *, do_upload: bool) -> StepRe
 
         cfg = ledger_settings()
         import mnm_ledger_upload
+
         mnm_ledger_upload.DATA = data_dir
         payload = build_payload(
             share_characters=bool(cfg.get("share_characters")),
@@ -237,6 +257,7 @@ def package_upload(data_dir: Path, site_dir: Path, *, do_upload: bool) -> StepRe
         site_stats = site_dir / "stats"
         site_stats.mkdir(parents=True, exist_ok=True)
         import shutil
+
         shutil.copyfile(out, site_stats / "upload-payload.json")
         detail = f"Payload {out.stat().st_size // 1024} KB"
         if do_upload and cfg.get("upload_url"):
@@ -289,8 +310,10 @@ def run_sync(
 
 
 def print_report(report: SyncReport) -> None:
-    print(f"\n=== Sync complete ({report.summary.get('ok', 0)} ok, "
-          f"{report.summary.get('failed', 0)} failed) ===")
+    print(
+        f"\n=== Sync complete ({report.summary.get('ok', 0)} ok, "
+        f"{report.summary.get('failed', 0)} failed) ==="
+    )
     for step in report.steps:
         mark = {"ok": "+", "skipped": "-", "failed": "!", "warning": "~"}.get(step.status, "?")
         print(f"  [{mark}] {step.name}: {step.detail}")

@@ -29,11 +29,16 @@ from pathlib import Path
 from client_re.catalog_bundles import write_catalog
 from client_re.crosswalk import write_crosswalk
 from client_re.find_assets import write_candidates
-from client_re.item_assets import write_item_assets
 from client_re.il2cpp import write_il2cpp_report
-from client_re.paths import DATA_CLIENT, ensure_out, install_root
+from client_re.item_assets import write_item_assets
+from client_re.paths import ensure_out, install_root
 from client_re.version import write_fingerprint
-from client_re.watch_patch import archive_fingerprint, check_patch, load_previous
+from client_re.watch_patch import (
+    archive_fingerprint,
+    archive_signature_cache,
+    check_patch,
+    load_previous,
+)
 
 ROOT = Path(__file__).parent
 STATUS_PATH = ROOT / "CLIENT-RE.md"
@@ -53,16 +58,18 @@ def _write_status(summary: dict) -> None:
     lines.extend(["", "## Summary", ""])
     for line in summary.get("lines", []):
         lines.append(f"- {line}")
-    lines.extend([
-        "",
-        "## Next steps (manual)",
-        "",
-        "1. Install [Il2CppDumper](https://github.com/Perfare/Il2CppDumper); set `MNM_IL2CPP_DUMPER`.",
-        "2. Import `client_re/dumps/il2cpp/script.json` into Ghidra with `GameAssembly.dll`.",
-        "3. Trace `ChatLibrary` / `ChatMessageEntry` for Option F combat memory harvest.",
-        "4. Run `python mnm_client_db.py --resolve-signatures` then `--verify-signatures`.",
-        "",
-    ])
+    lines.extend(
+        [
+            "",
+            "## Next steps (manual)",
+            "",
+            "1. Install [Il2CppDumper](https://github.com/Perfare/Il2CppDumper); set `MNM_IL2CPP_DUMPER`.",
+            "2. Import `client_re/dumps/il2cpp/script.json` into Ghidra with `GameAssembly.dll`.",
+            "3. Trace `ChatLibrary` / `ChatMessageEntry` for Option F combat memory harvest.",
+            "4. Run `python mnm_client_db.py --resolve-signatures` then `--verify-signatures`.",
+            "",
+        ]
+    )
     STATUS_PATH.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -124,28 +131,70 @@ def main() -> int:
     ap.add_argument("--catalog", action="store_true")
     ap.add_argument("--assets", action="store_true")
     ap.add_argument("--il2cpp", action="store_true")
-    ap.add_argument("--dump-metadata", action="store_true", help="Scan running mnm.exe for decrypted metadata")
-    ap.add_argument("--decrypt-metadata", action="store_true", help="Attempt static XOR decrypt of global-metadata.dat")
+    ap.add_argument(
+        "--dump-metadata", action="store_true", help="Scan running mnm.exe for decrypted metadata"
+    )
+    ap.add_argument(
+        "--decrypt-metadata",
+        action="store_true",
+        help="Attempt static XOR decrypt of global-metadata.dat",
+    )
     ap.add_argument("--crosswalk", action="store_true")
-    ap.add_argument("--item-assets", action="store_true", help="Catalog client icon sprites + equipment models")
-    ap.add_argument("--export-icons", action="store_true", help="With --item-assets, dump icon PNGs to data/client/icons/")
-    ap.add_argument("--patch", action="store_true", help="Compare install to last fingerprint before running")
-    ap.add_argument("--verify-signatures", action="store_true", help="Verify combat memory signature cache")
-    ap.add_argument("--resolve-signatures", action="store_true", help="Scan GameAssembly.dll and cache signatures")
-    ap.add_argument("--mnmlib-types", action="store_true", help="Regenerate client_re/mnmlib/types.json from metadata")
-    ap.add_argument("--discover-combat-struct", action="store_true", help="Discover ChatMessageEntry queue from live memory")
+    ap.add_argument(
+        "--item-assets", action="store_true", help="Catalog client icon sprites + equipment models"
+    )
+    ap.add_argument(
+        "--export-icons",
+        action="store_true",
+        help="With --item-assets, dump icon PNGs to data/client/icons/",
+    )
+    ap.add_argument(
+        "--patch", action="store_true", help="Compare install to last fingerprint before running"
+    )
+    ap.add_argument(
+        "--verify-signatures", action="store_true", help="Verify combat memory signature cache"
+    )
+    ap.add_argument(
+        "--resolve-signatures",
+        action="store_true",
+        help="Scan GameAssembly.dll and cache signatures",
+    )
+    ap.add_argument(
+        "--mnmlib-types",
+        action="store_true",
+        help="Regenerate client_re/mnmlib/types.json from metadata",
+    )
+    ap.add_argument(
+        "--discover-combat-struct",
+        action="store_true",
+        help="Discover ChatMessageEntry queue from live memory",
+    )
     ap.add_argument("--all", action="store_true")
     args = ap.parse_args()
 
     if args.all:
-        args.patch = args.fingerprint = args.catalog = args.assets = args.il2cpp = args.crosswalk = args.item_assets = True
+        args.patch = args.fingerprint = args.catalog = args.assets = args.il2cpp = (
+            args.crosswalk
+        ) = args.item_assets = True
 
-    if not any((
-        args.patch, args.fingerprint, args.catalog, args.assets, args.il2cpp,
-        args.dump_metadata, args.decrypt_metadata, args.crosswalk, args.item_assets,
-        args.verify_signatures, args.resolve_signatures, args.mnmlib_types,
-        args.combat_memory_status, args.discover_combat_struct,
-    )):
+    if not any(
+        (
+            args.patch,
+            args.fingerprint,
+            args.catalog,
+            args.assets,
+            args.il2cpp,
+            args.dump_metadata,
+            args.decrypt_metadata,
+            args.crosswalk,
+            args.item_assets,
+            args.verify_signatures,
+            args.resolve_signatures,
+            args.mnmlib_types,
+            args.combat_memory_status,
+            args.discover_combat_struct,
+        )
+    ):
         ap.print_help()
         return 1
 
@@ -190,8 +239,7 @@ def main() -> int:
         outputs["catalog"] = str(path.relative_to(ROOT))
         top = doc["scanned_files"][0] if doc["scanned_files"] else {}
         data_bundles = [
-            f for f in doc["scanned_files"]
-            if f.get("category") not in ("zone", "bundle_other")
+            f for f in doc["scanned_files"] if f.get("category") not in ("zone", "bundle_other")
         ]
         if data_bundles:
             top = max(data_bundles, key=lambda f: f.get("mono_behaviour_count", 0))
@@ -217,7 +265,11 @@ def main() -> int:
         outputs["il2cpp"] = str(path.relative_to(ROOT))
         sym = doc["symbols"]
         dumper = doc["dumper"]
-        ok = dumper.get("ran") and not dumper.get("error") and (ROOT / "client_re" / "dumps" / "il2cpp" / "dump.cs").is_file()
+        ok = (
+            dumper.get("ran")
+            and not dumper.get("error")
+            and (ROOT / "client_re" / "dumps" / "il2cpp" / "dump.cs").is_file()
+        )
         lines.append(
             f"IL2CPP: {len(sym['priority_hits'])} priority symbols; "
             f"dump.cs {'written' if ok else 'not produced (encrypted on-disk metadata)'}"

@@ -2,37 +2,51 @@
 
 from __future__ import annotations
 
-import json
+import contextlib
 import re
-from datetime import datetime, timezone
-from pathlib import Path
 
-from client_re.mnmlib.combat_struct import harvest_structured_queue, load_struct_config, struct_enabled
-from client_re.process_io import find_process, open_process, close_process, iter_region_data
-from client_re.signatures import load_signature_cache, resolve_signatures, verify_signatures
+from client_re.mnmlib.combat_struct import (
+    harvest_structured_queue,
+    load_struct_config,
+    struct_enabled,
+)
+from client_re.process_io import close_process, find_process, iter_region_data, open_process
+from client_re.signatures import resolve_signatures, verify_signatures
 
 # Combat line templates — aligned with mnm_combat_text.py
 _TEXT_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
-    ("damage", re.compile(
-        r"(?:^You |^Your |^[A-Za-z][\w']+(?:'s | )|^[Aa]n? )"
-        r".+ for \d+ points? of .*(?:damage|Damage)\s*[.!]?$",
-        re.I,
-    )),
-    ("heal", re.compile(
-        r"(?:^You |^Your |^[A-Za-z][\w']+(?:'s | ))"
-        r".+\s+heals?\s+.+\s+for\s+\d+(?:\s+(?:points?|Health))?\s*[.!]?$",
-        re.I,
-    )),
-    ("miss", re.compile(
-        r"(?:^You |^Your pet \S+|^[Aa]n? |[A-Za-z])"
-        r".+ try(?:s)? to .+, but (?:miss(?:es)?|parr(?:y|ies)|dodge(?:s)?|block(?:s)?)",
-        re.I,
-    )),
-    ("slain", re.compile(
-        r"(?:^You |^Your pet \S+|^[A-Za-z])"
-        r".+(?:have slain|has slain|has been slain by)",
-        re.I,
-    )),
+    (
+        "damage",
+        re.compile(
+            r"(?:^You |^Your |^[A-Za-z][\w']+(?:'s | )|^[Aa]n? )"
+            r".+ for \d+ points? of .*(?:damage|Damage)\s*[.!]?$",
+            re.I,
+        ),
+    ),
+    (
+        "heal",
+        re.compile(
+            r"(?:^You |^Your |^[A-Za-z][\w']+(?:'s | ))"
+            r".+\s+heals?\s+.+\s+for\s+\d+(?:\s+(?:points?|Health))?\s*[.!]?$",
+            re.I,
+        ),
+    ),
+    (
+        "miss",
+        re.compile(
+            r"(?:^You |^Your pet \S+|^[Aa]n? |[A-Za-z])"
+            r".+ try(?:s)? to .+, but (?:miss(?:es)?|parr(?:y|ies)|dodge(?:s)?|block(?:s)?)",
+            re.I,
+        ),
+    ),
+    (
+        "slain",
+        re.compile(
+            r"(?:^You |^Your pet \S+|^[A-Za-z])"
+            r".+(?:have slain|has slain|has been slain by)",
+            re.I,
+        ),
+    ),
     ("cast", re.compile(r"^You begin casting .+\.?$", re.I)),
     ("experience", re.compile(r".+ gain(?:s)? experience", re.I)),
 )
@@ -56,8 +70,13 @@ def memory_capture_status(install=None) -> dict:
         "structured_enabled": structured,
         "structured_layout": layout if structured else None,
         "recommended_mode": (
-            "message_blob" if layout == "message_blob"
-            else ("text_scan" if layout == "inline_buffer" else ("structured" if structured else "text_scan"))
+            "message_blob"
+            if layout == "message_blob"
+            else (
+                "text_scan"
+                if layout == "inline_buffer"
+                else ("structured" if structured else "text_scan")
+            )
         ),
         "live_capture_note": (
             "message_blob reads the chronological combat record tail (no OCR)."
@@ -76,10 +95,8 @@ def _extract_strings(data: bytes, min_len: int = 12, max_len: int = 512) -> list
     found: list[str] = []
     # UTF-8 runs
     for m in re.finditer(rb"[\x20-\x7e]{%d,%d}" % (min_len, max_len), data):
-        try:
+        with contextlib.suppress(UnicodeDecodeError):
             found.append(m.group().decode("ascii"))
-        except UnicodeDecodeError:
-            pass
     # UTF-16LE (printable ASCII chars)
     for m in re.finditer(
         (rb"(?:[\x20-\x7e]\x00){%d,%d}" % (min_len, max_len // 2)),
@@ -217,7 +234,11 @@ def scan_process_combat_hits(
     use_cache: bool = True,
     refresh_cache: bool = False,
 ) -> list[tuple[int, str]]:
-    from client_re.combat_regions import iter_cached_region_data, load_region_cache, refresh_region_cache
+    from client_re.combat_regions import (
+        iter_cached_region_data,
+        load_region_cache,
+        refresh_region_cache,
+    )
 
     pid = pid or find_process()
     if not pid:
@@ -233,8 +254,10 @@ def scan_process_combat_hits(
         cache = load_region_cache()
     try:
         count = 0
-        region_iter = iter_cached_region_data(handle, cache) if cache.get("regions") else iter_region_data(
-            handle, heap_only=heap_only, max_bytes=max_bytes
+        region_iter = (
+            iter_cached_region_data(handle, cache)
+            if cache.get("regions")
+            else iter_region_data(handle, heap_only=heap_only, max_bytes=max_bytes)
         )
         for base, data in region_iter:
             for addr, line in scan_region_for_combat_hits(base, data):
@@ -259,13 +282,16 @@ def scan_process_text(
     max_bytes: int = 256_000_000,
     use_cache: bool = True,
 ) -> list[str]:
-    return [line for _, line in scan_process_combat_hits(
-        pid,
-        max_regions=max_regions,
-        heap_only=heap_only,
-        max_bytes=max_bytes,
-        use_cache=use_cache,
-    )]
+    return [
+        line
+        for _, line in scan_process_combat_hits(
+            pid,
+            max_regions=max_regions,
+            heap_only=heap_only,
+            max_bytes=max_bytes,
+            use_cache=use_cache,
+        )
+    ]
 
 
 def harvest_structured(pid: int | None = None, queue_root: int | None = None) -> list[dict]:
@@ -326,7 +352,9 @@ def poll_combat_hits(
         return hits, "structured"
 
     hits = scan_process_combat_hits(
-        pid, max_regions=max_regions, refresh_cache=refresh_cache,
+        pid,
+        max_regions=max_regions,
+        refresh_cache=refresh_cache,
     )
     return hits, "text_scan"
 
@@ -339,7 +367,9 @@ def poll_combat_lines(
 ) -> tuple[list[str], str]:
     """Return combat text lines and the mode used."""
     hits, mode_used = poll_combat_hits(
-        pid=pid, mode=mode, max_regions=max_regions,
+        pid=pid,
+        mode=mode,
+        max_regions=max_regions,
     )
     return [line for _, line in hits], mode_used
 

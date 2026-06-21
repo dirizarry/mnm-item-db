@@ -88,7 +88,9 @@ def classify_journal(
     return "none", None
 
 
-def profile_token(server: str, character: str, committed_at: str | None, first_seen: str | None) -> str:
+def profile_token(
+    server: str, character: str, committed_at: str | None, first_seen: str | None
+) -> str:
     anchor = committed_at or first_seen or ""
     raw = f"{server}|{character}|{anchor}".casefold()
     return hashlib.sha256(raw.encode()).hexdigest()[:20]
@@ -153,26 +155,29 @@ def build_hardcore_profiles(
             continue
 
         lu_count = sum(
-            1 for lu in levelups
-            if lu.get("server") == server and lu.get("character") == character
+            1 for lu in levelups if lu.get("server") == server and lu.get("character") == character
         )
         if not committed_at:
             committed_at = stats["first_seen"]
 
-        profiles.append({
-            "server": server,
-            "character": character,
-            "status": status,
-            "source": "journal",
-            "level": stats["level"],
-            "zone": stats["zone"],
-            "kills": stats["kills"],
-            "committed_at": committed_at,
-            "first_seen": stats["first_seen"],
-            "last_seen": stats["last_seen"],
-            "levelups": lu_count,
-            "profile_token": profile_token(server, character, committed_at, stats["first_seen"]),
-        })
+        profiles.append(
+            {
+                "server": server,
+                "character": character,
+                "status": status,
+                "source": "journal",
+                "level": stats["level"],
+                "zone": stats["zone"],
+                "kills": stats["kills"],
+                "committed_at": committed_at,
+                "first_seen": stats["first_seen"],
+                "last_seen": stats["last_seen"],
+                "levelups": lu_count,
+                "profile_token": profile_token(
+                    server, character, committed_at, stats["first_seen"]
+                ),
+            }
+        )
 
     profiles.sort(key=lambda p: (-p["level"], -p["kills"], p.get("committed_at") or ""))
     return profiles

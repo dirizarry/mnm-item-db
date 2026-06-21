@@ -18,10 +18,9 @@ import json
 import re
 from pathlib import Path
 
+from build_wiki_review import entry_from_files, make_review_header, write_review_bundle
 from mnm_wiki import fetch_contents, parse_params, session, wiki_links
 from mnm_zones import normalize_zone_name
-
-from build_wiki_review import entry_from_files, make_review_header, write_review_bundle
 from wiki_page_stubs import stub_item_page, stub_namedmob_page
 from wiki_review_state import rejected_ids
 
@@ -42,6 +41,7 @@ def wiki_title_key(title: str) -> str:
 
 def title_matches(a: str, b: str) -> bool:
     return wiki_title_key(a) == wiki_title_key(b)
+
 
 def replace_multiline_param(box: str, key: str, new_value: str) -> str:
     key_fold = key.lower()
@@ -113,13 +113,14 @@ def edge_needs_item_fix(edge: dict, items_index: dict[str, dict]) -> bool:
     item = edge.get("item_title") or ""
     mob = edge.get("mob_title") or ""
     it = items_index.get(item)
-    if it:
-        if any(title_matches(m or "", mob) for m in it.get("drops_mobs") or []):
-            return False
+    if it and any(title_matches(m or "", mob) for m in it.get("drops_mobs") or []):
+        return False
     return _has_empirical(edge)
 
 
-def load_candidates(min_conf: float, items_index: dict[str, dict], mobs_index: dict[str, dict]) -> list[dict]:
+def load_candidates(
+    min_conf: float, items_index: dict[str, dict], mobs_index: dict[str, dict]
+) -> list[dict]:
     path = DATA / "drops.json"
     if not path.is_file():
         return []
@@ -237,10 +238,7 @@ def fix_mob_page(text: str, item_title: str) -> str | None:
 
 
 def mob_in_sections(mob_title: str, sections: list[list]) -> bool:
-    return any(
-        any(title_matches(m, mob_title) for m in mobs)
-        for _, mobs in sections
-    )
+    return any(any(title_matches(m, mob_title) for m in mobs) for _, mobs in sections)
 
 
 def append_dropsfrom(box: str, mob_title: str, zone: str | None) -> str | None:
@@ -287,7 +285,9 @@ def fix_item_page(text: str, mob_title: str, zone: str | None) -> str | None:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Generate wiki loot fix wikitext from drop candidates")
     ap.add_argument("--min-confidence", type=float, default=0.5)
-    ap.add_argument("--limit", type=int, default=0, help="Max drop edges to process (0 = all; not page count)")
+    ap.add_argument(
+        "--limit", type=int, default=0, help="Max drop edges to process (0 = all; not page count)"
+    )
     ap.add_argument("--dry-run", action="store_true", help="List candidates only")
     ap.add_argument(
         "--create-missing",
@@ -356,9 +356,7 @@ def main() -> int:
                 print(f"  skip mob (no wiki page): {mob}")
                 continue
             zones = [
-                normalize_zone_name(e.get("zone")) or e.get("zone")
-                for e in edges
-                if e.get("zone")
+                normalize_zone_name(e.get("zone")) or e.get("zone") for e in edges if e.get("zone")
             ]
             mob_text = stub_namedmob_page(mob, [z for z in zones if z])
             new_page = True
@@ -415,7 +413,9 @@ def main() -> int:
             next_fix = fix_item_page(item_fix, edge["mob_title"], edge.get("zone"))
             if next_fix:
                 item_fix = next_fix
-                applied.append(f"{edge['mob_title']}" + (f" @ {edge.get('zone')}" if edge.get("zone") else ""))
+                applied.append(
+                    f"{edge['mob_title']}" + (f" @ {edge.get('zone')}" if edge.get("zone") else "")
+                )
         if applied and item_fix != item_text:
             out = OUT_DIR / f"item-{slug(item)}.wiki"
             fix_id = out.stem
@@ -446,7 +446,9 @@ def main() -> int:
     if stubbed_pages:
         print(f"  {stubbed_pages} new page stub(s) (review carefully before push)")
     if skipped_rejected:
-        print(f"  Skipped {skipped_rejected} rejected page(s) — see data/wiki-fixes/loot/review-state.json")
+        print(
+            f"  Skipped {skipped_rejected} rejected page(s) — see data/wiki-fixes/loot/review-state.json"
+        )
     review_path = write_review_bundle(
         review_entries,
         stats={
@@ -460,7 +462,7 @@ def main() -> int:
     print(f"Review UI: {review_path.relative_to(ROOT)}")
     print("  Open http://127.0.0.1:<port>/site/wiki-review/index.html (serve repo root over HTTP)")
     print("  Or: python -m http.server 8080  from site/ -> http://localhost:8080/wiki-review/")
-    print("Publish after review: python push_wiki.py --page \"<Title>\" --file <path>")
+    print('Publish after review: python push_wiki.py --page "<Title>" --file <path>')
     return 0
 
 

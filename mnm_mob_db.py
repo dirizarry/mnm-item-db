@@ -31,14 +31,39 @@ OUT_DIR = Path(__file__).parent / "data"
 OUT_DIR.mkdir(exist_ok=True)
 
 MOB_COLUMNS = [
-    "title", "name", "format", "race", "class", "level_min", "level_max", "level_label",
-    "zone", "zones", "location", "ac", "hp", "damage_per_hit", "attacks_per_round", "attack_speed",
-    "special", "known_loot", "common_loot", "unique_loot", "related_quests",
-    "opposing_factions", "categories", "raw_len",
+    "title",
+    "name",
+    "format",
+    "race",
+    "class",
+    "level_min",
+    "level_max",
+    "level_label",
+    "zone",
+    "zones",
+    "location",
+    "ac",
+    "hp",
+    "damage_per_hit",
+    "attacks_per_round",
+    "attack_speed",
+    "special",
+    "known_loot",
+    "common_loot",
+    "unique_loot",
+    "related_quests",
+    "opposing_factions",
+    "categories",
+    "raw_len",
 ]
 JSON_FIELDS = {
-    "zones", "known_loot", "common_loot", "unique_loot", "related_quests",
-    "opposing_factions", "categories",
+    "zones",
+    "known_loot",
+    "common_loot",
+    "unique_loot",
+    "related_quests",
+    "opposing_factions",
+    "categories",
 }
 
 
@@ -125,7 +150,9 @@ def write_outputs(rows: list[dict], tag: str) -> tuple[Path, Path, Path]:
     conn.commit()
     conn.close()
 
-    with_loot = sum(1 for r in rows if r.get("known_loot") or r.get("common_loot") or r.get("unique_loot"))
+    with_loot = sum(
+        1 for r in rows if r.get("known_loot") or r.get("common_loot") or r.get("unique_loot")
+    )
     with_zone = sum(1 for r in rows if r.get("zones"))
     with_level = sum(1 for r in rows if r.get("level_min") is not None)
     lines = [

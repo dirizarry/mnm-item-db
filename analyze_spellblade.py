@@ -6,6 +6,7 @@ No reliance on wiki class pages (the class was reworked); everything here is
 derived from data we control: base-stat screenshots, item itemization, and the
 mob/zone level of each item's drop source.
 """
+
 import json
 import statistics
 from collections import defaultdict
@@ -39,7 +40,9 @@ def main():
     max_avg = {s: statistics.mean(b["max"][s] for b in spb_base) for s in STATS}
     print(f"{'stat':<5}{'avg start':>10}{'avg max':>10}{'headroom':>10}")
     for s in STATS:
-        print(f"{s.upper():<5}{cur_avg[s]:>10.1f}{max_avg[s]:>10.1f}{max_avg[s]-cur_avg[s]:>10.1f}")
+        print(
+            f"{s.upper():<5}{cur_avg[s]:>10.1f}{max_avg[s]:>10.1f}{max_avg[s] - cur_avg[s]:>10.1f}"
+        )
     ranked_max = sorted(STATS, key=lambda s: max_avg[s], reverse=True)
     print("\nStat priority by max ceiling:", " > ".join(s.upper() for s in ranked_max))
 
@@ -81,10 +84,19 @@ def main():
     # INT drives spell damage/mana pool; DEX drives melee accuracy/weapon skill;
     # STA = survivability; mana/hp = direct pools; AC = mitigation.
     WEIGHTS = {
-        "int": 3.0, "dex": 2.0, "sta": 1.5, "str": 1.0, "agi": 0.5,
-        "wis": 0.3, "cha": 0.2,
-        "hp": 0.25, "mana": 0.25, "ac": 0.4,
-        "hp_regen": 1.0, "mana_regen": 2.0, "haste": 4.0,
+        "int": 3.0,
+        "dex": 2.0,
+        "sta": 1.5,
+        "str": 1.0,
+        "agi": 0.5,
+        "wis": 0.3,
+        "cha": 0.2,
+        "hp": 0.25,
+        "mana": 0.25,
+        "ac": 0.4,
+        "hp_regen": 1.0,
+        "mana_regen": 2.0,
+        "haste": 4.0,
     }
     RESIST_W = 0.15
 
@@ -94,8 +106,16 @@ def main():
             v = it.get(k)
             if isinstance(v, (int, float)):
                 s += v * w
-        for rk in ("cold_resist", "fire_resist", "magic_resist", "poison_resist",
-                   "disease_resist", "electric_resist", "corruption_resist", "holy_resist"):
+        for rk in (
+            "cold_resist",
+            "fire_resist",
+            "magic_resist",
+            "poison_resist",
+            "disease_resist",
+            "electric_resist",
+            "corruption_resist",
+            "holy_resist",
+        ):
             v = it.get(rk)
             if isinstance(v, (int, float)):
                 s += v * RESIST_W
@@ -131,8 +151,7 @@ def main():
         c = (it.get("classes") or "").upper().replace(",", " ").split()
         return "SPB" in c and "ALL" not in c
 
-    armor = [it for it in spb_items if spb_specific(it)
-             and not (it.get("dmg") and it.get("delay"))]
+    armor = [it for it in spb_items if spb_specific(it) and not (it.get("dmg") and it.get("delay"))]
     print("\n" + "=" * 70)
     print(f"ITEMIZATION FINGERPRINT  ({len(armor)} SPB-tagged armor/jewelry pieces)")
     print("(how often each stat appears + average magnitude when present)")
@@ -160,9 +179,26 @@ def main():
         for sl in slots_of(it):
             by_slot[sl].append((sc, mlv, it))
 
-    SLOT_ORDER = ["HEAD", "FACE", "EAR", "NECK", "SHOULDERS", "BACK", "CHEST",
-                  "ARMS", "WRIST", "HANDS", "FINGER", "WAIST", "LEGS", "FEET",
-                  "PRIMARY", "SECONDARY", "RANGED", "AMMO"]
+    SLOT_ORDER = [
+        "HEAD",
+        "FACE",
+        "EAR",
+        "NECK",
+        "SHOULDERS",
+        "BACK",
+        "CHEST",
+        "ARMS",
+        "WRIST",
+        "HANDS",
+        "FINGER",
+        "WAIST",
+        "LEGS",
+        "FEET",
+        "PRIMARY",
+        "SECONDARY",
+        "RANGED",
+        "AMMO",
+    ]
 
     print("\n" + "=" * 70)
     print(f"BEST-IN-SLOT CANDIDATES (obtainable by ~L{TARGET_LEVEL})")
@@ -180,12 +216,14 @@ def main():
             parts.append("magic")
         return " ".join(parts)
 
-    report = {"base_stats": {"current_avg": cur_avg, "max_avg": max_avg,
-                             "priority": ranked_max},
-              "slots": {}}
+    report = {
+        "base_stats": {"current_avg": cur_avg, "max_avg": max_avg, "priority": ranked_max},
+        "slots": {},
+    }
 
-    seen_slots = [s for s in SLOT_ORDER if s in by_slot] + \
-                 [s for s in by_slot if s not in SLOT_ORDER]
+    seen_slots = [s for s in SLOT_ORDER if s in by_slot] + [
+        s for s in by_slot if s not in SLOT_ORDER
+    ]
     for sl in seen_slots:
         cands = sorted(by_slot[sl], key=lambda x: x[0], reverse=True)
         # dedupe by item title
@@ -203,13 +241,19 @@ def main():
             src = item_sources.get(it["title"], [])
             zone = src[0][2] if src else (it.get("dropsfrom") or "?")
             print(f"  {sc:>6}  [{lvtag:>5}] {it['title']:<34} {fmt_stats(it)}  <{zone}>")
-            report["slots"][sl].append({
-                "title": it["title"], "score": sc, "min_source_level": mlv,
-                "stats": fmt_stats(it), "zone": zone,
-            })
+            report["slots"][sl].append(
+                {
+                    "title": it["title"],
+                    "score": sc,
+                    "min_source_level": mlv,
+                    "stats": fmt_stats(it),
+                    "zone": zone,
+                }
+            )
 
     (DATA / "spellblade-analysis.json").write_text(
-        json.dumps(report, indent=2, default=str), encoding="utf-8")
+        json.dumps(report, indent=2, default=str), encoding="utf-8"
+    )
     print("\nWrote data/spellblade-analysis.json")
 
 

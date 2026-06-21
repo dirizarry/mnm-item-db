@@ -20,9 +20,18 @@ from client_re.process_io import (
 IL2CPP_MAGIC = 0xFAB11BAF
 
 PRIORITY_TYPES = (
-    "ClientItemRecord", "ItemRecord", "ItemInformation", "GlobalItemModelDataList",
-    "ItemModelData", "ItemModelConfiguration", "LootTable", "RecipeRecord",
-    "RecipeComponent", "ZoneRecord", "ZoneInfo", "Consider",
+    "ClientItemRecord",
+    "ItemRecord",
+    "ItemInformation",
+    "GlobalItemModelDataList",
+    "ItemModelData",
+    "ItemModelConfiguration",
+    "LootTable",
+    "RecipeRecord",
+    "RecipeComponent",
+    "ZoneRecord",
+    "ZoneInfo",
+    "Consider",
 )
 
 
@@ -40,12 +49,14 @@ def find_il2cpp_magic(handle) -> list[dict]:
             idx = data.find(magic, off)
             if idx < 0:
                 break
-            hits.append({
-                "address": base + idx,
-                "region_base": base,
-                "region_size": size,
-                "protect": protect,
-            })
+            hits.append(
+                {
+                    "address": base + idx,
+                    "region_base": base,
+                    "region_size": size,
+                    "protect": protect,
+                }
+            )
             off = idx + 4
             if len(hits) >= 10:
                 return hits
@@ -64,27 +75,29 @@ def find_metadata_blob(handle, expected_size: int) -> list[dict]:
         if not head:
             continue
         magic = struct.unpack_from("<I", head, 0)[0]
-        hits.append({
-            "address": base,
-            "size": size,
-            "magic_hex": f"{magic:08x}",
-            "head_hex": head[:16].hex(),
-            "protect": protect,
-            "il2cpp_magic": magic == IL2CPP_MAGIC,
-        })
+        hits.append(
+            {
+                "address": base,
+                "size": size,
+                "magic_hex": f"{magic:08x}",
+                "head_hex": head[:16].hex(),
+                "protect": protect,
+                "il2cpp_magic": magic == IL2CPP_MAGIC,
+            }
+        )
     return hits
 
 
 def count_type_strings(handle) -> dict[str, int]:
     needles = [t.encode("ascii") for t in PRIORITY_TYPES]
-    counts = {t: 0 for t in PRIORITY_TYPES}
+    counts = dict.fromkeys(PRIORITY_TYPES, 0)
     for base, size, _protect, _typ in iter_regions(handle):
         if size > 50_000_000:
             continue
         data = read_memory(handle, base, size)
         if not data:
             continue
-        for name, needle in zip(PRIORITY_TYPES, needles):
+        for name, needle in zip(PRIORITY_TYPES, needles, strict=False):
             counts[name] += data.count(needle)
     return counts
 

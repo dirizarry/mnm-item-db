@@ -82,7 +82,12 @@ def _score_list_at(handle, list_ptr: int) -> tuple[int, int, int, tuple, list[st
             continue
         for text_off in TEXT_OFFSETS:
             texts = _read_list_entries_layout(
-                handle, list_ptr, text_off, items_off, size_off, array_off,
+                handle,
+                list_ptr,
+                text_off,
+                items_off,
+                size_off,
+                array_off,
                 max_items=min(size, 120),
             )
             if len(texts) >= 3:
@@ -414,7 +419,5 @@ def discover_and_apply(pid: int | None = None) -> dict:
 
 
 if __name__ == "__main__":
-    import sys
-
     print(json.dumps(discover_and_apply(), indent=2))
     raise SystemExit(0 if struct_enabled() else 1)

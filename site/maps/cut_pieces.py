@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Cut isometric map into draggable room PNGs. Run from site/maps/."""
+
 import json
 from pathlib import Path
 

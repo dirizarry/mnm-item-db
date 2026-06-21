@@ -19,20 +19,70 @@ DATA = ROOT / "data"
 SITE = ROOT / "site"
 
 ITEM_KEEP = [
-    "title", "name", "slot", "skill", "size", "classes", "races",
-    "ac", "dmg", "delay", "str", "sta", "agi", "dex", "int", "wis", "cha",
-    "hp", "mana", "weight",
-    "cold_resist", "fire_resist", "magic_resist", "poison_resist",
-    "disease_resist", "electric_resist", "corruption_resist", "holy_resist",
-    "magic", "lore", "unique", "nodrop", "effect",
-    "source_types", "drops_zones", "drops_mobs", "crafted", "tradeskills",
-    "components", "quests", "vendor_value",
+    "title",
+    "name",
+    "slot",
+    "skill",
+    "size",
+    "classes",
+    "races",
+    "ac",
+    "dmg",
+    "delay",
+    "str",
+    "sta",
+    "agi",
+    "dex",
+    "int",
+    "wis",
+    "cha",
+    "hp",
+    "mana",
+    "weight",
+    "cold_resist",
+    "fire_resist",
+    "magic_resist",
+    "poison_resist",
+    "disease_resist",
+    "electric_resist",
+    "corruption_resist",
+    "holy_resist",
+    "magic",
+    "lore",
+    "unique",
+    "nodrop",
+    "effect",
+    "source_types",
+    "drops_zones",
+    "drops_mobs",
+    "crafted",
+    "tradeskills",
+    "components",
+    "quests",
+    "vendor_value",
 ]
 
 MOB_KEEP = [
-    "title", "name", "race", "class", "level_min", "level_max", "level_label",
-    "zone", "zones", "location", "ac", "hp", "damage_per_hit", "attacks_per_round",
-    "attack_speed", "special", "known_loot", "common_loot", "unique_loot", "related_quests",
+    "title",
+    "name",
+    "race",
+    "class",
+    "level_min",
+    "level_max",
+    "level_label",
+    "zone",
+    "zones",
+    "location",
+    "ac",
+    "hp",
+    "damage_per_hit",
+    "attacks_per_round",
+    "attack_speed",
+    "special",
+    "known_loot",
+    "common_loot",
+    "unique_loot",
+    "related_quests",
     "categories",
 ]
 
@@ -64,24 +114,28 @@ def drop_indexes(drops: list[dict]) -> dict:
     by_mob: dict[str, list] = defaultdict(list)
     for d in drops:
         conf = round(d.get("confidence", 0.0), 2) if d.get("confidence") is not None else None
-        by_item[d["item_title"]].append({
-            "mob": d["mob_title"],
-            "zone": d.get("zone"),
-            "kind": d.get("loot_kind"),
-            "conf": conf,
-            "status": d.get("status"),
-            "conflict": bool(d.get("conflict")),
-            "you": bool(d.get("via_ledger")),
-        })
-        by_mob[d["mob_title"]].append({
-            "item": d["item_title"],
-            "zone": d.get("zone"),
-            "kind": d.get("loot_kind"),
-            "conf": conf,
-            "status": d.get("status"),
-            "conflict": bool(d.get("conflict")),
-            "you": bool(d.get("via_ledger")),
-        })
+        by_item[d["item_title"]].append(
+            {
+                "mob": d["mob_title"],
+                "zone": d.get("zone"),
+                "kind": d.get("loot_kind"),
+                "conf": conf,
+                "status": d.get("status"),
+                "conflict": bool(d.get("conflict")),
+                "you": bool(d.get("via_ledger")),
+            }
+        )
+        by_mob[d["mob_title"]].append(
+            {
+                "item": d["item_title"],
+                "zone": d.get("zone"),
+                "kind": d.get("loot_kind"),
+                "conf": conf,
+                "status": d.get("status"),
+                "conflict": bool(d.get("conflict")),
+                "you": bool(d.get("via_ledger")),
+            }
+        )
     return {"byItem": dict(by_item), "byMob": dict(by_mob)}
 
 
@@ -93,7 +147,9 @@ def main() -> int:
     items = slim_items(json.loads(items_path.read_text(encoding="utf-8")), mob_canon)
 
     mobs_path = DATA / "monsters.json"
-    mobs = slim_mobs(json.loads(mobs_path.read_text(encoding="utf-8"))) if mobs_path.exists() else []
+    mobs = (
+        slim_mobs(json.loads(mobs_path.read_text(encoding="utf-8"))) if mobs_path.exists() else []
+    )
 
     drops_path = DATA / "drops.json"
     drops_raw = json.loads(drops_path.read_text(encoding="utf-8")) if drops_path.exists() else []
@@ -109,7 +165,9 @@ def main() -> int:
     }
     (SITE / "items.js").write_text(
         "window.MNM_META = " + json.dumps(meta) + ";\n"
-        "window.MNM_ITEMS = " + json.dumps(items, ensure_ascii=False, separators=(",", ":")) + ";\n",
+        "window.MNM_ITEMS = "
+        + json.dumps(items, ensure_ascii=False, separators=(",", ":"))
+        + ";\n",
         encoding="utf-8",
     )
     (SITE / "monsters.js").write_text(
@@ -117,7 +175,9 @@ def main() -> int:
         encoding="utf-8",
     )
     (SITE / "drops.js").write_text(
-        "window.MNM_DROPS = " + json.dumps(drops, ensure_ascii=False, separators=(",", ":")) + ";\n",
+        "window.MNM_DROPS = "
+        + json.dumps(drops, ensure_ascii=False, separators=(",", ":"))
+        + ";\n",
         encoding="utf-8",
     )
     shutil.copyfile(items_path, SITE / "items.json")

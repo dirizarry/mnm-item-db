@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import gen_wiki_loot_fixes as gwl
 
-
 ASHIRA_BOX = """
 | known_loot =
 
@@ -18,7 +17,7 @@ ASHIRA_BOX = """
 
 
 ZOMBIE_ITEM_BOX = """
-|dropsfrom = 
+|dropsfrom =
 [[Shaded Dunes]]
 * [[a stumbling zombie]]
 |recipes =
@@ -39,7 +38,7 @@ def test_mob_loot_appends_new_item_to_common_loot():
 def test_mob_loot_preserves_following_params():
     box = """| common_loot =
 
-| factions = 
+| factions =
 
 | opposing_factions =
 """

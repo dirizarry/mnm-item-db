@@ -7,8 +7,8 @@ the whole dataset is ~4000 copper (40 silver / 4 gold). So we cannot quote real
 per-item prices. Instead we tier items by power (score) + rarity and translate to
 an OFFER BAND grounded in that observed economy ceiling.
 """
+
 import json
-import statistics
 from collections import defaultdict
 from pathlib import Path
 
@@ -22,11 +22,31 @@ def load(name):
 
 
 # Spellblade weights (same model as analyze_spellblade.py)
-WEIGHTS = {"int": 3.0, "dex": 2.0, "sta": 1.5, "str": 1.0, "agi": 0.5,
-           "wis": 0.3, "cha": 0.2, "hp": 0.25, "mana": 0.25, "ac": 0.4,
-           "hp_regen": 1.0, "mana_regen": 2.0, "haste": 4.0}
-RESISTS = ["cold_resist", "fire_resist", "magic_resist", "poison_resist",
-           "disease_resist", "electric_resist", "corruption_resist", "holy_resist"]
+WEIGHTS = {
+    "int": 3.0,
+    "dex": 2.0,
+    "sta": 1.5,
+    "str": 1.0,
+    "agi": 0.5,
+    "wis": 0.3,
+    "cha": 0.2,
+    "hp": 0.25,
+    "mana": 0.25,
+    "ac": 0.4,
+    "hp_regen": 1.0,
+    "mana_regen": 2.0,
+    "haste": 4.0,
+}
+RESISTS = [
+    "cold_resist",
+    "fire_resist",
+    "magic_resist",
+    "poison_resist",
+    "disease_resist",
+    "electric_resist",
+    "corruption_resist",
+    "holy_resist",
+]
 
 
 def score(it):
@@ -179,25 +199,32 @@ def weapon_config(items):
     # (worn stats + discounted damage), not raw full score.
     def offhand_effective(it):
         return stat_score(it) + dmg_score(it) * OFFHAND_FACTOR
+
     best_dw = max(off_weapon, key=lambda x: offhand_effective(x[1])) if off_weapon else None
     dw_off_val = offhand_effective(best_dw[1]) if best_dw else 0
 
-    a_total = prim + (bsh[0][0] if bsh else 0)   # 1H + shield
-    b_total = prim + dw_off_val                   # 1H + 1H (dual wield, discounted off-hand)
-    c_total = b2[0][0] if b2 else 0               # 2H
+    a_total = prim + (bsh[0][0] if bsh else 0)  # 1H + shield
+    b_total = prim + dw_off_val  # 1H + 1H (dual wield, discounted off-hand)
+    c_total = b2[0][0] if b2 else 0  # 2H
 
     def line(sc, it, indent=12, extra=""):
         tag = "ND" if not tradeable(it) else "T "
         return f"  [{tag}] {' ' * indent}{sc:>6}  {it['title']:<34} {fmt_stats(it)}{extra}"
 
     print("=" * 92)
-    print(f"WEAPON CONFIG (SPB dual-wields; off-hand damage @ {OFFHAND_FACTOR:.0%}). 2H = both slots.")
+    print(
+        f"WEAPON CONFIG (SPB dual-wields; off-hand damage @ {OFFHAND_FACTOR:.0%}). 2H = both slots."
+    )
     print("=" * 92)
-    print(f"\n  Config A  1H + SHIELD       total = {a_total:.1f}   (defensive: off-hand = AC, no extra swings)")
+    print(
+        f"\n  Config A  1H + SHIELD       total = {a_total:.1f}   (defensive: off-hand = AC, no extra swings)"
+    )
     for grp in (bp, bsh):
         for sc, it in grp:
             print(line(sc, it))
-    print(f"\n  Config B  DUAL-WIELD 1H+1H  total = {b_total:.1f}   (max swings -> max procs; best DPS pipe)")
+    print(
+        f"\n  Config B  DUAL-WIELD 1H+1H  total = {b_total:.1f}   (max swings -> max procs; best DPS pipe)"
+    )
     for sc, it in bp:
         print(line(sc, it))
     if best_dw:
@@ -206,10 +233,12 @@ def weapon_config(items):
     for sc, it in b2:
         print(line(sc, it))
 
-    ranked = sorted([("A 1H+shield", a_total), ("B dual-wield", b_total),
-                     ("C two-hander", c_total)], key=lambda x: x[1], reverse=True)
-    print("\n  => DPS ranking (by model): " +
-          " > ".join(f"{n} ({v:.0f})" for n, v in ranked))
+    ranked = sorted(
+        [("A 1H+shield", a_total), ("B dual-wield", b_total), ("C two-hander", c_total)],
+        key=lambda x: x[1],
+        reverse=True,
+    )
+    print("\n  => DPS ranking (by model): " + " > ".join(f"{n} ({v:.0f})" for n, v in ranked))
     print("     Dual-wield favored for SPB: more swings = more weapon procs feeding")
     print("     the INT spell pipe. 2H wins only if its proc/hit is exceptional.")
 
@@ -223,16 +252,19 @@ def weapon_config(items):
     for sc, it in top(two_h):
         print(line(sc, it, 0))
 
-    return {"config_a_1h_shield": round(a_total, 1),
-            "config_b_dual_wield": round(b_total, 1),
-            "config_c_two_hander": round(c_total, 1),
-            "offhand_damage_factor": OFFHAND_FACTOR,
-            "dps_ranking": [n for n, _ in ranked],
-            "dual_wield": "confirmed in-game (off-hand 1H grants extra attacks)",
-            "best_1h_weapons": [{"title": it["title"], "score": sc} for sc, it in top(prim_1h)],
-            "best_shield": [{"title": it["title"], "score": sc} for sc, it in top(off_shield)],
-            "best_two_handers": [{"title": it["title"], "score": sc,
-                                  "tradeable": tradeable(it)} for sc, it in top(two_h)]}
+    return {
+        "config_a_1h_shield": round(a_total, 1),
+        "config_b_dual_wield": round(b_total, 1),
+        "config_c_two_hander": round(c_total, 1),
+        "offhand_damage_factor": OFFHAND_FACTOR,
+        "dps_ranking": [n for n, _ in ranked],
+        "dual_wield": "confirmed in-game (off-hand 1H grants extra attacks)",
+        "best_1h_weapons": [{"title": it["title"], "score": sc} for sc, it in top(prim_1h)],
+        "best_shield": [{"title": it["title"], "score": sc} for sc, it in top(off_shield)],
+        "best_two_handers": [
+            {"title": it["title"], "score": sc, "tradeable": tradeable(it)} for sc, it in top(two_h)
+        ],
+    }
 
 
 def main():
@@ -256,17 +288,31 @@ def main():
         for sl in slots_of(it):
             by_slot[sl].append((sc, it))
 
-    SLOT_ORDER = ["WAIST", "BACK", "WRIST", "HEAD", "CHEST",
-                  "HANDS", "FEET", "NECK", "EAR", "SHOULDERS", "FINGER", "LEGS",
-                  "FACE", "ARMS", "RANGED", "AMMO"]
+    SLOT_ORDER = [
+        "WAIST",
+        "BACK",
+        "WRIST",
+        "HEAD",
+        "CHEST",
+        "HANDS",
+        "FEET",
+        "NECK",
+        "EAR",
+        "SHOULDERS",
+        "FINGER",
+        "LEGS",
+        "FACE",
+        "ARMS",
+        "RANGED",
+        "AMMO",
+    ]
 
     out = {}
     print("=" * 92)
     print("SPELLBLADE BiS  —  no level cap.  [T]=tradeable/buyable  [ND]=NODROP must-farm")
     print("=" * 92)
     rows = []
-    for sl in [s for s in SLOT_ORDER if s in by_slot] + \
-             [s for s in by_slot if s not in SLOT_ORDER]:
+    for sl in [s for s in SLOT_ORDER if s in by_slot] + [s for s in by_slot if s not in SLOT_ORDER]:
         cands = sorted(by_slot[sl], key=lambda x: x[0], reverse=True)
         uniq, seen = [], set()
         for sc, it in cands:
@@ -288,26 +334,40 @@ def main():
             tag = "T " if tradeable(it) else "ND"
             band = offer_band(sc) if tradeable(it) else "— not purchasable —"
             print(f"  [{tag}] {sc:>6}  {it['title']:<36} {fmt_stats(it):<46} {band}")
-            out[sl].append({"title": it["title"], "score": sc, "tradeable": tradeable(it),
-                            "unique": bool(it.get("unique")), "offer_band": band,
-                            "stats": fmt_stats(it)})
+            out[sl].append(
+                {
+                    "title": it["title"],
+                    "score": sc,
+                    "tradeable": tradeable(it),
+                    "unique": bool(it.get("unique")),
+                    "offer_band": band,
+                    "stats": fmt_stats(it),
+                }
+            )
             shown += 1
         # priority weight = slot-best score, captured for global ordering
-        rows.append((sl, slot_best, best_buyable[0] if best_buyable else 0,
-                     uniq[0][1]["title"], tradeable(uniq[0][1])))
+        rows.append(
+            (
+                sl,
+                slot_best,
+                best_buyable[0] if best_buyable else 0,
+                uniq[0][1]["title"],
+                tradeable(uniq[0][1]),
+            )
+        )
 
     # ---- Global priority order (by upgrade magnitude of the slot's best piece) ----
     print("\n" + "=" * 92)
     print("GLOBAL PRIORITY ORDER (slots ranked by power of their best piece)")
     print("=" * 92)
-    for i, (sl, best, buyable_best, title, t) in enumerate(
-            sorted(rows, key=lambda r: r[1], reverse=True), 1):
+    for i, (sl, best, _buyable_best, title, t) in enumerate(
+        sorted(rows, key=lambda r: r[1], reverse=True), 1
+    ):
         note = "buyable" if t else "NODROP-farm"
         print(f"{i:>2}. {sl:<10} best={best:<7} {title:<34} ({note})")
 
     out["_weapons"] = weapons
-    (DATA / "spellblade-market.json").write_text(
-        json.dumps(out, indent=2), encoding="utf-8")
+    (DATA / "spellblade-market.json").write_text(json.dumps(out, indent=2), encoding="utf-8")
     print("\nWrote data/spellblade-market.json")
 
 

@@ -25,14 +25,16 @@ _JSON_OCR_JUNK = re.compile(
     r'^[\s"]*(kind|raw|actor|target|verb|ability|amount|source|pet|damage|direction|"\s*:)',
     re.I,
 )
-_JSON_LITERAL_JUNK = frozenset({
-    "null,",
-    "null",
-    '"source"',
-    '"pet": null,',
-    '"damage _ type" :',
-    ". null,",
-})
+_JSON_LITERAL_JUNK = frozenset(
+    {
+        "null,",
+        "null",
+        '"source"',
+        '"pet": null,',
+        '"damage _ type" :',
+        ". null,",
+    }
+)
 
 # OCR often splits mid-sentence across rows (e.g. "... 1 point of" / "damage.").
 _INCOMPLETE_SUFFIXES = (
@@ -120,6 +122,7 @@ def _has_tesseract() -> bool:
     if importlib.util.find_spec("pytesseract") is None:
         return False
     import pytesseract
+
     try:
         pytesseract.get_tesseract_version()
         return True
@@ -136,7 +139,7 @@ def available_backends() -> list[str]:
     return out
 
 
-def capture_region(region: Region, *, window_lock: bool | None = None) -> "object":
+def capture_region(region: Region, *, window_lock: bool | None = None) -> object:
     """Return a PIL Image of the combat capture rectangle.
 
     When ``window_lock`` is true (default on Windows), capture uses ``PrintWindow``
@@ -162,17 +165,19 @@ def capture_region(region: Region, *, window_lock: bool | None = None) -> "objec
 
     if importlib.util.find_spec("mss"):
         import mss
+
         with mss.mss() as sct:
             shot = sct.grab({"left": left, "top": top, "width": w, "height": h})
             return Image.frombytes("RGB", shot.size, shot.bgra, "raw", "BGRX")
 
     from PIL import ImageGrab
+
     return ImageGrab.grab(bbox=(left, top, right, bottom))
 
 
-def _prepare_for_ocr(im: "object", scale: float = 2.0) -> "object":
+def _prepare_for_ocr(im: object, scale: float = 2.0) -> object:
     """Upscale + grayscale to help OCR on small chat fonts."""
-    from PIL import ImageOps, ImageFilter
+    from PIL import ImageFilter, ImageOps
 
     if scale and scale > 1.0:
         w, h = im.size
@@ -209,13 +214,13 @@ def _filter_combat_lines(lines: list[OcrTextLine]) -> list[OcrTextLine]:
     return out
 
 
-def ocr_image_lines(im: "object", backend: str | None = None) -> list[str]:
+def ocr_image_lines(im: object, backend: str | None = None) -> list[str]:
     """OCR a capture and return ordered chat lines (top → bottom)."""
     raw = [ln.text for ln in ocr_image_frame(im, backend=backend)]
     return merge_wrapped_ocr_lines(raw)
 
 
-def ocr_image_frame(im: "object", backend: str | None = None) -> list[OcrTextLine]:
+def ocr_image_frame(im: object, backend: str | None = None) -> list[OcrTextLine]:
     """OCR a capture and return lines with vertical positions."""
     backends = available_backends()
     if not backends:
@@ -235,12 +240,12 @@ def ocr_image_frame(im: "object", backend: str | None = None) -> list[OcrTextLin
     return _filter_combat_lines(lines)
 
 
-def ocr_image(im: "object", backend: str | None = None) -> str:
+def ocr_image(im: object, backend: str | None = None) -> str:
     """Legacy blob OCR — prefer ``ocr_image_lines`` for live capture."""
     return "\n".join(ocr_image_lines(im, backend=backend))
 
 
-def _ocr_tesseract_frame(im: "object") -> list[OcrTextLine]:
+def _ocr_tesseract_frame(im: object) -> list[OcrTextLine]:
     import pytesseract
 
     data = pytesseract.image_to_data(im, config="--psm 6", output_type=pytesseract.Output.DICT)
@@ -266,9 +271,9 @@ def _ocr_tesseract_frame(im: "object") -> list[OcrTextLine]:
     return lines
 
 
-def _pil_to_software_bitmap(im: "object") -> "object":
-    from winrt.windows.graphics.imaging import BitmapPixelFormat, SoftwareBitmap
+def _pil_to_software_bitmap(im: object) -> object:
     import winrt.windows.storage.streams as streams
+    from winrt.windows.graphics.imaging import BitmapPixelFormat, SoftwareBitmap
 
     im = im.convert("RGBA")
     data_writer = streams.DataWriter()
@@ -278,7 +283,7 @@ def _pil_to_software_bitmap(im: "object") -> "object":
     return bitmap
 
 
-async def _ocr_windows_frame_async(im: "object") -> list[OcrTextLine]:
+async def _ocr_windows_frame_async(im: object) -> list[OcrTextLine]:
     from winrt.windows.media.ocr import OcrEngine
 
     engine = OcrEngine.try_create_from_user_profile_languages()
@@ -323,25 +328,23 @@ def _lines_from_windows_text(text: str, image_height: int) -> list[OcrTextLine]:
     if len(parts) == 1 and len(parts[0]) > 80:
         # Single blob — split on sentence boundaries for combat starters.
         from mnm_combat_text import split_combat_messages
+
         parts = split_combat_messages(parts[0])
     row_h = max(image_height // max(len(parts), 1), 12)
-    return [
-        OcrTextLine(part, i * row_h, row_h)
-        for i, part in enumerate(parts)
-    ]
+    return [OcrTextLine(part, i * row_h, row_h) for i, part in enumerate(parts)]
 
 
-def _ocr_windows_frame(im: "object") -> list[OcrTextLine]:
+def _ocr_windows_frame(im: object) -> list[OcrTextLine]:
     if sys.platform != "win32":
         raise RuntimeError("windows OCR backend requires Windows")
     return asyncio.run(_ocr_windows_frame_async(im))
 
 
-def _ocr_windows(im: "object") -> str:
+def _ocr_windows(im: object) -> str:
     return "\n".join(ln.text for ln in _ocr_windows_frame(im))
 
 
-def _ocr_tesseract(im: "object") -> str:
+def _ocr_tesseract(im: object) -> str:
     return "\n".join(ln.text for ln in _ocr_tesseract_frame(im))
 
 
@@ -354,9 +357,9 @@ def diff_chat_lines(prev: list[str], curr: list[str]) -> list[str]:
     """
     from mnm_combat_text import normalize_line
 
-    prev_norm = [normalize_line(l) for l in prev if l.strip()]
-    curr_raw = [l.strip() for l in curr if l.strip()]
-    curr_norm = [normalize_line(l) for l in curr_raw]
+    prev_norm = [normalize_line(line) for line in prev if line.strip()]
+    curr_raw = [line.strip() for line in curr if line.strip()]
+    curr_norm = [normalize_line(line) for line in curr_raw]
 
     if not prev_norm:
         return curr_raw
@@ -371,7 +374,7 @@ def diff_chat_lines(prev: list[str], curr: list[str]) -> list[str]:
 
     # More rows than before (chat grew without losing top row yet).
     if len(curr_norm) > len(prev_norm):
-        return curr_raw[len(prev_norm):]
+        return curr_raw[len(prev_norm) :]
 
     # Same row count — bottom row(s) updated in place.
     if len(curr_norm) == len(prev_norm):

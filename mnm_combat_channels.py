@@ -26,8 +26,18 @@ WINDOW_ROLES = {
 FAMILY_META: dict[str, dict] = {
     "CombatHit": {"category": "combat", "subcategory": "hit", "damage": True},
     "CombatMiss": {"category": "combat", "subcategory": "miss", "damage": False},
-    "AbilityHitBenefit": {"category": "ability", "subcategory": "hit", "benefit": True, "damage": True},
-    "AbilityHitDetriment": {"category": "ability", "subcategory": "hit", "benefit": False, "damage": True},
+    "AbilityHitBenefit": {
+        "category": "ability",
+        "subcategory": "hit",
+        "benefit": True,
+        "damage": True,
+    },
+    "AbilityHitDetriment": {
+        "category": "ability",
+        "subcategory": "hit",
+        "benefit": False,
+        "damage": True,
+    },
     "AbilityMiss": {"category": "ability", "subcategory": "miss"},
     "AbilityResist": {"category": "ability", "subcategory": "resist"},
     "Ability": {"category": "ability", "subcategory": "cast"},
@@ -59,40 +69,97 @@ SUFFIX_META = {
 # Recommended channel sets per capture window role.
 ROLE_CHANNELS: dict[str, tuple[str, ...]] = {
     "meter": (
-        "CombatHitMine", "CombatHitVictim", "CombatHitPet", "CombatHitOther", "CombatHitOtherPlayer",
-        "CombatMissMine", "CombatMissVictim", "CombatMissPet", "CombatMissOther", "CombatMissOtherPlayer",
-        "AbilityHitBenefitMine", "AbilityHitBenefitVictim", "AbilityHitBenefitPet",
-        "AbilityHitBenefitOther", "AbilityHitBenefitOtherPlayer",
-        "AbilityHitDetrimentMine", "AbilityHitDetrimentVictim", "AbilityHitDetrimentPet",
-        "AbilityHitDetrimentOther", "AbilityHitDetrimentOtherPlayer",
-        "AbilityMissMine", "AbilityMissVictim", "AbilityMissPet", "AbilityMissOther", "AbilityMissOtherPlayer",
-        "DamageShieldHitMine", "DamageShieldHitVictim", "DamageShieldHitOther", "DamageShieldHitOtherPlayer",
+        "CombatHitMine",
+        "CombatHitVictim",
+        "CombatHitPet",
+        "CombatHitOther",
+        "CombatHitOtherPlayer",
+        "CombatMissMine",
+        "CombatMissVictim",
+        "CombatMissPet",
+        "CombatMissOther",
+        "CombatMissOtherPlayer",
+        "AbilityHitBenefitMine",
+        "AbilityHitBenefitVictim",
+        "AbilityHitBenefitPet",
+        "AbilityHitBenefitOther",
+        "AbilityHitBenefitOtherPlayer",
+        "AbilityHitDetrimentMine",
+        "AbilityHitDetrimentVictim",
+        "AbilityHitDetrimentPet",
+        "AbilityHitDetrimentOther",
+        "AbilityHitDetrimentOtherPlayer",
+        "AbilityMissMine",
+        "AbilityMissVictim",
+        "AbilityMissPet",
+        "AbilityMissOther",
+        "AbilityMissOtherPlayer",
+        "DamageShieldHitMine",
+        "DamageShieldHitVictim",
+        "DamageShieldHitOther",
+        "DamageShieldHitOtherPlayer",
     ),
     "casts": (
-        "AbilityMine", "AbilityOther", "AbilityOtherPlayer", "AbilityPet",
-        "AbilityResistMine", "AbilityResistVictim", "AbilityResistPet", "AbilityResistOther", "AbilityResistOtherPlayer",
-        "AbilityStatus", "Action",
+        "AbilityMine",
+        "AbilityOther",
+        "AbilityOtherPlayer",
+        "AbilityPet",
+        "AbilityResistMine",
+        "AbilityResistVictim",
+        "AbilityResistPet",
+        "AbilityResistOther",
+        "AbilityResistOtherPlayer",
+        "AbilityStatus",
+        "Action",
     ),
     "buffs": tuple(
         f"Buff{kind}{suffix}"
         for kind in ("Apply", "Fade", "Tick")
-        for suffix in ("BenefitMine", "BenefitVictim", "BenefitOther", "BenefitOtherPlayer",
-                       "DetrimentMine", "DetrimentVictim", "DetrimentOther", "DetrimentOtherPlayer")
+        for suffix in (
+            "BenefitMine",
+            "BenefitVictim",
+            "BenefitOther",
+            "BenefitOtherPlayer",
+            "DetrimentMine",
+            "DetrimentVictim",
+            "DetrimentOther",
+            "DetrimentOtherPlayer",
+        )
     ),
     "deaths": ("DeathMine", "DeathMe", "DeathOther", "DeathOtherPlayer", "Experience"),
     "pvp": (
-        "CombatHitVictim", "CombatHitOtherPlayer",
-        "CombatMissVictim", "CombatMissOtherPlayer",
-        "AbilityHitDetrimentVictim", "AbilityHitDetrimentOtherPlayer",
-        "AbilityMissVictim", "AbilityMissOtherPlayer",
-        "AbilityResistVictim", "AbilityResistOtherPlayer",
-        "DamageShieldHitVictim", "DamageShieldHitOtherPlayer",
-        "BuffApplyDetrimentVictim", "BuffApplyDetrimentOtherPlayer",
-        "BuffTickDetrimentVictim", "BuffTickDetrimentOtherPlayer",
-        "DeathMe", "DeathOtherPlayer",
+        "CombatHitVictim",
+        "CombatHitOtherPlayer",
+        "CombatMissVictim",
+        "CombatMissOtherPlayer",
+        "AbilityHitDetrimentVictim",
+        "AbilityHitDetrimentOtherPlayer",
+        "AbilityMissVictim",
+        "AbilityMissOtherPlayer",
+        "AbilityResistVictim",
+        "AbilityResistOtherPlayer",
+        "DamageShieldHitVictim",
+        "DamageShieldHitOtherPlayer",
+        "BuffApplyDetrimentVictim",
+        "BuffApplyDetrimentOtherPlayer",
+        "BuffTickDetrimentVictim",
+        "BuffTickDetrimentOtherPlayer",
+        "DeathMe",
+        "DeathOtherPlayer",
     ),
-    "misc": ("LOS", "Status", "Loot", "ConsiderRED", "ConsiderYELLOW", "ConsiderWHITE",
-             "ConsiderBLUE", "ConsiderGREEN", "ConsiderGREY", "ConsiderLIGHTBLUE", "ConsiderLIGHTGREEN"),
+    "misc": (
+        "LOS",
+        "Status",
+        "Loot",
+        "ConsiderRED",
+        "ConsiderYELLOW",
+        "ConsiderWHITE",
+        "ConsiderBLUE",
+        "ConsiderGREEN",
+        "ConsiderGREY",
+        "ConsiderLIGHTBLUE",
+        "ConsiderLIGHTGREEN",
+    ),
 }
 
 # In-game Combat filter menu labels → chats.json channel suffix (Mine/Victim/Pet/Other/OtherPlayer).
@@ -195,7 +262,7 @@ OCR_PRESETS: dict[str, dict] = {
 def channel_family(channel_id: str) -> str:
     for suffix in ("Mine", "OtherPlayer", "Other", "Victim", "Pet"):
         if channel_id.endswith(suffix):
-            return channel_id[:-len(suffix)]
+            return channel_id[: -len(suffix)]
     return channel_id
 
 
@@ -229,7 +296,12 @@ def infer_channel(event: dict) -> str | None:
     ability = event.get("ability")
 
     def persp() -> str:
-        if pet or (actor and actor != "You" and event.get("kind") in ("melee", "ability", "miss") and direction == "outgoing"):
+        if pet or (
+            actor
+            and actor != "You"
+            and event.get("kind") in ("melee", "ability", "miss")
+            and direction == "outgoing"
+        ):
             if pet:
                 return "Pet"
         if actor == "You" or (direction == "outgoing" and not pet):
@@ -267,9 +339,9 @@ def infer_channel(event: dict) -> str | None:
             return f"AbilityMiss{p}"
         if kind == "heal" or (ability and "heal" in (ability or "").lower()):
             det = "Benefit"
-        elif direction == "outgoing" and target and target not in ("You",):
-            det = "Detriment"
-        elif direction == "incoming":
+        elif (
+            direction == "outgoing" and target and target not in ("You",) or direction == "incoming"
+        ):
             det = "Detriment"
         else:
             det = "Benefit"
@@ -314,8 +386,15 @@ def build_filter_menu() -> dict:
     spell_alignments = ("Beneficial", "Detrimental")
 
     melee_outcomes = (
-        "Hits", "Misses", "Dodges", "Parries", "Ripostes", "Blocks",
-        "Absorbs", "Reflects", "Invulnerable",
+        "Hits",
+        "Misses",
+        "Dodges",
+        "Parries",
+        "Ripostes",
+        "Blocks",
+        "Absorbs",
+        "Reflects",
+        "Invulnerable",
     )
     ability_outcomes = ("Hit", "Miss", "Resist", "Interrupts", "Fizzles")
     spell_phases = ("Apply", "Fade", "Tick")

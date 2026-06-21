@@ -87,13 +87,15 @@ def catalog(root: Path | None = None) -> dict:
         if not rel:
             continue
         full = root / rel
-        manifest_paths.append({
-            "manifest_path": entry.get("path"),
-            "file_hash": entry.get("file_hash"),
-            "on_disk": full.is_file(),
-            "size": full.stat().st_size if full.is_file() else None,
-            "category": _classify_path(rel),
-        })
+        manifest_paths.append(
+            {
+                "manifest_path": entry.get("path"),
+                "file_hash": entry.get("file_hash"),
+                "on_disk": full.is_file(),
+                "size": full.stat().st_size if full.is_file() else None,
+                "category": _classify_path(rel),
+            }
+        )
 
     scanned: list[dict] = []
     # Priority bundles + core assets

@@ -105,7 +105,7 @@ def client_size(hwnd: int) -> tuple[int, int]:
     return max(0, rect.right), max(0, rect.bottom)
 
 
-def capture_hwnd_client(hwnd: int) -> "object":
+def capture_hwnd_client(hwnd: int) -> object:
     """Capture the full client area of ``hwnd`` as a PIL RGB image."""
     from PIL import Image
 
@@ -140,7 +140,13 @@ def capture_hwnd_client(hwnd: int) -> "object":
     buf_size = w * h * 4
     buffer = ctypes.create_string_buffer(buf_size)
     lines = gdi32.GetDIBits(
-        mfc_dc, bitmap, 0, h, buffer, ctypes.byref(bmi), 0,
+        mfc_dc,
+        bitmap,
+        0,
+        h,
+        buffer,
+        ctypes.byref(bmi),
+        0,
     )
 
     gdi32.DeleteObject(bitmap)
@@ -173,7 +179,7 @@ def attach_window_lock(region: dict) -> dict:
     return region
 
 
-def _crop_region(region: dict, im: "object") -> "object":
+def _crop_region(region: dict, im: object) -> object:
     rel = region.get("relative")
     if rel:
         left, top = int(rel["left"]), int(rel["top"])
@@ -195,7 +201,7 @@ def _crop_region(region: dict, im: "object") -> "object":
     return im.crop((left, top, left + w, top + h))
 
 
-def capture_window_region(region: dict) -> "object":
+def capture_window_region(region: dict) -> object:
     """Capture combat chat region from the game window (not screen pixels)."""
     hwnd = find_game_hwnd()
     if not hwnd:

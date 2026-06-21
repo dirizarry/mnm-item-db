@@ -60,14 +60,18 @@ def require_admin(authorization: str = Header(default="")) -> str:
 
 # --- public / ingest ------------------------------------------------------------
 
+
 @app.get("/api/ledger/v1/health")
 def health() -> dict:
     return {"ok": True, "schema": sorted(ACCEPTED_SCHEMAS), "stats": db.stats()}
 
 
 @app.post("/api/ledger/v1/ingest")
-async def ingest(request: Request, authorization: str = Header(default=""),
-                 x_mnm_schema: str = Header(default="")) -> JSONResponse:
+async def ingest(
+    request: Request,
+    authorization: str = Header(default=""),
+    x_mnm_schema: str = Header(default=""),
+) -> JSONResponse:
     ingest_token = os.environ.get("MNM_INGEST_TOKEN")
     allow_anon = os.environ.get("MNM_ALLOW_ANONYMOUS", "1") == "1"
     if ingest_token:
@@ -81,9 +85,10 @@ async def ingest(request: Request, authorization: str = Header(default=""),
         raise HTTPException(413, "payload too large")
     try:
         import json
+
         payload = json.loads(raw)
-    except ValueError:
-        raise HTTPException(400, "invalid json")
+    except ValueError as err:
+        raise HTTPException(400, "invalid json") from err
 
     schema = payload.get("schema") or x_mnm_schema
     if schema not in ACCEPTED_SCHEMAS:
@@ -122,6 +127,7 @@ def forget(install_id: str) -> dict:
 
 
 # --- admin: aggregation + moderation -------------------------------------------
+
 
 @app.post("/api/admin/aggregate")
 def admin_aggregate(_: str = Depends(require_admin)) -> dict:

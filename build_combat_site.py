@@ -52,13 +52,15 @@ def _stream_labels(settings: dict) -> dict[str, str]:
 
 
 def _by_stream(events: list[dict], labels: dict[str, str]) -> dict:
-    buckets: dict[str, dict] = defaultdict(lambda: {
-        "events": 0,
-        "damage_out": 0,
-        "damage_in": 0,
-        "heal_out": 0,
-        "heal_in": 0,
-    })
+    buckets: dict[str, dict] = defaultdict(
+        lambda: {
+            "events": 0,
+            "damage_out": 0,
+            "damage_in": 0,
+            "heal_out": 0,
+            "heal_in": 0,
+        }
+    )
     for e in events:
         sid = e.get("stream_id") or "default"
         b = buckets[sid]
@@ -92,6 +94,7 @@ def build_bundle(data_dir: Path, settings: dict | None = None) -> dict:
     if not settings:
         try:
             from mnm_paths import load_settings
+
             settings = load_settings()
         except Exception:
             settings = {}
@@ -110,7 +113,9 @@ def build_bundle(data_dir: Path, settings: dict | None = None) -> dict:
             "generated": datetime.now(timezone.utc).isoformat(),
             "event_count": len(events),
             "has_data": bool(events or totals.get("event_count")),
-            "stream_count": len({e.get("stream_id") for e in events if e.get("stream_id")}) or len(streams_cfg) or (1 if events else 0),
+            "stream_count": len({e.get("stream_id") for e in events if e.get("stream_id")})
+            or len(streams_cfg)
+            or (1 if events else 0),
             "session_start": events[0].get("ts") if events else totals.get("session_start"),
             "session_end": events[-1].get("ts") if events else totals.get("updated_at"),
         },
@@ -132,7 +137,11 @@ def build_bundle(data_dir: Path, settings: dict | None = None) -> dict:
 
 def write_bundle(data_dir: Path, site_dir: Path, settings: dict | None = None) -> dict:
     bundle = build_bundle(data_dir, settings=settings)
-    js = "window.MNM_COMBAT = " + json.dumps(bundle, ensure_ascii=False, separators=(",", ":")) + ";\n"
+    js = (
+        "window.MNM_COMBAT = "
+        + json.dumps(bundle, ensure_ascii=False, separators=(",", ":"))
+        + ";\n"
+    )
     stats_dir = site_dir / "stats"
     stats_dir.mkdir(parents=True, exist_ok=True)
     (stats_dir / "combat-stats.js").write_text(js, encoding="utf-8")
@@ -140,7 +149,9 @@ def write_bundle(data_dir: Path, site_dir: Path, settings: dict | None = None) -
 
 
 def main(data_dir: Path | None = None, site_dir: Path | None = None) -> int:
-    from mnm_paths import data_dir as default_data_dir, site_dir as default_site_dir, load_settings
+    from mnm_paths import data_dir as default_data_dir
+    from mnm_paths import load_settings
+    from mnm_paths import site_dir as default_site_dir
 
     data_dir = data_dir or default_data_dir()
     site_dir = site_dir or default_site_dir()

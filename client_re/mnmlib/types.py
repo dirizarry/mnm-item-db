@@ -7,7 +7,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from client_re.paths import DUMPS_DIR, ensure_dumps, il2cpp_metadata
+from client_re.paths import ensure_dumps, il2cpp_metadata
 
 MNMLIB_DIR = Path(__file__).resolve().parent
 TYPES_PATH = MNMLIB_DIR / "types.json"
@@ -81,8 +81,7 @@ def scan_metadata_types(meta_path: Path | None = None) -> dict:
     data = meta_path.read_bytes()
     names = _extract_metadata_identifiers(data)
     combat_types = sorted(
-        n for n in names
-        if any(kw in n for kw in COMBAT_TYPE_KEYWORDS) and n[0].isupper()
+        n for n in names if any(kw in n for kw in COMBAT_TYPE_KEYWORDS) and n[0].isupper()
     )
     priority = [n for n in PRIORITY_COMBAT_TYPES if n in names]
     return {
@@ -90,9 +89,7 @@ def scan_metadata_types(meta_path: Path | None = None) -> dict:
         "metadata_size": len(data),
         "combat_type_count": len(combat_types),
         "priority_hits": priority,
-        "combat_types": [
-            {"name": n, "tags": _classify_type(n)} for n in combat_types
-        ],
+        "combat_types": [{"name": n, "tags": _classify_type(n)} for n in combat_types],
     }
 
 

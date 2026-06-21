@@ -102,9 +102,7 @@ def _looks_like_mob(name: str) -> bool:
     s = strip_markup(name).strip()
     if re.match(r"^(a|an)\s+", s, re.IGNORECASE):
         return True
-    if name.startswith("File:"):
-        return True
-    return False
+    return bool(name.startswith("File:"))
 
 
 def sanitize_item_drops(
@@ -288,7 +286,7 @@ def persist_normalized_data(
 
     if backup:
         today = date.today().isoformat()
-        for path, rows in ((items_path, items), (mobs_path, mobs)):
+        for path, _rows in ((items_path, items), (mobs_path, mobs)):
             if path.is_file():
                 bak = path.with_suffix(f"{path.suffix}.bak-{today}")
                 shutil.copy2(path, bak)

@@ -37,8 +37,23 @@ OBS_SATURATION = 4.0
 CONTRIB_BONUS = 0.05
 CONTRIB_BONUS_CAP = 0.20
 
-_STOPWORDS = {"a", "an", "the", "of", "and", "ip", "te", "wb", "cmn", "unc", "rare",
-              "melee", "caster", "tank", "healer"}
+_STOPWORDS = {
+    "a",
+    "an",
+    "the",
+    "of",
+    "and",
+    "ip",
+    "te",
+    "wb",
+    "cmn",
+    "unc",
+    "rare",
+    "melee",
+    "caster",
+    "tank",
+    "healer",
+}
 
 
 def empirical_probability(observations: int, contributors: int = 1) -> float:
@@ -70,7 +85,7 @@ def score_edge(edge: dict) -> dict:
     # Noisy-OR over independent evidence channels.
     not_p = 1.0
     for p in channels:
-        not_p *= (1.0 - p)
+        not_p *= 1.0 - p
     confidence = round(1.0 - not_p, 4)
 
     has_wiki = bool(edge.get("via_mob") or edge.get("via_item"))
@@ -110,6 +125,7 @@ def score_edge(edge: dict) -> dict:
 
 # --- client-derived (HID) structural matching -----------------------------------
 
+
 def _tokens(text: str) -> set[str]:
     parts = re.split(r"[^a-z0-9]+", (text or "").lower())
     return {p for p in parts if len(p) >= 4 and p not in _STOPWORDS and not p.isdigit()}
@@ -137,6 +153,7 @@ def client_hid_matches_mob(item_hid: str | None, mob_name: str | None) -> bool:
 # so the server can UNION observations instead of summing them. Tokens are hashed
 # so raw character/event identifiers never need to leave the client.
 
+
 def _hash(*parts: object) -> str:
     raw = "|".join("" if p is None else str(p) for p in parts)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:20]
@@ -154,8 +171,13 @@ def kill_token(server: str | None, mob_hid: str | None, corpse_ts: str | None) -
     return _hash("kill", server, mob_hid, _ts_second(corpse_ts))
 
 
-def loot_token(server: str | None, item_hid: str | None, mob_hid: str | None,
-               ts: str | None, instance_id: str | None = None) -> str:
+def loot_token(
+    server: str | None,
+    item_hid: str | None,
+    mob_hid: str | None,
+    ts: str | None,
+    instance_id: str | None = None,
+) -> str:
     """Identity of a single loot drop.
 
     Unique items carry a globally-unique `instance_id` (the ``<id>|`` prefix the

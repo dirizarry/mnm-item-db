@@ -14,13 +14,17 @@ import json
 import re
 from pathlib import Path
 
-from mnm_local import default_locallow
-
 COMBAT_WINDOW_ID = "combat"
 
 # Message categories we care about for damage/healing meters.
 COMBAT_CHANNEL_PREFIXES = (
-    "Combat", "Ability", "DamageShield", "Buff", "Death", "LOS", "Experience",
+    "Combat",
+    "Ability",
+    "DamageShield",
+    "Buff",
+    "Death",
+    "LOS",
+    "Experience",
 )
 
 
@@ -60,11 +64,7 @@ def find_character_dirs(locallow: Path) -> list[Path]:
                 continue
             if (char / "Ledger").is_dir():
                 try:
-                    mtime = max(
-                        p.stat().st_mtime
-                        for p in char.rglob("*")
-                        if p.is_file()
-                    )
+                    mtime = max(p.stat().st_mtime for p in char.rglob("*") if p.is_file())
                 except (OSError, ValueError):
                     mtime = 0.0
                 out.append((mtime, char))
@@ -72,7 +72,9 @@ def find_character_dirs(locallow: Path) -> list[Path]:
     return [p for _, p in out]
 
 
-def pick_character_dir(locallow: Path, server: str | None = None, character: str | None = None) -> Path | None:
+def pick_character_dir(
+    locallow: Path, server: str | None = None, character: str | None = None
+) -> Path | None:
     if server and character:
         p = locallow / server / character
         return p if p.is_dir() else None
@@ -186,7 +188,9 @@ def setup_recommendations(layout: dict) -> list[str]:
     tips = [
         "Right-click the combat chat window → Combat > to open filter flyouts (see data/combat-filter-ui.json).",
         "Use a dedicated combat chat window (built-in id: combat) — route Combat/Ability/Buff/Death there.",
-        "Meter preset: " + "; ".join(OCR_PRESETS["meter"]["steps"][:2]) + " (full list in Combat setup…).",
+        "Meter preset: "
+        + "; ".join(OCR_PRESETS["meter"]["steps"][:2])
+        + " (full list in Combat setup…).",
         "PvP preset: enable Mine + Players under Melee Hits/Misses and Detrimental spell toggles.",
         "Increase chat font size (/chatfontsize or Settings) — larger text improves OCR accuracy.",
         "Use high-contrast colors (bright damage on dark background); avoid neon-on-neon.",
@@ -199,5 +203,7 @@ def setup_recommendations(layout: dict) -> list[str]:
             "Few channels route to combat — open in-game chat filters and enable combat/damage/heal categories."
         )
     if not layout.get("combat_region_estimate"):
-        tips.append("Could not estimate window position — use Calibrate in the client or pass --region.")
+        tips.append(
+            "Could not estimate window position — use Calibrate in the client or pass --region."
+        )
     return tips

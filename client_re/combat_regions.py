@@ -7,7 +7,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from client_re.paths import DATA_CLIENT, ensure_out
-from client_re.process_io import MEM_PRIVATE, close_process, find_process, iter_regions, open_process, read_memory
+from client_re.process_io import (
+    MEM_PRIVATE,
+    close_process,
+    find_process,
+    iter_regions,
+    open_process,
+    read_memory,
+)
 
 CACHE_PATH = DATA_CLIENT / "combat-memory-regions.json"
 

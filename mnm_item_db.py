@@ -27,25 +27,76 @@ from mnm_zones import load_mob_canon, normalize_item_drops
 
 # Canonical vocab for cleaning leaked markup / typos out of parsed fields.
 CLASS_CODES = {
-    "ARC", "BRD", "BST", "CLR", "DRU", "ELE", "ENC", "FTR", "INQ", "MNK",
-    "NEC", "PAL", "RNG", "ROG", "SHD", "SHM", "SPB", "WIZ",
+    "ARC",
+    "BRD",
+    "BST",
+    "CLR",
+    "DRU",
+    "ELE",
+    "ENC",
+    "FTR",
+    "INQ",
+    "MNK",
+    "NEC",
+    "PAL",
+    "RNG",
+    "ROG",
+    "SHD",
+    "SHM",
+    "SPB",
+    "WIZ",
 }
 CLASS_ALIAS = {"ENCH": "ENC", "ELEM": "ELE", "MKN": "MNK", "MNL": "MNK", "WAR": "FTR"}
 
 RACE_CODES = {
-    "ALL", "HUM", "DWF", "GNM", "GOB", "HFL", "HIE", "OGR", "TRL", "ELF",
-    "DDF", "DEF", "DGN", "LIZ",
+    "ALL",
+    "HUM",
+    "DWF",
+    "GNM",
+    "GOB",
+    "HFL",
+    "HIE",
+    "OGR",
+    "TRL",
+    "ELF",
+    "DDF",
+    "DEF",
+    "DGN",
+    "LIZ",
 }
 
 SLOT_CANON = {
-    "HEAD", "FACE", "EAR", "NECK", "SHOULDERS", "CHEST", "ARMS", "BACK",
-    "WRIST", "HANDS", "FINGER", "WAIST", "LEGS", "FEET",
-    "PRIMARY", "SECONDARY", "RANGED", "AMMO",
+    "HEAD",
+    "FACE",
+    "EAR",
+    "NECK",
+    "SHOULDERS",
+    "CHEST",
+    "ARMS",
+    "BACK",
+    "WRIST",
+    "HANDS",
+    "FINGER",
+    "WAIST",
+    "LEGS",
+    "FEET",
+    "PRIMARY",
+    "SECONDARY",
+    "RANGED",
+    "AMMO",
 }
 SLOT_ALIAS = {
-    "CHES": "CHEST", "SECONDAY": "SECONDARY", "SECONDARY,": "SECONDARY",
-    "WAISTE": "WAIST", "RANGE": "RANGED", "EARS": "EAR", "WRISTS": "WRIST",
-    "FINGERS": "FINGER", "SHOULDER": "SHOULDERS", "BODY": "CHEST", "HEADS": "HEAD",
+    "CHES": "CHEST",
+    "SECONDAY": "SECONDARY",
+    "SECONDARY,": "SECONDARY",
+    "WAISTE": "WAIST",
+    "RANGE": "RANGED",
+    "EARS": "EAR",
+    "WRISTS": "WRIST",
+    "FINGERS": "FINGER",
+    "SHOULDER": "SHOULDERS",
+    "BODY": "CHEST",
+    "HEADS": "HEAD",
 }
 HANDED_2H = {"TWO", "2H", "2HS", "2HB", "TWOHAND", "TWOHANDED"}
 HANDED_1H = {"ONE", "1H", "1HS", "1HB", "ONEHAND"}
@@ -69,8 +120,23 @@ RESIST_FIELDS = {
 
 # Numeric stat params shared by both dialects
 STAT_FIELDS = [
-    "ac", "dmg", "delay", "str", "sta", "agi", "dex", "int", "wis", "cha",
-    "hp", "mana", "hp_regen", "mana_regen", "haste", "ranged_haste", "spell_haste",
+    "ac",
+    "dmg",
+    "delay",
+    "str",
+    "sta",
+    "agi",
+    "dex",
+    "int",
+    "wis",
+    "cha",
+    "hp",
+    "mana",
+    "hp_regen",
+    "mana_regen",
+    "haste",
+    "ranged_haste",
+    "spell_haste",
     "weight",
 ]
 
@@ -88,15 +154,42 @@ FLAG_WORDS = {
 }
 
 ACQ_FIELDS = [
-    "source_types", "drops_zones", "drops_mobs", "crafted", "tradeskills",
-    "components", "quests", "vendor_value",
+    "source_types",
+    "drops_zones",
+    "drops_mobs",
+    "crafted",
+    "tradeskills",
+    "components",
+    "quests",
+    "vendor_value",
 ]
 # Fields that hold lists/objects (JSON-encoded when written to SQLite).
-COMPLEX_FIELDS = {"drops_zones", "drops_mobs", "tradeskills", "components", "quests", "source_types"}
+COMPLEX_FIELDS = {
+    "drops_zones",
+    "drops_mobs",
+    "tradeskills",
+    "components",
+    "quests",
+    "source_types",
+}
 
 ALL_COLUMNS = (
-    ["title", "name", "slot", "handed", "skill", "size", "classes", "races",
-     "effect", "icon_id", "dropsfrom", "categories", "format", "raw_len"]
+    [
+        "title",
+        "name",
+        "slot",
+        "handed",
+        "skill",
+        "size",
+        "classes",
+        "races",
+        "effect",
+        "icon_id",
+        "dropsfrom",
+        "categories",
+        "format",
+        "raw_len",
+    ]
     + STAT_FIELDS
     + list(RESIST_FIELDS.values())
     + ["magic", "lore", "unique", "nodrop", "norent", "nozone", "temporary", "attuneable"]
@@ -104,10 +197,25 @@ ALL_COLUMNS = (
 )
 
 TRADESKILLS = {
-    "Blacksmithing", "Tailoring", "Leatherworking", "Jewelcrafting", "Pottery",
-    "Woodworking", "Alchemy", "Brewing", "Cooking", "Fletching", "Smelting",
-    "Tinkering", "Spellcrafting", "Carpentry", "Masonry", "Poison Making",
-    "Research", "Baking", "Enchanting",
+    "Blacksmithing",
+    "Tailoring",
+    "Leatherworking",
+    "Jewelcrafting",
+    "Pottery",
+    "Woodworking",
+    "Alchemy",
+    "Brewing",
+    "Cooking",
+    "Fletching",
+    "Smelting",
+    "Tinkering",
+    "Spellcrafting",
+    "Carpentry",
+    "Masonry",
+    "Poison Making",
+    "Research",
+    "Baking",
+    "Enchanting",
 }
 
 _MOB_CANON: dict[str, str] = {}
@@ -191,14 +299,20 @@ def extract_itempage(text: str) -> str | None:
     depth = 2  # we're already inside the opening {{
     out = []
     while i < len(text) and depth > 0:
-        if text[i:i + 2] == "{{":
-            depth += 2; out.append("{{"); i += 2; continue
-        if text[i:i + 2] == "}}":
+        if text[i : i + 2] == "{{":
+            depth += 2
+            out.append("{{")
+            i += 2
+            continue
+        if text[i : i + 2] == "}}":
             depth -= 2
             if depth <= 0:
                 break
-            out.append("}}"); i += 2; continue
-        out.append(text[i]); i += 1
+            out.append("}}")
+            i += 2
+            continue
+        out.append(text[i])
+        i += 1
     return "".join(out)
 
 
@@ -229,7 +343,9 @@ def parse_acquisition(text: str, rec: dict) -> None:
 
     # --- crafted ---
     craft_raw = "\n".join(filter(None, [params.get("playercrafted", ""), params.get("notes", "")]))
-    is_crafted = bool(params.get("playercrafted")) and "not crafted by players" not in craft_raw.lower()
+    is_crafted = (
+        bool(params.get("playercrafted")) and "not crafted by players" not in craft_raw.lower()
+    )
     # fallback: notes describing a recipe
     if not is_crafted and re.search(r"recipe is", params.get("notes", ""), re.IGNORECASE):
         is_crafted = True
@@ -385,19 +501,34 @@ def parse_freeform(stats: str, rec: dict) -> None:
     if race:
         rec.setdefault("races", race)
     for label, field in [
-        ("AC", "ac"), ("DMG", "dmg"), ("Dmg", "dmg"), ("Delay", "delay"),
-        ("Dly", "delay"), ("STR", "str"), ("STA", "sta"), ("AGI", "agi"),
-        ("DEX", "dex"), ("INT", "int"), ("WIS", "wis"), ("CHA", "cha"),
-        ("HP", "hp"), ("MANA", "mana"), ("Weight", "weight"), ("WT", "weight"),
+        ("AC", "ac"),
+        ("DMG", "dmg"),
+        ("Dmg", "dmg"),
+        ("Delay", "delay"),
+        ("Dly", "delay"),
+        ("STR", "str"),
+        ("STA", "sta"),
+        ("AGI", "agi"),
+        ("DEX", "dex"),
+        ("INT", "int"),
+        ("WIS", "wis"),
+        ("CHA", "cha"),
+        ("HP", "hp"),
+        ("MANA", "mana"),
+        ("Weight", "weight"),
+        ("WT", "weight"),
     ]:
         if rec.get(field) is None:
             v = grab(label)
             if v is not None:
                 rec[field] = num(v)
     for label, field in [
-        ("Cold", "cold_resist"), ("Fire", "fire_resist"),
-        ("Magic", "magic_resist"), ("Poison", "poison_resist"),
-        ("Disease", "disease_resist"), ("Electric", "electric_resist"),
+        ("Cold", "cold_resist"),
+        ("Fire", "fire_resist"),
+        ("Magic", "magic_resist"),
+        ("Poison", "poison_resist"),
+        ("Disease", "disease_resist"),
+        ("Electric", "electric_resist"),
     ]:
         if rec.get(field) is None:
             v = grab(label + " Resist") or grab(label + " Res")
@@ -508,10 +639,7 @@ def write_outputs(rows: list[dict], tag: str) -> tuple[Path, Path, Path]:
     structured = sum(1 for r in rows if r.get("format") == "structured")
     freeform = sum(1 for r in rows if r.get("format") == "freeform")
     no_box = sum(1 for r in rows if r.get("format") == "no_itembox")
-    field_fill = {
-        c: sum(1 for r in rows if r.get(c) not in (None, "", False))
-        for c in ALL_COLUMNS
-    }
+    field_fill = {c: sum(1 for r in rows if r.get(c) not in (None, "", False)) for c in ALL_COLUMNS}
     lines = [
         f"Monsters and Memories item extraction report ({tag or 'full'})",
         f"Total items: {total}",
@@ -524,8 +652,7 @@ def write_outputs(rows: list[dict], tag: str) -> tuple[Path, Path, Path]:
         pct = (field_fill[c] / total * 100) if total else 0
         lines.append(f"  {c:18} {field_fill[c]:4}/{total}  {pct:5.1f}%")
     # parse-quality flags
-    suspect = [r["title"] for r in rows if r.get("format") != "no_itembox"
-               and not r.get("name")]
+    suspect = [r["title"] for r in rows if r.get("format") != "no_itembox" and not r.get("name")]
     lines.append("")
     lines.append(f"Items missing parsed name: {len(suspect)}")
     for t in suspect[:20]:
@@ -559,6 +686,7 @@ def main() -> int:
         tag = ""
     else:
         import random
+
         random.seed(args.seed)
         titles = random.sample(pool, min(args.pilot, len(pool)))
         tag = "-pilot"

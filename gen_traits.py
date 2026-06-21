@@ -31,14 +31,23 @@ SECTIONS = [
 
 # Passive bonuses the planner can sum, keyed by trait name.
 STAT_BONUS = {
-    "Strong": {"str": 10}, "Tough": {"sta": 10}, "Agile": {"agi": 10},
-    "Dexterous": {"dex": 10}, "Intelligent": {"int": 10}, "Wise": {"wis": 10},
+    "Strong": {"str": 10},
+    "Tough": {"sta": 10},
+    "Agile": {"agi": 10},
+    "Dexterous": {"dex": 10},
+    "Intelligent": {"int": 10},
+    "Wise": {"wis": 10},
     "Charismatic": {"cha": 10},
-    "Cold Resistant": {"cold_resist": 10}, "Fire Resistant": {"fire_resist": 10},
-    "Magic Resistant": {"magic_resist": 10}, "Poison Resistant": {"poison_resist": 10},
-    "Disease Resistant": {"disease_resist": 10}, "Electric Resistant": {"electric_resist": 10},
-    "Corruption Resistant": {"corruption_resist": 10}, "Holy Resistant": {"holy_resist": 10},
-    "Slippery": {}, "Tenacity": {},
+    "Cold Resistant": {"cold_resist": 10},
+    "Fire Resistant": {"fire_resist": 10},
+    "Magic Resistant": {"magic_resist": 10},
+    "Poison Resistant": {"poison_resist": 10},
+    "Disease Resistant": {"disease_resist": 10},
+    "Electric Resistant": {"electric_resist": 10},
+    "Corruption Resistant": {"corruption_resist": 10},
+    "Holy Resistant": {"holy_resist": 10},
+    "Slippery": {},
+    "Tenacity": {},
 }
 
 
@@ -54,11 +63,15 @@ def fetch_template() -> str:
     r = requests.get(
         API,
         params={
-            "action": "query", "titles": "Template:Traits",
-            "prop": "revisions", "rvprop": "content", "rvslots": "main",
+            "action": "query",
+            "titles": "Template:Traits",
+            "prop": "revisions",
+            "rvprop": "content",
+            "rvslots": "main",
             "format": "json",
         },
-        headers={"User-Agent": UA}, timeout=60,
+        headers={"User-Agent": UA},
+        timeout=60,
     )
     return next(iter(r.json()["query"]["pages"].values()))["revisions"][0]["slots"]["main"]["*"]
 
@@ -66,7 +79,12 @@ def fetch_template() -> str:
 def parse_rows(section_text: str) -> list[dict]:
     rows: list[dict] = []
     for line in section_text.splitlines():
-        if not line.startswith("|") or line.startswith("|-") or "!!" in line or line.strip() == "|}":
+        if (
+            not line.startswith("|")
+            or line.startswith("|-")
+            or "!!" in line
+            or line.strip() == "|}"
+        ):
             continue
         cells = [strip_markup(c) for c in line.lstrip("|").split("||")]
         if len(cells) < 4:
@@ -74,13 +92,15 @@ def parse_rows(section_text: str) -> list[dict]:
         name, race, cls, desc = cells[0], cells[1], cells[2], cells[3]
         if not name:
             continue
-        rows.append({
-            "name": name,
-            "race": race,
-            "classes": cls,
-            "desc": desc,
-            "bonus": STAT_BONUS.get(name, {}),
-        })
+        rows.append(
+            {
+                "name": name,
+                "race": race,
+                "classes": cls,
+                "desc": desc,
+                "bonus": STAT_BONUS.get(name, {}),
+            }
+        )
     return rows
 
 
@@ -96,11 +116,11 @@ def main() -> int:
             out[key] = []
             continue
         end = len(text)
-        for _, _, nidx in bounds[i + 1:]:
+        for _, _, nidx in bounds[i + 1 :]:
             if nidx > idx:
                 end = nidx
                 break
-        out[key] = parse_rows(text[idx + len(header):end])
+        out[key] = parse_rows(text[idx + len(header) : end])
 
     SITE.mkdir(exist_ok=True)
     js = "window.MNM_TRAITS = " + json.dumps(out, ensure_ascii=False, indent=0) + ";\n"

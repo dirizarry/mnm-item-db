@@ -21,9 +21,7 @@ def is_combat_kill(mob_name: str | None, mob_hid: str | None, *, kind: str = "ac
     if mob_hid != CORPSE_HID:
         return False
     name = (mob_name or "").strip()
-    if not name or name.lower() == "ground":
-        return False
-    return True
+    return not (not name or name.lower() == "ground")
 
 
 def is_ground_loot(kind: str, mob_name: str | None, mob_hid: str | None) -> bool:

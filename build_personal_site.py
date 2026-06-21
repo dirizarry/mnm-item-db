@@ -30,16 +30,20 @@ def build_index(data_dir: Path) -> dict:
         mob = row.get("mob_name") or row.get("mob_title")
         if not item or not mob:
             continue
-        by_item[item].append({
-            "mob": mob,
-            "zone": row.get("zone"),
-            "count": row.get("count", 1),
-        })
-        by_mob[mob].append({
-            "item": item,
-            "zone": row.get("zone"),
-            "count": row.get("count", 1),
-        })
+        by_item[item].append(
+            {
+                "mob": mob,
+                "zone": row.get("zone"),
+                "count": row.get("count", 1),
+            }
+        )
+        by_mob[mob].append(
+            {
+                "item": item,
+                "zone": row.get("zone"),
+                "count": row.get("count", 1),
+            }
+        )
 
     rate_by_mob: dict[str, dict] = {}
     for mob_row in rates:
@@ -75,7 +79,11 @@ def main(data_dir: Path | None = None, site_dir: Path | None = None) -> int:
     data_dir = data_dir or ROOT / "data"
     site_dir = site_dir or ROOT / "site"
     bundle = build_index(data_dir)
-    js = "window.MNM_PERSONAL = " + json.dumps(bundle, ensure_ascii=False, separators=(",", ":")) + ";\n"
+    js = (
+        "window.MNM_PERSONAL = "
+        + json.dumps(bundle, ensure_ascii=False, separators=(",", ":"))
+        + ";\n"
+    )
     site_dir.mkdir(parents=True, exist_ok=True)
     (site_dir / "personal.js").write_text(js, encoding="utf-8")
     n = len(bundle["byItem"])

@@ -51,9 +51,7 @@ def diff_fingerprints(old: dict, new: dict) -> dict:
     if oh != nh:
         changes.append(f"manifest file hashes changed: {len(oh ^ nh)} entries")
     if old.get("unity_version") != new.get("unity_version"):
-        changes.append(
-            f"unity_version: {old.get('unity_version')} -> {new.get('unity_version')}"
-        )
+        changes.append(f"unity_version: {old.get('unity_version')} -> {new.get('unity_version')}")
     return {
         "generated": datetime.now(timezone.utc).isoformat(),
         "patched": bool(changes),

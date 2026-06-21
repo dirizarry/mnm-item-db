@@ -21,7 +21,6 @@ import json
 import time
 from collections import defaultdict
 from datetime import datetime, timezone
-from pathlib import Path
 
 from mnm_combat_ocr import (
     available_backends,
@@ -29,9 +28,9 @@ from mnm_combat_ocr import (
     diff_chat_lines,
     ocr_image_lines,
 )
-from mnm_combat_text import normalize_line, parse_message_list, parse_ocr_line
 from mnm_combat_pvp import annotate_pvp
 from mnm_combat_streams import allowed_channel_set, event_allowed
+from mnm_combat_text import normalize_line, parse_message_list, parse_ocr_line
 from mnm_paths import data_dir
 
 STATE_PATH = data_dir() / "combat-capture-state.json"
@@ -91,7 +90,9 @@ def _stamp_batch_events(events: list[dict], poll_ts: str, state: dict) -> None:
     for i, ev in enumerate(events):
         seq += 1
         ev["seq"] = seq
-        ev["ts"] = (base if i == 0 else base.replace(microsecond=min(999999, base.microsecond + i * 1000))).isoformat()
+        ev["ts"] = (
+            base if i == 0 else base.replace(microsecond=min(999999, base.microsecond + i * 1000))
+        ).isoformat()
     state["event_seq"] = seq
 
 
@@ -297,12 +298,20 @@ def run_watch(
         if batch:
             _stamp_batch_events(batch, ts, state)
             events = events[-max_events:]
-            EVENTS_PATH.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
-            _write_session(events, backend=backend, region=region, frame_lines=len(frame_lines), capture_source="ocr")
+            EVENTS_PATH.write_text(
+                json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8"
+            )
+            _write_session(
+                events,
+                backend=backend,
+                region=region,
+                frame_lines=len(frame_lines),
+                capture_source="ocr",
+            )
             _refresh_combat_site()
 
         state["text_hash"] = text_hash
-        state[state_key] = [normalize_line(l) for l in frame_lines][-40:]
+        state[state_key] = [normalize_line(line) for line in frame_lines][-40:]
         state[dedup_key] = recent_raws
         if not stream_id:
             state["prev_frame_lines"] = state[state_key]
@@ -350,16 +359,18 @@ def run_multi_watch(
         sid = stream.get("id") or stream.get("label") or "stream"
         state_key = f"prev_frame_lines_{sid}"
         dedup_key = f"recent_raws_{sid}"
-        runners.append({
-            "id": sid,
-            "label": stream.get("label") or sid,
-            "region": stream["region"],
-            "allowed": allowed_channel_set(stream),
-            "prev_frame": list(state.get(state_key) or []),
-            "recent_raws": list(state.get(dedup_key) or []),
-            "state_key": state_key,
-            "dedup_key": dedup_key,
-        })
+        runners.append(
+            {
+                "id": sid,
+                "label": stream.get("label") or sid,
+                "region": stream["region"],
+                "allowed": allowed_channel_set(stream),
+                "prev_frame": list(state.get(state_key) or []),
+                "recent_raws": list(state.get(dedup_key) or []),
+                "state_key": state_key,
+                "dedup_key": dedup_key,
+            }
+        )
 
     totals = {"polls": 0, "parsed_events": 0, "filtered_events": 0, "streams": {}}
     primary_region = streams[0]["region"]
@@ -423,13 +434,17 @@ def run_multi_watch(
                 "frame_lines": len(frame_lines),
             }
 
-            state[runner["state_key"]] = [normalize_line(l) for l in runner["prev_frame"]][-40:]
+            state[runner["state_key"]] = [normalize_line(line) for line in runner["prev_frame"]][
+                -40:
+            ]
             state[runner["dedup_key"]] = recent_raws
 
         if batch_any:
             _stamp_batch_events(events[events_before:], ts, state)
             events = events[-max_events:]
-            EVENTS_PATH.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
+            EVENTS_PATH.write_text(
+                json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8"
+            )
             _write_session(
                 events,
                 backend=backend,
@@ -475,8 +490,7 @@ def run_memory_watch(
     recent_raws: list[str] = list(state.get(dedup_key) or state.get("recent_raws") or [])
     seen_addrs_key = f"memory_seen_addrs_{stream_id}" if stream_id else "memory_seen_addrs"
     seen_addrs: set[int] = {
-        int(x, 16) if isinstance(x, str) else int(x)
-        for x in (state.get(seen_addrs_key) or [])
+        int(x, 16) if isinstance(x, str) else int(x) for x in (state.get(seen_addrs_key) or [])
     }
     warmup_done = layout == "message_blob"
     events = _load_events()
@@ -525,10 +539,12 @@ def run_memory_watch(
                 seen_addrs.add(addr)
             warmup_done = True
             if on_event and polls == 1:
-                on_event({
-                    "info": f"Baselined {len(hits)} heap lines; streaming new combat only.",
-                    "stream_id": stream_id,
-                })
+                on_event(
+                    {
+                        "info": f"Baselined {len(hits)} heap lines; streaming new combat only.",
+                        "stream_id": stream_id,
+                    }
+                )
             new_hits = []
         else:
             new_hits = [(addr, line) for addr, line in hits if addr not in seen_addrs]
@@ -560,7 +576,9 @@ def run_memory_watch(
         if batch:
             _stamp_batch_events(batch, ts, state)
             events = events[-max_events:]
-            EVENTS_PATH.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
+            EVENTS_PATH.write_text(
+                json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8"
+            )
             _write_session(
                 events,
                 backend=None,

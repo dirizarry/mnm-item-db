@@ -27,12 +27,14 @@ def _mono_candidates(path: Path, top: int) -> list[dict]:
                 class_name = getattr(script, "m_ClassName", "") or ""
         except Exception:
             pass
-        rows.append({
-            "path_id": obj.path_id,
-            "size": len(raw),
-            "name": name,
-            "script_class": class_name,
-        })
+        rows.append(
+            {
+                "path_id": obj.path_id,
+                "size": len(raw),
+                "name": name,
+                "script_class": class_name,
+            }
+        )
     rows.sort(key=lambda r: -r["size"])
     return rows[:top]
 

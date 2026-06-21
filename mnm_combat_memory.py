@@ -19,7 +19,9 @@ from mnm_combat_watch import run_combat_watch, run_memory_watch
 def main() -> int:
     ap = argparse.ArgumentParser(description="MnM combat capture (OCR or memory)")
     ap.add_argument("--status", action="store_true", help="Print readiness report")
-    ap.add_argument("--resolve", action="store_true", help="Resolve and cache GameAssembly signatures")
+    ap.add_argument(
+        "--resolve", action="store_true", help="Resolve and cache GameAssembly signatures"
+    )
     ap.add_argument("--scan-once", action="store_true", help="One-shot memory text scan")
     ap.add_argument(
         "--watch",
@@ -35,7 +37,11 @@ def main() -> int:
     )
     ap.add_argument("--interval", type=float, default=1.0)
     ap.add_argument("--mode", choices=("auto", "text_scan", "structured"), default="auto")
-    ap.add_argument("--discover-struct", action="store_true", help="Discover combat buffer layout (needs active combat)")
+    ap.add_argument(
+        "--discover-struct",
+        action="store_true",
+        help="Discover combat buffer layout (needs active combat)",
+    )
     ap.add_argument("--json", action="store_true", help="Emit scan results as JSON")
     args = ap.parse_args()
 
@@ -60,7 +66,9 @@ def main() -> int:
         doc = memory_capture_status()
         settings = load_settings()
         doc["capture_source_auto"] = resolve_capture_backend("auto")
-        doc["has_ocr_region"] = bool(settings.get("combat_streams") or settings.get("combat_region"))
+        doc["has_ocr_region"] = bool(
+            settings.get("combat_streams") or settings.get("combat_region")
+        )
         print(json.dumps(doc, indent=2))
         return 0 if doc.get("process_running") or doc.get("has_ocr_region") else 1
 

@@ -53,6 +53,4 @@ def is_valid_memory_combat_line(raw: str) -> bool:
         target = ev.get("target") or ""
         if len(actor) > 40 or len(target) > 50:
             return False
-    if ev.get("target") and len(ev.get("target", "")) > 60:
-        return False
-    return True
+    return not (ev.get("target") and len(ev.get("target", "")) > 60)

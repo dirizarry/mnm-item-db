@@ -8,11 +8,11 @@ from __future__ import annotations
 
 import json
 import uuid
+from collections.abc import Iterator
 from pathlib import Path
-from typing import Iterator
 
-from mnm_combat_channels import OCR_PRESETS, ROLE_CHANNELS, build_filter_menu, infer_channel
 from mnm_chat_windows import channels_for_window, load_layout, pick_character_dir
+from mnm_combat_channels import OCR_PRESETS, ROLE_CHANNELS, build_filter_menu, infer_channel
 
 
 def new_stream_id() -> str:
@@ -67,7 +67,9 @@ def iter_filter_leaves(menu: dict | None = None) -> Iterator[tuple[str, str, lis
         targets = entry.get("targets")
         chs = entry.get("channels") or []
         if targets and chs:
-            fam = "CombatHit" if outcome == "Hits" else "CombatMiss" if outcome == "Misses" else None
+            fam = (
+                "CombatHit" if outcome == "Hits" else "CombatMiss" if outcome == "Misses" else None
+            )
             if fam:
                 from mnm_combat_channels import UI_TARGET_SUFFIX
 
@@ -163,7 +165,9 @@ def channels_from_filter_paths(paths: set[str] | list[str], menu: dict | None = 
     return sorted(out)
 
 
-def filter_paths_from_channels(channels: set[str] | list[str], menu: dict | None = None) -> set[str]:
+def filter_paths_from_channels(
+    channels: set[str] | list[str], menu: dict | None = None
+) -> set[str]:
     """Best-effort reverse map: which filter leaves cover the given channels."""
     ch_set = set(channels)
     paths: set[str] = set()
@@ -219,29 +223,33 @@ def resolve_capture_streams(settings: dict, locallow: Path | None = None) -> lis
         channels: list[str] = []
         if locallow:
             channels = import_window_channels(locallow, "combat")
-        return [{
-            "id": "default",
-            "label": "Combat",
-            "window_id": "combat",
-            "role": "meter",
-            "region": dict(region),
-            "channels": channels,
-            "filter_paths": [],
-        }]
+        return [
+            {
+                "id": "default",
+                "label": "Combat",
+                "window_id": "combat",
+                "role": "meter",
+                "region": dict(region),
+                "channels": channels,
+                "filter_paths": [],
+            }
+        ]
 
     if locallow:
         layout = load_layout(locallow)
         est = layout.get("combat_region_estimate")
         if est:
-            return [{
-                "id": "default",
-                "label": "Combat",
-                "window_id": "combat",
-                "role": "meter",
-                "region": dict(est),
-                "channels": layout.get("combat_meter_channels") or [],
-                "filter_paths": [],
-            }]
+            return [
+                {
+                    "id": "default",
+                    "label": "Combat",
+                    "window_id": "combat",
+                    "role": "meter",
+                    "region": dict(est),
+                    "channels": layout.get("combat_meter_channels") or [],
+                    "filter_paths": [],
+                }
+            ]
     return []
 
 
@@ -260,9 +268,7 @@ def event_allowed(event: dict, allowed: set[str] | None) -> bool:
     if ch and ch in allowed:
         return True
     # Cast lifecycle lines often land on AbilityStatus without a clean channel match.
-    if "AbilityStatus" in allowed and event.get("outcome") in ("interrupted", "fizzle"):
-        return True
-    return False
+    return bool("AbilityStatus" in allowed and event.get("outcome") in ("interrupted", "fizzle"))
 
 
 def stream_summary(streams: list[dict]) -> str:

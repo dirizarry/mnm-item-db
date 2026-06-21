@@ -41,9 +41,7 @@ def _quick_validate_v35_header(data: bytes) -> bool:
     if magic != METADATA_MAGIC or not (24 <= version <= 106):
         return False
     string_offset, string_size = struct.unpack_from("<II", data, 24)
-    if string_offset == 0 or string_offset + string_size > len(data):
-        return False
-    return True
+    return not (string_offset == 0 or string_offset + string_size > len(data))
 
 
 def _quick_validate_v39_header(data: bytes) -> bool:
@@ -93,8 +91,8 @@ def _kasiski_key_length(data: bytes, max_len: int = 32) -> int:
         grams[g] = i
     if not distances:
         return 0
-    from math import gcd
     from functools import reduce
+    from math import gcd
 
     g = reduce(gcd, distances[:50], distances[0])
     for prefer in (8, 16, 4, 12, 32, 24):
@@ -234,13 +232,22 @@ def analyze_encryption(data: bytes) -> dict:
     magic_le = struct.unpack_from("<I", data, 0)[0]
     plaintext_hits = {
         name: data.count(name.encode("ascii"))
-        for name in ("ItemRecord", "ClientItemRecord", "LootTable", "System.", "mscorlib", "Assembly-CSharp")
+        for name in (
+            "ItemRecord",
+            "ClientItemRecord",
+            "LootTable",
+            "System.",
+            "mscorlib",
+            "Assembly-CSharp",
+        )
     }
     return {
         "on_disk_magic_hex": f"{magic_le:08x}",
         "standard_il2cpp_magic": magic_le == METADATA_MAGIC,
         "header_entropy_256": round(entropy(data[:256]), 3),
-        "body_entropy_64k": round(entropy(data[65536 : 65536 + 65536]), 3) if len(data) > 131072 else None,
+        "body_entropy_64k": round(entropy(data[65536 : 65536 + 65536]), 3)
+        if len(data) > 131072
+        else None,
         "plaintext_symbol_hits": plaintext_hits,
         "note": (
             "M&M keeps type/name strings readable in the file body but the v38/v39 header "
@@ -286,7 +293,7 @@ def decrypt_metadata_file(
     if allow_partial:
         for ver in (39, 38, 40):
             plain_hdr = struct.pack("<Ii", METADATA_MAGIC, ver)
-            key = bytes(a ^ b for a, b in zip(data[:8], plain_hdr))
+            key = bytes(a ^ b for a, b in zip(data[:8], plain_hdr, strict=False))
             out = bytearray(data)
             for i in range(len(out)):
                 out[i] ^= key[i % 8]

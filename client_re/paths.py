@@ -9,9 +9,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_CLIENT = ROOT / "data" / "client"
 DUMPS_DIR = Path(__file__).resolve().parent / "dumps"
 
-_DEFAULT_INSTALL = (
-    Path(os.environ.get("LOCALAPPDATA", "")) / "Monsters & Memories" / "mnm"
-)
+_DEFAULT_INSTALL = Path(os.environ.get("LOCALAPPDATA", "")) / "Monsters & Memories" / "mnm"
 
 
 def default_install() -> Path:
@@ -36,13 +34,7 @@ def game_db_path(root: Path | None = None) -> Path:
 
 
 def bundles_dir(root: Path | None = None) -> Path:
-    return (
-        install_root(root)
-        / "mnm_Data"
-        / "StreamingAssets"
-        / "aa"
-        / "StandaloneWindows64"
-    )
+    return install_root(root) / "mnm_Data" / "StreamingAssets" / "aa" / "StandaloneWindows64"
 
 
 def il2cpp_metadata(root: Path | None = None) -> Path:

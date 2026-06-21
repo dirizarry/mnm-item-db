@@ -63,10 +63,7 @@ def stub_item_page(title: str, item_rec: dict | None = None) -> str:
     weight_s = str(weight) if weight is not None else ""
     size = rec.get("size") or "SMALL"
     link_id = item_link_id(rec.get("name") or title) if rec else ""
-    box = (
-        "{{ItemBox\n"
-        f"| item_name     = {title}\n"
-    )
+    box = f"{{{{ItemBox\n| item_name     = {title}\n"
     if link_id:
         box += f"| item_link_id  = {link_id}\n"
     box += (

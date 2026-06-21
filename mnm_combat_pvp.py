@@ -8,8 +8,8 @@ from __future__ import annotations
 
 import re
 import time
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable
 
 from mnm_combat_channels import describe_channel
 
@@ -17,9 +17,16 @@ _PLAYER_TOKEN = re.compile(r"^[A-Z][A-Za-z']{2,}$")
 _NPC_PREFIXES = ("guard ", "a ", "an ", "the ", "your pet ")
 
 # Combat kinds that can represent incoming player aggression.
-_AGGRESSIVE_KINDS = frozenset({
-    "melee", "ability", "damage", "miss", "dot", "absorb",
-})
+_AGGRESSIVE_KINDS = frozenset(
+    {
+        "melee",
+        "ability",
+        "damage",
+        "miss",
+        "dot",
+        "absorb",
+    }
+)
 
 
 def is_player_name(name: str | None) -> bool:
@@ -42,9 +49,7 @@ def _targets_you_or_pet(event: dict) -> bool:
     if low.startswith("your pet "):
         return True
     pet = event.get("pet")
-    if pet and event.get("direction") == "incoming" and target == pet:
-        return True
-    return False
+    return bool(pet and event.get("direction") == "incoming" and target == pet)
 
 
 def classify_pvp(event: dict) -> str | None:
@@ -94,17 +99,18 @@ def is_incoming_player_aggression(event: dict) -> bool:
         return False
     if not is_player_name(event.get("actor")):
         return False
-    if not _targets_you_or_pet(event):
-        if event.get("direction") != "incoming":
-            return False
+    if not _targets_you_or_pet(event) and event.get("direction") != "incoming":
+        return False
     kind = event.get("kind") or ""
     if kind in _AGGRESSIVE_KINDS:
         return True
     if kind == "status" and event.get("verb") == "angry" and event.get("target") == "You":
         return True
-    if kind == "ability" and event.get("outcome") == "resist" and event.get("direction") == "incoming":
-        return True
-    return False
+    return bool(
+        kind == "ability"
+        and event.get("outcome") == "resist"
+        and event.get("direction") == "incoming"
+    )
 
 
 def annotate_pvp(event: dict) -> dict:
@@ -134,14 +140,17 @@ def play_alert_sound(settings: dict) -> None:
     if custom and Path(custom).is_file():
         try:
             import winsound
+
             winsound.PlaySound(custom, winsound.SND_FILENAME | winsound.SND_ASYNC)
             return
         except (OSError, RuntimeError):
             pass
     try:
         import sys
+
         if sys.platform == "win32":
             import winsound
+
             winsound.MessageBeep(winsound.MB_ICONEXCLAMATION)
     except OSError:
         pass
@@ -159,8 +168,7 @@ class PvpAlerter:
         self.settings = settings
         self.on_alert = on_alert
         self.cooldown_sec = float(
-            cooldown_sec if cooldown_sec is not None
-            else settings.get("pvp_alert_cooldown", 15)
+            cooldown_sec if cooldown_sec is not None else settings.get("pvp_alert_cooldown", 15)
         )
         self._last_alert = 0.0
 

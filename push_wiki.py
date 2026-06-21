@@ -113,9 +113,7 @@ def dry_run_fix(page: str, file: Path) -> dict:
 
 def push_fix(page: str, file: Path, summary: str) -> dict:
     if not credentials_configured():
-        raise WikiPushError(
-            "Wiki credentials not configured (~/.mnm-wiki/wiki-credentials.env)"
-        )
+        raise WikiPushError("Wiki credentials not configured (~/.mnm-wiki/wiki-credentials.env)")
     text = read_fix_wikitext(file)
     s = session()
     login(s)
@@ -129,24 +127,38 @@ def login(s: requests.Session) -> None:
         raise WikiPushError(
             "Set MNM_WIKI_USER or WIKI_USERNAME (or ~/.mnm-wiki/wiki-credentials.env)."
         )
-    token = s.get(API, params={"action": "query", "meta": "tokens", "type": "login", "format": "json"}).json()
+    token = s.get(
+        API, params={"action": "query", "meta": "tokens", "type": "login", "format": "json"}
+    ).json()
     ltoken = token["query"]["tokens"]["logintoken"]
     pw = wiki_password()
     if not pw:
         raise WikiPushError("Set MNM_WIKI_BOT_PASSWORD, MNM_WIKI_PASS, or WIKI_PASSWORD.")
-    r = s.post(API, data={
-        "action": "login", "lgname": user, "lgpassword": pw,
-        "lgtoken": ltoken, "format": "json",
-    }).json()
+    r = s.post(
+        API,
+        data={
+            "action": "login",
+            "lgname": user,
+            "lgpassword": pw,
+            "lgtoken": ltoken,
+            "format": "json",
+        },
+    ).json()
     if r.get("login", {}).get("result") != "Success":
         raise WikiPushError(f"Login failed: {r}")
 
 
 def fetch_page(s: requests.Session, title: str) -> tuple[int | None, str]:
-    r = s.get(API, params={
-        "action": "query", "prop": "revisions", "rvprop": "content|ids",
-        "titles": title, "format": "json",
-    }).json()
+    r = s.get(
+        API,
+        params={
+            "action": "query",
+            "prop": "revisions",
+            "rvprop": "content|ids",
+            "titles": title,
+            "format": "json",
+        },
+    ).json()
     page = next(iter(r["query"]["pages"].values()))
     if "missing" in page:
         return None, ""
@@ -155,17 +167,22 @@ def fetch_page(s: requests.Session, title: str) -> tuple[int | None, str]:
 
 
 def push_page(s: requests.Session, title: str, text: str, summary: str) -> None:
-    token = s.get(API, params={"action": "query", "meta": "tokens", "type": "csrf", "format": "json"}).json()
+    token = s.get(
+        API, params={"action": "query", "meta": "tokens", "type": "csrf", "format": "json"}
+    ).json()
     csrf = token["query"]["tokens"]["csrftoken"]
     _, old = fetch_page(s, title)
-    r = s.post(API, data={
-        "action": "edit",
-        "title": title,
-        "text": text,
-        "summary": summary,
-        "token": csrf,
-        "format": "json",
-    }).json()
+    r = s.post(
+        API,
+        data={
+            "action": "edit",
+            "title": title,
+            "text": text,
+            "summary": summary,
+            "token": csrf,
+            "format": "json",
+        },
+    ).json()
     if "error" in r:
         raise WikiPushError(f"Edit failed: {r['error']}")
     print(f"Published: {wiki_page_url(title)}")

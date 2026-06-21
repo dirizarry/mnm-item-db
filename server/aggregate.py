@@ -18,11 +18,10 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from build_relations import ITEMS_PATH, MOBS_PATH, build_drops, load_and_normalize  # noqa: E402
 from mnm_crowd_aggregate import aggregate as aggregate_payloads  # noqa: E402
-from build_relations import build_drops, load_and_normalize, ITEMS_PATH, MOBS_PATH  # noqa: E402
 
 from . import db
-
 
 # Anti-poisoning: a single actor should not be able to push edits to the wiki.
 # Require independent corroboration before auto-queuing. Single-contributor edges
@@ -36,18 +35,22 @@ def _wiki_candidates(drops: list[dict]) -> list[dict]:
     out = []
     for d in drops:
         status = d.get("status")
-        if (status == "crowd_candidate"
-                and d.get("observations", 0) >= MIN_OBSERVATIONS
-                and d.get("contributors", 0) >= MIN_CONTRIBUTORS):
-            out.append({
-                "item_title": d["item_title"],
-                "mob_title": d["mob_title"],
-                "zone": d.get("zone"),
-                "edit_kind": "add_drop",  # wiki is missing an empirically-observed drop
-                "confidence": d.get("confidence"),
-                "observations": d.get("observations"),
-                "reason": "Observed in play by the community but not listed on the wiki.",
-            })
+        if (
+            status == "crowd_candidate"
+            and d.get("observations", 0) >= MIN_OBSERVATIONS
+            and d.get("contributors", 0) >= MIN_CONTRIBUTORS
+        ):
+            out.append(
+                {
+                    "item_title": d["item_title"],
+                    "mob_title": d["mob_title"],
+                    "zone": d.get("zone"),
+                    "edit_kind": "add_drop",  # wiki is missing an empirically-observed drop
+                    "confidence": d.get("confidence"),
+                    "observations": d.get("observations"),
+                    "reason": "Observed in play by the community but not listed on the wiki.",
+                }
+            )
     return out
 
 

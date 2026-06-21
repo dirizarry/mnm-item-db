@@ -3,8 +3,8 @@
 from __future__ import annotations
 
 import tkinter as tk
+from collections.abc import Callable
 from tkinter import messagebox, ttk
-from typing import Callable
 
 from mnm_combat_channels import OCR_PRESETS, WINDOW_ROLES, build_filter_menu
 from mnm_combat_streams import (
@@ -69,7 +69,9 @@ class FilterPickerDialog(tk.Toplevel):
             width=14,
         )
         preset_cb.pack(side="left", padx=4)
-        ttk.Button(preset_row, text="Apply preset", command=self._apply_preset).pack(side="left", padx=4)
+        ttk.Button(preset_row, text="Apply preset", command=self._apply_preset).pack(
+            side="left", padx=4
+        )
 
         tree_frm = ttk.Frame(self, padding=(8, 4))
         tree_frm.pack(fill="both", expand=True)
@@ -131,7 +133,10 @@ class FilterPickerDialog(tk.Toplevel):
             return None
         var = self._path_vars[row]
         var.set(not var.get())
-        self._tree.item(row, text=f"{'☑' if var.get() else '☐'}  {self._tree.item(row, 'text').split('  ', 1)[-1]}")
+        self._tree.item(
+            row,
+            text=f"{'☑' if var.get() else '☐'}  {self._tree.item(row, 'text').split('  ', 1)[-1]}",
+        )
         self._update_summary()
         return "break"
 
@@ -145,7 +150,9 @@ class FilterPickerDialog(tk.Toplevel):
 
     def _update_summary(self) -> None:
         chs = self._selected_channels()
-        self._summary_var.set(f"{len(self._selected_paths())} toggles → {len(chs)} channel categories")
+        self._summary_var.set(
+            f"{len(self._selected_paths())} toggles → {len(chs)} channel categories"
+        )
 
     def _select_all(self) -> None:
         for pid, var in self._path_vars.items():
@@ -230,13 +237,18 @@ class StreamEditorDialog(tk.Toplevel):
 
         ttk.Label(frm, text="Label:").grid(row=0, column=0, sticky="w", pady=4)
         self._label_var = tk.StringVar(value=stream.get("label") or "Combat")
-        ttk.Entry(frm, textvariable=self._label_var, width=36).grid(row=0, column=1, columnspan=2, sticky="we")
+        ttk.Entry(frm, textvariable=self._label_var, width=36).grid(
+            row=0, column=1, columnspan=2, sticky="we"
+        )
 
         ttk.Label(frm, text="In-game window id:").grid(row=1, column=0, sticky="w", pady=4)
         self._window_var = tk.StringVar(value=stream.get("window_id") or "combat")
         ids = window_ids or ["combat", "chat0", "chat1", "combat2", "combat3"]
         ttk.Combobox(frm, textvariable=self._window_var, values=ids, width=18).grid(
-            row=1, column=1, sticky="w", pady=4,
+            row=1,
+            column=1,
+            sticky="w",
+            pady=4,
         )
 
         ttk.Label(frm, text="Role preset:").grid(row=2, column=0, sticky="w", pady=4)
@@ -248,12 +260,16 @@ class StreamEditorDialog(tk.Toplevel):
             state="readonly",
             width=18,
         ).grid(row=2, column=1, sticky="w", pady=4)
-        ttk.Button(frm, text="Use role channels", command=self._use_role).grid(row=2, column=2, padx=4)
+        ttk.Button(frm, text="Use role channels", command=self._use_role).grid(
+            row=2, column=2, padx=4
+        )
 
         ttk.Label(frm, text="Region:").grid(row=3, column=0, sticky="w", pady=4)
         region = stream.get("region") or {}
         self._region_var = tk.StringVar(value=region_to_str(region) if region.get("width") else "")
-        ttk.Entry(frm, textvariable=self._region_var, width=36).grid(row=3, column=1, sticky="we", pady=4)
+        ttk.Entry(frm, textvariable=self._region_var, width=36).grid(
+            row=3, column=1, sticky="we", pady=4
+        )
         ttk.Button(frm, text="Pick…", command=self._pick_region).grid(row=3, column=2, padx=4)
 
         filt_row = ttk.Frame(frm)
@@ -262,8 +278,12 @@ class StreamEditorDialog(tk.Toplevel):
         ttk.Label(filt_row, textvariable=self._filt_summary, wraplength=420).pack(anchor="w")
         filt_btns = ttk.Frame(frm)
         filt_btns.grid(row=5, column=0, columnspan=3, sticky="w")
-        ttk.Button(filt_btns, text="Combat filters…", command=self._edit_filters).pack(side="left", padx=(0, 4))
-        ttk.Button(filt_btns, text="Import from game", command=self._import_game).pack(side="left", padx=4)
+        ttk.Button(filt_btns, text="Combat filters…", command=self._edit_filters).pack(
+            side="left", padx=(0, 4)
+        )
+        ttk.Button(filt_btns, text="Import from game", command=self._import_game).pack(
+            side="left", padx=4
+        )
 
         btns = ttk.Frame(frm, padding=(0, 8))
         btns.grid(row=6, column=0, columnspan=3, sticky="e", pady=(12, 0))
@@ -343,15 +363,17 @@ class StreamEditorDialog(tk.Toplevel):
         if len(parts) < 4:
             return None
         try:
-            l, t, w, h = (int(float(x)) for x in parts[:4])
+            left, top, width, height = (int(float(x)) for x in parts[:4])
         except ValueError:
             return None
-        return {"left": l, "top": t, "width": w, "height": h, "source": "manual"}
+        return {"left": left, "top": top, "width": width, "height": height, "source": "manual"}
 
     def _save(self) -> None:
         region = self._parse_region()
         if not region:
-            messagebox.showerror("Region required", "Pick a screen region for this stream.", parent=self)
+            messagebox.showerror(
+                "Region required", "Pick a screen region for this stream.", parent=self
+            )
             return
         out = {
             "id": self._stream.get("id") or new_stream_id(),
@@ -364,7 +386,9 @@ class StreamEditorDialog(tk.Toplevel):
         }
         norm = normalize_stream(out)
         if not norm:
-            messagebox.showerror("Invalid stream", "Could not save stream configuration.", parent=self)
+            messagebox.showerror(
+                "Invalid stream", "Could not save stream configuration.", parent=self
+            )
             return
         self._on_save(norm)
         self.destroy()
@@ -399,7 +423,7 @@ class StreamManagerDialog(tk.Toplevel):
 
         cols = ("label", "window", "region", "filters")
         self._tree = ttk.Treeview(self, columns=cols, show="headings", height=10)
-        for col, w in zip(cols, (140, 80, 200, 80)):
+        for col, w in zip(cols, (140, 80, 200, 80), strict=False):
             self._tree.heading(col, text=col.title())
             self._tree.column(col, width=w, anchor="w")
         self._tree.pack(fill="both", expand=True, padx=10, pady=4)

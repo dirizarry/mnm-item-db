@@ -20,16 +20,14 @@ Build a standalone exe:
 from __future__ import annotations
 
 import contextlib
-import io
 import queue
 import shutil
 import threading
+import tkinter as tk
 import webbrowser
 from functools import partial
 from http.server import ThreadingHTTPServer
 from pathlib import Path
-
-import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 import mnm_paths
@@ -41,7 +39,7 @@ from wiki_review_server import handler_class
 class _Console:
     """Thread-safe sink that streams worker output into the Tk log widget."""
 
-    def __init__(self, sink: "queue.Queue[str]"):
+    def __init__(self, sink: queue.Queue[str]):
         self.sink = sink
 
     def write(self, text: str) -> int:
@@ -60,7 +58,7 @@ class ClientApp:
         mnm_paths.apply_settings_to_env(self.settings)
         self._prepare_workspace()
 
-        self.log_queue: "queue.Queue[str]" = queue.Queue()
+        self.log_queue: queue.Queue[str] = queue.Queue()
         self.busy = False
         self._watch_stop = threading.Event()
         self._watch_thread: threading.Thread | None = None
@@ -76,12 +74,15 @@ class ClientApp:
         self._refresh_status()
         self.root.after(120, self._drain_log)
         if self.settings.get("auto_check_updates"):
-            self.root.after(800, partial(self._run_async, self._do_update_check, "update check", quiet=True))
+            self.root.after(
+                800, partial(self._run_async, self._do_update_check, "update check", quiet=True)
+            )
         self.root.after(400, self._check_combat_deps)
 
     def _check_combat_deps(self) -> None:
         try:
             from mnm_combat_ocr import available_backends
+
             backends = available_backends()
         except ImportError:
             backends = []
@@ -112,21 +113,29 @@ class ClientApp:
         site_stats = ws / "site" / "stats"
         try:
             import mnm_ledger_db
+
             mnm_ledger_db.OUT = data
             import build_ledger_site
+
             build_ledger_site.DATA = data
             build_ledger_site.SITE_STATS = site_stats
-            import build_personal_site
-            import build_combat_site
-            import build_hardcore_site
             import build_site
+
             build_site.DATA = data
             build_site.SITE = ws / "site"
             import mnm_ledger_upload
+
             mnm_ledger_upload.DATA = data
             import build_relations
+
             build_relations.DATA = data
-            for attr in ("ITEMS_PATH", "MOBS_PATH", "LEDGER_DROPS_PATH", "CROWD_DROPS_PATH", "GAME_DB"):
+            for attr in (
+                "ITEMS_PATH",
+                "MOBS_PATH",
+                "LEDGER_DROPS_PATH",
+                "CROWD_DROPS_PATH",
+                "GAME_DB",
+            ):
                 if hasattr(build_relations, attr):
                     setattr(build_relations, attr, data / Path(getattr(build_relations, attr)).name)
         except Exception:  # pragma: no cover - best-effort retarget
@@ -155,20 +164,40 @@ class ClientApp:
         self.watch_btn.pack(side="left", padx=4, pady=6)
         add("dashboard", "Open dashboard", self._open_dashboard)
         add("wiki_review", "Wiki review", self._open_wiki_review)
-        add("relations", "Rebuild DB", lambda: self._run_async(self._do_relations, "rebuilding relations"))
+        add(
+            "relations",
+            "Rebuild DB",
+            lambda: self._run_async(self._do_relations, "rebuilding relations"),
+        )
         add("upload", "Submit data", lambda: self._run_async(self._do_upload, "uploading"))
 
-        combat_row = ttk.LabelFrame(self.root, text="Combat capture (memory / OCR)", padding=(10, 6))
+        combat_row = ttk.LabelFrame(
+            self.root, text="Combat capture (memory / OCR)", padding=(10, 6)
+        )
         combat_row.pack(fill="x", padx=10, pady=(4, 0))
         combat_btns = ttk.Frame(combat_row)
         combat_btns.pack(fill="x")
-        self.combat_btn = ttk.Button(combat_btns, text="Start combat capture", command=self._toggle_combat_capture)
+        self.combat_btn = ttk.Button(
+            combat_btns, text="Start combat capture", command=self._toggle_combat_capture
+        )
         self.combat_btn.pack(side="left", padx=4, pady=2)
-        ttk.Button(combat_btns, text="Test OCR once", command=lambda: self._run_async(self._do_combat_test, "combat test")).pack(side="left", padx=4)
-        ttk.Button(combat_btns, text="Combat setup…", command=self._show_combat_setup).pack(side="left", padx=4)
-        ttk.Button(combat_btns, text="Pick on screen…", command=self._pick_combat_region).pack(side="left", padx=4)
-        ttk.Button(combat_btns, text="OCR streams…", command=self._manage_combat_streams).pack(side="left", padx=4)
-        ttk.Button(combat_btns, text="Clear session", command=self._clear_combat_session).pack(side="left", padx=4)
+        ttk.Button(
+            combat_btns,
+            text="Test OCR once",
+            command=lambda: self._run_async(self._do_combat_test, "combat test"),
+        ).pack(side="left", padx=4)
+        ttk.Button(combat_btns, text="Combat setup…", command=self._show_combat_setup).pack(
+            side="left", padx=4
+        )
+        ttk.Button(combat_btns, text="Pick on screen…", command=self._pick_combat_region).pack(
+            side="left", padx=4
+        )
+        ttk.Button(combat_btns, text="OCR streams…", command=self._manage_combat_streams).pack(
+            side="left", padx=4
+        )
+        ttk.Button(combat_btns, text="Clear session", command=self._clear_combat_session).pack(
+            side="left", padx=4
+        )
 
         stats_frm = ttk.Frame(combat_row)
         stats_frm.pack(fill="x", pady=(6, 0))
@@ -193,18 +222,31 @@ class ClientApp:
             cell = ttk.Frame(stats_frm)
             cell.pack(side="left", padx=(0, 14))
             ttk.Label(cell, text=label, font=("", 9)).pack(anchor="w")
-            ttk.Label(cell, textvariable=self.combat_stat_vars[key], font=("", 10, "bold")).pack(anchor="w")
+            ttk.Label(cell, textvariable=self.combat_stat_vars[key], font=("", 10, "bold")).pack(
+                anchor="w"
+            )
 
         btns2 = ttk.Frame(self.root, padding=(10, 0))
         btns2.pack(fill="x")
         ttk.Button(btns2, text="Settings…", command=self._open_settings).pack(side="left", padx=4)
-        ttk.Button(btns2, text="Check for updates", command=lambda: self._run_async(self._do_update_check, "update check")).pack(side="left", padx=4)
+        ttk.Button(
+            btns2,
+            text="Check for updates",
+            command=lambda: self._run_async(self._do_update_check, "update check"),
+        ).pack(side="left", padx=4)
 
         ttk.Separator(self.root).pack(fill="x", pady=8)
         logframe = ttk.Frame(self.root, padding=(10, 0, 10, 10))
         logframe.pack(fill="both", expand=True)
-        self.log = tk.Text(logframe, height=18, wrap="word", state="disabled",
-                           background="#101418", foreground="#d4dae0", insertbackground="#d4dae0")
+        self.log = tk.Text(
+            logframe,
+            height=18,
+            wrap="word",
+            state="disabled",
+            background="#101418",
+            foreground="#d4dae0",
+            insertbackground="#d4dae0",
+        )
         scroll = ttk.Scrollbar(logframe, command=self.log.yview)
         self.log.configure(yscrollcommand=scroll.set)
         self.log.pack(side="left", fill="both", expand=True)
@@ -296,7 +338,8 @@ class ClientApp:
             print(f"Logs folder not found: {locallow}\nSet it in Settings.")
             return
         print(f"Full sync from {locallow} …")
-        from sync_manifest import run_sync, print_report
+        from sync_manifest import print_report, run_sync
+
         report = run_sync(
             locallow=locallow,
             data_dir=mnm_paths.data_dir(),
@@ -315,23 +358,29 @@ class ClientApp:
             return
         print(f"Mining logs from {locallow} …")
         from mnm_ledger_db import run as extract_run
+
         stats = extract_run(locallow, ledger=True, journal=True)
         print(f"  {stats['files']:,} files, {stats['events']:,} events, {stats['kills']:,} kills")
         from build_ledger_site import main as build_stats
+
         build_stats()
         print("Done. Click 'Open dashboard' to view your stats.")
 
     def _do_relations(self) -> None:
         print("Rebuilding item/mob/drop relations (game.db) …")
         from build_relations import main as rel_main
+
         rel_main()
         print("Done.")
 
     def _do_upload(self) -> None:
         if not self.settings.get("upload_url"):
-            print("No submit endpoint configured. Set 'Submit endpoint URL' in Settings to contribute.")
+            print(
+                "No submit endpoint configured. Set 'Submit endpoint URL' in Settings to contribute."
+            )
             print("A privacy-gated payload was still written locally for inspection.")
-        from mnm_ledger_upload import build_payload, write_payload, upload_payload
+        from mnm_ledger_upload import build_payload, upload_payload, write_payload
+
         payload = build_payload(share_characters=bool(self.settings.get("share_characters")))
         out = write_payload(payload)
         print(f"Built payload: {out} ({out.stat().st_size // 1024} KB, schema {payload['schema']})")
@@ -342,6 +391,7 @@ class ClientApp:
 
     def _do_update_check(self) -> None:
         from mnm_updater import check_for_update
+
         info = check_for_update(self.settings.get("update_url", ""))
         if info.error:
             print(f"Update check: {info.error}")
@@ -353,11 +403,15 @@ class ClientApp:
             print(f"You are up to date (v{info.current}).")
 
     def _prompt_update(self, info) -> None:
-        if messagebox.askyesno("Update available",
-                               f"v{info.latest} is available (you have v{info.current}).\n\n"
-                               f"{info.notes}\n\nOpen the download page?"):
-            if info.url:
-                webbrowser.open(info.url)
+        if (
+            messagebox.askyesno(
+                "Update available",
+                f"v{info.latest} is available (you have v{info.current}).\n\n"
+                f"{info.notes}\n\nOpen the download page?",
+            )
+            and info.url
+        ):
+            webbrowser.open(info.url)
 
     def _toggle_watch(self) -> None:
         if self._watch_thread and self._watch_thread.is_alive():
@@ -375,12 +429,19 @@ class ClientApp:
 
         def loop():
             from mnm_ledger_watch import run as watch_run
+
             console = _Console(self.log_queue)
             while not self._watch_stop.is_set():
                 try:
                     with contextlib.redirect_stdout(console), contextlib.redirect_stderr(console):
-                        watch_run(locallow, interval=2.0, gap_minutes=15.0,
-                                  backlog=False, once=True, rebuild=False)
+                        watch_run(
+                            locallow,
+                            interval=2.0,
+                            gap_minutes=15.0,
+                            backlog=False,
+                            once=True,
+                            rebuild=False,
+                        )
                 except Exception as exc:
                     self.log_queue.put(f"[watch error] {exc}\n")
                 self._watch_stop.wait(2.0)
@@ -395,6 +456,7 @@ class ClientApp:
             if isinstance(r, dict) and r.get("width") and r.get("height"):
                 return r
         from mnm_chat_windows import load_layout
+
         layout = load_layout(self._locallow())
         return layout.get("combat_region_estimate")
 
@@ -431,7 +493,9 @@ class ClientApp:
         layout = load_layout(self._locallow())
         tips = setup_recommendations(layout)
         est = layout.get("combat_region_estimate") or self.settings.get("combat_region")
-        backends = ", ".join(available_backends()) or "none — pip install -r requirements-combat.txt"
+        backends = (
+            ", ".join(available_backends()) or "none — pip install -r requirements-combat.txt"
+        )
         streams = self._resolve_combat_streams()
         stream_txt = stream_summary(streams) if streams else "(none — use OCR streams…)"
         preset_lines = []
@@ -529,8 +593,9 @@ class ClientApp:
         stream = streams[0]
         region = stream["region"]
         from mnm_combat_ocr import available_backends, ocr_region_lines
-        from mnm_combat_text import parse_lines
         from mnm_combat_streams import allowed_channel_set, event_allowed
+        from mnm_combat_text import parse_lines
+
         if not available_backends():
             print("OCR not available. pip install -r requirements-combat.txt")
             return
@@ -549,16 +614,20 @@ class ClientApp:
         else:
             print(f"--- parsed {len(events)} events (no channel filter) ---")
         for ev in events[:12]:
-            print(f"  [{ev['kind']}] {ev.get('actor')} -> {ev.get('target')} {ev.get('amount') or ''}")
+            print(
+                f"  [{ev['kind']}] {ev.get('actor')} -> {ev.get('target')} {ev.get('amount') or ''}"
+            )
 
     def _poll_combat_stats(self) -> None:
         """Refresh combat stat labels from data/combat-live.json while OCR runs."""
         from mnm_combat_watch import LIVE_PATH
+
         if self._combat_thread and self._combat_thread.is_alive():
             self.combat_stat_vars["status"].set("Capturing…")
             if LIVE_PATH.is_file():
                 try:
                     import json
+
                     live = json.loads(LIVE_PATH.read_text(encoding="utf-8"))
                     self.combat_stat_vars["dmg_out"].set(str(live.get("damage_out", 0)))
                     self.combat_stat_vars["dmg_in"].set(str(live.get("damage_in", 0)))
@@ -613,6 +682,7 @@ class ClientApp:
         if not use_memory:
             try:
                 from mnm_combat_ocr import available_backends
+
                 if not available_backends():
                     messagebox.showerror(
                         "OCR not available",
@@ -652,6 +722,7 @@ class ClientApp:
             from mnm_combat_pvp import PvpAlerter
             from mnm_combat_streams import allowed_channel_set
             from mnm_combat_watch import run_memory_watch, run_multi_watch, run_watch
+
             console = _Console(self.log_queue)
 
             def on_pvp(ev, title, msg):
@@ -665,7 +736,9 @@ class ClientApp:
                     prefix = f"[{sid}] " if sid else ""
                     console.write(f"{prefix}[combat ocr] {ev['error']}\n")
                 elif ev.get("pvp_aggressive"):
-                    console.write(f"[PVP] {ev.get('actor')} -> {ev.get('target')} {ev.get('raw')}\n")
+                    console.write(
+                        f"[PVP] {ev.get('actor')} -> {ev.get('target')} {ev.get('raw')}\n"
+                    )
                 else:
                     amt = ev.get("amount") or ""
                     sid = ev.get("stream_id") or ""
@@ -770,8 +843,11 @@ class ClientApp:
             ent = ttk.Entry(frm, textvariable=var, width=52)
             ent.grid(row=r, column=1, sticky="we", pady=4)
             if browse:
-                ttk.Button(frm, text="Browse…",
-                           command=lambda: var.set(filedialog.askdirectory() or var.get())).grid(row=r, column=2, padx=4)
+                ttk.Button(
+                    frm,
+                    text="Browse…",
+                    command=lambda: var.set(filedialog.askdirectory() or var.get()),
+                ).grid(row=r, column=2, padx=4)
 
         row(0, "Logs folder (LocalLow):", "locallow", browse=True)
         row(1, "Submit endpoint URL:", "upload_url")
@@ -779,20 +855,26 @@ class ClientApp:
         row(3, "Update manifest URL:", "update_url")
         cr = self.settings.get("combat_region") or {}
         ttk.Label(frm, text="Combat region (L,T,W,H):").grid(row=4, column=0, sticky="w", pady=4)
-        cr_var = tk.StringVar(value=f"{cr.get('left','')},{cr.get('top','')},{cr.get('width','')},{cr.get('height','')}")
+        cr_var = tk.StringVar(
+            value=f"{cr.get('left', '')},{cr.get('top', '')},{cr.get('width', '')},{cr.get('height', '')}"
+        )
         vars_["combat_region_str"] = cr_var
         ttk.Entry(frm, textvariable=cr_var, width=52).grid(row=4, column=1, sticky="we", pady=4)
-        ttk.Button(frm, text="Estimate…",
-                   command=lambda: cr_var.set(self._estimate_region_str())).grid(row=4, column=2, padx=4)
-        ttk.Button(frm, text="Pick…",
-                   command=lambda: self._pick_combat_region(cr_var, dlg)).grid(row=4, column=3, padx=4)
+        ttk.Button(
+            frm, text="Estimate…", command=lambda: cr_var.set(self._estimate_region_str())
+        ).grid(row=4, column=2, padx=4)
+        ttk.Button(frm, text="Pick…", command=lambda: self._pick_combat_region(cr_var, dlg)).grid(
+            row=4, column=3, padx=4
+        )
         row(5, "Combat OCR interval (sec):", "combat_ocr_interval")
         cap_modes = ("auto", "memory", "ocr")
         cap_default = str(self.settings.get("combat_capture") or "auto")
         ttk.Label(frm, text="Combat capture mode:").grid(row=6, column=0, sticky="w", pady=4)
         cap_var = tk.StringVar(value=cap_default if cap_default in cap_modes else "auto")
         vars_["combat_capture"] = cap_var
-        cap_combo = ttk.Combobox(frm, textvariable=cap_var, values=cap_modes, width=12, state="readonly")
+        cap_combo = ttk.Combobox(
+            frm, textvariable=cap_var, values=cap_modes, width=12, state="readonly"
+        )
         cap_combo.grid(row=6, column=1, sticky="w", pady=4)
 
         win_lock_var = tk.BooleanVar(value=bool(self.settings.get("combat_window_lock", True)))
@@ -813,25 +895,31 @@ class ClientApp:
         ttk.Label(frm, text="PvP alert sound (.wav):").grid(row=9, column=0, sticky="w", pady=4)
         pvp_snd_var = tk.StringVar(value=str(self.settings.get("pvp_alert_sound_path") or ""))
         vars_["pvp_alert_sound_path"] = pvp_snd_var
-        ttk.Entry(frm, textvariable=pvp_snd_var, width=52).grid(row=9, column=1, sticky="we", pady=4)
+        ttk.Entry(frm, textvariable=pvp_snd_var, width=52).grid(
+            row=9, column=1, sticky="we", pady=4
+        )
         ttk.Button(
-            frm, text="Browse…",
+            frm,
+            text="Browse…",
             command=lambda: pvp_snd_var.set(
                 filedialog.askopenfilename(
                     filetypes=[("WAV files", "*.wav"), ("All files", "*.*")],
-                ) or pvp_snd_var.get()
+                )
+                or pvp_snd_var.get()
             ),
         ).grid(row=9, column=2, padx=4)
         row(10, "PvP alert cooldown (sec):", "pvp_alert_cooldown")
 
         share_var = tk.BooleanVar(value=bool(self.settings.get("share_characters")))
         vars_["share_characters"] = share_var
-        ttk.Checkbutton(frm, text="Share character names when submitting (off = anonymous)",
-                        variable=share_var).grid(row=11, column=0, columnspan=3, sticky="w", pady=6)
+        ttk.Checkbutton(
+            frm, text="Share character names when submitting (off = anonymous)", variable=share_var
+        ).grid(row=11, column=0, columnspan=3, sticky="w", pady=6)
         auto_var = tk.BooleanVar(value=bool(self.settings.get("auto_check_updates")))
         vars_["auto_check_updates"] = auto_var
-        ttk.Checkbutton(frm, text="Check for updates on startup",
-                        variable=auto_var).grid(row=12, column=0, columnspan=3, sticky="w")
+        ttk.Checkbutton(frm, text="Check for updates on startup", variable=auto_var).grid(
+            row=12, column=0, columnspan=3, sticky="w"
+        )
 
         if not self.settings.get("locallow"):
             vars_["locallow"].set(str(default_locallow()))
@@ -854,8 +942,10 @@ class ClientApp:
                 parts = [p.strip() for p in raw.split(",")]
                 if len(parts) == 4 and all(p.lstrip("-").isdigit() for p in parts):
                     region = {
-                        "left": int(parts[0]), "top": int(parts[1]),
-                        "width": int(parts[2]), "height": int(parts[3]),
+                        "left": int(parts[0]),
+                        "top": int(parts[1]),
+                        "width": int(parts[2]),
+                        "height": int(parts[3]),
                         "source": "settings",
                     }
                     if vars_["combat_window_lock"].get():
@@ -880,6 +970,7 @@ class ClientApp:
 
     def _estimate_region_str(self) -> str:
         from mnm_chat_windows import load_layout
+
         est = load_layout(self._locallow()).get("combat_region_estimate")
         if not est:
             return ""
@@ -897,10 +988,8 @@ class ClientApp:
 
 def main() -> int:
     root = tk.Tk()
-    try:
+    with contextlib.suppress(tk.TclError):
         ttk.Style().theme_use("clam")
-    except tk.TclError:
-        pass
     app = ClientApp(root)
     root.protocol("WM_DELETE_WINDOW", app.on_close)
     root.mainloop()

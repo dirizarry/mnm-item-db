@@ -104,6 +104,7 @@ def migrate() -> int:
 
 # --- ingest ---------------------------------------------------------------------
 
+
 def record_payload(install_id: str, batch_id: str, schema: str, share: bool, body: dict) -> bool:
     """Persist a payload. Returns False if the batch_id was already seen (idempotent)."""
     now = time.time()
@@ -113,17 +114,30 @@ def record_payload(install_id: str, batch_id: str, schema: str, share: bool, bod
             conn.execute(
                 "INSERT INTO ingest_payloads (install_id, batch_id, schema, received_at, share_characters, body) "
                 "VALUES (?,?,?,?,?,?)",
-                (install_id, batch_id, schema, now, int(share), json.dumps(body, ensure_ascii=False)),
+                (
+                    install_id,
+                    batch_id,
+                    schema,
+                    now,
+                    int(share),
+                    json.dumps(body, ensure_ascii=False),
+                ),
             )
         except sqlite3.IntegrityError:
             return False
-        row = conn.execute("SELECT install_id FROM contributors WHERE install_id=?", (install_id,)).fetchone()
+        row = conn.execute(
+            "SELECT install_id FROM contributors WHERE install_id=?", (install_id,)
+        ).fetchone()
         if row:
-            conn.execute("UPDATE contributors SET last_seen=?, batches=batches+1 WHERE install_id=?",
-                         (now, install_id))
+            conn.execute(
+                "UPDATE contributors SET last_seen=?, batches=batches+1 WHERE install_id=?",
+                (now, install_id),
+            )
         else:
-            conn.execute("INSERT INTO contributors (install_id, first_seen, last_seen, batches) VALUES (?,?,?,1)",
-                         (install_id, now, now))
+            conn.execute(
+                "INSERT INTO contributors (install_id, first_seen, last_seen, batches) VALUES (?,?,?,1)",
+                (install_id, now, now),
+            )
         conn.commit()
         return True
     finally:
@@ -136,7 +150,8 @@ def recent_payload_count(install_id: str, within_seconds: float) -> int:
     try:
         row = conn.execute(
             "SELECT COUNT(*) c FROM ingest_payloads WHERE install_id=? AND received_at>=?",
-            (install_id, cutoff)).fetchone()
+            (install_id, cutoff),
+        ).fetchone()
         return row["c"]
     finally:
         conn.close()
@@ -151,7 +166,8 @@ def load_payload_bodies(include_deleted: bool = False) -> list[dict]:
             rows = conn.execute(
                 "SELECT p.body FROM ingest_payloads p "
                 "LEFT JOIN contributors c ON c.install_id=p.install_id "
-                "WHERE COALESCE(c.deleted,0)=0").fetchall()
+                "WHERE COALESCE(c.deleted,0)=0"
+            ).fetchall()
         return [json.loads(r["body"]) for r in rows]
     finally:
         conn.close()
@@ -171,6 +187,7 @@ def forget_install(install_id: str) -> int:
 
 # --- dataset --------------------------------------------------------------------
 
+
 def replace_dataset(drops: list[dict]) -> int:
     now = time.time()
     conn = connect()
@@ -181,12 +198,26 @@ def replace_dataset(drops: list[dict]) -> int:
             "(item_title, mob_title, zone, loot_kind, via_mob, via_item, via_client, via_ledger, via_crowd, "
             " observations, contributors, confidence, status, conflict, updated_at) "
             "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-            [(d["item_title"], d["mob_title"], d.get("zone"), d.get("loot_kind"),
-              int(d.get("via_mob", 0)), int(d.get("via_item", 0)), int(d.get("via_client", 0)),
-              int(d.get("via_ledger", 0)), int(d.get("via_crowd", 0)),
-              int(d.get("observations", 0)), int(d.get("contributors", 0)),
-              float(d.get("confidence", 0.0)), d.get("status"), int(d.get("conflict", 0)), now)
-             for d in drops],
+            [
+                (
+                    d["item_title"],
+                    d["mob_title"],
+                    d.get("zone"),
+                    d.get("loot_kind"),
+                    int(d.get("via_mob", 0)),
+                    int(d.get("via_item", 0)),
+                    int(d.get("via_client", 0)),
+                    int(d.get("via_ledger", 0)),
+                    int(d.get("via_crowd", 0)),
+                    int(d.get("observations", 0)),
+                    int(d.get("contributors", 0)),
+                    float(d.get("confidence", 0.0)),
+                    d.get("status"),
+                    int(d.get("conflict", 0)),
+                    now,
+                )
+                for d in drops
+            ],
         )
         conn.commit()
         return len(drops)
@@ -200,17 +231,20 @@ def dataset_drops(status: str | None = None, limit: int = 1000, offset: int = 0)
         if status:
             rows = conn.execute(
                 "SELECT * FROM dataset_drops WHERE status=? ORDER BY confidence DESC LIMIT ? OFFSET ?",
-                (status, limit, offset)).fetchall()
+                (status, limit, offset),
+            ).fetchall()
         else:
             rows = conn.execute(
                 "SELECT * FROM dataset_drops ORDER BY confidence DESC LIMIT ? OFFSET ?",
-                (limit, offset)).fetchall()
+                (limit, offset),
+            ).fetchall()
         return [dict(r) for r in rows]
     finally:
         conn.close()
 
 
 # --- wiki queue -----------------------------------------------------------------
+
 
 def upsert_wiki_candidates(candidates: list[dict]) -> int:
     now = time.time()
@@ -222,8 +256,16 @@ def upsert_wiki_candidates(candidates: list[dict]) -> int:
                 conn.execute(
                     "INSERT INTO wiki_queue (item_title, mob_title, zone, edit_kind, confidence, observations, reason, created_at) "
                     "VALUES (?,?,?,?,?,?,?,?)",
-                    (c["item_title"], c["mob_title"], c.get("zone"), c["edit_kind"],
-                     c.get("confidence"), c.get("observations"), c.get("reason"), now),
+                    (
+                        c["item_title"],
+                        c["mob_title"],
+                        c.get("zone"),
+                        c["edit_kind"],
+                        c.get("confidence"),
+                        c.get("observations"),
+                        c.get("reason"),
+                        now,
+                    ),
                 )
                 added += 1
             except sqlite3.IntegrityError:
@@ -238,7 +280,9 @@ def wiki_queue(state: str | None = "pending") -> list[dict]:
     conn = connect()
     try:
         if state:
-            rows = conn.execute("SELECT * FROM wiki_queue WHERE state=? ORDER BY confidence DESC", (state,)).fetchall()
+            rows = conn.execute(
+                "SELECT * FROM wiki_queue WHERE state=? ORDER BY confidence DESC", (state,)
+            ).fetchall()
         else:
             rows = conn.execute("SELECT * FROM wiki_queue ORDER BY created_at DESC").fetchall()
         return [dict(r) for r in rows]
@@ -251,7 +295,8 @@ def decide_wiki(queue_id: int, state: str, by: str) -> bool:
     try:
         cur = conn.execute(
             "UPDATE wiki_queue SET state=?, decided_at=?, decided_by=? WHERE id=? AND state='pending'",
-            (state, time.time(), by, queue_id))
+            (state, time.time(), by, queue_id),
+        )
         conn.commit()
         return cur.rowcount > 0
     finally:
@@ -261,8 +306,10 @@ def decide_wiki(queue_id: int, state: str, by: str) -> bool:
 def stats() -> dict:
     conn = connect()
     try:
+
         def one(q):
             return conn.execute(q).fetchone()[0]
+
         return {
             "payloads": one("SELECT COUNT(*) FROM ingest_payloads"),
             "contributors": one("SELECT COUNT(*) FROM contributors WHERE deleted=0"),

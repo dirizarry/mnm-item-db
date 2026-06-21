@@ -37,7 +37,9 @@ def struct_enabled(cfg: dict | None = None) -> bool:
     return bool(has_text and has_queue)
 
 
-def read_il2cpp_list(handle, list_ptr: int, max_items: int = 256, cfg: dict | None = None) -> list[int]:
+def read_il2cpp_list(
+    handle, list_ptr: int, max_items: int = 256, cfg: dict | None = None
+) -> list[int]:
     """Return object pointers from IL2CPP List<T> (x64)."""
     if not list_ptr:
         return []
@@ -103,8 +105,7 @@ def harvest_inline_buffer(handle, cfg: dict | None = None) -> list[dict]:
     if not data:
         return []
     return [
-        {"raw": line, "source": "memory_structured"}
-        for line in scan_region_for_combat_lines(data)
+        {"raw": line, "source": "memory_structured"} for line in scan_region_for_combat_lines(data)
     ]
 
 

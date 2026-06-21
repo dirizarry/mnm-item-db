@@ -23,8 +23,8 @@ from pathlib import Path
 
 from mnm_hardcore_detect import build_hardcore_profiles
 from mnm_ledger_parse import is_combat_kill, is_ground_loot
-from mnm_provenance import kill_token, loot_token
 from mnm_local import (
+    JOURNAL_LINE,
     character_context,
     clean_item_name,
     day_from_ts,
@@ -37,8 +37,8 @@ from mnm_local import (
     parse_currency_field,
     parse_event_payload,
     parse_ledger_zone,
-    JOURNAL_LINE,
 )
+from mnm_provenance import kill_token, loot_token
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "data"
@@ -115,7 +115,9 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
         state["events_total"] += 1
 
         if act == "act_14" and payload:
-            mob_name = decode_b64_text(payload.get("d13", "")) or decode_name_token(ev.get("f02", ""))
+            mob_name = decode_b64_text(payload.get("d13", "")) or decode_name_token(
+                ev.get("f02", "")
+            )
             mob_hid = decode_hid(payload.get("d14"))
             coin = parse_currency_field(payload.get("d12"))
             copper = coin.get("copper_total") if coin else None
@@ -136,13 +138,15 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                     state["coin"][coin_key]["others_bulk"] += bulk_c
                     state["coin"][coin_key]["split_received"] += mine_c
                     if bulk_c or mine_c:
-                        state["coin_events"].append({
-                            "at": ts,
-                            "character": ctx["character"],
-                            "server": ctx["server"],
-                            "bulk": bulk_c,
-                            "mine": mine_c,
-                        })
+                        state["coin_events"].append(
+                            {
+                                "at": ts,
+                                "character": ctx["character"],
+                                "server": ctx["server"],
+                                "bulk": bulk_c,
+                                "mine": mine_c,
+                            }
+                        )
             if is_ground_loot(act, mob_name, mob_hid):
                 state["ground_loot"] += 1
             elif is_own and mob_name and is_combat_kill(mob_name, mob_hid, kind=act):
@@ -151,17 +155,20 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                 if dedup_key in state["kill_seen"]:
                     continue
                 state["kill_seen"].add(dedup_key)
-                mob = state["mobs"].setdefault(mob_cf, {
-                    "name": mob_name,
-                    "mob_hid": mob_hid,
-                    "copper_min": None,
-                    "copper_max": None,
-                    "copper_total": 0,
-                    "zones": set(),
-                    "kill_count": 0,
-                    "sources": {},
-                    "tokens": set(),
-                })
+                mob = state["mobs"].setdefault(
+                    mob_cf,
+                    {
+                        "name": mob_name,
+                        "mob_hid": mob_hid,
+                        "copper_min": None,
+                        "copper_max": None,
+                        "copper_total": 0,
+                        "zones": set(),
+                        "kill_count": 0,
+                        "sources": {},
+                        "tokens": set(),
+                    },
+                )
                 if mob_hid and not mob.get("mob_hid"):
                     mob["mob_hid"] = mob_hid
                 if copper is not None:
@@ -181,13 +188,15 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                 # total and our split.
                 if copper:
                     state["coin"][coin_key]["own_bulk"] += copper
-                    state["coin_events"].append({
-                        "at": ts,
-                        "character": ctx["character"],
-                        "server": ctx["server"],
-                        "bulk": copper,
-                        "mine": copper,
-                    })
+                    state["coin_events"].append(
+                        {
+                            "at": ts,
+                            "character": ctx["character"],
+                            "server": ctx["server"],
+                            "bulk": copper,
+                            "mine": copper,
+                        }
+                    )
 
                 state["mob_kills"][mob_cf] += 1
                 if zone:
@@ -196,19 +205,21 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                 heat_key = (zone or "?", day or "?", ctx["server"], ctx["character"])
                 state["kill_heatmap"][heat_key] += 1
 
-                state["kills"].append({
-                    "at": ts,
-                    "day": day,
-                    "mob_name": mob_name,
-                    "mob_hid": mob_hid,
-                    "zone": zone,
-                    "zone_key": zone_key,
-                    "character_level": char_level,
-                    "character": ctx["character"],
-                    "server": ctx["server"],
-                    "ledger_kind": ctx["ledger_kind"],
-                    "copper": copper,
-                })
+                state["kills"].append(
+                    {
+                        "at": ts,
+                        "day": day,
+                        "mob_name": mob_name,
+                        "mob_hid": mob_hid,
+                        "zone": zone,
+                        "zone_key": zone_key,
+                        "character_level": char_level,
+                        "character": ctx["character"],
+                        "server": ctx["server"],
+                        "ledger_kind": ctx["ledger_kind"],
+                        "copper": copper,
+                    }
+                )
 
         if act == "act_18":
             state["ground_loot"] += 1
@@ -217,13 +228,16 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
             item_name = clean_item_name(payload.get("d04")) or decode_name_token(ev.get("f02", ""))
             item_hid = payload.get("d05") or None
             if item_name:
-                item = state["items"].setdefault(item_hid or item_name.casefold(), {
-                    "name": item_name,
-                    "item_hid": item_hid,
-                    "count": 0,
-                    "zones": set(),
-                    "sources": {},
-                })
+                item = state["items"].setdefault(
+                    item_hid or item_name.casefold(),
+                    {
+                        "name": item_name,
+                        "item_hid": item_hid,
+                        "count": 0,
+                        "zones": set(),
+                        "sources": {},
+                    },
+                )
                 if item_hid and not item.get("item_hid"):
                     item["item_hid"] = item_hid
                 qty = int(payload.get("d01") or 1)
@@ -251,23 +265,24 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                 # Drop-rate knowledge tied to *my own* kills (denominator = own kills).
                 if own_loot and not duped:
                     key = (item_name.casefold(), mob_cf, zone or "")
-                    drop = state["drops"].setdefault(key, {
-                        "item_name": item_name,
-                        "item_hid": item_hid,
-                        "mob_name": mob_name,
-                        "zone": zone,
-                        "zone_key": zone_key,
-                        "count": 0,
-                        "sources": {},
-                        "tokens": set(),
-                    })
+                    drop = state["drops"].setdefault(
+                        key,
+                        {
+                            "item_name": item_name,
+                            "item_hid": item_hid,
+                            "mob_name": mob_name,
+                            "zone": zone,
+                            "zone_key": zone_key,
+                            "count": 0,
+                            "sources": {},
+                            "tokens": set(),
+                        },
+                    )
                     if item_hid and not drop.get("item_hid"):
                         drop["item_hid"] = item_hid
                     drop["count"] += qty
                     # Cross-user/idempotent dedup identity for this loot observation.
-                    drop["tokens"].add(
-                        loot_token(ctx["server"], item_hid, mob_cf, ts, instance_id)
-                    )
+                    drop["tokens"].add(loot_token(ctx["server"], item_hid, mob_cf, ts, instance_id))
                     _bump_time(drop, ts)
                     _note_source(drop, ctx)
 
@@ -277,44 +292,53 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                     state["loot_item_names"][(mob_cf, zone or "", item_name.casefold())] = item_name
 
                 if not duped:
-                    state["loot"].append({
-                        "at": ts,
-                        "day": day,
-                        "item_name": item_name,
-                        "item_hid": item_hid,
-                        "mob_name": mob_name,
-                        "qty": qty,
-                        "zone": zone,
-                        "zone_key": zone_key,
-                        "looter": looter,
-                        "owner": owner,
-                        "character": ctx["character"],
-                        "server": ctx["server"],
-                        "ledger_kind": ctx["ledger_kind"],
-                        "own": own_loot,
-                        "party_loot": looter != owner,
-                    })
+                    state["loot"].append(
+                        {
+                            "at": ts,
+                            "day": day,
+                            "item_name": item_name,
+                            "item_hid": item_hid,
+                            "mob_name": mob_name,
+                            "qty": qty,
+                            "zone": zone,
+                            "zone_key": zone_key,
+                            "looter": looter,
+                            "owner": owner,
+                            "character": ctx["character"],
+                            "server": ctx["server"],
+                            "ledger_kind": ctx["ledger_kind"],
+                            "own": own_loot,
+                            "party_loot": looter != owner,
+                        }
+                    )
 
         if act == "act_24" and payload:
             item_name = clean_item_name(payload.get("d04")) or decode_name_token(ev.get("f02", ""))
             if item_name:
                 coin = parse_currency_field(payload.get("d03"))
                 key = (item_name.casefold(), payload.get("d05") or "")
-                rec = state["vendor_prices"].setdefault(key, {
-                    "item_name": item_name,
-                    "item_hid": payload.get("d05") or None,
-                    "sell_count": 0,
-                    "min_copper": None,
-                    "max_copper": None,
-                    "zones": set(),
-                })
+                rec = state["vendor_prices"].setdefault(
+                    key,
+                    {
+                        "item_name": item_name,
+                        "item_hid": payload.get("d05") or None,
+                        "sell_count": 0,
+                        "min_copper": None,
+                        "max_copper": None,
+                        "zones": set(),
+                    },
+                )
                 rec["sell_count"] += int(payload.get("d01") or 1)
                 if zone:
                     rec["zones"].add(zone)
                 if coin and "copper_total" in coin:
                     ct = coin["copper_total"]
-                    rec["min_copper"] = ct if rec["min_copper"] is None else min(rec["min_copper"], ct)
-                    rec["max_copper"] = ct if rec["max_copper"] is None else max(rec["max_copper"], ct)
+                    rec["min_copper"] = (
+                        ct if rec["min_copper"] is None else min(rec["min_copper"], ct)
+                    )
+                    rec["max_copper"] = (
+                        ct if rec["max_copper"] is None else max(rec["max_copper"], ct)
+                    )
                     rec["last_price"] = coin
                     vkey = (ts, item_name.casefold(), ct)
                     if vkey not in state["loot_seen"]:
@@ -333,47 +357,53 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                     lu_key = (ts, ctx["server"], who, old_lvl, new_lvl)
                     if lu_key not in state["levelup_seen"]:
                         state["levelup_seen"].add(lu_key)
-                        state["levelups"].append({
-                            "at": ts,
-                            "day": day,
-                            "character": who,
-                            "observer": ctx["character"],
-                            "server": ctx["server"],
-                            "new_level": new_lvl,
-                            "old_level": old_lvl,
-                            "zone": zone,
-                        })
+                        state["levelups"].append(
+                            {
+                                "at": ts,
+                                "day": day,
+                                "character": who,
+                                "observer": ctx["character"],
+                                "server": ctx["server"],
+                                "new_level": new_lvl,
+                                "old_level": old_lvl,
+                                "zone": zone,
+                            }
+                        )
 
         if act in TRADE_ACTS and payload:
             partner = decode_name_token(ev.get("f02", "")) or payload.get("partner")
             summary = decode_b64_text(payload.get("summary", "")) or payload.get("summary")
             coin = parse_currency_field(payload.get("currency"))
-            state["trades"].append({
-                "at": ts,
-                "day": day,
-                "character": ctx["character"],
-                "server": ctx["server"],
-                "partner": partner,
-                "summary": summary,
-                "item_count": payload.get("itemCount"),
-                "items": payload.get("items") or [],
-                "currency": coin,
-                "zone": zone,
-                "act": act,
-            })
+            state["trades"].append(
+                {
+                    "at": ts,
+                    "day": day,
+                    "character": ctx["character"],
+                    "server": ctx["server"],
+                    "partner": partner,
+                    "summary": summary,
+                    "item_count": payload.get("itemCount"),
+                    "items": payload.get("items") or [],
+                    "currency": coin,
+                    "zone": zone,
+                    "act": act,
+                }
+            )
 
         if act in PARTY_ACTS and payload:
-            state["party"].append({
-                "at": ts,
-                "day": day,
-                "character": ctx["character"],
-                "server": ctx["server"],
-                "action": PARTY_ACTS[act],
-                "detail": decode_b64_text(payload.get("d63", "")) or payload.get("d63"),
-                "ref": payload.get("d64"),
-                "zone": zone,
-                "character_level": char_level,
-            })
+            state["party"].append(
+                {
+                    "at": ts,
+                    "day": day,
+                    "character": ctx["character"],
+                    "server": ctx["server"],
+                    "action": PARTY_ACTS[act],
+                    "detail": decode_b64_text(payload.get("d63", "")) or payload.get("d63"),
+                    "ref": payload.get("d64"),
+                    "zone": zone,
+                    "character_level": char_level,
+                }
+            )
 
         if act in TRADE_ACTS and payload:
             for it in payload.get("items") or []:
@@ -381,13 +411,16 @@ def extract_ledger(path: Path, locallow: Path, state: dict) -> None:
                 item_hid = it.get("hid")
                 if not item_name:
                     continue
-                item = state["items"].setdefault(item_hid or item_name.casefold(), {
-                    "name": item_name,
-                    "item_hid": item_hid,
-                    "count": 0,
-                    "zones": set(),
-                    "sources": {},
-                })
+                item = state["items"].setdefault(
+                    item_hid or item_name.casefold(),
+                    {
+                        "name": item_name,
+                        "item_hid": item_hid,
+                        "count": 0,
+                        "zones": set(),
+                        "sources": {},
+                    },
+                )
                 item["count"] += 1
                 if zone:
                     item["zones"].add(zone)
@@ -416,15 +449,18 @@ def extract_journal(path: Path, locallow: Path, state: dict) -> None:
 
     npc = path.name
     key = npc.casefold()
-    rec = state["journal"].setdefault(key, {
-        "npc": npc,
-        "line_count": 0,
-        "characters": set(),
-        "servers": set(),
-        "first_seen": None,
-        "last_seen": None,
-        "sample": [],
-    })
+    rec = state["journal"].setdefault(
+        key,
+        {
+            "npc": npc,
+            "line_count": 0,
+            "characters": set(),
+            "servers": set(),
+            "first_seen": None,
+            "last_seen": None,
+            "sample": [],
+        },
+    )
     rec["line_count"] += len(lines)
     rec["characters"].add(character)
     rec["servers"].add(server)
@@ -451,25 +487,29 @@ def build_drop_rates(state: dict) -> list[dict]:
         for item_cf, count in sorted(items.items(), key=lambda x: -x[1]):
             item_name = state["loot_item_names"].get((mob_cf, zone, item_cf), item_cf)
             rate = round(count / kills, 4) if kills else None
-            loot_rows.append({
-                "item_name": item_name,
-                "loot_count": count,
-                "drop_rate": rate,
-                "pct": round(100 * count / total_loots, 1) if total_loots else None,
-            })
-        rows.append({
-            "mob_name": mob_name,
-            "zone": zone or None,
-            "kills": kills,
-            "loot_events": total_loots,
-            "loots_per_kill": round(total_loots / kills, 3) if kills else None,
-            "items": loot_rows,
-            "mob_copper_avg": (
-                round(mob_rec.get("copper_total", 0) / mob_rec["kill_count"], 1)
-                if mob_rec.get("kill_count")
-                else None
-            ),
-        })
+            loot_rows.append(
+                {
+                    "item_name": item_name,
+                    "loot_count": count,
+                    "drop_rate": rate,
+                    "pct": round(100 * count / total_loots, 1) if total_loots else None,
+                }
+            )
+        rows.append(
+            {
+                "mob_name": mob_name,
+                "zone": zone or None,
+                "kills": kills,
+                "loot_events": total_loots,
+                "loots_per_kill": round(total_loots / kills, 3) if kills else None,
+                "items": loot_rows,
+                "mob_copper_avg": (
+                    round(mob_rec.get("copper_total", 0) / mob_rec["kill_count"], 1)
+                    if mob_rec.get("kill_count")
+                    else None
+                ),
+            }
+        )
     return sorted(rows, key=lambda r: (-r["kills"], r["mob_name"]))
 
 
@@ -478,13 +518,15 @@ def build_kill_heatmap(state: dict) -> list[dict]:
     for (zone, day, server, character), kills in sorted(
         state["kill_heatmap"].items(), key=lambda x: (-x[1], x[0])
     ):
-        rows.append({
-            "zone": zone,
-            "day": day,
-            "server": server,
-            "character": character,
-            "kills": kills,
-        })
+        rows.append(
+            {
+                "zone": zone,
+                "day": day,
+                "server": server,
+                "character": character,
+                "kills": kills,
+            }
+        )
     return rows
 
 
@@ -512,15 +554,17 @@ def serialize_mobs(mobs: dict) -> list[dict]:
 def serialize_items(items: dict) -> list[dict]:
     out = []
     for rec in sorted(items.values(), key=lambda r: r["name"].casefold()):
-        out.append({
-            "name": rec["name"],
-            "item_hid": rec.get("item_hid"),
-            "count": rec["count"],
-            "zones": sorted(rec["zones"]),
-            "first_seen": rec.get("first_seen"),
-            "last_seen": rec.get("last_seen"),
-            "sources": _serialize_sources(rec["sources"]),
-        })
+        out.append(
+            {
+                "name": rec["name"],
+                "item_hid": rec.get("item_hid"),
+                "count": rec["count"],
+                "zones": sorted(rec["zones"]),
+                "first_seen": rec.get("first_seen"),
+                "last_seen": rec.get("last_seen"),
+                "sources": _serialize_sources(rec["sources"]),
+            }
+        )
     return out
 
 
@@ -537,23 +581,25 @@ def serialize_drops(drops: dict) -> list[dict]:
 def serialize_coin(coin: dict) -> list[dict]:
     out = []
     for (server, character), c in sorted(coin.items()):
-        own_bulk = c.get("own_bulk", 0)          # corpse bulk I randomly won
-        others_bulk = c.get("others_bulk", 0)    # corpse bulk a groupmate won
+        own_bulk = c.get("own_bulk", 0)  # corpse bulk I randomly won
+        others_bulk = c.get("others_bulk", 0)  # corpse bulk a groupmate won
         split_received = c.get("split_received", 0)  # my small split when a mate won
         vendor = c.get("vendor", 0)
-        group_total = own_bulk + others_bulk     # all coin the group looted (bulk-dominated)
-        my_split = own_bulk + split_received      # my cut of that total
-        out.append({
-            "server": server,
-            "character": character,
-            "own_bulk": own_bulk,
-            "others_bulk": others_bulk,
-            "split_received": split_received,
-            "group_total": group_total,
-            "my_split": my_split,
-            "my_share": round(my_split / group_total, 4) if group_total else 0,
-            "vendor": vendor,
-        })
+        group_total = own_bulk + others_bulk  # all coin the group looted (bulk-dominated)
+        my_split = own_bulk + split_received  # my cut of that total
+        out.append(
+            {
+                "server": server,
+                "character": character,
+                "own_bulk": own_bulk,
+                "others_bulk": others_bulk,
+                "split_received": split_received,
+                "group_total": group_total,
+                "my_split": my_split,
+                "my_share": round(my_split / group_total, 4) if group_total else 0,
+                "vendor": vendor,
+            }
+        )
     return sorted(out, key=lambda r: -r["my_split"])
 
 
@@ -569,15 +615,17 @@ def serialize_vendor(vendor_prices: dict) -> list[dict]:
 def serialize_journal(journal: dict) -> list[dict]:
     out = []
     for rec in sorted(journal.values(), key=lambda r: r["npc"].casefold()):
-        out.append({
-            "npc": rec["npc"],
-            "line_count": rec["line_count"],
-            "characters": sorted(rec["characters"]),
-            "servers": sorted(rec["servers"]),
-            "first_seen": rec["first_seen"],
-            "last_seen": rec["last_seen"],
-            "sample": rec["sample"],
-        })
+        out.append(
+            {
+                "npc": rec["npc"],
+                "line_count": rec["line_count"],
+                "characters": sorted(rec["characters"]),
+                "servers": sorted(rec["servers"]),
+                "first_seen": rec["first_seen"],
+                "last_seen": rec["last_seen"],
+                "sample": rec["sample"],
+            }
+        )
     return out
 
 
@@ -630,7 +678,7 @@ def write_report(
         top = r["items"][0] if r["items"] else {}
         lines.append(
             f"  {r['kills']:4} kills  {r['mob_name']}  "
-            f"top={top.get('item_name','?')} @{top.get('drop_rate','?')}/kill"
+            f"top={top.get('item_name', '?')} @{top.get('drop_rate', '?')}/kill"
         )
 
     lines += ["", "=== Kill heatmap (top cells) ==="]
@@ -639,7 +687,9 @@ def write_report(
 
     lines += ["", "=== Recent level-ups ==="]
     for lu in sorted(levelups, key=lambda x: x["at"])[-10:]:
-        lines.append(f"  {lu['at'][:16]}  {lu['character']}  {lu['old_level']} -> {lu['new_level']}  ({lu.get('zone') or '?'})")
+        lines.append(
+            f"  {lu['at'][:16]}  {lu['character']}  {lu['old_level']} -> {lu['new_level']}  ({lu.get('zone') or '?'})"
+        )
 
     lines += ["", "=== Top journal NPCs ==="]
     for j in sorted(journal, key=lambda x: -x["line_count"])[:10]:
@@ -648,7 +698,9 @@ def write_report(
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def build_file_index(locallow: Path, *, ledger: bool = True, journal: bool = True) -> dict[str, dict]:
+def build_file_index(
+    locallow: Path, *, ledger: bool = True, journal: bool = True
+) -> dict[str, dict]:
     """Fingerprint ledger + journal files for incremental skip detection."""
     index: dict[str, dict] = {}
     if ledger:
@@ -748,7 +800,9 @@ def new_state() -> dict:
         "kill_seen": set(),
         "loot": [],
         "loot_seen": set(),
-        "coin": defaultdict(lambda: {"own_bulk": 0, "others_bulk": 0, "split_received": 0, "vendor": 0}),
+        "coin": defaultdict(
+            lambda: {"own_bulk": 0, "others_bulk": 0, "split_received": 0, "vendor": 0}
+        ),
         "coin_seen": set(),
         "coin_events": [],
         "kill_heatmap": defaultdict(int),
@@ -826,7 +880,9 @@ def run(
         _write_json(OUT / "ledger-kills.json", state["kills"])
         _write_json(OUT / "ledger-loot.json", state["loot"])
         _write_json(OUT / "ledger-coin.json", serialize_coin(state["coin"]))
-        _write_json(OUT / "ledger-coin-events.json", sorted(state["coin_events"], key=lambda r: r["at"]))
+        _write_json(
+            OUT / "ledger-coin-events.json", sorted(state["coin_events"], key=lambda r: r["at"])
+        )
         _write_json(OUT / "ledger-vendor-prices.json", vendor)
         _write_json(OUT / "ledger-levelups.json", levelups)
         _write_json(OUT / "ledger-trades.json", trades)
@@ -910,8 +966,12 @@ def main() -> int:
     print(f"Scanned {locallow}")
     if ledger:
         print(f"  {stats['files']:,} ledger files, {stats['events']:,} events")
-        print(f"  kills={stats['kills']:,}  drops={stats['drops']:,}  drop_rates={stats['drop_rates']:,}")
-        print(f"  heatmap={stats['heatmap']:,}  levelups={stats['levelups']:,}  trades={stats['trades']:,}")
+        print(
+            f"  kills={stats['kills']:,}  drops={stats['drops']:,}  drop_rates={stats['drop_rates']:,}"
+        )
+        print(
+            f"  heatmap={stats['heatmap']:,}  levelups={stats['levelups']:,}  trades={stats['trades']:,}"
+        )
         print(f"  party={stats['party']:,}  vendor={stats['vendor']:,}  mobs={stats['mobs']:,}")
     if journal:
         print(f"  journal NPCs={stats['journal_npcs']:,}")

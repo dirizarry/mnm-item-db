@@ -116,7 +116,9 @@ def run_batch(
 class WikiReviewHTTPHandler(SimpleHTTPRequestHandler):
     workspace: Path
 
-    def __init__(self, *args, directory: str | None = None, workspace: Path | None = None, **kwargs):
+    def __init__(
+        self, *args, directory: str | None = None, workspace: Path | None = None, **kwargs
+    ):
         self.workspace = workspace or Path(directory or ".")
         super().__init__(*args, directory=str(self.workspace), **kwargs)
 
@@ -262,7 +264,9 @@ def main() -> int:
     print(f"Wiki review: http://{host}:{port}/site/wiki-review/")
     print(f"Push API:    http://{host}:{port}/api/wiki-review/status")
     if not credentials_configured():
-        print("Note: no wiki credentials found — push disabled until ~/.mnm-wiki/wiki-credentials.env is set")
+        print(
+            "Note: no wiki credentials found — push disabled until ~/.mnm-wiki/wiki-credentials.env is set"
+        )
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

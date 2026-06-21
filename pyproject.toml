@@ -133,6 +133,9 @@ ignore = [
     "E501",   # line too long (handled by formatter)
     "B008",   # do not perform function calls in argument defaults
     "SIM108", # use ternary operator instead of if-else
+    "SIM102", # collapsible-if (often more readable as nested)
+    "SIM117", # multiple-with-statements (often more readable when nested)
+    "E402",   # module-import-not-at-top (intentional in scripts with sys.path manipulation)
 ]
 
 [tool.ruff.lint.isort]

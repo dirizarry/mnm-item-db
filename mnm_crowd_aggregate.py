@@ -20,7 +20,6 @@ from __future__ import annotations
 
 import argparse
 import json
-from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -58,15 +57,18 @@ def aggregate(payloads: list[dict]) -> tuple[list[dict], list[dict], list[dict]]
             if not item or not mob:
                 continue
             key = (item.casefold(), mob.casefold(), (zone or "").casefold())
-            edge = drops.setdefault(key, {
-                "item_name": item,
-                "item_hid": d.get("item_hid"),
-                "mob_name": mob,
-                "zone": zone,
-                "tokens": set(),
-                "installs": set(),
-                "raw_count": 0,
-            })
+            edge = drops.setdefault(
+                key,
+                {
+                    "item_name": item,
+                    "item_hid": d.get("item_hid"),
+                    "mob_name": mob,
+                    "zone": zone,
+                    "tokens": set(),
+                    "installs": set(),
+                    "raw_count": 0,
+                },
+            )
             tokens = d.get("dedup_tokens") or []
             edge["tokens"].update(tokens)
             edge["installs"].add(install)
@@ -78,13 +80,16 @@ def aggregate(payloads: list[dict]) -> tuple[list[dict], list[dict], list[dict]]
             name = m.get("name")
             if not name:
                 continue
-            rec = kills.setdefault(name.casefold(), {
-                "mob_name": name,
-                "tokens": set(),
-                "installs": set(),
-                "raw_count": 0,
-                "zones": set(),
-            })
+            rec = kills.setdefault(
+                name.casefold(),
+                {
+                    "mob_name": name,
+                    "tokens": set(),
+                    "installs": set(),
+                    "raw_count": 0,
+                    "zones": set(),
+                },
+            )
             tokens = m.get("dedup_tokens") or []
             rec["tokens"].update(tokens)
             rec["installs"].add(install)
@@ -98,25 +103,30 @@ def aggregate(payloads: list[dict]) -> tuple[list[dict], list[dict], list[dict]]
             if not server or not character:
                 continue
             key = (server.casefold(), character.casefold())
-            rec = hardcore.setdefault(key, {
-                "server": server,
-                "character": character,
-                "level": 0,
-                "kills": 0,
-                "zone": None,
-                "status": "candidate",
-                "source": "ledger",
-                "committed_at": None,
-                "last_seen": None,
-                "profile_token": hp.get("profile_token"),
-                "installs": set(),
-            })
+            rec = hardcore.setdefault(
+                key,
+                {
+                    "server": server,
+                    "character": character,
+                    "level": 0,
+                    "kills": 0,
+                    "zone": None,
+                    "status": "candidate",
+                    "source": "ledger",
+                    "committed_at": None,
+                    "last_seen": None,
+                    "profile_token": hp.get("profile_token"),
+                    "installs": set(),
+                },
+            )
             rec["installs"].add(install)
             level = int(hp.get("level") or 0)
             kills_n = int(hp.get("kills") or 0)
             last_seen = hp.get("last_seen") or ""
             committed_at = hp.get("committed_at") or ""
-            if level > rec["level"] or (level == rec["level"] and last_seen > (rec["last_seen"] or "")):
+            if level > rec["level"] or (
+                level == rec["level"] and last_seen > (rec["last_seen"] or "")
+            ):
                 rec["level"] = level
                 rec["kills"] = kills_n
                 rec["zone"] = hp.get("zone")
@@ -140,20 +150,23 @@ def aggregate(payloads: list[dict]) -> tuple[list[dict], list[dict], list[dict]]
             if not server or not character:
                 continue
             key = (server.casefold(), character.casefold())
-            rec = hardcore.setdefault(key, {
-                "server": server,
-                "character": character,
-                "level": 0,
-                "kills": 0,
-                "zone": None,
-                "status": "magnificent",
-                "source": "community",
-                "race_class": prof.get("race_class"),
-                "committed_at": prof.get("committed_at"),
-                "last_seen": prof.get("last_seen") or prof.get("committed_at"),
-                "profile_token": prof.get("profile_token"),
-                "installs": set(),
-            })
+            rec = hardcore.setdefault(
+                key,
+                {
+                    "server": server,
+                    "character": character,
+                    "level": 0,
+                    "kills": 0,
+                    "zone": None,
+                    "status": "magnificent",
+                    "source": "community",
+                    "race_class": prof.get("race_class"),
+                    "committed_at": prof.get("committed_at"),
+                    "last_seen": prof.get("last_seen") or prof.get("committed_at"),
+                    "profile_token": prof.get("profile_token"),
+                    "installs": set(),
+                },
+            )
             rec["installs"].add(install)
             level = int(prof.get("level") or 0)
             if level >= rec["level"]:
@@ -166,45 +179,56 @@ def aggregate(payloads: list[dict]) -> tuple[list[dict], list[dict], list[dict]]
     crowd_drops = []
     for edge in drops.values():
         observations = len(edge["tokens"]) or edge["raw_count"]
-        crowd_drops.append({
-            "item_name": edge["item_name"],
-            "item_hid": edge["item_hid"],
-            "mob_name": edge["mob_name"],
-            "zone": edge["zone"],
-            "observations": observations,
-            "contributors": len(edge["installs"]),
-        })
+        crowd_drops.append(
+            {
+                "item_name": edge["item_name"],
+                "item_hid": edge["item_hid"],
+                "mob_name": edge["mob_name"],
+                "zone": edge["zone"],
+                "observations": observations,
+                "contributors": len(edge["installs"]),
+            }
+        )
     crowd_drops.sort(key=lambda e: -e["observations"])
 
     crowd_kills = []
     for rec in kills.values():
         distinct = len(rec["tokens"]) or rec["raw_count"]
-        crowd_kills.append({
-            "mob_name": rec["mob_name"],
-            "kills": distinct,
-            "contributors": len(rec["installs"]),
-            "zones": sorted(rec["zones"]),
-        })
+        crowd_kills.append(
+            {
+                "mob_name": rec["mob_name"],
+                "kills": distinct,
+                "contributors": len(rec["installs"]),
+                "zones": sorted(rec["zones"]),
+            }
+        )
     crowd_kills.sort(key=lambda e: -e["kills"])
 
     crowd_hardcore = []
     for rec in hardcore.values():
-        crowd_hardcore.append({
-            "server": rec["server"],
-            "character": rec["character"],
-            "level": rec["level"],
-            "zone": rec["zone"],
-            "kills": rec["kills"],
-            "status": rec["status"],
-            "source": rec.get("source"),
-            "race_class": rec.get("race_class"),
-            "committed_at": rec["committed_at"],
-            "last_seen": rec["last_seen"],
-            "profile_token": rec["profile_token"],
-            "contributors": len(rec["installs"]),
-        })
+        crowd_hardcore.append(
+            {
+                "server": rec["server"],
+                "character": rec["character"],
+                "level": rec["level"],
+                "zone": rec["zone"],
+                "kills": rec["kills"],
+                "status": rec["status"],
+                "source": rec.get("source"),
+                "race_class": rec.get("race_class"),
+                "committed_at": rec["committed_at"],
+                "last_seen": rec["last_seen"],
+                "profile_token": rec["profile_token"],
+                "contributors": len(rec["installs"]),
+            }
+        )
     crowd_hardcore.sort(
-        key=lambda e: (-e["level"], -e["kills"], e.get("committed_at") or "", e.get("character") or "")
+        key=lambda e: (
+            -e["level"],
+            -e["kills"],
+            e.get("committed_at") or "",
+            e.get("character") or "",
+        )
     )
 
     return crowd_drops, crowd_kills, crowd_hardcore
@@ -212,8 +236,12 @@ def aggregate(payloads: list[dict]) -> tuple[list[dict], list[dict], list[dict]]
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Aggregate crowd upload payloads (deduped)")
-    ap.add_argument("--inbox", type=Path, default=DEFAULT_INBOX,
-                    help="Directory of mnm-ledger-upload/v2 payload JSON files")
+    ap.add_argument(
+        "--inbox",
+        type=Path,
+        default=DEFAULT_INBOX,
+        help="Directory of mnm-ledger-upload/v2 payload JSON files",
+    )
     args = ap.parse_args()
 
     if not args.inbox.is_dir():
@@ -228,11 +256,14 @@ def main() -> int:
 
     crowd_drops, crowd_kills, crowd_hardcore = aggregate(payloads)
     (DATA / "crowd-drops.json").write_text(
-        json.dumps(crowd_drops, indent=2, ensure_ascii=False), encoding="utf-8")
+        json.dumps(crowd_drops, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
     (DATA / "crowd-kills.json").write_text(
-        json.dumps(crowd_kills, indent=2, ensure_ascii=False), encoding="utf-8")
+        json.dumps(crowd_kills, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
     (DATA / "crowd-hardcore.json").write_text(
-        json.dumps(crowd_hardcore, indent=2, ensure_ascii=False), encoding="utf-8")
+        json.dumps(crowd_hardcore, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
     installs = {p.get("install_id") for p in payloads}
     print(f"Aggregated {len(payloads)} payloads from {len(installs)} installs")

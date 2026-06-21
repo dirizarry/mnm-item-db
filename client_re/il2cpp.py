@@ -67,7 +67,13 @@ def _dumper_exe() -> Path | None:
         return p if p.is_file() else None
     for candidate in (
         DUMPS_DIR / "c01ns" / "Il2CppDumper.exe",
-        DUMPS_DIR / "Il2CppDumper-src" / "Il2CppDumper" / "bin" / "Release" / "net8.0" / "Il2CppDumper.exe",
+        DUMPS_DIR
+        / "Il2CppDumper-src"
+        / "Il2CppDumper"
+        / "bin"
+        / "Release"
+        / "net8.0"
+        / "Il2CppDumper.exe",
         DUMPS_DIR / "Il2CppDumper" / "Il2CppDumper.exe",
         Path("Il2CppDumper.exe"),
     ):
@@ -98,11 +104,30 @@ def extract_metadata_symbols(meta_path: Path | None = None) -> dict:
     meta_path = meta_path or il2cpp_metadata()
     data = meta_path.read_bytes()
     # C#-ish identifiers from metadata string heap
-    names = set(m.group().decode("ascii", "ignore") for m in re.finditer(rb"[A-Za-z_][A-Za-z0-9_]{4,80}", data))
+    names = {
+        m.group().decode("ascii", "ignore")
+        for m in re.finditer(rb"[A-Za-z_][A-Za-z0-9_]{4,80}", data)
+    }
     priority = sorted(n for n in PRIORITY_TYPES if n in names)
     item_related = sorted(
-        n for n in names
-        if any(k in n for k in ("Item", "Loot", "Recipe", "Npc", "Mob", "Zone", "Consider", "Spawn", "Chat", "Combat", "Message"))
+        n
+        for n in names
+        if any(
+            k in n
+            for k in (
+                "Item",
+                "Loot",
+                "Recipe",
+                "Npc",
+                "Mob",
+                "Zone",
+                "Consider",
+                "Spawn",
+                "Chat",
+                "Combat",
+                "Message",
+            )
+        )
         and n[0].isupper()
     )
     combat_hits = sorted(n for n in COMBAT_PRIORITY_TYPES if n in names)
@@ -196,11 +221,13 @@ def parse_dump_cs(dump_path: Path) -> list[dict]:
         m = pat.search(text)
         if m:
             body = m.group(1).strip()
-            blocks.append({
-                "type": type_name,
-                "lines": len(body.splitlines()),
-                "preview": "\n".join(body.splitlines()[:40]),
-            })
+            blocks.append(
+                {
+                    "type": type_name,
+                    "lines": len(body.splitlines()),
+                    "preview": "\n".join(body.splitlines()[:40]),
+                }
+            )
     return blocks
 
 

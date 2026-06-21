@@ -89,8 +89,8 @@ class Session:
         self.loot_events = 0
         self.loot_qty = 0
         self.ground_loot = 0
-        self.coin_own_bulk = 0       # corpse bulk I randomly won
-        self.coin_others_bulk = 0    # corpse bulk a groupmate won
+        self.coin_own_bulk = 0  # corpse bulk I randomly won
+        self.coin_others_bulk = 0  # corpse bulk a groupmate won
         self.coin_split_received = 0  # my small split when a mate won
         self.vendor_copper = 0
         self.levelups: list[dict] = []
@@ -209,7 +209,7 @@ def classify_event(ev: dict, ctx: dict, session: Session, observed_at: str) -> b
     _zone_key, zone = parse_ledger_zone(ev.get("f05"))
     char_level = ev.get("f06")
     actor = ev.get("f07")
-    owner = ev.get("f09") or ctx.get("character")
+    ev.get("f09") or ctx.get("character")
     player = ctx.get("character")
     is_own = actor == player or actor is None
 
@@ -260,10 +260,15 @@ def classify_event(ev: dict, ctx: dict, session: Session, observed_at: str) -> b
             # I randomly won this corpse's bulk (d12); counts toward group total and my split.
             if copper:
                 session.coin_own_bulk += copper
-            session.push_recent({
-                "at": ts, "kind": "kill", "name": mob_name,
-                "copper": copper, "zone": zone,
-            })
+            session.push_recent(
+                {
+                    "at": ts,
+                    "kind": "kill",
+                    "name": mob_name,
+                    "copper": copper,
+                    "zone": zone,
+                }
+            )
             return True
         return False
 
@@ -282,10 +287,16 @@ def classify_event(ev: dict, ctx: dict, session: Session, observed_at: str) -> b
             session.loot_events += 1
             session.loot_qty += qty
             session.loot_by_item[item_name] += qty
-            session.push_recent({
-                "at": ts, "kind": "loot", "name": item_name,
-                "qty": qty, "from": mob_name, "zone": zone,
-            })
+            session.push_recent(
+                {
+                    "at": ts,
+                    "kind": "loot",
+                    "name": item_name,
+                    "qty": qty,
+                    "from": mob_name,
+                    "zone": zone,
+                }
+            )
             return True
 
     if act == "act_24" and payload and is_own:
@@ -299,14 +310,22 @@ def classify_event(ev: dict, ctx: dict, session: Session, observed_at: str) -> b
         old_lvl = payload.get("d22")
         if new_lvl is not None and old_lvl == new_lvl - 1:
             entry = {
-                "at": ts, "character": ev.get("f07") or ctx.get("character"),
-                "old_level": old_lvl, "new_level": new_lvl, "zone": zone,
+                "at": ts,
+                "character": ev.get("f07") or ctx.get("character"),
+                "old_level": old_lvl,
+                "new_level": new_lvl,
+                "zone": zone,
             }
             session.levelups.append(entry)
-            session.push_recent({
-                "at": ts, "kind": "levelup",
-                "name": entry["character"], "level": new_lvl, "zone": zone,
-            })
+            session.push_recent(
+                {
+                    "at": ts,
+                    "kind": "levelup",
+                    "name": entry["character"],
+                    "level": new_lvl,
+                    "zone": zone,
+                }
+            )
             return True
 
     return False
@@ -353,7 +372,12 @@ def _fmt_coin(copper: int) -> str:
     pp, rem = divmod(copper, 1_000_000)
     gp, rem = divmod(rem, 10_000)
     sp, cp = divmod(rem, 100)
-    parts = [f"{pp}p" if pp else "", f"{gp}g" if gp else "", f"{sp}s" if sp else "", f"{cp}c" if cp else ""]
+    parts = [
+        f"{pp}p" if pp else "",
+        f"{gp}g" if gp else "",
+        f"{sp}s" if sp else "",
+        f"{cp}c" if cp else "",
+    ]
     return " ".join(p for p in parts if p) or "0c"
 
 
@@ -370,13 +394,19 @@ def print_console(snap: dict) -> None:
     print("=" * 58)
     who = f"{sess.get('character') or '?'}@{sess.get('server') or '?'}"
     print(f" {who}   lvl {sess.get('level') or '?'}   zone: {sess.get('zone') or '?'}")
-    print(f" active: {_fmt_dur(sess.get('active_seconds') or 0)}   updated {snap['observed_at'][11:19]}")
+    print(
+        f" active: {_fmt_dur(sess.get('active_seconds') or 0)}   updated {snap['observed_at'][11:19]}"
+    )
     print("-" * 58)
-    print(f" Kills {tot['kills']:<6} ({rates['kills']}/hr)    Loot {tot['loot_qty']:<6} ({rates['loot_qty']}/hr)")
+    print(
+        f" Kills {tot['kills']:<6} ({rates['kills']}/hr)    Loot {tot['loot_qty']:<6} ({rates['loot_qty']}/hr)"
+    )
     mine = tot["coin_received"]
     grp = tot.get("coin_group_total", 0)
     share = f"{round(100 * mine / grp)}%" if grp else "—"
-    print(f" My split {_fmt_coin(mine):<13} ({share} of group {_fmt_coin(grp)})  +vendor {_fmt_coin(tot['vendor_copper'])}")
+    print(
+        f" My split {_fmt_coin(mine):<13} ({share} of group {_fmt_coin(grp)})  +vendor {_fmt_coin(tot['vendor_copper'])}"
+    )
     print(f" Levelups {tot['levelups']}   Ground loot {tot['ground_loot']}")
     if snap["top_mobs"]:
         print("-" * 58)
@@ -389,9 +419,12 @@ def print_console(snap: dict) -> None:
         for r in snap["recent"][:6]:
             t = (r.get("at") or "")[11:19]
             if r["kind"] == "kill":
-                print(f"   {t}  killed {r['name']}" + (f" (+{_fmt_coin(r['copper'])})" if r.get("copper") else ""))
+                print(
+                    f"   {t}  killed {r['name']}"
+                    + (f" (+{_fmt_coin(r['copper'])})" if r.get("copper") else "")
+                )
             elif r["kind"] == "loot":
-                print(f"   {t}  looted {r.get('qty',1)}x {r['name']}")
+                print(f"   {t}  looted {r.get('qty', 1)}x {r['name']}")
             elif r["kind"] == "levelup":
                 print(f"   {t}  *** {r['name']} reached level {r['level']} ***")
     print("=" * 58)
@@ -484,8 +517,8 @@ def run(
 
 def _trigger_rebuild() -> None:
     try:
-        from mnm_ledger_db import run as extract_run
         from build_ledger_site import main as build_site
+        from mnm_ledger_db import run as extract_run
 
         cfg = ledger_settings()
         locallow = Path(cfg["locallow"]) if cfg.get("locallow") else default_locallow()
@@ -499,10 +532,16 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Real-time M&M ledger session monitor")
     ap.add_argument("--path", type=Path, default=None, help="LocalLow Monsters and Memories folder")
     ap.add_argument("--interval", type=float, default=2.0, help="Poll interval seconds (default 2)")
-    ap.add_argument("--session-gap", type=float, default=30.0, help="Idle minutes that start a new session")
-    ap.add_argument("--backlog", action="store_true", help="Seed session with today's existing events")
+    ap.add_argument(
+        "--session-gap", type=float, default=30.0, help="Idle minutes that start a new session"
+    )
+    ap.add_argument(
+        "--backlog", action="store_true", help="Seed session with today's existing events"
+    )
     ap.add_argument("--once", action="store_true", help="Single catch-up pass, then exit")
-    ap.add_argument("--rebuild", action="store_true", help="Full re-mine of dashboard data after idle lulls")
+    ap.add_argument(
+        "--rebuild", action="store_true", help="Full re-mine of dashboard data after idle lulls"
+    )
     args = ap.parse_args()
 
     cfg = ledger_settings()

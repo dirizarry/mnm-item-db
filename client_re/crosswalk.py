@@ -51,7 +51,7 @@ def crosswalk(root: Path | None = None, max_bundles: int = 0) -> dict:
     ledger = _load_ledger_keys()
     wiki_idx = _wiki_name_index()
     needles = [r["item_hid"].encode("utf-8") for r in ledger]
-    needle_names = {r["item_hid"]: r["name"] for r in ledger}
+    {r["item_hid"]: r["name"] for r in ledger}
 
     bdir = bundles_dir(root)
     bundle_paths = sorted(bdir.glob("*.bundle")) if bdir.is_dir() else []
@@ -76,14 +76,16 @@ def crosswalk(root: Path | None = None, max_bundles: int = 0) -> dict:
             in_bundles += 1
         if wiki_title:
             in_wiki += 1
-        rows.append({
-            "item_hid": hid,
-            "name": name,
-            "wiki_title": wiki_title,
-            "in_wiki": bool(wiki_title),
-            "in_client_bundles": bool(bundle_files),
-            "bundle_hits": bundle_files,
-        })
+        rows.append(
+            {
+                "item_hid": hid,
+                "name": name,
+                "wiki_title": wiki_title,
+                "in_wiki": bool(wiki_title),
+                "in_client_bundles": bool(bundle_files),
+                "bundle_hits": bundle_files,
+            }
+        )
 
     return {
         "generated": datetime.now(timezone.utc).isoformat(),
