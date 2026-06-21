@@ -1,0 +1,2341 @@
+{
+  "generated": "2026-06-17T06:47:09.165385+00:00",
+  "install_root": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm",
+  "manifest_summary": {
+    "entries": 235,
+    "on_disk": 235
+  },
+  "manifest_paths": [
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Main.bnk",
+      "file_hash": "08017f4d43b6d5cd8b8f0fc1ada07248",
+      "on_disk": true,
+      "size": 49184799,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets3.assets",
+      "file_hash": "9f23ac697704ec09aea943ce849470c4",
+      "on_disk": true,
+      "size": 61743512,
+      "category": "assets"
+    },
+    {
+      "manifest_path": "/mnm_Data/resources.assets",
+      "file_hash": "451c3c2a43ae67eed77ca0cb665c908c",
+      "on_disk": true,
+      "size": 38524008,
+      "category": "assets"
+    },
+    {
+      "manifest_path": "/mnm_Data/resources.assets.resS",
+      "file_hash": "7c00836d29a91e937c74c7937b7622c3",
+      "on_disk": true,
+      "size": 122374560,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/GameAssembly.dll",
+      "file_hash": "3c33cbc0e98f4a940dbea8b31b30f95b",
+      "on_disk": true,
+      "size": 98660352,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle",
+      "file_hash": "ac2c0bd7754e7bf0df973eddfe7c59e1",
+      "on_disk": true,
+      "size": 25873828,
+      "category": "global_structures"
+    },
+    {
+      "manifest_path": "/UnityPlayer.dll",
+      "file_hash": "cd351fd15f2cb9ad84b51a0c0242e50f",
+      "on_disk": true,
+      "size": 33653672,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+      "file_hash": "f41e36a727b104477c7d0cf650e37714",
+      "on_disk": true,
+      "size": 139368836,
+      "category": "default_local_group"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets0.assets",
+      "file_hash": "2cc0723731a8a0d7a99f2886093616fb",
+      "on_disk": true,
+      "size": 23230696,
+      "category": "assets"
+    },
+    {
+      "manifest_path": "/mnm_Data/globalgamemanagers.assets",
+      "file_hash": "4de9492307bf8aba1161c81f2ba01439",
+      "on_disk": true,
+      "size": 20909856,
+      "category": "assets"
+    },
+    {
+      "manifest_path": "/mnm_Data/il2cpp_data/Metadata/global-metadata.dat",
+      "file_hash": "f0890eb834fc0006d804a83cd4098f89",
+      "on_disk": true,
+      "size": 20387460,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/contentupdate_assets_all_e21ea6ac62a26d71097d96d41c6014b0.bundle",
+      "file_hash": "f75b2baa42605f104a1e046eb3161f6c",
+      "on_disk": true,
+      "size": 22058356,
+      "category": "content_update"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/globalshaders_assets_all_563d2c83a4955f1d642ce6fe8d0b38ff.bundle",
+      "file_hash": "36dea4e69831434c226078b1d9a21854",
+      "on_disk": true,
+      "size": 20159801,
+      "category": "global_shaders"
+    },
+    {
+      "manifest_path": "/mnm_Data/level3",
+      "file_hash": "9959386969fdf1b95d1dfb32b9163cdb",
+      "on_disk": true,
+      "size": 13746640,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/271978119.wem",
+      "file_hash": "d73c2663d74cb69f56544d1943594477",
+      "on_disk": true,
+      "size": 19124928,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/7986934.wem",
+      "file_hash": "d73c2663d74cb69f56544d1943594477",
+      "on_disk": true,
+      "size": 19124928,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/globalgamemanagers.assets.resS",
+      "file_hash": "7900a644ace0ee92574bd755d55a776c",
+      "on_disk": true,
+      "size": 16461472,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/level0",
+      "file_hash": "d938e2f19d10d1d8e49381822f90a752",
+      "on_disk": true,
+      "size": 8672648,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/779092158.wem",
+      "file_hash": "a4cc9de3fd70a1957a6c6fa73ce8a733",
+      "on_disk": true,
+      "size": 10573234,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/globalraces_assets_all_aafb184e5d9d4c04f2daa727823639c2.bundle",
+      "file_hash": "bf407fea1db2d0a2972d93c4029592a9",
+      "on_disk": true,
+      "size": 11692207,
+      "category": "global_races"
+    },
+    {
+      "manifest_path": "/mnm_Data/level3.resS",
+      "file_hash": "b181709d5efadb6c5cfea4bcf0190c51",
+      "on_disk": true,
+      "size": 11810128,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/924594717.wem",
+      "file_hash": "0d656dd041842b6feb13668c6f799d22",
+      "on_disk": true,
+      "size": 10573234,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/654090812.wem",
+      "file_hash": "be544aa387a474efde5681842fdea44f",
+      "on_disk": true,
+      "size": 8627590,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/269220599.wem",
+      "file_hash": "309ed84eb14de9b0e8b398f05028300d",
+      "on_disk": true,
+      "size": 8033258,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/806951286.wem",
+      "file_hash": "97164c5f4226ab29568b5e520f10ccc7",
+      "on_disk": true,
+      "size": 7435064,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1011108985.wem",
+      "file_hash": "cebe8ae234afb9545ef4c994507c7123",
+      "on_disk": true,
+      "size": 7435098,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/976994244.wem",
+      "file_hash": "309ed84eb14de9b0e8b398f05028300d",
+      "on_disk": true,
+      "size": 8033258,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/globalitems_assets_all_a7c52748ffbbaad331cab0bfc02394d4.bundle",
+      "file_hash": "c9c0154a4889275ad75746f6795931a8",
+      "on_disk": true,
+      "size": 7357119,
+      "category": "global_items_models"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/507631685.wem",
+      "file_hash": "7bdb848ce90bd37cefba083709b313fe",
+      "on_disk": true,
+      "size": 6918511,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/375929877.wem",
+      "file_hash": "d08425fc2065bd7125dde2a0d1fe8d5d",
+      "on_disk": true,
+      "size": 6786175,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/935148186.wem",
+      "file_hash": "71c978c0d0467abe4077671283b580fd",
+      "on_disk": true,
+      "size": 7302155,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/81852253.wem",
+      "file_hash": "1f5253436d557b31215407a47f2e0108",
+      "on_disk": true,
+      "size": 7302121,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/650079941.wem",
+      "file_hash": "e065ae089944b93ee766d4360a3f62c4",
+      "on_disk": true,
+      "size": 6786141,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/9355024.wem",
+      "file_hash": "5f5d63d6f51e0c03b2daad1be906cd7d",
+      "on_disk": true,
+      "size": 5963818,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/852176618.wem",
+      "file_hash": "3c081f57d2269c97b1f1c51c6de8c3ea",
+      "on_disk": true,
+      "size": 5963784,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/globalprops_assets_all_f5719ee3e3de7584fa45681303dc1878.bundle",
+      "file_hash": "48a09b7996855e467dbedb6f4c3cc85f",
+      "on_disk": true,
+      "size": 6711396,
+      "category": "global_props"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/194041246.wem",
+      "file_hash": "e852c13913d0c5f34257660e1cba2a4f",
+      "on_disk": true,
+      "size": 6592947,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Resources/unity default resources",
+      "file_hash": "f3cb81865e309804fba68492fb3fbd8c",
+      "on_disk": true,
+      "size": 5858500,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/D3D12/D3D12Core.dll",
+      "file_hash": "56baef7447d356bb7ffa8724b2788aea",
+      "on_disk": true,
+      "size": 5908408,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/875340516.wem",
+      "file_hash": "c1814e9c78f690c65e83969c6d7c1371",
+      "on_disk": true,
+      "size": 5467116,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/782879407.wem",
+      "file_hash": "317bcf91d139cc90fbe452f5749a3af1",
+      "on_disk": true,
+      "size": 5467150,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/750449908.wem",
+      "file_hash": "94d5bdccb707d151e886e080f4e6a4fc",
+      "on_disk": true,
+      "size": 5368843,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/834315620.wem",
+      "file_hash": "c16725f950dcd011f62e2aabb9cbba85",
+      "on_disk": true,
+      "size": 5368843,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/310418994.wem",
+      "file_hash": "fe9cb9399fd31bfd64f25a7c64680e2a",
+      "on_disk": true,
+      "size": 5368809,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1031672296.wem",
+      "file_hash": "d4b51f64479b206653901e313c29a1fe",
+      "on_disk": true,
+      "size": 5366289,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/313288502.wem",
+      "file_hash": "3b55edd792f80c6b2f525588d064fbcb",
+      "on_disk": true,
+      "size": 5231508,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/496502784.wem",
+      "file_hash": "e97f0281eb78795ab5565f1bc7b01d19",
+      "on_disk": true,
+      "size": 5057555,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/958939258.wem",
+      "file_hash": "1940d6505765a276d3cf31bcc03167ae",
+      "on_disk": true,
+      "size": 4335739,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/36006786.wem",
+      "file_hash": "8f312906c568fe12d8104a32b036c00f",
+      "on_disk": true,
+      "size": 4335773,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/modelparts_assets_all_f3ae7a240a26291f92a46447c290c022.bundle",
+      "file_hash": "0721cfbde79a09e5f4aed1d907570917",
+      "on_disk": true,
+      "size": 4271150,
+      "category": "bundle_other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Plugins/x86_64/AkUnitySoundEngine.dll",
+      "file_hash": "0ef3f37967708ef4dc334c16465b1b95",
+      "on_disk": true,
+      "size": 5241320,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/905425716.wem",
+      "file_hash": "edea103cd63ec83307e3e5b64e82cbe4",
+      "on_disk": true,
+      "size": 4025812,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/176304831.wem",
+      "file_hash": "5d07ab792563943ab30051230370c350",
+      "on_disk": true,
+      "size": 3939584,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/210429745.wem",
+      "file_hash": "6edaa0f44269847c3657e3f5f17c8514",
+      "on_disk": true,
+      "size": 3939550,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/591538660.wem",
+      "file_hash": "6edaa0f44269847c3657e3f5f17c8514",
+      "on_disk": true,
+      "size": 3939550,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/275947173.wem",
+      "file_hash": "c8d25caba1188dcf059bf195b906ad7c",
+      "on_disk": true,
+      "size": 3845432,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/772080049.wem",
+      "file_hash": "a57073425a900349b1f779b54c43fc16",
+      "on_disk": true,
+      "size": 3845398,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/807346179.wem",
+      "file_hash": "ec755174831f9f832fd595611318314d",
+      "on_disk": true,
+      "size": 3768786,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/113620076.wem",
+      "file_hash": "1735ee4a944b8b7bfac59c29d1996b66",
+      "on_disk": true,
+      "size": 3768546,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/702591986.wem",
+      "file_hash": "76e4209992d1fa55c2ebd8bc6bb01231",
+      "on_disk": true,
+      "size": 3768512,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/861062856.wem",
+      "file_hash": "af20d5d3cf50b58cf7f69ba061456912",
+      "on_disk": true,
+      "size": 3750778,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1068122028.wem",
+      "file_hash": "b4b54a5f59819c68bb6ad1fb10e0c0a7",
+      "on_disk": true,
+      "size": 2844443,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1020924263.wem",
+      "file_hash": "fd690598ac66a143c76232ba23948a30",
+      "on_disk": true,
+      "size": 2844409,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/258516281.wem",
+      "file_hash": "62d4fe957cdbe924666b9ad2f1531c8b",
+      "on_disk": true,
+      "size": 2508794,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets2.assets.resS",
+      "file_hash": "0afbadf20f195d7a58678c8203a5ee0b",
+      "on_disk": true,
+      "size": 3686944,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/255620123.wem",
+      "file_hash": "a7f136ca7bda256e21a6183a3b9e7380",
+      "on_disk": true,
+      "size": 2508760,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Plugins/x86_64/lib_burst_generated.dll",
+      "file_hash": "28b75a83bb2addd96c01415adba4acb5",
+      "on_disk": true,
+      "size": 2514432,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets1.assets",
+      "file_hash": "776d997d0f39ff8e400f5517a8e76d21",
+      "on_disk": true,
+      "size": 2488584,
+      "category": "assets"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1072074132.wem",
+      "file_hash": "4f7bcdeb25b96f2cff7757288e4b26f2",
+      "on_disk": true,
+      "size": 1978650,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/278855593.wem",
+      "file_hash": "607985902b1b09fc076afc9af792ad13",
+      "on_disk": true,
+      "size": 1824490,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/level1",
+      "file_hash": "013394a573aacaa36080388fd7385e80",
+      "on_disk": true,
+      "size": 1753836,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/862256356.wem",
+      "file_hash": "bbc86c8300886955edc295b21bfab803",
+      "on_disk": true,
+      "size": 1341869,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/873311382.wem",
+      "file_hash": "7f7ba0f11813ac1c8aea6e2938acac5c",
+      "on_disk": true,
+      "size": 1410646,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/86088884.wem",
+      "file_hash": "b93c8bf340fea28e2a9a3e462376644e",
+      "on_disk": true,
+      "size": 1629995,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/218811726.wem",
+      "file_hash": "c834b5a98f269e318c8b7f9973ec7e42",
+      "on_disk": true,
+      "size": 1290918,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/782510053.wem",
+      "file_hash": "1203cc2922a7afc4f448ed615d1fb77c",
+      "on_disk": true,
+      "size": 1290884,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/550324845.wem",
+      "file_hash": "be483f1f9def251eae5e2649450842f3",
+      "on_disk": true,
+      "size": 1263913,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/559362291.wem",
+      "file_hash": "49db5a3f165658a20f986532cde389f7",
+      "on_disk": true,
+      "size": 1269844,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/678092676.wem",
+      "file_hash": "d26819f48e1063cdf0d1ca6eee4fa2b0",
+      "on_disk": true,
+      "size": 1239476,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/capsules_assets_all_a6ff36a8651e794e43913af61f1e168e.bundle",
+      "file_hash": "c9b21ef96a8eb48bfa95df8dfff0536b",
+      "on_disk": true,
+      "size": 1237997,
+      "category": "bundle_other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/419486468.wem",
+      "file_hash": "cfd5cbe580a135b4d47f3a0f911d7e5c",
+      "on_disk": true,
+      "size": 1187415,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/649668183.wem",
+      "file_hash": "16aa755c3135fb19e55212c979ff6998",
+      "on_disk": true,
+      "size": 1129226,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/599891517.wem",
+      "file_hash": "4c325d50e0090c95e4e7bed884915a13",
+      "on_disk": true,
+      "size": 1044657,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/820956289.wem",
+      "file_hash": "257dde204b8657f79a1d62798dc77d46",
+      "on_disk": true,
+      "size": 1129192,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/801413399.wem",
+      "file_hash": "433e097989a07eb84c562964546b37aa",
+      "on_disk": true,
+      "size": 1032505,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/398661505.wem",
+      "file_hash": "c1027f5a23683863041fb673d51e8c25",
+      "on_disk": true,
+      "size": 903805,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/catalog.bin",
+      "file_hash": "d423b4f075dfa6cf28bde269b27e3075",
+      "on_disk": true,
+      "size": 853531,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1032763453.wem",
+      "file_hash": "cf44a7161384dea8349fc5eb24563e61",
+      "on_disk": true,
+      "size": 781196,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.json",
+      "file_hash": "71adeec8c2091102a0754330fba47ffd",
+      "on_disk": true,
+      "size": 693360,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/globalgamemanagers",
+      "file_hash": "e40dfd733e969175a66daa407702bb81",
+      "on_disk": true,
+      "size": 714628,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/210976138.wem",
+      "file_hash": "269107bbca3a17276cbc72e9488e476e",
+      "on_disk": true,
+      "size": 654229,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/877797780.wem",
+      "file_hash": "8305f01599ff4d5e44668592f0999eff",
+      "on_disk": true,
+      "size": 651915,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/714326838.wem",
+      "file_hash": "50475e61f58a38eb6e400ef5de6c7046",
+      "on_disk": true,
+      "size": 651915,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/357987162.wem",
+      "file_hash": "6444ca5af1d59b3d8f989021dd375620",
+      "on_disk": true,
+      "size": 651881,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/543455139.wem",
+      "file_hash": "bf7c3229219c1acc954a1081b78c14ca",
+      "on_disk": true,
+      "size": 580554,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Plugins/x86_64/WwiseProjectDatabase.dll",
+      "file_hash": "b2ca1b63c7f34aa7baa45d3750df17be",
+      "on_disk": true,
+      "size": 897512,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/301658176.wem",
+      "file_hash": "dd129a99821b17e775084d56ead95c00",
+      "on_disk": true,
+      "size": 632364,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/752430742.wem",
+      "file_hash": "6b96a41cacb264a3f86ad48f0b7f60d3",
+      "on_disk": true,
+      "size": 631653,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm.exe",
+      "file_hash": "6e1a0fdfcf18b7290b998923d85dfcf8",
+      "on_disk": true,
+      "size": 672256,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/540055760.wem",
+      "file_hash": "16e9d441afcfac82d4127b57f555304f",
+      "on_disk": true,
+      "size": 526334,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/821044761.wem",
+      "file_hash": "7740faa796d82cecdaabdf0ab371a044",
+      "on_disk": true,
+      "size": 519716,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/757816859.wem",
+      "file_hash": "6a18ec67d8b8c177304e9543f78a9fb5",
+      "on_disk": true,
+      "size": 580554,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/21265726.wem",
+      "file_hash": "95fe96c34218f4f34acadcdfad965dc1",
+      "on_disk": true,
+      "size": 483921,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/366524163.wem",
+      "file_hash": "70c94ae3fab9062e0caf14cb4cd3c5e0",
+      "on_disk": true,
+      "size": 483921,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/level2.resS",
+      "file_hash": "75c1c0aaf3e15abe7f8d0f1f09c84cf3",
+      "on_disk": true,
+      "size": 496944,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/881268522.wem",
+      "file_hash": "2955f8eef304ef6115fe3da88c3ccab9",
+      "on_disk": true,
+      "size": 447852,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/347260026.wem",
+      "file_hash": "8cd1aad9a3456628ceb07baca5c77ad4",
+      "on_disk": true,
+      "size": 473606,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/476752324.wem",
+      "file_hash": "cb68f0a8634d5619fe58bc47b66a6e5f",
+      "on_disk": true,
+      "size": 453269,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/179288636.wem",
+      "file_hash": "5c876838f298ad06d58b0f8bd009ca98",
+      "on_disk": true,
+      "size": 402853,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Resources/unity_builtin_extra",
+      "file_hash": "e60f533f3004bf193f4719c4f8f84225",
+      "on_disk": true,
+      "size": 372764,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/381168085.wem",
+      "file_hash": "df0269bca005198d063d435af030c475",
+      "on_disk": true,
+      "size": 371741,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1048567126.wem",
+      "file_hash": "efc81c6a374f5fa6b92ed348e0d4e081",
+      "on_disk": true,
+      "size": 371741,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/473623604.wem",
+      "file_hash": "78d67c90fb67c931e68138d0a2432c8c",
+      "on_disk": true,
+      "size": 339685,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/level1.resS",
+      "file_hash": "a395c8ccbc135d0c48ecffd8a01c755f",
+      "on_disk": true,
+      "size": 338624,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/il2cpp_data/Resources/mscorlib.dll-resources.dat",
+      "file_hash": "0385fca52d6d473b0ef65290c4e56b33",
+      "on_disk": true,
+      "size": 337563,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/114785566.wem",
+      "file_hash": "cc6c1f2885be9644478cd89eb52143a1",
+      "on_disk": true,
+      "size": 316343,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/811096349.wem",
+      "file_hash": "bb8291cda607881372d9a29da219aaba",
+      "on_disk": true,
+      "size": 300979,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/785304490.wem",
+      "file_hash": "29ea87e08f67d660f98229fb2f1a09e9",
+      "on_disk": true,
+      "size": 283721,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets2.assets",
+      "file_hash": "3d983b116b9d4567ddaf4c11d90a68b1",
+      "on_disk": true,
+      "size": 247720,
+      "category": "assets"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/673167175.wem",
+      "file_hash": "39bde04c30eea56d9299fc7bf530fc5b",
+      "on_disk": true,
+      "size": 255669,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/level2",
+      "file_hash": "94fad396f43cff5284fab8150a53ee31",
+      "on_disk": true,
+      "size": 238336,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets0.assets.resS",
+      "file_hash": "1ac1fc962fe71c680fa24d726206cfdd",
+      "on_disk": true,
+      "size": 281179584,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/443349912.wem",
+      "file_hash": "3ce3de085ea1f615d1186c226ad4abdd",
+      "on_disk": true,
+      "size": 198664,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/b5977eed9c1d24f73cb682ec4db1707b_unitybuiltinassets_f920896b5fd3f4d3b6760bbc29778abd.bundle",
+      "file_hash": "e4e8a74b64b83edae5c22314afd7623d",
+      "on_disk": true,
+      "size": 209682,
+      "category": "bundle_other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/95502315.wem",
+      "file_hash": "bf610ac0cf59cd4d3c1582a1be8fc39c",
+      "on_disk": true,
+      "size": 185680,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/baselib.dll",
+      "file_hash": "c1642a6514229c55c4bd5a45a3f3c12d",
+      "on_disk": true,
+      "size": 228776,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/253337249.wem",
+      "file_hash": "c40b3b39e0953c1135bcb861fc68b308",
+      "on_disk": true,
+      "size": 183584,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Main.txt",
+      "file_hash": "549c235fa23c2cd1b24e652899701e64",
+      "on_disk": true,
+      "size": 227687,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/783039208.wem",
+      "file_hash": "5787dd7a7e9e55ed32d8f0c9b7db5f87",
+      "on_disk": true,
+      "size": 157968,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/336250637.wem",
+      "file_hash": "c00d52a4c67273f7fab902acc4dd0c4c",
+      "on_disk": true,
+      "size": 158262,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.xml",
+      "file_hash": "9ec94bac93ec215f023d4138654c88ba",
+      "on_disk": true,
+      "size": 373296,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/439905029.wem",
+      "file_hash": "dfed34b7e9faa29613906aa69d6c7af4",
+      "on_disk": true,
+      "size": 152219,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/453107300.wem",
+      "file_hash": "e9ec5e5bf86243b698721011b6fd20cc",
+      "on_disk": true,
+      "size": 146137,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/250311802.wem",
+      "file_hash": "ea107f9715ba42c8a8c036f70bf7c23a",
+      "on_disk": true,
+      "size": 143408,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/626567163.wem",
+      "file_hash": "b4c15e0388ddf6168e427feaa3421100",
+      "on_disk": true,
+      "size": 141078,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1008201742.wem",
+      "file_hash": "157bb36105fa78285fc4909ddc6be43f",
+      "on_disk": true,
+      "size": 126283,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/526635867.wem",
+      "file_hash": "fabbcb98ab4809e9d8b0bf04da6582f9",
+      "on_disk": true,
+      "size": 134274,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/725359211.wem",
+      "file_hash": "5fe43c13076b32c118e6592c96424e84",
+      "on_disk": true,
+      "size": 123158,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/626304709.wem",
+      "file_hash": "06f4776fdf5e2657cef49dbcfc6ea5a8",
+      "on_disk": true,
+      "size": 120627,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/899704769.wem",
+      "file_hash": "9d37415b170ddb4ff20b552fc933fd4c",
+      "on_disk": true,
+      "size": 119163,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/699536752.wem",
+      "file_hash": "55f6a33408343a9235d2a16b6e53483f",
+      "on_disk": true,
+      "size": 110164,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Plugins/x86_64/AkMeter.dll",
+      "file_hash": "bead790c1a110b4eda14f811712d3f1a",
+      "on_disk": true,
+      "size": 167400,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/686296101.wem",
+      "file_hash": "6bb7c8cae1a9b134f6c9c0cfacee99d8",
+      "on_disk": true,
+      "size": 105868,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/929910314.wem",
+      "file_hash": "614325ad1e118496e469be0a4ea14ca2",
+      "on_disk": true,
+      "size": 101687,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/716395980.wem",
+      "file_hash": "b2dafd603afea3e0d026f08f052229aa",
+      "on_disk": true,
+      "size": 96086,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/749529564.wem",
+      "file_hash": "f41219f665ca0e3f0fd837d771bb7ba8",
+      "on_disk": true,
+      "size": 82222,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/187287138.wem",
+      "file_hash": "1ccacb2a0c5a827aab684725e561bb5b",
+      "on_disk": true,
+      "size": 86740,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/Plugins/x86_64/AkSidechain.dll",
+      "file_hash": "9e1298ab8ae888defe34931838df89b4",
+      "on_disk": true,
+      "size": 169960,
+      "category": "binary"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/1070817438.wem",
+      "file_hash": "eec09fff7b9b7c7fff9360a914a2ee5b",
+      "on_disk": true,
+      "size": 71823,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/il2cpp_data/Resources/System.Data.dll-resources.dat",
+      "file_hash": "bc72a94e6b69ba22ea5ce9023bed3783",
+      "on_disk": true,
+      "size": 93718,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Media/672998585.wem",
+      "file_hash": "e41230c8c3690570b0c5e88a236eb9c2",
+      "on_disk": true,
+      "size": 49076,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets0.resource",
+      "file_hash": "720067f352c1cd0bbed77f6813ac6b23",
+      "on_disk": true,
+      "size": 44544,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/AddressablesLink/link.xml",
+      "file_hash": "3dd3840ff1ee98ba1a22d3a4974083f8",
+      "on_disk": true,
+      "size": 57690,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/zone_szuur_assets_all_e756f8e46365a80658a6d93bdb9f545a.bundle",
+      "file_hash": "03e256ff498e2e8f77d4f02d15547fd2",
+      "on_disk": true,
+      "size": 37725,
+      "category": "zone"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/b5977eed9c1d24f73cb682ec4db1707b_monoscripts_da487d97676561791b463c954c264ea8.bundle",
+      "file_hash": "5148ed84e9089adb3c8eafcbad4d9987",
+      "on_disk": true,
+      "size": 14705,
+      "category": "bundle_other"
+    },
+    {
+      "manifest_path": "/mnm_Data/il2cpp_data/Resources/System.Drawing.dll-resources.dat",
+      "file_hash": "8931c0b60e5fdf2f202c15e221982af4",
+      "on_disk": true,
+      "size": 25453,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/ScriptingAssemblies.json",
+      "file_hash": "65abec31433878b4e8c273d10cc4c523",
+      "on_disk": true,
+      "size": 6789,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/RuntimeInitializeOnLoads.json",
+      "file_hash": "58a385cc4a82378e59c382379703e693",
+      "on_disk": true,
+      "size": 13131,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PlatformInfo.xml",
+      "file_hash": "206fae47879fd58151e2879e07a95141",
+      "on_disk": true,
+      "size": 1545,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PluginInfo.json",
+      "file_hash": "b9efed569014c0639a577434b018bfb1",
+      "on_disk": true,
+      "size": 2073,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/ProjectInfo.json",
+      "file_hash": "a1b79105c1c50ec7afaecab842e15a09",
+      "on_disk": true,
+      "size": 1283,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.bnk",
+      "file_hash": "be3527b01974bacf6a163986e8a1ad22",
+      "on_disk": true,
+      "size": 11058,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.txt",
+      "file_hash": "d20dc5264a71b598932cdf241eebd7c0",
+      "on_disk": true,
+      "size": 11824,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PlatformInfo.json",
+      "file_hash": "41ceb6d1a0b0173976f0e712337f56d9",
+      "on_disk": true,
+      "size": 1105,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/il2cpp_data/Resources/Newtonsoft.Json.dll-resources.dat",
+      "file_hash": "0742847de630f7c48c48ad36846480fd",
+      "on_disk": true,
+      "size": 900,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h",
+      "file_hash": "64d7a984fc2548a64cb5687ea7488b4e",
+      "on_disk": true,
+      "size": 38912,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/REV_GenericOutdoorDistance.txt",
+      "file_hash": "bb2ea9365253c3d4981355922655f619",
+      "on_disk": true,
+      "size": 799,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/settings.json",
+      "file_hash": "3b30cfa0cbe505469bb4e019b5130797",
+      "on_disk": true,
+      "size": 866,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/ProjectInfo.xml",
+      "file_hash": "b77977a2113e65926b964c0fc9af2d05",
+      "on_disk": true,
+      "size": 1151,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_Reverb.txt",
+      "file_hash": "50e447ef053cd78a011938129f687c10",
+      "on_disk": true,
+      "size": 516,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Play_Seraphina_Widget.bnk",
+      "file_hash": "a58bcbed951680a4feeb3879a02900ea",
+      "on_disk": true,
+      "size": 465,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/CanyonDelay.txt",
+      "file_hash": "2642107fb051a6f8c278f5307f8c93b2",
+      "on_disk": true,
+      "size": 470,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_Reverb.bnk",
+      "file_hash": "346e0cffdb1c529a46b1b1822a85ffc7",
+      "on_disk": true,
+      "size": 444,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/REV_GenericOutdoorDistance.bnk",
+      "file_hash": "c482029a7181a2081f5b721a16b70146",
+      "on_disk": true,
+      "size": 562,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PluginInfo.xml",
+      "file_hash": "12fbbb653c44914542240ed06839058a",
+      "on_disk": true,
+      "size": 1508,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_StoneCorridor_Reverb.bnk",
+      "file_hash": "4b20e716910c3460f142bbd544bd656d",
+      "on_disk": true,
+      "size": 387,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_StoneCorridor_Reverb2.bnk",
+      "file_hash": "8b57642ecb803e9fb28d61418fb0e745",
+      "on_disk": true,
+      "size": 387,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_StoneCorridor_Reverb2.txt",
+      "file_hash": "ac51731ee537b5cb844d7ce8e338820d",
+      "on_disk": true,
+      "size": 302,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Stinger.txt",
+      "file_hash": "f5f7efc46165569e4b46a2a77a60a570",
+      "on_disk": true,
+      "size": 336,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_StoneRoomLarge_Reverb.bnk",
+      "file_hash": "c1c2ac9b87ec40f31086e8f699aac476",
+      "on_disk": true,
+      "size": 377,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_StoneCorridor_Reverb.txt",
+      "file_hash": "efdc692f935d283767dc3f981706da6f",
+      "on_disk": true,
+      "size": 300,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Thunder_LPF.txt",
+      "file_hash": "a4a2f18045ef9392ffc3532e28297a0d",
+      "on_disk": true,
+      "size": 282,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Spells_HPF.txt",
+      "file_hash": "275e29d94758ccc9cdd366787e0247b8",
+      "on_disk": true,
+      "size": 273,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Spells_HPF.bnk",
+      "file_hash": "99a91be7ceb07d0503df4b88d277f952",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Spells_LPF.bnk",
+      "file_hash": "0fde42aa8f952096adf76a44469d2372",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Thunder_LPF.bnk",
+      "file_hash": "53a40e33d1f51e123746d20c4e76fcbb",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_LPF.bnk",
+      "file_hash": "191deaae7aa25d171bd8aa989bbad3af",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_Mid.bnk",
+      "file_hash": "b1e13cea424238636ced65fd5ecf6a31",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_Mid.txt",
+      "file_hash": "fd52e772526f0c798a6937ba977cbed8",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/Dungeon_StoneRoomLarge_Reverb.txt",
+      "file_hash": "9a70cf187c134f93bca5cf48fd999a15",
+      "on_disk": true,
+      "size": 301,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Spells_LPF.txt",
+      "file_hash": "42fd066a9da98f471ed2152262b0414f",
+      "on_disk": true,
+      "size": 273,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_HPF.txt",
+      "file_hash": "ab0c0ca2d05423dc8fc175eb405039e5",
+      "on_disk": true,
+      "size": 264,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_LPF.txt",
+      "file_hash": "5324c4253f1fa17451a49e687803f8d5",
+      "on_disk": true,
+      "size": 264,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_HPF.bnk",
+      "file_hash": "9c5fb15eb2a81a1c5878448a065ef317",
+      "on_disk": true,
+      "size": 265,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_FullSpectrum.txt",
+      "file_hash": "b809fad85d7c003ec708d5e46665e532",
+      "on_disk": true,
+      "size": 234,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Leatherworking.bnk",
+      "file_hash": "b37591673cfd9337165702089dc39896",
+      "on_disk": true,
+      "size": 214,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/CanyonDelay.bnk",
+      "file_hash": "ccb52ab0496925f97047c196a2b4ded5",
+      "on_disk": true,
+      "size": 234,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Stinger.bnk",
+      "file_hash": "79682f71817bb62e6d840af333504b8f",
+      "on_disk": true,
+      "size": 212,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Spells_FullSpectrum.txt",
+      "file_hash": "a1dde73f2c37cde302056d115ab2fe01",
+      "on_disk": true,
+      "size": 242,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/desc.txt",
+      "file_hash": "c7915e983f88ecec6b64d4f4a2fe483a",
+      "on_disk": true,
+      "size": 238,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_Spells_FullSpectrum.bnk",
+      "file_hash": "d0bfd9f1fb945e557ead6858dae64947",
+      "on_disk": true,
+      "size": 195,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Earth_Stop.txt",
+      "file_hash": "15238d53f24813e902334d20940dcc09",
+      "on_disk": true,
+      "size": 130,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/LeatherworkingStop.txt",
+      "file_hash": "1527129646de4ef4f2d1a9dc5987be71",
+      "on_disk": true,
+      "size": 131,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Bus/SC_UI_FullSpectrum.bnk",
+      "file_hash": "7799b5855540aa0889bd0aea82235434",
+      "on_disk": true,
+      "size": 210,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Water_Stop.txt",
+      "file_hash": "fd141705e2390546b09833b41659daaa",
+      "on_disk": true,
+      "size": 130,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Play_Seraphina_Widget.txt",
+      "file_hash": "60a814dd4f0d15963997f89b0f544291",
+      "on_disk": true,
+      "size": 130,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Fire_Play.txt",
+      "file_hash": "ea7f6e32fda08d5d756cd794f82e2998",
+      "on_disk": true,
+      "size": 128,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Water_Play.txt",
+      "file_hash": "2ee9cbf725ec108b23e1ae42fc4be56a",
+      "on_disk": true,
+      "size": 129,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Earth_Play.txt",
+      "file_hash": "0ecc0915029ebe226f27f7879829db55",
+      "on_disk": true,
+      "size": 129,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Stop_Seraphina_Widget.txt",
+      "file_hash": "e5d1733b50bf71dc072746c014184119",
+      "on_disk": true,
+      "size": 130,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Air_Stop.txt",
+      "file_hash": "55d5f3d82e56059698f77fbafcb972de",
+      "on_disk": true,
+      "size": 126,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Fire_Stop.txt",
+      "file_hash": "9a5d7e3289aaefbd98ea2831c526b1fe",
+      "on_disk": true,
+      "size": 128,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Air_Play.txt",
+      "file_hash": "9c3703171787fb8340d2d3db16a3b27d",
+      "on_disk": true,
+      "size": 124,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Stop_Seraphina_Widget.bnk",
+      "file_hash": "2a68103c1fbc9571ee7edd0834fe0dcc",
+      "on_disk": true,
+      "size": 102,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Air_Play.bnk",
+      "file_hash": "15e13758d08d7b84e0418ac9a48d55d5",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/boot.config",
+      "file_hash": "c3be7a1d2a5ced19ba8e328f52efaefe",
+      "on_disk": true,
+      "size": 156,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Earth_Play.bnk",
+      "file_hash": "363d82f37fc70f70ba8882f2e5b280aa",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Air_Stop.bnk",
+      "file_hash": "b5fd28bc8e35ee7a194adef12289b57d",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Fire_Stop.bnk",
+      "file_hash": "5a9bb0fd899c317fa8c6aa4c3db927d3",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Leatherworking.txt",
+      "file_hash": "5065fc62624904ad86b9cabc1aba1429",
+      "on_disk": true,
+      "size": 123,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/LeatherworkingStop.bnk",
+      "file_hash": "be3270c880b7913ab9595c2a161a6aab",
+      "on_disk": true,
+      "size": 107,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Earth_Stop.bnk",
+      "file_hash": "cf77c362939407f361df42030758f85f",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Fire_Play.bnk",
+      "file_hash": "5eda2bb999f3a836fd2d1d5bfa2d9164",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Water_Play.bnk",
+      "file_hash": "33822e8c90f43613d30f7683bcbb7edf",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/app.info",
+      "file_hash": "4668c1ab7c3803184f3136c8b96c198b",
+      "on_disk": true,
+      "size": 39,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/catalog.hash",
+      "file_hash": "9264cbd09889f384286db5b6f8760956",
+      "on_disk": true,
+      "size": 32,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Event/Elemental_Water_Stop.bnk",
+      "file_hash": "d576b829ad66214f495196909ee611af",
+      "on_disk": true,
+      "size": 77,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/globaltextures_assets_all_538c22017b2d89a8fc6fb7a8b1a09c71.bundle",
+      "file_hash": "25523a2647da79a7b4702efb667a62b0",
+      "on_disk": true,
+      "size": 266434884,
+      "category": "global_textures"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets1.assets.resS",
+      "file_hash": "f4607c1c4cbac8026c7155d21e50a838",
+      "on_disk": true,
+      "size": 249554912,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/zone_sea_scenes_all_196088016a1ded9a836c612f6175cb4a.bundle",
+      "file_hash": "735eefa941e9d385a0fc2a4b46c82aba",
+      "on_disk": true,
+      "size": 289122324,
+      "category": "zone"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/zone_other_scenes_all_24e42eed2ed6d95f20dea124e8c4c369.bundle",
+      "file_hash": "141173915957bf521d55cf182785b7ba",
+      "on_disk": true,
+      "size": 682533277,
+      "category": "zone"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/zone_calafrey_scenes_all_8357c99d7a2cb479509b8efbc556a8ad.bundle",
+      "file_hash": "26586affa307baae2032fce5fee06268",
+      "on_disk": true,
+      "size": 648887788,
+      "category": "zone"
+    },
+    {
+      "manifest_path": "/mnm_Data/sharedassets3.assets.resS",
+      "file_hash": "c8ddb712d917f3860706c77f4762b9ec",
+      "on_disk": true,
+      "size": 918779648,
+      "category": "other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/duplicateassetisolation_assets_all_bdeacb7348af9451511d510f552c49fc.bundle",
+      "file_hash": "48d5e2f4cbaccee56eff450a9db7acc3",
+      "on_disk": true,
+      "size": 1516417437,
+      "category": "bundle_other"
+    },
+    {
+      "manifest_path": "/mnm_Data/StreamingAssets/aa/StandaloneWindows64/zone_szuur_scenes_all_effe411043ce515d87d5abc8e7aa5d92.bundle",
+      "file_hash": "a06c037bcb3b5bc77a1b7704ba020952",
+      "on_disk": true,
+      "size": 1886867933,
+      "category": "zone"
+    }
+  ],
+  "scanned_files": [
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\zone_szuur_scenes_all_effe411043ce515d87d5abc8e7aa5d92.bundle",
+      "name": "zone_szuur_scenes_all_effe411043ce515d87d5abc8e7aa5d92.bundle",
+      "size": 1886867933,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 209761,
+        "Transform": 209276,
+        "MeshRenderer": 112187,
+        "MeshFilter": 111873,
+        "MonoBehaviour": 108100,
+        "MeshCollider": 68246,
+        "BoxCollider": 15879,
+        "Mesh": 13491,
+        "Light": 7953,
+        "VFXRenderer": 4641,
+        "VisualEffect": 4641,
+        "SphereCollider": 3124,
+        "CapsuleCollider": 1551,
+        "LODGroup": 947,
+        "Material": 775,
+        "Animator": 707,
+        "Texture2D": 586,
+        "RectTransform": 485,
+        "Animation": 412,
+        "NavMeshObstacle": 386,
+        "ParticleSystem": 361,
+        "ParticleSystemRenderer": 361,
+        "Rigidbody": 72,
+        "Shader": 62,
+        "ComputeShader": 38,
+        "PreloadData": 36,
+        "RenderSettings": 36,
+        "LightmapSettings": 36,
+        "NavMeshSettings": 36,
+        "OcclusionArea": 29,
+        "OcclusionCullingSettings": 27,
+        "TextAsset": 15,
+        "OcclusionCullingData": 15,
+        "TerrainCollider": 11,
+        "Terrain": 11,
+        "SkinnedMeshRenderer": 11,
+        "AnimationClip": 10,
+        "TerrainData": 7,
+        "SpriteRenderer": 6,
+        "AnimatorController": 5,
+        "LightingSettings": 5,
+        "VisualEffectAsset": 4,
+        "Sprite": 4,
+        "TerrainLayer": 2,
+        "AssetBundle": 1,
+        "Cubemap": 1,
+        "LightProbes": 1,
+        "RenderTexture": 1,
+        "Avatar": 1
+      },
+      "mono_behaviour_count": 108100,
+      "text_asset_count": 15,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 876226
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\zone_calafrey_scenes_all_8357c99d7a2cb479509b8efbc556a8ad.bundle",
+      "name": "zone_calafrey_scenes_all_8357c99d7a2cb479509b8efbc556a8ad.bundle",
+      "size": 648887788,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 81748,
+        "Transform": 81590,
+        "MeshRenderer": 41641,
+        "MeshFilter": 41499,
+        "MonoBehaviour": 29410,
+        "MeshCollider": 22001,
+        "BoxCollider": 4543,
+        "Mesh": 3600,
+        "Light": 2975,
+        "VFXRenderer": 1728,
+        "VisualEffect": 1728,
+        "CapsuleCollider": 1236,
+        "SphereCollider": 1080,
+        "LODGroup": 926,
+        "Material": 370,
+        "Texture2D": 286,
+        "RectTransform": 158,
+        "ReflectionProbe": 154,
+        "Animation": 134,
+        "Animator": 77,
+        "SkinnedMeshRenderer": 73,
+        "ComputeShader": 42,
+        "Shader": 36,
+        "OcclusionArea": 28,
+        "AnimationClip": 28,
+        "ParticleSystem": 27,
+        "ParticleSystemRenderer": 27,
+        "PreloadData": 17,
+        "RenderSettings": 17,
+        "LightmapSettings": 17,
+        "NavMeshSettings": 17,
+        "OcclusionCullingSettings": 15,
+        "OcclusionCullingData": 9,
+        "TextAsset": 9,
+        "VisualEffectAsset": 6,
+        "LightingSettings": 4,
+        "RenderTexture": 3,
+        "AnimatorController": 2,
+        "Cubemap": 2,
+        "Avatar": 2,
+        "AssetBundle": 1,
+        "LightProbes": 1,
+        "AudioClip": 1,
+        "AudioSource": 1,
+        "Camera": 1
+      },
+      "mono_behaviour_count": 29410,
+      "text_asset_count": 9,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 317270
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\zone_sea_scenes_all_196088016a1ded9a836c612f6175cb4a.bundle",
+      "name": "zone_sea_scenes_all_196088016a1ded9a836c612f6175cb4a.bundle",
+      "size": 289122324,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 45056,
+        "Transform": 45004,
+        "MonoBehaviour": 27530,
+        "MeshRenderer": 22417,
+        "MeshFilter": 22369,
+        "MeshCollider": 15420,
+        "BoxCollider": 1622,
+        "Light": 1571,
+        "VFXRenderer": 1152,
+        "VisualEffect": 1152,
+        "Mesh": 922,
+        "SphereCollider": 570,
+        "ParticleSystem": 252,
+        "ParticleSystemRenderer": 252,
+        "CapsuleCollider": 215,
+        "Material": 175,
+        "Texture2D": 129,
+        "ComputeShader": 61,
+        "AnimationClip": 56,
+        "RectTransform": 52,
+        "Shader": 44,
+        "Animation": 39,
+        "Animator": 19,
+        "SpriteRenderer": 18,
+        "Rigidbody": 14,
+        "Canvas": 9,
+        "PreloadData": 7,
+        "VisualEffectAsset": 7,
+        "RenderSettings": 7,
+        "LightmapSettings": 7,
+        "NavMeshSettings": 7,
+        "OcclusionCullingSettings": 6,
+        "SkinnedMeshRenderer": 6,
+        "OcclusionArea": 6,
+        "TerrainCollider": 5,
+        "Terrain": 5,
+        "TextAsset": 5,
+        "OcclusionCullingData": 4,
+        "TerrainData": 3,
+        "Sprite": 2,
+        "LightingSettings": 2,
+        "AssetBundle": 1,
+        "AnimatorController": 1,
+        "Avatar": 1
+      },
+      "mono_behaviour_count": 27530,
+      "text_asset_count": 5,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 186202
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\zone_other_scenes_all_24e42eed2ed6d95f20dea124e8c4c369.bundle",
+      "name": "zone_other_scenes_all_24e42eed2ed6d95f20dea124e8c4c369.bundle",
+      "size": 682533277,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 31127,
+        "Transform": 31001,
+        "MeshRenderer": 13011,
+        "MeshFilter": 12925,
+        "MonoBehaviour": 12650,
+        "MeshCollider": 9008,
+        "Mesh": 3378,
+        "BoxCollider": 1295,
+        "Light": 759,
+        "Material": 459,
+        "Texture2D": 406,
+        "CapsuleCollider": 358,
+        "VFXRenderer": 289,
+        "VisualEffect": 289,
+        "AnimationClip": 155,
+        "SphereCollider": 136,
+        "RectTransform": 126,
+        "SkinnedMeshRenderer": 119,
+        "LODGroup": 97,
+        "Animator": 95,
+        "Shader": 45,
+        "ComputeShader": 35,
+        "ParticleSystem": 31,
+        "ParticleSystemRenderer": 31,
+        "Tree": 30,
+        "PreloadData": 24,
+        "RenderSettings": 24,
+        "LightmapSettings": 24,
+        "NavMeshSettings": 24,
+        "Rigidbody": 22,
+        "TerrainCollider": 22,
+        "Terrain": 22,
+        "TextAsset": 18,
+        "OcclusionArea": 14,
+        "Animation": 11,
+        "NavMeshObstacle": 7,
+        "RenderTexture": 5,
+        "Avatar": 5,
+        "AnimatorController": 5,
+        "LightingSettings": 4,
+        "OcclusionCullingData": 4,
+        "OcclusionCullingSettings": 4,
+        "AnimatorOverrideController": 3,
+        "VisualEffectAsset": 3,
+        "TerrainData": 3,
+        "AssetBundle": 1,
+        "AudioClip": 1,
+        "AudioSource": 1,
+        "SpeedTreeWindAsset": 1,
+        "TerrainLayer": 1,
+        "LightProbes": 1,
+        "Camera": 1
+      },
+      "mono_behaviour_count": 12650,
+      "text_asset_count": 18,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 118110
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+      "name": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+      "size": 139368836,
+      "category": "default_local_group",
+      "parseable": true,
+      "object_types": {
+        "MonoBehaviour": 1203,
+        "Sprite": 855,
+        "Transform": 277,
+        "GameObject": 277,
+        "Texture2D": 254,
+        "Material": 44,
+        "ComputeShader": 36,
+        "MeshRenderer": 31,
+        "MeshFilter": 31,
+        "Shader": 22,
+        "Mesh": 20,
+        "VisualEffect": 17,
+        "VFXRenderer": 17,
+        "Light": 16,
+        "VisualEffectAsset": 6,
+        "BoxCollider": 4,
+        "MeshCollider": 4,
+        "Cubemap": 3,
+        "SkinnedMeshRenderer": 2,
+        "AssetBundle": 1
+      },
+      "mono_behaviour_count": 1203,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 3120
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globalraces_assets_all_aafb184e5d9d4c04f2daa727823639c2.bundle",
+      "name": "globalraces_assets_all_aafb184e5d9d4c04f2daa727823639c2.bundle",
+      "size": 11692207,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 5856,
+        "Transform": 5856,
+        "MonoBehaviour": 1100,
+        "BoxCollider": 481,
+        "AnimationClip": 269,
+        "SkinnedMeshRenderer": 126,
+        "Animator": 86,
+        "Mesh": 23,
+        "MeshRenderer": 12,
+        "MeshFilter": 12,
+        "Avatar": 11,
+        "AnimatorOverrideController": 8,
+        "Light": 6,
+        "Rigidbody": 5,
+        "MeshCollider": 4,
+        "VisualEffect": 3,
+        "VFXRenderer": 3,
+        "SphereCollider": 1,
+        "Texture2D": 1,
+        "AssetBundle": 1,
+        "ParticleSystem": 1,
+        "ParticleSystemRenderer": 1
+      },
+      "mono_behaviour_count": 1100,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 13866
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globalitems_assets_all_a7c52748ffbbaad331cab0bfc02394d4.bundle",
+      "name": "globalitems_assets_all_a7c52748ffbbaad331cab0bfc02394d4.bundle",
+      "size": 7357119,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 5839,
+        "Transform": 5839,
+        "MonoBehaviour": 1083,
+        "MeshRenderer": 604,
+        "MeshFilter": 601,
+        "Mesh": 522,
+        "SkinnedMeshRenderer": 78,
+        "Texture2D": 25,
+        "MeshCollider": 4,
+        "VisualEffect": 2,
+        "VFXRenderer": 2,
+        "Avatar": 1,
+        "ParticleSystem": 1,
+        "ParticleSystemRenderer": 1,
+        "AssetBundle": 1,
+        "Material": 1,
+        "Animator": 1
+      },
+      "mono_behaviour_count": 1083,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 14605
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globaltextures_assets_all_538c22017b2d89a8fc6fb7a8b1a09c71.bundle",
+      "name": "globaltextures_assets_all_538c22017b2d89a8fc6fb7a8b1a09c71.bundle",
+      "size": 266434884,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Texture2D": 1299,
+        "MonoBehaviour": 765,
+        "Material": 1,
+        "AssetBundle": 1
+      },
+      "mono_behaviour_count": 765,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 2066
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\duplicateassetisolation_assets_all_bdeacb7348af9451511d510f552c49fc.bundle",
+      "name": "duplicateassetisolation_assets_all_bdeacb7348af9451511d510f552c49fc.bundle",
+      "size": 1516417437,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Transform": 7089,
+        "GameObject": 7089,
+        "MeshFilter": 2759,
+        "MeshRenderer": 2759,
+        "Mesh": 2377,
+        "MeshCollider": 1845,
+        "Texture2D": 924,
+        "Material": 898,
+        "AnimationClip": 725,
+        "MonoBehaviour": 217,
+        "SkinnedMeshRenderer": 88,
+        "Shader": 74,
+        "Animator": 42,
+        "Avatar": 42,
+        "Light": 41,
+        "Sprite": 39,
+        "AnimatorOverrideController": 38,
+        "ComputeShader": 36,
+        "TerrainData": 10,
+        "VisualEffectAsset": 10,
+        "AnimatorController": 9,
+        "TerrainLayer": 5,
+        "LightingSettings": 4,
+        "Camera": 1,
+        "AssetBundle": 1,
+        "Font": 1
+      },
+      "mono_behaviour_count": 217,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 27123
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\modelparts_assets_all_f3ae7a240a26291f92a46447c290c022.bundle",
+      "name": "modelparts_assets_all_f3ae7a240a26291f92a46447c290c022.bundle",
+      "size": 4271150,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Transform": 11825,
+        "GameObject": 11825,
+        "SkinnedMeshRenderer": 210,
+        "MonoBehaviour": 209,
+        "Mesh": 195,
+        "Material": 4,
+        "Texture2D": 2,
+        "AssetBundle": 1
+      },
+      "mono_behaviour_count": 209,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 24271
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle",
+      "name": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle",
+      "size": 25873828,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 729,
+        "Transform": 728,
+        "MeshFilter": 418,
+        "MeshRenderer": 366,
+        "MonoBehaviour": 198,
+        "Mesh": 111,
+        "MeshCollider": 78,
+        "CapsuleCollider": 74,
+        "BoxCollider": 73,
+        "Material": 40,
+        "Texture2D": 33,
+        "AnimationClip": 30,
+        "Animator": 19,
+        "VFXRenderer": 10,
+        "Light": 10,
+        "VisualEffect": 10,
+        "AnimatorController": 9,
+        "SphereCollider": 9,
+        "ParticleSystem": 9,
+        "ParticleSystemRenderer": 9,
+        "OcclusionPortal": 6,
+        "Animation": 4,
+        "AnimatorOverrideController": 2,
+        "Shader": 1,
+        "AssetBundle": 1,
+        "RectTransform": 1,
+        "SkinnedMeshRenderer": 1
+      },
+      "mono_behaviour_count": 198,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 2979
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\capsules_assets_all_a6ff36a8651e794e43913af61f1e168e.bundle",
+      "name": "capsules_assets_all_a6ff36a8651e794e43913af61f1e168e.bundle",
+      "size": 1237997,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "GameObject": 307,
+        "Transform": 307,
+        "MonoBehaviour": 97,
+        "MeshFilter": 58,
+        "CapsuleCollider": 58,
+        "MeshRenderer": 58,
+        "AnimationClip": 41,
+        "Animator": 29,
+        "Material": 17,
+        "Mesh": 15,
+        "SkinnedMeshRenderer": 15,
+        "BoxCollider": 5,
+        "MeshCollider": 4,
+        "AnimatorController": 3,
+        "Light": 3,
+        "Texture2D": 1,
+        "AssetBundle": 1,
+        "Avatar": 1
+      },
+      "mono_behaviour_count": 97,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 1020
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globalprops_assets_all_f5719ee3e3de7584fa45681303dc1878.bundle",
+      "name": "globalprops_assets_all_f5719ee3e3de7584fa45681303dc1878.bundle",
+      "size": 6711396,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Transform": 126,
+        "GameObject": 126,
+        "MeshRenderer": 97,
+        "MeshFilter": 97,
+        "MeshCollider": 71,
+        "MonoBehaviour": 70,
+        "Mesh": 67,
+        "Texture2D": 13,
+        "Material": 9,
+        "Light": 7,
+        "VFXRenderer": 5,
+        "VisualEffect": 5,
+        "SphereCollider": 4,
+        "BoxCollider": 2,
+        "Animation": 2,
+        "ParticleSystemRenderer": 1,
+        "AssetBundle": 1,
+        "AnimationClip": 1,
+        "ParticleSystem": 1
+      },
+      "mono_behaviour_count": 70,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 705
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\contentupdate_assets_all_e21ea6ac62a26d71097d96d41c6014b0.bundle",
+      "name": "contentupdate_assets_all_e21ea6ac62a26d71097d96d41c6014b0.bundle",
+      "size": 22058356,
+      "category": "content_update",
+      "parseable": true,
+      "object_types": {
+        "Transform": 798,
+        "GameObject": 798,
+        "AnimationClip": 419,
+        "SkinnedMeshRenderer": 12,
+        "Mesh": 12,
+        "AnimatorOverrideController": 7,
+        "Avatar": 6,
+        "Animator": 6,
+        "Texture2D": 3,
+        "Material": 3,
+        "MonoBehaviour": 2,
+        "AnimatorController": 1,
+        "AssetBundle": 1,
+        "Shader": 1,
+        "Font": 1
+      },
+      "mono_behaviour_count": 2,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 2070
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\resources.assets",
+      "name": "resources.assets",
+      "size": 38524008,
+      "category": "assets",
+      "parseable": false,
+      "object_types": {},
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": "UnityFS signature not found"
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\sharedassets0.assets",
+      "name": "sharedassets0.assets",
+      "size": 23230696,
+      "category": "assets",
+      "parseable": false,
+      "object_types": {},
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": "UnityFS signature not found"
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\globalgamemanagers.assets",
+      "name": "globalgamemanagers.assets",
+      "size": 20909856,
+      "category": "assets",
+      "parseable": false,
+      "object_types": {},
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": "UnityFS signature not found"
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globalshaders_assets_all_563d2c83a4955f1d642ce6fe8d0b38ff.bundle",
+      "name": "globalshaders_assets_all_563d2c83a4955f1d642ce6fe8d0b38ff.bundle",
+      "size": 20159801,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Shader": 3,
+        "AssetBundle": 1,
+        "Material": 1
+      },
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 5
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\b5977eed9c1d24f73cb682ec4db1707b_unitybuiltinassets_f920896b5fd3f4d3b6760bbc29778abd.bundle",
+      "name": "b5977eed9c1d24f73cb682ec4db1707b_unitybuiltinassets_f920896b5fd3f4d3b6760bbc29778abd.bundle",
+      "size": 209682,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Shader": 19,
+        "Material": 4,
+        "Texture2D": 3,
+        "Cubemap": 1,
+        "AssetBundle": 1,
+        "Sprite": 1
+      },
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 29
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\zone_szuur_assets_all_e756f8e46365a80658a6d93bdb9f545a.bundle",
+      "name": "zone_szuur_assets_all_e756f8e46365a80658a6d93bdb9f545a.bundle",
+      "size": 37725,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "Material": 2,
+        "Shader": 2,
+        "Texture2D": 1,
+        "AssetBundle": 1
+      },
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 6
+    },
+    {
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\b5977eed9c1d24f73cb682ec4db1707b_monoscripts_da487d97676561791b463c954c264ea8.bundle",
+      "name": "b5977eed9c1d24f73cb682ec4db1707b_monoscripts_da487d97676561791b463c954c264ea8.bundle",
+      "size": 14705,
+      "category": "bundle_other",
+      "parseable": true,
+      "object_types": {
+        "MonoScript": 247,
+        "AssetBundle": 1
+      },
+      "mono_behaviour_count": 0,
+      "text_asset_count": 0,
+      "error": null,
+      "mnm_offset": 8,
+      "unity_version": "6000.0.59f2",
+      "object_count": 248
+    }
+  ]
+}

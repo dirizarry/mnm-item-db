@@ -1,0 +1,49 @@
+name: Aggregate crowd data
+
+# Pull crowd-inbox payloads (synced from R2) into crowd-*.json and rebuild site bundles.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/crowd-inbox/**"
+      - "mnm_crowd_aggregate.py"
+      - "build_relations.py"
+      - "build_site.py"
+
+permissions:
+  contents: read
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Check crowd inbox
+        id: inbox
+        run: |
+          count=$(find data/crowd-inbox -name '*.json' 2>/dev/null | wc -l | tr -d ' ')
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+
+      - name: Aggregate crowd payloads
+        if: steps.inbox.outputs.count != '0'
+        run: python mnm_crowd_aggregate.py --inbox data/crowd-inbox
+
+      - name: Rebuild relations + site
+        if: steps.inbox.outputs.count != '0'
+        run: |
+          python build_relations.py
+          python build_site.py
+          python build_hardcore_site.py
+
+      - name: No inbox files
+        if: steps.inbox.outputs.count == '0'
+        run: echo "No crowd-inbox payloads — skipping aggregation"

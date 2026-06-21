@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&amp;M Maps — 3D Layout Editor</title>
+<link rel="stylesheet" href="maps.css">
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<header class="mp-header">
+  <div class="mp-brand">
+    <a href="index.html" class="mp-back">← Viewer</a>
+    <a href="../index.html" class="mp-back" style="margin-left:.5rem">Item DB</a>
+    <h1>3D layout editor <span class="mp-proto-badge">Prototype</span></h1>
+    <div class="sub" id="zone-title">Loading…</div>
+  </div>
+</header>
+
+<div class="mp-layout ed-layout">
+  <aside class="mp-sidebar">
+    <div class="mp-section">
+      <h3>Tools</h3>
+      <div class="mp-section-body mp-controls">
+        <button class="mp-btn active" data-mode="translate">Move (G)</button>
+        <button class="mp-btn" data-mode="rotate">Rotate (R)</button>
+        <button class="mp-btn" id="btn-fit">Fit view</button>
+        <button class="mp-btn" id="btn-scatter">Scatter rooms</button>
+      </div>
+      <div class="mp-section-body" style="padding-top:0">
+        <label style="font-size:.78rem;color:var(--muted)">
+          <input type="checkbox" id="snap-toggle" checked> Snap 0.5m
+        </label>
+        <label style="font-size:.78rem;color:var(--muted);display:block;margin-top:.35rem">
+          <input type="checkbox" id="ref-toggle" checked> Reference map on ground
+        </label>
+      </div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Selected transform</h3>
+      <div class="mp-section-body ed-pos" id="pos-fields">
+        X <input id="px" type="number" step="0.5"> 
+        Y <input id="py" type="number" step="0.5"> 
+        Z <input id="pz" type="number" step="0.5"><br>
+        Rot° <input id="ry" type="number" step="90">
+      </div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Rooms</h3>
+      <div class="mp-section-body" id="room-list"></div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Layout</h3>
+      <div class="mp-section-body mp-controls">
+        <button class="mp-btn" id="btn-save">Save</button>
+        <button class="mp-btn" id="btn-export">Export JSON</button>
+        <button class="mp-btn" id="btn-reset">Reset</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mp-viewport-wrap">
+    <canvas id="viewport"></canvas>
+    <div class="mp-hud">
+      <div class="mp-hud-panel">
+        <p class="mp-hud-title" id="hud-title">3D room layout</p>
+        <p class="mp-hud-detail" id="hud-detail">Click a room, drag the gizmo to place it in 3D space.</p>
+      </div>
+      <div class="mp-hud-panel mp-hud-keys">
+        <span class="mode-on" id="mode-label">translate</span><br>
+        Orbit · right-drag empty space<br>
+        G move · R rotate<br>
+        Arrows nudge XZ · ↑↓ Y<br>
+        PgUp/Dn nudge Z
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="editor.js"></script>
+</body>
+</html>

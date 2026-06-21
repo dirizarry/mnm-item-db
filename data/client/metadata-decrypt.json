@@ -1,0 +1,29 @@
+{
+  "source": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\il2cpp_data\\Metadata\\global-metadata.dat",
+  "output": "C:\\Users\\84dan\\Projects\\mnm-item-db\\client_re\\dumps\\il2cpp\\global-metadata.decrypted.dat",
+  "source_size": 20401936,
+  "analysis": {
+    "on_disk_magic_hex": "8d670598",
+    "standard_il2cpp_magic": false,
+    "header_entropy_256": 7.202,
+    "body_entropy_64k": 7.77,
+    "plaintext_symbol_hits": {
+      "ItemRecord": 8,
+      "ClientItemRecord": 2,
+      "LootTable": 2,
+      "System.": 185,
+      "mscorlib": 7,
+      "Assembly-CSharp": 78
+    },
+    "note": "M&M keeps type/name strings readable in the file body but the v38/v39 header is obfuscated. Simple 8-byte XOR (including magic-derived keys) does not yield valid section offsets. Runtime memory mirrors the same encrypted header."
+  },
+  "success": false,
+  "partial": true,
+  "error": "Could not recover XOR key (full_encryption=True, tried [8, 16, 4, 32, 12, 24])",
+  "output_size": 20401936,
+  "magic_ok": true,
+  "mode": "full_xor_magic_derived",
+  "key_hex": "371ed67797ccbc88",
+  "version": 39,
+  "warning": "Header section offsets remain invalid; Il2CppDumper will not parse this."
+}

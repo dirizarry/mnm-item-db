@@ -1,0 +1,122 @@
+{
+  "id": "wyrmsbane-tomb",
+  "name": "Tomb of the Last Wyrmsbane",
+  "source": "chazsolo isometric",
+  "refImage": "ref/chazsolo-wyrmsbane.png",
+  "refSize": [1024, 768],
+  "credit": "Map by chazsolo",
+  "pieces": [
+    {
+      "id": "gildas-wing",
+      "name": "Grandmaster Gildas hall",
+      "poi": "Grandmaster Gildas",
+      "crop": [4, 18, 198, 128],
+      "hint": { "x": 12, "y": 28, "r": 0 }
+    },
+    {
+      "id": "gregan-hall",
+      "name": "Lt. Gregan Snyde hall",
+      "poi": "Lieutenant Gregan Snyde",
+      "crop": [6, 168, 212, 118],
+      "hint": { "x": 10, "y": 175, "r": 0 }
+    },
+    {
+      "id": "fiona-obadiah",
+      "name": "Fiona & Obadiah wing",
+      "poi": "High Marshal Fionna · Grandmaster Obadiah",
+      "crop": [188, 218, 162, 152],
+      "hint": { "x": 192, "y": 222, "r": 0 }
+    },
+    {
+      "id": "gerhardt",
+      "name": "Gerhardt Graves",
+      "poi": "Gerhardt Graves",
+      "crop": [388, 388, 138, 98],
+      "hint": { "x": 392, "y": 392, "r": 0 }
+    },
+    {
+      "id": "bone-construct",
+      "name": "Bone Construct",
+      "poi": "Bone Construct",
+      "crop": [348, 578, 118, 88],
+      "hint": { "x": 352, "y": 582, "r": 0 }
+    },
+    {
+      "id": "timmon-complex",
+      "name": "Timmon Bell complex",
+      "poi": "Timmon Bell",
+      "crop": [422, 568, 208, 182],
+      "hint": { "x": 426, "y": 572, "r": 0 }
+    },
+    {
+      "id": "crypt-hub",
+      "name": "Ancient Crypt hub",
+      "poi": "Quartermaster · Jakob · Ancient Crypt",
+      "crop": [648, 418, 228, 148],
+      "hint": { "x": 652, "y": 422, "r": 0 }
+    },
+    {
+      "id": "night-harbor",
+      "name": "Night Harbor entrance",
+      "poi": "Night Harbor zone line",
+      "crop": [778, 578, 238, 182],
+      "hint": { "x": 782, "y": 582, "r": 0 }
+    },
+    {
+      "id": "ariblast-wing",
+      "name": "Ariblast the Wicked",
+      "poi": "Ariblast the Wicked",
+      "crop": [538, 8, 218, 178],
+      "hint": { "x": 542, "y": 12, "r": 0 }
+    },
+    {
+      "id": "dario-room",
+      "name": "Dario Numas",
+      "poi": "Dario Numas",
+      "crop": [608, 2, 102, 78],
+      "hint": { "x": 612, "y": 6, "r": 0 }
+    },
+    {
+      "id": "link-upper-mid",
+      "name": "Corridor (upper)",
+      "poi": null,
+      "crop": [168, 138, 95, 88],
+      "hint": { "x": 172, "y": 142, "r": 0 }
+    },
+    {
+      "id": "link-mid-left",
+      "name": "Corridor (mid-left)",
+      "poi": null,
+      "crop": [210, 310, 185, 82],
+      "hint": { "x": 214, "y": 314, "r": 0 }
+    },
+    {
+      "id": "link-mid-center",
+      "name": "Corridor (center)",
+      "poi": null,
+      "crop": [395, 488, 108, 92],
+      "hint": { "x": 399, "y": 492, "r": 0 }
+    },
+    {
+      "id": "link-crypt-rise",
+      "name": "Corridor (to Ariblast)",
+      "poi": null,
+      "crop": [612, 188, 88, 235],
+      "hint": { "x": 616, "y": 192, "r": 0 }
+    },
+    {
+      "id": "link-timmon-crypt",
+      "name": "Corridor (Timmon ↔ Crypt)",
+      "poi": null,
+      "crop": [575, 512, 88, 68],
+      "hint": { "x": 579, "y": 516, "r": 0 }
+    },
+    {
+      "id": "link-dario-drop",
+      "name": "Corridor (Dario descent)",
+      "poi": null,
+      "crop": [655, 78, 72, 115],
+      "hint": { "x": 659, "y": 82, "r": 0 }
+    }
+  ]
+}

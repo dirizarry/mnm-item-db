@@ -1,0 +1,698 @@
+{
+  "generated": "2026-06-17T06:47:11.233933+00:00",
+  "install_root": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm",
+  "files": [
+    {
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+      "size": 139368836,
+      "candidates": [
+        {
+          "path_id": -2933182006446393942,
+          "size": 21156,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -8801376515393908217,
+          "size": 996,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -7727757695765700459,
+          "size": 996,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 3704488807492582518,
+          "size": 980,
+          "name": "VolumetricClouds",
+          "script_class": ""
+        },
+        {
+          "path_id": -8562548754111137214,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -8413047745738108409,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -8165566997269835257,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -7428139212347072363,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -5396227252519628281,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -5358250526383140345,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -5254194088055860729,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -3392682262052855659,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -2752379571458727787,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -84699032486731627,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 302755827216939586,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 1479628123689908802,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 2003317685553537173,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 2028583897574865474,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 6510896146020392475,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 8376498634854758978,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 5269236720817372278,
+          "size": 592,
+          "name": "DefaultSettingsVolumeProfile",
+          "script_class": ""
+        },
+        {
+          "path_id": -2200145240488182666,
+          "size": 564,
+          "name": "ColorCurves",
+          "script_class": ""
+        },
+        {
+          "path_id": 4085532770819314183,
+          "size": 556,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 6607149120319070357,
+          "size": 556,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -9008819417433246839,
+          "size": 528,
+          "name": "PhysicallyBasedSky",
+          "script_class": ""
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "contentupdate_assets_all_e21ea6ac62a26d71097d96d41c6014b0.bundle",
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\contentupdate_assets_all_e21ea6ac62a26d71097d96d41c6014b0.bundle",
+      "size": 22058356,
+      "candidates": [
+        {
+          "path_id": 3364514311608139806,
+          "size": 1232,
+          "name": "Nightharbor-Regular SDF",
+          "script_class": ""
+        },
+        {
+          "path_id": -4845514511406044314,
+          "size": 32,
+          "name": "",
+          "script_class": ""
+        }
+      ],
+      "error": null
+    },
+    {
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle",
+      "path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle",
+      "size": 25873828,
+      "candidates": [
+        {
+          "path_id": -7065204724240180089,
+          "size": 79488,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -1593155484628877658,
+          "size": 51868,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 6687228969628410877,
+          "size": 28804,
+          "name": "LiberationSans SDF _FlatSign",
+          "script_class": ""
+        },
+        {
+          "path_id": 903767524419280007,
+          "size": 10788,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 1226172976683833684,
+          "size": 5324,
+          "name": "LiberationSans SDF - Fallback",
+          "script_class": ""
+        },
+        {
+          "path_id": 1247935326290575014,
+          "size": 3928,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 2089310843454226086,
+          "size": 2616,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -8353295706695336282,
+          "size": 1936,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -1042896495142991247,
+          "size": 1744,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -2836116339156027329,
+          "size": 900,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -8464177952353552314,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -6967847060873320910,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -4704733565254471612,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -2433847972764815743,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -1177779290184563169,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -1009399768893561094,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 2258777928468816754,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 4900399659898758350,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 5341769907192208896,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 6589248157545634820,
+          "size": 632,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": 6860721938896685681,
+          "size": 524,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -8781542258680886671,
+          "size": 164,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -7734134568057791484,
+          "size": 160,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -5966066820314708449,
+          "size": 160,
+          "name": "",
+          "script_class": ""
+        },
+        {
+          "path_id": -5595372610478695634,
+          "size": 160,
+          "name": "",
+          "script_class": ""
+        }
+      ],
+      "error": null
+    }
+  ],
+  "top_overall": [
+    {
+      "path_id": -7065204724240180089,
+      "size": 79488,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -1593155484628877658,
+      "size": 51868,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 6687228969628410877,
+      "size": 28804,
+      "name": "LiberationSans SDF _FlatSign",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -2933182006446393942,
+      "size": 21156,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 903767524419280007,
+      "size": 10788,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 1226172976683833684,
+      "size": 5324,
+      "name": "LiberationSans SDF - Fallback",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 1247935326290575014,
+      "size": 3928,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 2089310843454226086,
+      "size": 2616,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -8353295706695336282,
+      "size": 1936,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -1042896495142991247,
+      "size": 1744,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 3364514311608139806,
+      "size": 1232,
+      "name": "Nightharbor-Regular SDF",
+      "script_class": "",
+      "file": "contentupdate_assets_all_e21ea6ac62a26d71097d96d41c6014b0.bundle"
+    },
+    {
+      "path_id": -8801376515393908217,
+      "size": 996,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -7727757695765700459,
+      "size": 996,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 3704488807492582518,
+      "size": 980,
+      "name": "VolumetricClouds",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -2836116339156027329,
+      "size": 900,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -8562548754111137214,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -8413047745738108409,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -8165566997269835257,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -7428139212347072363,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -5396227252519628281,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -5358250526383140345,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -5254194088055860729,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -3392682262052855659,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -2752379571458727787,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -84699032486731627,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 302755827216939586,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 1479628123689908802,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 2003317685553537173,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 2028583897574865474,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 6510896146020392475,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 8376498634854758978,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -8464177952353552314,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -6967847060873320910,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -4704733565254471612,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -2433847972764815743,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -1177779290184563169,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -1009399768893561094,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 2258777928468816754,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 4900399659898758350,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 5341769907192208896,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 6589248157545634820,
+      "size": 632,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": 5269236720817372278,
+      "size": 592,
+      "name": "DefaultSettingsVolumeProfile",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -2200145240488182666,
+      "size": 564,
+      "name": "ColorCurves",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 4085532770819314183,
+      "size": 556,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 6607149120319070357,
+      "size": 556,
+      "name": "",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": -9008819417433246839,
+      "size": 528,
+      "name": "PhysicallyBasedSky",
+      "script_class": "",
+      "file": "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+    },
+    {
+      "path_id": 6860721938896685681,
+      "size": 524,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -8781542258680886671,
+      "size": 164,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -7734134568057791484,
+      "size": 160,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    },
+    {
+      "path_id": -5966066820314708449,
+      "size": 160,
+      "name": "",
+      "script_class": "",
+      "file": "globalstructures_assets_all_985b81c8214ae9a53b6b7913bfb21802.bundle"
+    }
+  ],
+  "notes": [
+    "Large MonoBehaviours in defaultlocalgroup/contentupdate are likely Odin-serialized game tables.",
+    "script_class is often empty under IL2CPP until TypeTree / Il2CppDumper mapping exists."
+  ]
+}

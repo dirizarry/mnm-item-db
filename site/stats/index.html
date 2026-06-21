@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Stats · M&amp;M Item DB</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="stats.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Play Stats</h1>
+    <span class="tag">local ledger analytics · <a href="../index.html">← Item DB</a> · <a href="../hardcore/index.html">Magnificent Hall</a></span>
+  </div>
+</header>
+
+<main class="stats-main">
+  <p id="stats-empty" class="stats-empty hidden">
+    No ledger data bundled. Run <code>python mine_local.py</code> from the repo root, then refresh.
+  </p>
+
+  <div id="stats-root" class="hidden">
+    <section class="filter-bar stats-panel">
+      <label>Server
+        <select id="filter-server"><option value="">All servers</option></select>
+      </label>
+      <label>Character
+        <select id="filter-character"><option value="">All characters</option></select>
+      </label>
+      <span id="filter-summary" class="muted"></span>
+    </section>
+
+    <section id="live-panel" class="stats-panel live-panel hidden">
+      <div class="live-head">
+        <h2><span class="live-dot"></span> Live session</h2>
+        <span id="live-meta" class="muted"></span>
+      </div>
+      <div id="live-cards" class="live-cards"></div>
+      <div class="live-grid">
+        <div>
+          <h3>Top mobs</h3>
+          <ul id="live-mobs" class="live-list"></ul>
+        </div>
+        <div>
+          <h3>Recent</h3>
+          <ul id="live-recent" class="live-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-cards" id="summary-cards"></section>
+
+    <section class="stats-panel session-panel">
+      <div class="session-head">
+        <h2>Session explorer <span class="muted">drag the handles to set the window</span></h2>
+        <span id="session-meta" class="muted"></span>
+      </div>
+      <div id="session-presets" class="session-presets"></div>
+      <div id="session-timeline" class="session-timeline" aria-label="Activity timeline with adjustable start and end"></div>
+      <div class="session-range">
+        <label>Start <input type="datetime-local" id="session-start" step="1"></label>
+        <label>End <input type="datetime-local" id="session-end" step="1"></label>
+        <button type="button" id="session-reset" class="ghost">Full range</button>
+      </div>
+      <div id="session-cards" class="session-cards"></div>
+      <div class="session-grid">
+        <div>
+          <h3>Top mobs <span class="muted">in window</span></h3>
+          <ul id="session-mobs" class="live-list"></ul>
+        </div>
+        <div>
+          <h3>Coin per hour <span class="muted">my split, in window</span></h3>
+          <div id="session-chart" class="line-chart"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-grid">
+      <section class="stats-panel">
+        <h2>Kills per day</h2>
+        <div id="chart-kills-day" class="line-chart" aria-label="Kills per day line chart"></div>
+      </section>
+      <section class="stats-panel drill-panel">
+        <h2>Kills by zone <span class="muted">click to drill down</span></h2>
+        <nav id="drill-breadcrumb" class="drill-breadcrumb hidden"></nav>
+        <div id="drill-content"></div>
+      </section>
+    </div>
+
+    <section class="stats-panel">
+      <h2>Farming heatmap <span class="muted">overlay on zone map</span></h2>
+      <div id="zone-map" class="zone-map" aria-label="Zone kill heatmap"></div>
+      <p class="muted map-legend">Brighter zones = more kills (filtered selection)</p>
+    </section>
+
+    <section class="stats-panel">
+      <h2>Top mobs</h2>
+      <div class="tablewrap"><table id="mobs-table"><thead><tr>
+        <th>Mob</th><th>Kills</th><th>Coin/kill</th><th>Zones</th>
+      </tr></thead><tbody></tbody></table></div>
+    </section>
+
+    <section class="stats-panel">
+      <h2>Party loot <span class="muted">who looted what</span></h2>
+      <div class="tablewrap"><table id="party-loot-table"><thead><tr>
+        <th>When</th><th>Looter</th><th>Owner</th><th>Item</th><th>Qty</th><th>From</th><th>Zone</th>
+      </tr></thead><tbody></tbody></table></div>
+    </section>
+
+    <section class="stats-panel">
+      <h2>Level-ups</h2>
+      <div class="tablewrap"><table id="levelups-table"><thead><tr>
+        <th>When</th><th>Character</th><th>Level</th><th>Zone</th>
+      </tr></thead><tbody></tbody></table></div>
+    </section>
+
+    <section id="combat-panel" class="stats-panel hidden">
+      <h2>Combat OCR session</h2>
+      <p class="muted">Live totals from <code>data/combat-live.json</code> (desktop client or <code>mnm_combat_capture.py</code>). Refreshes every few seconds while the local server is running.</p>
+      <div id="combat-cards" class="live-cards"></div>
+      <div id="combat-streams" class="hidden muted"></div>
+    </section>
+
+    <section class="stats-panel upload-panel">
+      <h2>Contribute analytics</h2>
+      <p class="muted">
+        Aggregated play data helps improve drop links on the site. Character names are
+        <strong>excluded by default</strong> from the upload bundle.
+      </p>
+      <div class="upload-opts">
+        <label><input type="checkbox" id="upload-share-characters"> Share character names</label>
+        <label><input type="checkbox" id="upload-share-hardcore" disabled> Share Magnificent standings</label>
+      </div>
+      <div id="upload-status" class="upload-status"></div>
+      <div class="upload-actions">
+        <button type="button" id="btn-copy-payload" class="primary">Copy upload JSON</button>
+        <button type="button" id="btn-upload" class="primary" disabled>Upload to site (stub)</button>
+      </div>
+      <pre id="upload-preview" class="upload-preview muted"></pre>
+    </section>
+  </div>
+</main>
+
+<footer><span id="stats-meta"></span></footer>
+
+<script src="ledger-stats.js"></script>
+<script src="combat-stats.js" onerror="void 0"></script>
+<script src="../hardcore/hardcore-data.js" onerror="void 0"></script>
+<script src="ledger-live.js" onerror="void 0"></script>
+<script src="stats.js"></script>
+</body>
+</html>

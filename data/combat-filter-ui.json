@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "ui_path": "Right-click chat window → Combat >",
+  "source_screenshots": [
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_1OLuI4SLno.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_3XUnnh83dk.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_de4bPvwNYV.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_pTAvNH91Nl.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_4kDcOH7csC.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_EuowaYxVIW.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_qhudRZ741e.jpg",
+    "C:\\Users\\84dan\\Documents\\ShareX\\Screenshots\\2026-06\\mnm_Vk9q7ggBG0.jpg"
+  ],
+  "label_maps": {
+    "target_suffix": {
+      "Me": "Mine",
+      "My": "Mine",
+      "Mine": "Victim",
+      "Pet": "Pet",
+      "Pets": "Pet",
+      "NPCs": "Other",
+      "Others": "Other",
+      "Co-Players": "Other",
+      "Group": "Other",
+      "Players": "OtherPlayer"
+    },
+    "buff_suffix": {
+      "Beneficial|Me": "BenefitMine",
+      "Beneficial|NPCs": "BenefitOther",
+      "Beneficial|Players": "BenefitOtherPlayer",
+      "Beneficial|Pets": "BenefitVictim",
+      "Detrimental|Me": "DetrimentVictim",
+      "Detrimental|NPCs": "DetrimentOther",
+      "Detrimental|Players": "DetrimentOtherPlayer",
+      "Detrimental|Pets": "DetrimentVictim"
+    },
+    "suffix_meta": {
+      "Mine": {
+        "perspective": "mine",
+        "actor": "you"
+      },
+      "Pet": {
+        "perspective": "pet",
+        "actor": "pet"
+      },
+      "Victim": {
+        "perspective": "victim",
+        "actor": "you"
+      },
+      "OtherPlayer": {
+        "perspective": "other_player"
+      },
+      "Other": {
+        "perspective": "other"
+      }
+    }
+  },
+  "menu": {
+    "Death": {
+      "targets": [
+        "Me",
+        "Pet",
+        "NPCs",
+        "Players"
+      ],
+      "channels_by_target": {
+        "Me": [
+          "DeathMine",
+          "DeathMe"
+        ],
+        "Pet": [],
+        "NPCs": [
+          "DeathOther"
+        ],
+        "Players": [
+          "DeathOtherPlayer"
+        ]
+      }
+    },
+    "Pet": {
+      "toggle": true,
+      "channels": [
+        "Pet"
+      ]
+    },
+    "Line of Sight": {
+      "toggle": true,
+      "channels": [
+        "LOS"
+      ]
+    },
+    "Melee": {
+      "outcomes": {
+        "Hits": {
+          "targets": [
+            "Me",
+            "Mine",
+            "Pet",
+            "NPCs",
+            "Players"
+          ],
+          "channels": [
+            "CombatHitMine",
+            "CombatHitVictim",
+            "CombatHitPet",
+            "CombatHitOther",
+            "CombatHitOtherPlayer"
+          ]
+        },
+        "Misses": {
+          "targets": [
+            "Me",
+            "Mine",
+            "Pet",
+            "NPCs",
+            "Players"
+          ],
+          "channels": [
+            "CombatMissMine",
+            "CombatMissVictim",
+            "CombatMissPet",
+            "CombatMissOther",
+            "CombatMissOtherPlayer"
+          ]
+        },
+        "Dodges": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        },
+        "Parries": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        },
+        "Ripostes": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        },
+        "Blocks": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        },
+        "Absorbs": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        },
+        "Reflects": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        },
+        "Invulnerable": {
+          "note": "Mitigation outcome — parsed from hit lines (absorb/parry/dodge/block)",
+          "channels": []
+        }
+      }
+    },
+    "Ability": {
+      "outcomes": {
+        "Hit": {
+          "targets": [
+            "Me",
+            "NPCs",
+            "Players"
+          ],
+          "channels": [
+            "AbilityHitBenefitMine",
+            "AbilityHitBenefitOther",
+            "AbilityHitBenefitOtherPlayer",
+            "AbilityHitDetrimentMine",
+            "AbilityHitDetrimentOther",
+            "AbilityHitDetrimentOtherPlayer"
+          ]
+        },
+        "Miss": {
+          "targets": [
+            "Me",
+            "NPCs",
+            "Players"
+          ],
+          "channels": [
+            "AbilityMissMine",
+            "AbilityMissOther",
+            "AbilityMissOtherPlayer"
+          ]
+        },
+        "Resist": {
+          "targets": [
+            "Me",
+            "NPCs",
+            "Players"
+          ],
+          "channels": [
+            "AbilityResistMine",
+            "AbilityResistOther",
+            "AbilityResistOtherPlayer"
+          ]
+        },
+        "Interrupts": {
+          "note": "Cast lifecycle — AbilityStatus channel",
+          "channels": [
+            "AbilityStatus"
+          ]
+        },
+        "Fizzles": {
+          "note": "Cast lifecycle — AbilityStatus channel",
+          "channels": [
+            "AbilityStatus"
+          ]
+        }
+      }
+    },
+    "Spell": {
+      "phases": {
+        "Apply": {
+          "alignments": {
+            "Beneficial": {
+              "targets": [
+                "Me",
+                "NPCs",
+                "Players"
+              ],
+              "channels": [
+                "BuffApplyBenefitMine",
+                "BuffApplyBenefitOther",
+                "BuffApplyBenefitOtherPlayer"
+              ]
+            },
+            "Detrimental": {
+              "targets": [
+                "Me",
+                "NPCs",
+                "Players"
+              ],
+              "channels": [
+                "BuffApplyDetrimentVictim",
+                "BuffApplyDetrimentOther",
+                "BuffApplyDetrimentOtherPlayer"
+              ]
+            }
+          }
+        },
+        "Fade": {
+          "alignments": {
+            "Beneficial": {
+              "targets": [
+                "Me",
+                "NPCs",
+                "Players"
+              ],
+              "channels": [
+                "BuffFadeBenefitMine",
+                "BuffFadeBenefitOther",
+                "BuffFadeBenefitOtherPlayer"
+              ]
+            },
+            "Detrimental": {
+              "targets": [
+                "Me",
+                "NPCs",
+                "Players"
+              ],
+              "channels": [
+                "BuffFadeDetrimentVictim",
+                "BuffFadeDetrimentOther",
+                "BuffFadeDetrimentOtherPlayer"
+              ]
+            }
+          }
+        },
+        "Tick": {
+          "alignments": {
+            "Beneficial": {
+              "targets": [
+                "Me",
+                "NPCs",
+                "Players"
+              ],
+              "channels": [
+                "BuffTickBenefitMine",
+                "BuffTickBenefitOther",
+                "BuffTickBenefitOtherPlayer"
+              ]
+            },
+            "Detrimental": {
+              "targets": [
+                "Me",
+                "NPCs",
+                "Players"
+              ],
+              "channels": [
+                "BuffTickDetrimentVictim",
+                "BuffTickDetrimentOther",
+                "BuffTickDetrimentOtherPlayer"
+              ]
+            }
+          }
+        }
+      },
+      "Resist": {
+        "note": "Spell resist flyout — maps to AbilityResist* channels",
+        "alignments": {
+          "Beneficial": {
+            "targets": [
+              "Me",
+              "Mine",
+              "Pet",
+              "NPCs",
+              "Players"
+            ],
+            "channels": [
+              "AbilityResistMine",
+              "AbilityResistVictim",
+              "AbilityResistPet",
+              "AbilityResistOther",
+              "AbilityResistOtherPlayer"
+            ]
+          },
+          "Detriment": {
+            "targets": [
+              "Me",
+              "Mine",
+              "Pet",
+              "NPCs",
+              "Players"
+            ],
+            "channels": [
+              "AbilityResistMine",
+              "AbilityResistVictim",
+              "AbilityResistPet",
+              "AbilityResistOther",
+              "AbilityResistOtherPlayer"
+            ]
+          },
+          "Misc": {
+            "targets": [
+              "Me",
+              "Mine",
+              "Pet",
+              "NPCs",
+              "Players"
+            ],
+            "channels": [
+              "AbilityResistMine",
+              "AbilityResistVictim",
+              "AbilityResistPet",
+              "AbilityResistOther",
+              "AbilityResistOtherPlayer"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "presets": {
+    "meter": {
+      "label": "DPS / HPS meter (primary combat window)",
+      "role": "meter",
+      "window_id": "combat",
+      "steps": [
+        "Combat → Melee → Hits: Me, Pet, NPCs, Players",
+        "Combat → Melee → Misses: Me, Pet, NPCs, Players",
+        "Combat → Ability → Hit / Miss: Me, NPCs, Players",
+        "Combat → Spell → Tick: all Beneficial + Detrimental toggles"
+      ],
+      "channels": [
+        "CombatHitMine",
+        "CombatHitVictim",
+        "CombatHitPet",
+        "CombatHitOther",
+        "CombatHitOtherPlayer",
+        "CombatMissMine",
+        "CombatMissVictim",
+        "CombatMissPet",
+        "CombatMissOther",
+        "CombatMissOtherPlayer",
+        "AbilityHitBenefitMine",
+        "AbilityHitBenefitVictim",
+        "AbilityHitBenefitPet",
+        "AbilityHitBenefitOther",
+        "AbilityHitBenefitOtherPlayer",
+        "AbilityHitDetrimentMine",
+        "AbilityHitDetrimentVictim",
+        "AbilityHitDetrimentPet",
+        "AbilityHitDetrimentOther",
+        "AbilityHitDetrimentOtherPlayer",
+        "AbilityMissMine",
+        "AbilityMissVictim",
+        "AbilityMissPet",
+        "AbilityMissOther",
+        "AbilityMissOtherPlayer",
+        "DamageShieldHitMine",
+        "DamageShieldHitVictim",
+        "DamageShieldHitOther",
+        "DamageShieldHitOtherPlayer"
+      ],
+      "channel_count": 29
+    },
+    "casts": {
+      "label": "Casts, resists, interrupts, fizzles",
+      "role": "casts",
+      "window_id": "combat2",
+      "steps": [
+        "Open a second chat window (or route to combat2)",
+        "Combat → Ability → Resist: Me, NPCs, Players",
+        "Enable AbilityStatus (interrupts/fizzles) via casts filter group"
+      ],
+      "channels": [
+        "AbilityMine",
+        "AbilityOther",
+        "AbilityOtherPlayer",
+        "AbilityPet",
+        "AbilityResistMine",
+        "AbilityResistVictim",
+        "AbilityResistPet",
+        "AbilityResistOther",
+        "AbilityResistOtherPlayer",
+        "AbilityStatus",
+        "Action"
+      ],
+      "channel_count": 11
+    },
+    "buffs": {
+      "label": "Buff apply, fade, tick",
+      "role": "buffs",
+      "window_id": "combat3",
+      "steps": [
+        "Combat → Spell → Apply / Fade / Tick",
+        "Enable all Beneficial + Detrimental toggles (Me, NPCs, Players)"
+      ],
+      "channels": [
+        "BuffApplyBenefitMine",
+        "BuffApplyBenefitVictim",
+        "BuffApplyBenefitOther",
+        "BuffApplyBenefitOtherPlayer",
+        "BuffApplyDetrimentMine",
+        "BuffApplyDetrimentVictim",
+        "BuffApplyDetrimentOther",
+        "BuffApplyDetrimentOtherPlayer",
+        "BuffFadeBenefitMine",
+        "BuffFadeBenefitVictim",
+        "BuffFadeBenefitOther",
+        "BuffFadeBenefitOtherPlayer",
+        "BuffFadeDetrimentMine",
+        "BuffFadeDetrimentVictim",
+        "BuffFadeDetrimentOther",
+        "BuffFadeDetrimentOtherPlayer",
+        "BuffTickBenefitMine",
+        "BuffTickBenefitVictim",
+        "BuffTickBenefitOther",
+        "BuffTickBenefitOtherPlayer",
+        "BuffTickDetrimentMine",
+        "BuffTickDetrimentVictim",
+        "BuffTickDetrimentOther",
+        "BuffTickDetrimentOtherPlayer"
+      ],
+      "channel_count": 24
+    },
+    "deaths": {
+      "label": "Deaths and experience",
+      "role": "deaths",
+      "window_id": "combat",
+      "steps": [
+        "Combat → Death: Me, NPCs, Players",
+        "Route Experience channel to this window"
+      ],
+      "channels": [
+        "DeathMine",
+        "DeathMe",
+        "DeathOther",
+        "DeathOtherPlayer",
+        "Experience"
+      ],
+      "channel_count": 5
+    },
+    "pvp": {
+      "label": "PvP incoming aggression alerts",
+      "role": "pvp",
+      "window_id": "combat",
+      "steps": [
+        "Combat → Melee → Hits/Misses: Mine (hits on you), Players",
+        "Combat → Ability → Hit/Miss/Resist: Me, Players",
+        "Combat → Spell → Apply/Tick Detrimental: Me, Players",
+        "Combat → Death → Players"
+      ],
+      "channels": [
+        "CombatHitVictim",
+        "CombatHitOtherPlayer",
+        "CombatMissVictim",
+        "CombatMissOtherPlayer",
+        "AbilityHitDetrimentVictim",
+        "AbilityHitDetrimentOtherPlayer",
+        "AbilityMissVictim",
+        "AbilityMissOtherPlayer",
+        "AbilityResistVictim",
+        "AbilityResistOtherPlayer",
+        "DamageShieldHitVictim",
+        "DamageShieldHitOtherPlayer",
+        "BuffApplyDetrimentVictim",
+        "BuffApplyDetrimentOtherPlayer",
+        "BuffTickDetrimentVictim",
+        "BuffTickDetrimentOtherPlayer",
+        "DeathMe",
+        "DeathOtherPlayer"
+      ],
+      "channel_count": 18
+    },
+    "misc": {
+      "label": "LOS, consider, loot noise",
+      "role": "misc",
+      "window_id": "combat",
+      "steps": [
+        "Combat → Line of Sight",
+        "Optional: route Consider / Loot to a separate window"
+      ],
+      "channels": [
+        "LOS",
+        "Status",
+        "Loot",
+        "ConsiderRED",
+        "ConsiderYELLOW",
+        "ConsiderWHITE",
+        "ConsiderBLUE",
+        "ConsiderGREEN",
+        "ConsiderGREY",
+        "ConsiderLIGHTBLUE",
+        "ConsiderLIGHTGREEN"
+      ],
+      "channel_count": 11
+    }
+  },
+  "roles": {
+    "meter": [
+      "CombatHitMine",
+      "CombatHitVictim",
+      "CombatHitPet",
+      "CombatHitOther",
+      "CombatHitOtherPlayer",
+      "CombatMissMine",
+      "CombatMissVictim",
+      "CombatMissPet",
+      "CombatMissOther",
+      "CombatMissOtherPlayer",
+      "AbilityHitBenefitMine",
+      "AbilityHitBenefitVictim",
+      "AbilityHitBenefitPet",
+      "AbilityHitBenefitOther",
+      "AbilityHitBenefitOtherPlayer",
+      "AbilityHitDetrimentMine",
+      "AbilityHitDetrimentVictim",
+      "AbilityHitDetrimentPet",
+      "AbilityHitDetrimentOther",
+      "AbilityHitDetrimentOtherPlayer",
+      "AbilityMissMine",
+      "AbilityMissVictim",
+      "AbilityMissPet",
+      "AbilityMissOther",
+      "AbilityMissOtherPlayer",
+      "DamageShieldHitMine",
+      "DamageShieldHitVictim",
+      "DamageShieldHitOther",
+      "DamageShieldHitOtherPlayer"
+    ],
+    "casts": [
+      "AbilityMine",
+      "AbilityOther",
+      "AbilityOtherPlayer",
+      "AbilityPet",
+      "AbilityResistMine",
+      "AbilityResistVictim",
+      "AbilityResistPet",
+      "AbilityResistOther",
+      "AbilityResistOtherPlayer",
+      "AbilityStatus",
+      "Action"
+    ],
+    "buffs": [
+      "BuffApplyBenefitMine",
+      "BuffApplyBenefitVictim",
+      "BuffApplyBenefitOther",
+      "BuffApplyBenefitOtherPlayer",
+      "BuffApplyDetrimentMine",
+      "BuffApplyDetrimentVictim",
+      "BuffApplyDetrimentOther",
+      "BuffApplyDetrimentOtherPlayer",
+      "BuffFadeBenefitMine",
+      "BuffFadeBenefitVictim",
+      "BuffFadeBenefitOther",
+      "BuffFadeBenefitOtherPlayer",
+      "BuffFadeDetrimentMine",
+      "BuffFadeDetrimentVictim",
+      "BuffFadeDetrimentOther",
+      "BuffFadeDetrimentOtherPlayer",
+      "BuffTickBenefitMine",
+      "BuffTickBenefitVictim",
+      "BuffTickBenefitOther",
+      "BuffTickBenefitOtherPlayer",
+      "BuffTickDetrimentMine",
+      "BuffTickDetrimentVictim",
+      "BuffTickDetrimentOther",
+      "BuffTickDetrimentOtherPlayer"
+    ],
+    "deaths": [
+      "DeathMine",
+      "DeathMe",
+      "DeathOther",
+      "DeathOtherPlayer",
+      "Experience"
+    ],
+    "pvp": [
+      "CombatHitVictim",
+      "CombatHitOtherPlayer",
+      "CombatMissVictim",
+      "CombatMissOtherPlayer",
+      "AbilityHitDetrimentVictim",
+      "AbilityHitDetrimentOtherPlayer",
+      "AbilityMissVictim",
+      "AbilityMissOtherPlayer",
+      "AbilityResistVictim",
+      "AbilityResistOtherPlayer",
+      "DamageShieldHitVictim",
+      "DamageShieldHitOtherPlayer",
+      "BuffApplyDetrimentVictim",
+      "BuffApplyDetrimentOtherPlayer",
+      "BuffTickDetrimentVictim",
+      "BuffTickDetrimentOtherPlayer",
+      "DeathMe",
+      "DeathOtherPlayer"
+    ],
+    "misc": [
+      "LOS",
+      "Status",
+      "Loot",
+      "ConsiderRED",
+      "ConsiderYELLOW",
+      "ConsiderWHITE",
+      "ConsiderBLUE",
+      "ConsiderGREEN",
+      "ConsiderGREY",
+      "ConsiderLIGHTBLUE",
+      "ConsiderLIGHTGREEN"
+    ]
+  }
+}

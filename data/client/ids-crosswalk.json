@@ -1,0 +1,5165 @@
+{
+  "generated": "2026-06-20T02:11:47.716482+00:00",
+  "install_root": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm",
+  "ledger_items": 641,
+  "bundles_scanned": 18,
+  "plaintext_hid_hits": 10,
+  "wiki_name_matches": 579,
+  "rows": [
+    {
+      "item_hid": "acolyte_mantle_of_ash",
+      "name": "Acolyte Mantle of Ashes",
+      "wiki_title": "Acolyte Mantle of Ashes",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "acolyte_robe_of_ash",
+      "name": "Acolyte Robe of Ashes",
+      "wiki_title": "Acolyte Robe of Ashes",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_bends_tenhooks_bracer",
+      "name": "Allegiance Cuff",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a45f7e78b86e5d9ba802f0a0",
+      "name": "Allegiance Cuff",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wb_leather_hand",
+      "name": "Ancient Rotting Wyrmsbane Gloves",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cracked_amphora_piece",
+      "name": "Antique Ceramic Fragment",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dru_research_tier1_5",
+      "name": "Apoptosis Journal Page",
+      "wiki_title": "Apoptosis Journal Page",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "e01fb56ebf44e98a4a2611de",
+      "name": "Ashira Hunter Tooth",
+      "wiki_title": "Ashira Hunter Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inq_ash_herbs",
+      "name": "Ashira Medicinal Herbs",
+      "wiki_title": "Ashira Medicinal Herbs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_necklace_sct",
+      "name": "Ashira Scout Necklace",
+      "wiki_title": "Ashira Scout Necklace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_tail",
+      "name": "Ashira Tail",
+      "wiki_title": "Ashira Tail",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2a9050dd2b3e8b4b864bebc1",
+      "name": "Ashira Tail",
+      "wiki_title": "Ashira Tail",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "e7083c39b4f931793c59de91",
+      "name": "Ashira Tooth",
+      "wiki_title": "Ashira Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "8fbfcae92a1252e48c977fd9",
+      "name": "Ashira War Tooth",
+      "wiki_title": "Ashira War Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_war_tooth",
+      "name": "Ashira War Tooth",
+      "wiki_title": "Ashira War Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_war_fore",
+      "name": "Ashira Warrior Bracer",
+      "wiki_title": "Ashira Warrior Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_necklace_war",
+      "name": "Ashira Warrior Necklace",
+      "wiki_title": "Ashira Warrior Necklace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_warrior_pelt",
+      "name": "Ashira Warrior Pelt",
+      "wiki_title": "Ashira Warrior Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_minicrypt_spider_special_cmn_head_plt_melee_11",
+      "name": "Barbute of the Frenzied Watch",
+      "wiki_title": "Barbute of the Frenzied Watch",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bat_eye",
+      "name": "Bat Eye",
+      "wiki_title": "Bat Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a8f4fb29849a35c7a5b1a8d9",
+      "name": "Bat Eye",
+      "wiki_title": "Bat Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bat_fur",
+      "name": "Bat Fur",
+      "wiki_title": "Bat Fur",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3413ae85a6bdb1ffd4d4c665",
+      "name": "Bat Fur",
+      "wiki_title": "Bat Fur",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bat_tooth",
+      "name": "Bat Tooth",
+      "wiki_title": "Bat Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ecfab4f31a58122a9c917a93",
+      "name": "Bat Tooth",
+      "wiki_title": "Bat Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bat_wing",
+      "name": "Bat Wing",
+      "wiki_title": "Bat Wing",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3b9eae4b79a3090957aed13e",
+      "name": "Bat Wing",
+      "wiki_title": "Bat Wing",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bell_pepper",
+      "name": "Bell Pepper",
+      "wiki_title": "Bell Pepper",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "0f46da79dcec1962cf8551e8",
+      "name": "Bell Pepper",
+      "wiki_title": "Bell Pepper",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "blister_beetle_gland",
+      "name": "Blister Beetle Gland",
+      "wiki_title": "Blister Beetle Gland",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_bends_tenhooks_bracer_broken",
+      "name": "Bloodied Allegiance Cuff",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f216d5ec592f89301e3ed505",
+      "name": "Bloodied Allegiance Cuff",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ayip_head",
+      "name": "Bloodied Ashira Head",
+      "wiki_title": "Bloodied Ashira Head",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ayvins_head",
+      "name": "Bloodied Human Head",
+      "wiki_title": "Bloodied Human Head",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bloodynose_goblin_ear",
+      "name": "Bloodynose Goblin Ear",
+      "wiki_title": "Bloodynose Goblin Ear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bloodynose_goblin_head",
+      "name": "Bloodynose Goblin Head",
+      "wiki_title": "Bloodynose Goblin Head",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bone_chips",
+      "name": "Bone Chips",
+      "wiki_title": "Bone Chips",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "9fae14dfbd2ef030e0993461",
+      "name": "Bone Chips",
+      "wiki_title": "Bone Chips",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dario_bow",
+      "name": "Bow of the Fallen Ranger",
+      "wiki_title": "Bow of the Fallen Ranger",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "brahsons_cleaver",
+      "name": "Brahson's Cleaver",
+      "wiki_title": "Brahson's Cleaver",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bread_roll",
+      "name": "Bread Rolls",
+      "wiki_title": "Bread Rolls",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "brittle_sharpening_stone",
+      "name": "Brittle Sharpening Stone",
+      "wiki_title": "Brittle Sharpening Stone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "brittle_stone",
+      "name": "Brittle Stone",
+      "wiki_title": "Brittle Stone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "grain_beetle_legs_01",
+      "name": "Broken Grain Beetle Legs",
+      "wiki_title": "Broken Grain Beetle Legs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bronze_scraps",
+      "name": "Bronze Scraps",
+      "wiki_title": "Bronze Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4bd63c9adfb5348a4e0832e7",
+      "name": "Bronze Scraps",
+      "wiki_title": "Bronze Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_minicrypt_spider_boss_uncommon_plate_wrists_17",
+      "name": "Brood-Crest Vambraces",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_minicrypt_spider_boss_common_plate_chest_17",
+      "name": "Broodwarden Carapace",
+      "wiki_title": "Broodwarden Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fpdrake_note_02",
+      "name": "Burned Parchment Scrap",
+      "wiki_title": "Burned Parchment Scrap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "burnt_bone_chips",
+      "name": "Burnt Bone Chips",
+      "wiki_title": "Burnt Bone Chips",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "burnt_rune_staff",
+      "name": "Burnt Rune Staff",
+      "wiki_title": "Burnt Rune Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "burntout_light_stone",
+      "name": "Burnt-Out Lightstone",
+      "wiki_title": "Burnt-Out Lightstone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "butchers_cap",
+      "name": "Butcher's Cap",
+      "wiki_title": "Butcher's Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cabbage",
+      "name": "Cabbage",
+      "wiki_title": "Cabbage",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "7464484d69831c9587f6b80e",
+      "name": "Cabbage",
+      "wiki_title": "Cabbage",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_fp_boneyard_beetle_necrof_cmn_back_cha_25",
+      "name": "Carapace Cloak",
+      "wiki_title": "Carapace Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_fp_boneyard_beetle_necrof_cmn_mainhand_wis_25",
+      "name": "Carrioncaller",
+      "wiki_title": "Carrioncaller",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b8cc2f790204be7fa5445ccb",
+      "name": "Carrot",
+      "wiki_title": "Carrot",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "carrot",
+      "name": "Carrot",
+      "wiki_title": "Carrot",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+        "zone_calafrey_scenes_all_8357c99d7a2cb479509b8efbc556a8ad.bundle",
+        "zone_other_scenes_all_24e42eed2ed6d95f20dea124e8c4c369.bundle",
+        "zone_szuur_scenes_all_effe411043ce515d87d5abc8e7aa5d92.bundle"
+      ]
+    },
+    {
+      "item_hid": "celery",
+      "name": "Celery",
+      "wiki_title": "Celery",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "746a584511ccfadc80f71d00",
+      "name": "Celery",
+      "wiki_title": "Celery",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "eb02147972de638ead40bb0d",
+      "name": "Ceremonial Plated Mantle",
+      "wiki_title": "Ceremonial Plated Mantle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ac_librarian_gallier_book",
+      "name": "Charred Transcripts",
+      "wiki_title": "Charred Transcripts",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2e56d4c09d5f796d029947ec",
+      "name": "Cheese",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cheese",
+      "name": "Cheese",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_amber",
+      "name": "Chipped Amber",
+      "wiki_title": "Chipped Amber",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_black_pearl",
+      "name": "Chipped Black Pearl",
+      "wiki_title": "Chipped Black Pearl",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_black_sapphire",
+      "name": "Chipped Black Sapphire",
+      "wiki_title": "Chipped Black Sapphire",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_bloodstone",
+      "name": "Chipped Bloodstone",
+      "wiki_title": "Chipped Bloodstone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_blue_diamond",
+      "name": "Chipped Blue Diamond",
+      "wiki_title": "Chipped Blue Diamond",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_carnelian",
+      "name": "Chipped Carnelian",
+      "wiki_title": "Chipped Carnelian",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_cats_eye_agate",
+      "name": "Chipped Cat's Eye Agate",
+      "wiki_title": "Chipped Cat's Eye Agate",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_diamond",
+      "name": "Chipped Diamond",
+      "wiki_title": "Chipped Diamond",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_fire_emerald",
+      "name": "Chipped Fire Emerald",
+      "wiki_title": "Chipped Fire Emerald",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_fire_opal",
+      "name": "Chipped Fire Opal",
+      "wiki_title": "Chipped Fire Opal",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_hematite",
+      "name": "Chipped Hematite",
+      "wiki_title": "Chipped Hematite",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_jasper",
+      "name": "Chipped Jasper",
+      "wiki_title": "Chipped Jasper",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_lapis_lazuli",
+      "name": "Chipped Lapis Lazuli",
+      "wiki_title": "Chipped Lapis Lazuli",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_malachite",
+      "name": "Chipped Malachite",
+      "wiki_title": "Chipped Malachite",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_onyx",
+      "name": "Chipped Onyx",
+      "wiki_title": "Chipped Onyx",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_sapphire",
+      "name": "Chipped Sapphire",
+      "wiki_title": "Chipped Sapphire",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_star_rose_quartz",
+      "name": "Chipped Star Rose Quartz",
+      "wiki_title": "Chipped Star Rose Quartz",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_star_ruby",
+      "name": "Chipped Star Ruby",
+      "wiki_title": "Chipped Star Ruby",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_topaz",
+      "name": "Chipped Topaz",
+      "wiki_title": "Chipped Topaz",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_turquoise",
+      "name": "Chipped Turquoise",
+      "wiki_title": "Chipped Turquoise",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "chipped_wolfs_eye_agate",
+      "name": "Chipped Wolf's Eye Agate",
+      "wiki_title": "Chipped Wolf's Eye Agate",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "diseased_meat",
+      "name": "Chunk of Diseased Meat",
+      "wiki_title": "Chunk of Diseased Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cinder_beetle_shell",
+      "name": "Cinder Beetle Carapace",
+      "wiki_title": "Cinder Beetle Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cinder_beetle_eye",
+      "name": "Cinder Beetle Eye",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cinder_beetle_gland",
+      "name": "Cinder Beetle Gland",
+      "wiki_title": "Cinder Beetle Gland",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cinder_beetle_leg",
+      "name": "Cinder Beetle Legs",
+      "wiki_title": "Cinder Beetle Legs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cinder_beetle_mandible",
+      "name": "Cinder Beetle Mandible",
+      "wiki_title": "Cinder Beetle Mandible",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "clawed_spider_leg",
+      "name": "Clawed Spider Legs",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "clear_quartz_shard",
+      "name": "Clear Quartz Shard",
+      "wiki_title": "Clear Quartz Shard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cloth_bandage",
+      "name": "Cloth Bandage",
+      "wiki_title": "Cloth Bandage",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cloth_padding",
+      "name": "Cloth Padding",
+      "wiki_title": "Cloth Padding",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cloth_pouch",
+      "name": "Cloth Pouch",
+      "wiki_title": "Cloth Pouch",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cloth_scraps",
+      "name": "Cloth Scraps",
+      "wiki_title": "Cloth Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b688897ebe26c20e25e8b0b8",
+      "name": "Cloth Scraps",
+      "wiki_title": "Cloth Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_bends_cognitive_wristguards",
+      "name": "Cognitive Wristguard",
+      "wiki_title": "Cognitive Wristguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c929f83213e67ace88367b94",
+      "name": "Cognitive Wristguard",
+      "wiki_title": "Cognitive Wristguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ac_commander_mangles_cape",
+      "name": "Commander's Cloak",
+      "wiki_title": "Commander's Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "hammer_cns",
+      "name": "Construction Hammer",
+      "wiki_title": "Construction Hammer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_ash_meat",
+      "name": "Cooked Ashira Meat",
+      "wiki_title": "Cooked Ashira Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_bat_meat",
+      "name": "Cooked Bat Meat",
+      "wiki_title": "Cooked Bat Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_beetle_meat",
+      "name": "Cooked Beetle Meat",
+      "wiki_title": "Cooked Beetle Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_gator_meat",
+      "name": "Cooked Crocodile Meat",
+      "wiki_title": "Cooked Crocodile Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_gob_meat",
+      "name": "Cooked Goblin Meat",
+      "wiki_title": "Cooked Goblin Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3500ad5bbdf06193876c490b",
+      "name": "Cooked Goblin Meat",
+      "wiki_title": "Cooked Goblin Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_hum_meat",
+      "name": "Cooked Human Meat",
+      "wiki_title": "Cooked Human Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "42c85a16210ca44bc6e44755",
+      "name": "Cooked Human Meat",
+      "wiki_title": "Cooked Human Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_jackal_meat",
+      "name": "Cooked Jackal Meat",
+      "wiki_title": "Cooked Jackal Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_rat_meat",
+      "name": "Cooked Rat Meat",
+      "wiki_title": "Cooked Rat Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cooked_snake_meat",
+      "name": "Cooked Snake Meat",
+      "wiki_title": "Cooked Snake Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "copper_fasteners",
+      "name": "Copper Fasteners",
+      "wiki_title": "Copper Fasteners",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "copper_lsword",
+      "name": "Copper Longsword",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "copper_ore",
+      "name": "Copper Ore",
+      "wiki_title": "Copper Ore",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "copper_ssword",
+      "name": "Copper Shortsword",
+      "wiki_title": "Copper Shortsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_axe",
+      "name": "Corroded Bronze Axe",
+      "wiki_title": "Corroded Bronze Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "97c2bf3bf5b2dc499047c884",
+      "name": "Corroded Bronze Axe",
+      "wiki_title": "Corroded Bronze Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_2axe",
+      "name": "Corroded Bronze Battle Axe",
+      "wiki_title": "Corroded Bronze Battle Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2c7787a70e07c9eb17415908",
+      "name": "Corroded Bronze Battle Axe",
+      "wiki_title": "Corroded Bronze Battle Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c088982bfe6a4f309e35e4e6",
+      "name": "Corroded Bronze Chain Boots",
+      "wiki_title": "Corroded Bronze Chain Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_feet",
+      "name": "Corroded Bronze Chain Boots",
+      "wiki_title": "Corroded Bronze Chain Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_cape",
+      "name": "Corroded Bronze Chain Cloak",
+      "wiki_title": "Corroded Bronze Chain Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "0d888319485b49cdd4a58075",
+      "name": "Corroded Bronze Chain Cloak",
+      "wiki_title": "Corroded Bronze Chain Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_head",
+      "name": "Corroded Bronze Chain Coif",
+      "wiki_title": "Corroded Bronze Chain Coif",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "95a7990663b6e92bee341f6d",
+      "name": "Corroded Bronze Chain Coif",
+      "wiki_title": "Corroded Bronze Chain Coif",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1f34a9d325689320ef16fca7",
+      "name": "Corroded Bronze Chain Gambeson",
+      "wiki_title": "Corroded Bronze Chain Gambeson",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_arms",
+      "name": "Corroded Bronze Chain Gambeson",
+      "wiki_title": "Corroded Bronze Chain Gambeson",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_hand",
+      "name": "Corroded Bronze Chain Gloves",
+      "wiki_title": "Corroded Bronze Chain Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "74e8624cff2233a539422d11",
+      "name": "Corroded Bronze Chain Gloves",
+      "wiki_title": "Corroded Bronze Chain Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_neck",
+      "name": "Corroded Bronze Chain Gorget",
+      "wiki_title": "Corroded Bronze Chain Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "df5e0ea258ce399a07765c88",
+      "name": "Corroded Bronze Chain Gorget",
+      "wiki_title": "Corroded Bronze Chain Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_legs",
+      "name": "Corroded Bronze Chain Leggings",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "eb1e4881161f57919de4923c",
+      "name": "Corroded Bronze Chain Leggings",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "55d1a8395651f2c1080a93f5",
+      "name": "Corroded Bronze Chain Mask",
+      "wiki_title": "Corroded Bronze Chain Mask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_face",
+      "name": "Corroded Bronze Chain Mask",
+      "wiki_title": "Corroded Bronze Chain Mask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_shld",
+      "name": "Corroded Bronze Chain Shoulderguards",
+      "wiki_title": "Corroded Bronze Chain Shoulderguards",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_vest",
+      "name": "Corroded Bronze Chain Tunic",
+      "wiki_title": "Corroded Bronze Chain Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c00036993a5447f8dceff24d",
+      "name": "Corroded Bronze Chain Tunic",
+      "wiki_title": "Corroded Bronze Chain Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_belt",
+      "name": "Corroded Bronze Chain Waistguard",
+      "wiki_title": "Corroded Bronze Chain Waistguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1d4631f78825317a08fdf1e1",
+      "name": "Corroded Bronze Chain Waistguard",
+      "wiki_title": "Corroded Bronze Chain Waistguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_chain_fore",
+      "name": "Corroded Bronze Chain Wristguard",
+      "wiki_title": "Corroded Bronze Chain Wristguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "96fa2e77e74a61ff8d16745f",
+      "name": "Corroded Bronze Chain Wristguard",
+      "wiki_title": "Corroded Bronze Chain Wristguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_dagger",
+      "name": "Corroded Bronze Dagger",
+      "wiki_title": "Corroded Bronze Dagger",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cd9311d6c710dc07776ad430",
+      "name": "Corroded Bronze Dagger",
+      "wiki_title": "Corroded Bronze Dagger",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_scythe",
+      "name": "Corroded Bronze Great Scythe",
+      "wiki_title": "Corroded Bronze Great Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2ba6862990047a14099402fe",
+      "name": "Corroded Bronze Great Scythe",
+      "wiki_title": "Corroded Bronze Great Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_2sword",
+      "name": "Corroded Bronze Greatsword",
+      "wiki_title": "Corroded Bronze Greatsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "631fa166fb822f33ef4217e3",
+      "name": "Corroded Bronze Greatsword",
+      "wiki_title": "Corroded Bronze Greatsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_kite_shield",
+      "name": "Corroded Bronze Kite Shield",
+      "wiki_title": "Corroded Bronze Kite Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "0763d32616a25676bed32782",
+      "name": "Corroded Bronze Kite Shield",
+      "wiki_title": "Corroded Bronze Kite Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_2spear",
+      "name": "Corroded Bronze Long Spear",
+      "wiki_title": "Corroded Bronze Long Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "59e3ceecc85569abc004fe55",
+      "name": "Corroded Bronze Long Spear",
+      "wiki_title": "Corroded Bronze Long Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_lsword",
+      "name": "Corroded Bronze Longsword",
+      "wiki_title": "Corroded Bronze Longsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "766d1c24ab2c35bec955270d",
+      "name": "Corroded Bronze Longsword",
+      "wiki_title": "Corroded Bronze Longsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_mace",
+      "name": "Corroded Bronze Mace",
+      "wiki_title": "Corroded Bronze Mace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "27c2915249c51af934c40ea9",
+      "name": "Corroded Bronze Mace",
+      "wiki_title": "Corroded Bronze Mace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_2hammer",
+      "name": "Corroded Bronze Maul",
+      "wiki_title": "Corroded Bronze Maul",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f56eeb59d2d04886adb56685",
+      "name": "Corroded Bronze Maul",
+      "wiki_title": "Corroded Bronze Maul",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_arms",
+      "name": "Corroded Bronze Plate Arming Doublet",
+      "wiki_title": "Corroded Bronze Plate Arming Doublet",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "9e81d455f3841b5616ecd6d4",
+      "name": "Corroded Bronze Plate Arming Doublet",
+      "wiki_title": "Corroded Bronze Plate Arming Doublet",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_feet",
+      "name": "Corroded Bronze Plate Boots",
+      "wiki_title": "Corroded Bronze Plate Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7692fb08f9d7f15dcacff686",
+      "name": "Corroded Bronze Plate Boots",
+      "wiki_title": "Corroded Bronze Plate Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_fore",
+      "name": "Corroded Bronze Plate Bracer",
+      "wiki_title": "Corroded Bronze Plate Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "df305f2da5fb608e69602af3",
+      "name": "Corroded Bronze Plate Bracer",
+      "wiki_title": "Corroded Bronze Plate Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_vest",
+      "name": "Corroded Bronze Plate Breastplate",
+      "wiki_title": "Corroded Bronze Plate Breastplate",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "64c31c059e6e7254e7b74ecf",
+      "name": "Corroded Bronze Plate Breastplate",
+      "wiki_title": "Corroded Bronze Plate Breastplate",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_cape",
+      "name": "Corroded Bronze Plate Cloak",
+      "wiki_title": "Corroded Bronze Plate Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7bffa078a20da488fb527d1e",
+      "name": "Corroded Bronze Plate Cloak",
+      "wiki_title": "Corroded Bronze Plate Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "90bef43bf8cbd79730a7c9aa",
+      "name": "Corroded Bronze Plate Collar",
+      "wiki_title": "Corroded Bronze Plate Collar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_neck",
+      "name": "Corroded Bronze Plate Collar",
+      "wiki_title": "Corroded Bronze Plate Collar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3ed99d6c3f92c8d76de1cc61",
+      "name": "Corroded Bronze Plate Gauntlets",
+      "wiki_title": "Corroded Bronze Plate Gauntlets",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_hand",
+      "name": "Corroded Bronze Plate Gauntlets",
+      "wiki_title": "Corroded Bronze Plate Gauntlets",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_belt",
+      "name": "Corroded Bronze Plate Girdle",
+      "wiki_title": "Corroded Bronze Plate Girdle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7cfa651762783aebad8da690",
+      "name": "Corroded Bronze Plate Girdle",
+      "wiki_title": "Corroded Bronze Plate Girdle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_legs",
+      "name": "Corroded Bronze Plate Greaves",
+      "wiki_title": "Corroded Bronze Plate Greaves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "851553c1bc2e3e6c9731e7af",
+      "name": "Corroded Bronze Plate Greaves",
+      "wiki_title": "Corroded Bronze Plate Greaves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_head",
+      "name": "Corroded Bronze Plate Helm",
+      "wiki_title": "Corroded Bronze Plate Helm",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "59bacc502cb79e12d1db0634",
+      "name": "Corroded Bronze Plate Helm",
+      "wiki_title": "Corroded Bronze Plate Helm",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_shld",
+      "name": "Corroded Bronze Plate Pauldrons",
+      "wiki_title": "Corroded Bronze Plate Pauldrons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "eb58770289933c2dfcf2bebc",
+      "name": "Corroded Bronze Plate Pauldrons",
+      "wiki_title": "Corroded Bronze Plate Pauldrons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "38516078efe57a66cf347c34",
+      "name": "Corroded Bronze Plate Visor",
+      "wiki_title": "Corroded Bronze Plate Visor",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_plate_face",
+      "name": "Corroded Bronze Plate Visor",
+      "wiki_title": "Corroded Bronze Plate Visor",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_scimitar",
+      "name": "Corroded Bronze Scimitar",
+      "wiki_title": "Corroded Bronze Scimitar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "46a378140a8663a91dc685e1",
+      "name": "Corroded Bronze Scimitar",
+      "wiki_title": "Corroded Bronze Scimitar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_1scythe",
+      "name": "Corroded Bronze Scythe",
+      "wiki_title": "Corroded Bronze Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "d1acb9a6576b35349f82f3f3",
+      "name": "Corroded Bronze Scythe",
+      "wiki_title": "Corroded Bronze Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_ssword",
+      "name": "Corroded Bronze Shortsword",
+      "wiki_title": "Corroded Bronze Shortsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "16c39cb0f1ded858c2bcb95d",
+      "name": "Corroded Bronze Shortsword",
+      "wiki_title": "Corroded Bronze Shortsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_spear",
+      "name": "Corroded Bronze Spear",
+      "wiki_title": "Corroded Bronze Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ebf427192a41765c98516ba5",
+      "name": "Corroded Bronze Spear",
+      "wiki_title": "Corroded Bronze Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3d97bf3d72cd0f8a42d2af7b",
+      "name": "Corroded Bronze Tower Shield",
+      "wiki_title": "Corroded Bronze Tower Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_tower_shield",
+      "name": "Corroded Bronze Tower Shield",
+      "wiki_title": "Corroded Bronze Tower Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_trident",
+      "name": "Corroded Bronze Trident",
+      "wiki_title": "Corroded Bronze Trident",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "30315e00e65ca1e4ae4a815a",
+      "name": "Corroded Bronze Trident",
+      "wiki_title": "Corroded Bronze Trident",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_2lance",
+      "name": "Corroded Bronze War Lance",
+      "wiki_title": "Corroded Bronze War Lance",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7294dac569563d2c1f305899",
+      "name": "Corroded Bronze War Lance",
+      "wiki_title": "Corroded Bronze War Lance",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_bronze_whammer",
+      "name": "Corroded Bronze Warhammer",
+      "wiki_title": "Corroded Bronze Warhammer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3835584b4d01268674afe6de",
+      "name": "Corroded Bronze Warhammer",
+      "wiki_title": "Corroded Bronze Warhammer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1723d7b89e602b0845a18a44",
+      "name": "Corrupted Leather Belt",
+      "wiki_title": "Corrupted Leather Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "corrupted_leather_hand",
+      "name": "Corrupted Leather Gloves",
+      "wiki_title": "Corrupted Leather Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a1d1cb6ad309cefe8a887352",
+      "name": "Corrupted Leather Gloves",
+      "wiki_title": "Corrupted Leather Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6e1ebee48f642e338b27d4e6",
+      "name": "Corrupted Leather Robe",
+      "wiki_title": "Corrupted Leather Robe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6dbc3517a0b9c9a94b5a2a94",
+      "name": "Corrupted Leather Scraps",
+      "wiki_title": "Corrupted Leather Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "8fe8b7258033f34ed5df53a3",
+      "name": "Corrupted Leather Shoulderpads",
+      "wiki_title": "Corrupted Leather Shoulderpads",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "8ffa5d66998f03e10d0e5f82",
+      "name": "Corrupted Leather Tunic",
+      "wiki_title": "Corrupted Leather Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cracked_staff_t2",
+      "name": "Cracked Fine Wood Staff",
+      "wiki_title": "Cracked Fine Wood Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c8945854c8b1a0659e5fd748",
+      "name": "Cracked Fine Wood Staff",
+      "wiki_title": "Cracked Fine Wood Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "902802015e7f03b879687c3b",
+      "name": "Cracked Staff",
+      "wiki_title": "Cracked Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cracked_staff",
+      "name": "Cracked Staff",
+      "wiki_title": "Cracked Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gator_scale",
+      "name": "Crocodile Hide",
+      "wiki_title": "Crocodile Hide",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gator_tooth",
+      "name": "Crocodile Tooth",
+      "wiki_title": "Crocodile Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ddfd641764c79cc0c00d986d",
+      "name": "Crocodile Tooth",
+      "wiki_title": "Crocodile Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "284a9e771e70e9876c4105a7",
+      "name": "Crypt Scarab Carapace",
+      "wiki_title": "Crypt Scarab Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "crypt_scarab_carapace",
+      "name": "Crypt Scarab Carapace",
+      "wiki_title": "Crypt Scarab Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "crypt_scarab_eye",
+      "name": "Crypt Scarab Eye",
+      "wiki_title": "Crypt Scarab Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b8da1246a519e3e20fcb26e4",
+      "name": "Crypt Scarab Eye",
+      "wiki_title": "Crypt Scarab Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7ddecab9d4f3bf624ea21d81",
+      "name": "Crypt Scarab Leg",
+      "wiki_title": "Crypt Scarab Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "crypt_scarab_leg",
+      "name": "Crypt Scarab Leg",
+      "wiki_title": "Crypt Scarab Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_ghost_shard_2",
+      "name": "Crystallized Shard",
+      "wiki_title": "Crystallized Shard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_ghost_shard_4",
+      "name": "Crystallized Shard",
+      "wiki_title": "Crystallized Shard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_ghost_shard_1",
+      "name": "Crystallized Shard",
+      "wiki_title": "Crystallized Shard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_ghost_shard_3",
+      "name": "Crystallized Shard",
+      "wiki_title": "Crystallized Shard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "kpb_bear_named_feet",
+      "name": "Den Dweller's Boots",
+      "wiki_title": "Den Dweller's Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_bends_waterdogs_earring_dirty",
+      "name": "Dirty Pirate Earring",
+      "wiki_title": "Dirty Pirate Earring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "af402a8d2e4000e1b072ffd0",
+      "name": "Dirty Pirate Earring",
+      "wiki_title": "Dirty Pirate Earring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dis_bat_blood",
+      "name": "Diseased Bat Blood",
+      "wiki_title": "Diseased Bat Blood",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dis_jackal_blood",
+      "name": "Diseased Jackal Blood",
+      "wiki_title": "Diseased Jackal Blood",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dis_rat_blood",
+      "name": "Diseased Rat Blood",
+      "wiki_title": "Diseased Rat Blood",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cata_scarab_carapace",
+      "name": "Dusty Scarab Carapace",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cata_scarab_eye",
+      "name": "Dusty Scarab Eye",
+      "wiki_title": "Dusty Scarab Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cata_scarab_leg",
+      "name": "Dusty Scarab Leg",
+      "wiki_title": "Dusty Scarab Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_nh_egg_hunter_rare_common_shield_offhand_7",
+      "name": "Eggwatcher Shield",
+      "wiki_title": "Eggwatcher Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_voz_ashira_seshena_the_lo_cmn_fingers_int_28",
+      "name": "Embermoss Ring",
+      "wiki_title": "Embermoss Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "477ad2ae303e4718e3941929",
+      "name": "Embermoss Ring",
+      "wiki_title": "Embermoss Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "enchant_neck_int_t1",
+      "name": "Enchant Necklace: Minor Intelligence",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wb_timmon_mace",
+      "name": "Enchanted Battleworn Mace",
+      "wiki_title": "Enchanted Battleworn Mace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "brd_nwb_amulet",
+      "name": "Engraved Amulet",
+      "wiki_title": "Engraved Amulet",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dru_research_tier1_1",
+      "name": "Eth-ur Arboreal Journal Page",
+      "wiki_title": "Eth-ur Arboreal Journal Page",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dru_research_tier2_1",
+      "name": "Eth-ur Geological Journal Page",
+      "wiki_title": "Eth-ur Geological Journal Page",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_dario_common_chain_wrists_10",
+      "name": "Fallen Ranger Hide Bracer",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "d1f9188a85f01c2536bc221a",
+      "name": "Fang-Backed Boots",
+      "wiki_title": "Fang-Backed Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "toma_cloth_hood",
+      "name": "Filthy Cloth Hood",
+      "wiki_title": "Filthy Cloth Hood",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fine_cloth_face",
+      "name": "Fine Cloth Veil",
+      "wiki_title": "Fine Cloth Veil",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rog_emissary_bag",
+      "name": "Fine Leather Courier Bag",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fbeetle_shell",
+      "name": "Fire Beetle Carapace",
+      "wiki_title": "Fire Beetle Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c1037c7d481bf81e37259cf6",
+      "name": "Fire Beetle Eye",
+      "wiki_title": "Fire Beetle Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fbeetle_eye",
+      "name": "Fire Beetle Eye",
+      "wiki_title": "Fire Beetle Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fbeetle_gland",
+      "name": "Fire Beetle Gland",
+      "wiki_title": "Fire Beetle Gland",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fbeetle_leg",
+      "name": "Fire Beetle Legs",
+      "wiki_title": "Fire Beetle Legs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bfa195f6fbe4fc378ff93832",
+      "name": "Fire Beetle Legs",
+      "wiki_title": "Fire Beetle Legs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ce655955748a502705ce0654",
+      "name": "Fish Bones",
+      "wiki_title": "Fish Bones",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fish_bones",
+      "name": "Fish Bones",
+      "wiki_title": "Fish Bones",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "50081a1af0ed403ba5294763",
+      "name": "Flawed Amber",
+      "wiki_title": "Flawed Amber",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "19a76f6170c25aeb56d408ef",
+      "name": "Flawed Black Pearl",
+      "wiki_title": "Flawed Black Pearl",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3be1dc6368f30e43d66d2a36",
+      "name": "Flawed Black Sapphire",
+      "wiki_title": "Flawed Black Sapphire",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "23a74434af58a39b3015ae00",
+      "name": "Flawed Blue Diamond",
+      "wiki_title": "Flawed Blue Diamond",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_diamond",
+      "name": "Flawed Diamond",
+      "wiki_title": "Flawed Diamond",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7c852a23df880bfd0df32108",
+      "name": "Flawed Diamond",
+      "wiki_title": "Flawed Diamond",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_emerald",
+      "name": "Flawed Emerald",
+      "wiki_title": "Flawed Emerald",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "be83412ae765d02c0811944a",
+      "name": "Flawed Emerald",
+      "wiki_title": "Flawed Emerald",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "008ba6042b472a027e275579",
+      "name": "Flawed Fire Emerald",
+      "wiki_title": "Flawed Fire Emerald",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_fire_emerald",
+      "name": "Flawed Fire Emerald",
+      "wiki_title": "Flawed Fire Emerald",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_fire_opal",
+      "name": "Flawed Fire Opal",
+      "wiki_title": "Flawed Fire Opal",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_hematite",
+      "name": "Flawed Hematite",
+      "wiki_title": "Flawed Hematite",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_jade",
+      "name": "Flawed Jade",
+      "wiki_title": "Flawed Jade",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "09ca16a1c655ae3e58655bce",
+      "name": "Flawed Jasper",
+      "wiki_title": "Flawed Jasper",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_jasper",
+      "name": "Flawed Jasper",
+      "wiki_title": "Flawed Jasper",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_lapis_lazuli",
+      "name": "Flawed Lapis Lazuli",
+      "wiki_title": "Flawed Lapis Lazuli",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "9159101c9f3c31e5ad89d984",
+      "name": "Flawed Malachite",
+      "wiki_title": "Flawed Malachite",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b25b377248633cc45cefdce7",
+      "name": "Flawed Onyx",
+      "wiki_title": "Flawed Onyx",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_opal",
+      "name": "Flawed Opal",
+      "wiki_title": "Flawed Opal",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "5a16884217fa1719662c3519",
+      "name": "Flawed Pearl",
+      "wiki_title": "Flawed Pearl",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f61a226b6e4f213413ff8c05",
+      "name": "Flawed Peridot",
+      "wiki_title": "Flawed Peridot",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "00069afdbfa6d3b2d9919815",
+      "name": "Flawed Ruby",
+      "wiki_title": "Flawed Ruby",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_star_rose_quartz",
+      "name": "Flawed Star Rose Quartz",
+      "wiki_title": "Flawed Star Rose Quartz",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2c6aba769e38d966182de35e",
+      "name": "Flawed Star Ruby",
+      "wiki_title": "Flawed Star Ruby",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_topaz",
+      "name": "Flawed Topaz",
+      "wiki_title": "Flawed Topaz",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "flawed_turquoise",
+      "name": "Flawed Turquoise",
+      "wiki_title": "Flawed Turquoise",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "foul_chitin_bracer",
+      "name": "Foul Chitin Bracer",
+      "wiki_title": "Foul Chitin Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "garlic",
+      "name": "Garlic",
+      "wiki_title": "Garlic",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "f008f734277f98228e6b5d62",
+      "name": "Garlic",
+      "wiki_title": "Garlic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ghostly_cloth_scraps",
+      "name": "Ghostly Cloth Scraps",
+      "wiki_title": "Ghostly Cloth Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ghoul_bile",
+      "name": "Ghoul Bile",
+      "wiki_title": "Ghoul Bile",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ghoul_skin",
+      "name": "Ghoul Skin",
+      "wiki_title": "Ghoul Skin",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "giant_cinder_beetle_shell",
+      "name": "Giant Cinder Beetle Carapace",
+      "wiki_title": "Giant Cinder Beetle Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "giant_cinder_beetle_leg",
+      "name": "Giant Cinder Beetle Leg",
+      "wiki_title": "Giant Cinder Beetle Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gfbeetle_shell",
+      "name": "Giant Fire Beetle Carapace",
+      "wiki_title": "Giant Fire Beetle Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gfbeetle_leg",
+      "name": "Giant Fire Beetle Legs",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gscarab_legs",
+      "name": "Giant Scarab Leg",
+      "wiki_title": "Giant Scarab Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_grandmaster_common_chain_head_10",
+      "name": "Grandmaster's Dark Leather Hood",
+      "wiki_title": "Grandmaster's Dark Leather Hood",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_nh_graverobber_8_cmn_2h_weap_int_8",
+      "name": "Grave Marker",
+      "wiki_title": "Grave Marker",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "great_light_stone",
+      "name": "Great Lightstone",
+      "wiki_title": "Great Lightstone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gregan_2sword",
+      "name": "Great Sword of the Dragon Crusader",
+      "wiki_title": "Great Sword of the Dragon Crusader",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "hammer_and_chisel",
+      "name": "Hammer and Chisel",
+      "wiki_title": "Hammer and Chisel",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "harvallen_root",
+      "name": "Harvallen Root",
+      "wiki_title": "Harvallen Root",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6d3f449bfca6090a80f9ba69",
+      "name": "Head of Cormac Renshaw",
+      "wiki_title": "Head of Cormac Renshaw",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cormac_head",
+      "name": "Head of Cormac Renshaw",
+      "wiki_title": "Head of Cormac Renshaw",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "9854fc955da44fdd62cbb2ab",
+      "name": "Head of Darius Brask",
+      "wiki_title": "Head of Darius Brask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "darius_head",
+      "name": "Head of Darius Brask",
+      "wiki_title": "Head of Darius Brask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "d5128bd12386eae7980ea2bd",
+      "name": "Head of Eamon Kassir",
+      "wiki_title": "Head of Eamon Kassir",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "vikar_head",
+      "name": "Head of Vikar Brask",
+      "wiki_title": "Head of Vikar Brask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6e782158059d50dc06d247b7",
+      "name": "Head of Vikar Brask",
+      "wiki_title": "Head of Vikar Brask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_nh_bends_eamon_uncommon_leather_head_25",
+      "name": "Heartplate Scout Cap",
+      "wiki_title": "Heartplate Scout Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "138928a9e8c988bf71b816fe",
+      "name": "Heartplate Scout Cap",
+      "wiki_title": "Heartplate Scout Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_fw_harseal_common_plate_wrists_16",
+      "name": "Heatshield Armguard",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "heavy_cloth_bandage",
+      "name": "Heavy Cloth Bandage",
+      "wiki_title": "Heavy Cloth Bandage",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "hide_scraps",
+      "name": "Hide Scraps",
+      "wiki_title": "Hide Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "11af0fdfc6e868be0eec690f",
+      "name": "Hide Scraps",
+      "wiki_title": "Hide Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "hide_strap",
+      "name": "Hide Strap",
+      "wiki_title": "Hide Strap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "holy_water",
+      "name": "Holy Water",
+      "wiki_title": "Holy Water",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "young_snake_venom",
+      "name": "Immature Snake Venom Sac",
+      "wiki_title": "Immature Snake Venom Sac",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c87406a86ee3c870601a6746",
+      "name": "Incarnal Residue",
+      "wiki_title": "Incarnal Residue",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "incarnal_residue",
+      "name": "Incarnal Residue",
+      "wiki_title": "Incarnal Residue",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inlaid_amber_copper_earring",
+      "name": "Inlaid Amber Copper Earring",
+      "wiki_title": "Inlaid Amber Copper Earring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inlaid_black_pearl_copper_earring",
+      "name": "Inlaid Black Pearl Copper Earring",
+      "wiki_title": "Inlaid Black Pearl Copper Earring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inlaid_fire_emerald_copper_ring",
+      "name": "Inlaid Fire Emerald Copper Ring",
+      "wiki_title": "Inlaid Fire Emerald Copper Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inlaid_hematite_bronze_ring",
+      "name": "Inlaid Hematite Bronze Ring",
+      "wiki_title": "Inlaid Hematite Bronze Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inlaid_peridot_copper_ring",
+      "name": "Inlaid Peridot Copper Ring",
+      "wiki_title": "Inlaid Peridot Copper Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "grain_beetle_legs_02",
+      "name": "Intact Grain Beetle Leg",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "jackal_tooth",
+      "name": "Jackal Tooth",
+      "wiki_title": "Jackal Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "jagged_sharpening_stone",
+      "name": "Jagged Sharpening Stone",
+      "wiki_title": "Jagged Sharpening Stone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "jagged_stone",
+      "name": "Jagged Stone",
+      "wiki_title": "Jagged Stone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "edf48ddca22f4ccd17d87ce4",
+      "name": "Kassir's Eye",
+      "wiki_title": "Kassir's Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_timmon_cmn_legs_melee_8",
+      "name": "Knucklehide Chausses",
+      "wiki_title": "Knucklehide Chausses",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "large_bat_eye",
+      "name": "Large Bat Eye",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "large_bat_fur",
+      "name": "Large Bat Fur",
+      "wiki_title": "Large Bat Fur",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "large_bat_wing",
+      "name": "Large Bat Wing",
+      "wiki_title": "Large Bat Wing",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_fw_harseal_rare_ranged_16",
+      "name": "Lavashot Longbow",
+      "wiki_title": "Lavashot Longbow",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "lemon",
+      "name": "Lemon",
+      "wiki_title": "Lemon",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "0ffe07ad1ae981a91fff2620",
+      "name": "Lemon",
+      "wiki_title": "Lemon",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "lesser_manastone",
+      "name": "Lesser Manastone",
+      "wiki_title": "Lesser Manastone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_gregan_uncommon_leather_legs_10",
+      "name": "Lieutenant's Hunting Pants",
+      "wiki_title": "Lieutenant's Hunting Pants",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "limestone",
+      "name": "Limestone",
+      "wiki_title": "Limestone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "lowquality_jackal_pelt",
+      "name": "Low-Quality Jackal Pelt",
+      "wiki_title": "Low-Quality Jackal Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cda9457403240020a3621d2e",
+      "name": "Low-Quality Jackal Pelt",
+      "wiki_title": "Low-Quality Jackal Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "mage_light",
+      "name": "Mage Light",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_fionna_common_leather_wrists_15",
+      "name": "Marshal's Insignia Bracer",
+      "wiki_title": "Marshal's Insignia Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "te_voodoo_doll",
+      "name": "Messy Voodoo Doll",
+      "wiki_title": "Messy Voodoo Doll",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "minor_healthstone",
+      "name": "Minor Lifestone",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "minor_serum_of_dexterity",
+      "name": "Minor Serum of Dexterity",
+      "wiki_title": "Minor Serum of Dexterity",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "multhele_root",
+      "name": "Multhele Root",
+      "wiki_title": "Multhele Root",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "mushroom",
+      "name": "Mushroom",
+      "wiki_title": "Mushroom",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "a72960443f1011e142fc792c",
+      "name": "Mushroom",
+      "wiki_title": "Mushroom",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "necrotic_chitin_shld",
+      "name": "Necrotic Chitin Pauldrons",
+      "wiki_title": "Necrotic Chitin Pauldrons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "shd_noel_ring",
+      "name": "Noel Klares' Ring",
+      "wiki_title": "Noel Klares' Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_te_a_bloodynose_hag_cmn_ears_melee_15",
+      "name": "Nosebleed Studs",
+      "wiki_title": "Nosebleed Studs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_shm_urn_hint",
+      "name": "Note from Ariblast",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_grandmaster_2_common_plate_feet_10",
+      "name": "Obadiah's Marchers",
+      "wiki_title": "Obadiah's Marchers",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "onion",
+      "name": "Onion",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "93190eda5810e51decab6837",
+      "name": "Onion",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "patched_rawhide_fore",
+      "name": "Patched Rawhide Bracelet",
+      "wiki_title": "Patched Rawhide Bracelet",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "patched_rawhide_shld",
+      "name": "Patched Rawhide Shoulderpads",
+      "wiki_title": "Patched Rawhide Shoulderpads",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wb_jakob_face",
+      "name": "Penitential Veil",
+      "wiki_title": "Penitential Veil",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "poisonous_spider_venom",
+      "name": "Poisonous Spider Venom Sac",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "69520022c780a79ea2bdbf1b",
+      "name": "Poor Ashira Pelt",
+      "wiki_title": "Poor Ashira Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_poor_pelt",
+      "name": "Poor Ashira Pelt",
+      "wiki_title": "Poor Ashira Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "potato",
+      "name": "Potato",
+      "wiki_title": "Potato",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7344328837f0e260ae91ef77",
+      "name": "Potato",
+      "wiki_title": "Potato",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "pouch",
+      "name": "Pouch",
+      "wiki_title": "Pouch",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gator_pscale",
+      "name": "Pristine Crocodile Hide",
+      "wiki_title": "Pristine Crocodile Hide",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "inq_wrt_herbs",
+      "name": "Pungent Healing Herbs",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "pyrite_ore",
+      "name": "Pyrite Ore",
+      "wiki_title": "Pyrite Ore",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "quarry_stone",
+      "name": "Quarry Stone",
+      "wiki_title": "Quarry Stone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_fw_gallier_cmn_shield_str_15",
+      "name": "Quillguard",
+      "wiki_title": "Quillguard",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_bends_leather_cloak",
+      "name": "Ragged Leather Cloak",
+      "wiki_title": "Ragged Leather Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4bf5cf901495ca634df5a98f",
+      "name": "Ragged Leather Cloak",
+      "wiki_title": "Ragged Leather Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "nh_bends_leather_gloves",
+      "name": "Ragged Leather Gloves",
+      "wiki_title": "Ragged Leather Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "0f90563863b877b41b3e0c84",
+      "name": "Ragged Leather Gloves",
+      "wiki_title": "Ragged Leather Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "te_ayip_earring",
+      "name": "Rat Bone Earring",
+      "wiki_title": "Rat Bone Earring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rat_ear",
+      "name": "Rat Ear",
+      "wiki_title": "Rat Ear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b57628c324c0c571c04c152a",
+      "name": "Rat Ear",
+      "wiki_title": "Rat Ear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rat_foot",
+      "name": "Rat Foot",
+      "wiki_title": "Rat Foot",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "7138ad20ddb242ef00435cda",
+      "name": "Rat Foot",
+      "wiki_title": "Rat Foot",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rat_tooth",
+      "name": "Rat Tooth",
+      "wiki_title": "Rat Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "457056389914f32a45800c9f",
+      "name": "Rat Tooth",
+      "wiki_title": "Rat Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "food_ration",
+      "name": "Ration",
+      "wiki_title": "Ration",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rsnake_skin",
+      "name": "Rattlesnake Skin",
+      "wiki_title": "Rattlesnake Skin",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "raw_ash_meat",
+      "name": "Raw Ashira Meat",
+      "wiki_title": "Raw Ashira Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "828599659af012394b753209",
+      "name": "Raw Ashira Meat",
+      "wiki_title": "Raw Ashira Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "579a9471f975601473792884",
+      "name": "Raw Bat Meat",
+      "wiki_title": "Raw Bat Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bat_meat",
+      "name": "Raw Bat Meat",
+      "wiki_title": "Raw Bat Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "beetle_meat",
+      "name": "Raw Beetle Meat",
+      "wiki_title": "Raw Beetle Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a8c922b5e349c0afa973ec9e",
+      "name": "Raw Beetle Meat",
+      "wiki_title": "Raw Beetle Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gator_meat",
+      "name": "Raw Crocodile Meat",
+      "wiki_title": "Raw Crocodile Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4c117d3ed590ed8a5382792d",
+      "name": "Raw Crocodile Meat",
+      "wiki_title": "Raw Crocodile Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "raw_dwf_meat",
+      "name": "Raw Dwarf Meat",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ae8f6843dc9f93e94a53a750",
+      "name": "Raw Dwarf Meat",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "174fd4ba1c8246774787ea7d",
+      "name": "Raw Goblin Meat",
+      "wiki_title": "Raw Goblin Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "raw_gob_meat",
+      "name": "Raw Goblin Meat",
+      "wiki_title": "Raw Goblin Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "raw_hfl_meat",
+      "name": "Raw Halfling Meat",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2c6a3b17bdf9650edea1256b",
+      "name": "Raw Halfling Meat",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "raw_hum_meat",
+      "name": "Raw Human Meat",
+      "wiki_title": "Raw Human Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "0aba99615b57b2523938d9ae",
+      "name": "Raw Human Meat",
+      "wiki_title": "Raw Human Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "jackal_meat",
+      "name": "Raw Jackal Meat",
+      "wiki_title": "Raw Jackal Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "294dff2ddbc5b61ebfc8c73c",
+      "name": "Raw Ogre Meat",
+      "wiki_title": "Raw Ogre Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "raw_ogr_meat",
+      "name": "Raw Ogre Meat",
+      "wiki_title": "Raw Ogre Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rat_meat",
+      "name": "Raw Rat Meat",
+      "wiki_title": "Raw Rat Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2f3ba51a6de62a7cd6fbab04",
+      "name": "Raw Rat Meat",
+      "wiki_title": "Raw Rat Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "snake_meat",
+      "name": "Raw Snake Meat",
+      "wiki_title": "Raw Snake Meat",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_backpack",
+      "name": "Rawhide Backpack",
+      "wiki_title": "Rawhide Backpack",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_belt",
+      "name": "Rawhide Belt",
+      "wiki_title": "Rawhide Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_canvas",
+      "name": "Rawhide Canvas",
+      "wiki_title": "Rawhide Canvas",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_head",
+      "name": "Rawhide Cap",
+      "wiki_title": "Rawhide Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_cape",
+      "name": "Rawhide Cloak",
+      "wiki_title": "Rawhide Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_hand",
+      "name": "Rawhide Gloves",
+      "wiki_title": "Rawhide Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rawhide_scraps",
+      "name": "Rawhide Scraps",
+      "wiki_title": "Rawhide Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_fw_harseal_uncommon_chain_hands_16",
+      "name": "Researcher's Protective Mitts",
+      "wiki_title": "Researcher's Protective Mitts",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "resin",
+      "name": "Resin",
+      "wiki_title": "Resin",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "jakob_robe",
+      "name": "Robe of the Deacon",
+      "wiki_title": "Robe of the Deacon",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rope_hemp_50",
+      "name": "Rope, Hempen, 50 Length",
+      "wiki_title": "Rope, Hempen, 50 Length",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rugged_spider_silk",
+      "name": "Rugged Spider Silk",
+      "wiki_title": "Rugged Spider Silk",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dd5ad5592b7f09e0cac4d7dd",
+      "name": "Rusty Axe",
+      "wiki_title": "Rusty Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_axe",
+      "name": "Rusty Axe",
+      "wiki_title": "Rusty Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_2axe",
+      "name": "Rusty Battle Axe",
+      "wiki_title": "Rusty Battle Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "afbba553b47b148e666034e2",
+      "name": "Rusty Battle Axe",
+      "wiki_title": "Rusty Battle Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "e8d3195fde3a66b0223bf5e4",
+      "name": "Rusty Dagger",
+      "wiki_title": "Rusty Dagger",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_dagger",
+      "name": "Rusty Dagger",
+      "wiki_title": "Rusty Dagger",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_scythe",
+      "name": "Rusty Great Scythe",
+      "wiki_title": "Rusty Great Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f34d410dc9567979a19257d2",
+      "name": "Rusty Great Scythe",
+      "wiki_title": "Rusty Great Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_2sword",
+      "name": "Rusty Greatsword",
+      "wiki_title": "Rusty Greatsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "260771fe4344d5709aa81d05",
+      "name": "Rusty Greatsword",
+      "wiki_title": "Rusty Greatsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_kite_shield",
+      "name": "Rusty Kite Shield",
+      "wiki_title": "Rusty Kite Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "0666fc6c860347418ca400a9",
+      "name": "Rusty Kite Shield",
+      "wiki_title": "Rusty Kite Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_2spear",
+      "name": "Rusty Long Spear",
+      "wiki_title": "Rusty Long Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3f5cd6f4894a79ea05badfa2",
+      "name": "Rusty Longsword",
+      "wiki_title": "Rusty Longsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_lsword",
+      "name": "Rusty Longsword",
+      "wiki_title": "Rusty Longsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_mace",
+      "name": "Rusty Mace",
+      "wiki_title": "Rusty Mace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "930700c00296cdd5385faed6",
+      "name": "Rusty Mace",
+      "wiki_title": "Rusty Mace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2bef8fd0cbf142a97506c28c",
+      "name": "Rusty Maul",
+      "wiki_title": "Rusty Maul",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_2hammer",
+      "name": "Rusty Maul",
+      "wiki_title": "Rusty Maul",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b34b508568ce4b4ba0a1e171",
+      "name": "Rusty Scimitar",
+      "wiki_title": "Rusty Scimitar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_scimitar",
+      "name": "Rusty Scimitar",
+      "wiki_title": "Rusty Scimitar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_1scythe",
+      "name": "Rusty Scythe",
+      "wiki_title": "Rusty Scythe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "25e58bf88115aba5b2625a24",
+      "name": "Rusty Shortsword",
+      "wiki_title": "Rusty Shortsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_ssword",
+      "name": "Rusty Shortsword",
+      "wiki_title": "Rusty Shortsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_spear",
+      "name": "Rusty Spear",
+      "wiki_title": "Rusty Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "d4d1dcfca6bc71934ec72eab",
+      "name": "Rusty Spear",
+      "wiki_title": "Rusty Spear",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b40ebfd2200c23576ccb0939",
+      "name": "Rusty Tower Shield",
+      "wiki_title": "Rusty Tower Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_tower_shield",
+      "name": "Rusty Tower Shield",
+      "wiki_title": "Rusty Tower Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "63cff43bb35497ebf7cb7634",
+      "name": "Rusty Trident",
+      "wiki_title": "Rusty Trident",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_trident",
+      "name": "Rusty Trident",
+      "wiki_title": "Rusty Trident",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "5b820d054de0d21a061071c4",
+      "name": "Rusty War Lance",
+      "wiki_title": "Rusty War Lance",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_2lance",
+      "name": "Rusty War Lance",
+      "wiki_title": "Rusty War Lance",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "905facd6c67662f57f3b8fc7",
+      "name": "Rusty Warhammer",
+      "wiki_title": "Rusty Warhammer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rusty_whammer",
+      "name": "Rusty Warhammer",
+      "wiki_title": "Rusty Warhammer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4e32b23f1b30f5716e2a2b39",
+      "name": "Sand-Blasted Boots",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "satchel",
+      "name": "Satchel",
+      "wiki_title": "Satchel",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f118ec8a82569e04199e8a94",
+      "name": "Savage Heartplate",
+      "wiki_title": "Savage Heartplate",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scapular_acolyte_hood_ash",
+      "name": "Scapular Acolyte Hood of Ashes",
+      "wiki_title": "Scapular Acolyte Hood of Ashes",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_feet",
+      "name": "Scarab Boots",
+      "wiki_title": "Scarab Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_vest",
+      "name": "Scarab Breastplate",
+      "wiki_title": "Scarab Breastplate",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_carapace",
+      "name": "Scarab Carapace",
+      "wiki_title": "Scarab Carapace",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_eye",
+      "name": "Scarab Eye",
+      "wiki_title": "Scarab Eye",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_legs",
+      "name": "Scarab Greaves",
+      "wiki_title": "Scarab Greaves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_head",
+      "name": "Scarab Helm",
+      "wiki_title": "Scarab Helm",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_leg",
+      "name": "Scarab Leg",
+      "wiki_title": "Scarab Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "9e29dfe257d538f5d6145cfc",
+      "name": "Scarab Leg",
+      "wiki_title": "Scarab Leg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scarab_sshield",
+      "name": "Scarab Shell Shield",
+      "wiki_title": "Scarab Shell Shield",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wb_viridon_folio0",
+      "name": "Scorched Academy Folio",
+      "wiki_title": "Scorched Academy Folio",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_scorched_remains",
+      "name": "Scorched Skeletal Remains",
+      "wiki_title": "Scorched Skeletal Remains",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "scrl_moonflame",
+      "name": "Scroll: Moon Flame",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "brd_nwb_ringfinger",
+      "name": "Severed Ring Finger",
+      "wiki_title": "Severed Ring Finger",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "shd_skel_femurs",
+      "name": "Shattered Skeleton Femur",
+      "wiki_title": "Shattered Skeleton Femur",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "rog_nwb_courier_note2",
+      "name": "Sinastin's List of Names",
+      "wiki_title": "Sinastin's List of Names",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_skele_arc_ariblast_cmn_face_wis_6",
+      "name": "Skeletal Sight",
+      "wiki_title": "Skeletal Sight",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "elrind_skel_jaw",
+      "name": "Skeleton Jawbone",
+      "wiki_title": "Skeleton Jawbone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "30a8c5f9d886bccc30b6ee4f",
+      "name": "Skeleton Jawbone",
+      "wiki_title": "Skeleton Jawbone",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "fieldpack_sm",
+      "name": "Small Field Pack",
+      "wiki_title": "Small Field Pack",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_smuggler_logbook",
+      "name": "Smuggler's Damaged Logbook",
+      "wiki_title": "Smuggler's Damaged Logbook",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_logbook_pages_01",
+      "name": "Smuggler's Logbook Page 1",
+      "wiki_title": "Smuggler's Logbook Page 1",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_logbook_pages_02",
+      "name": "Smuggler's Logbook Page 2",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_logbook_pages_03",
+      "name": "Smuggler's Logbook Page 3",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_logbook_pages_04",
+      "name": "Smuggler's Logbook Page 4",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_logbook_pages_05",
+      "name": "Smuggler's Logbook Page 5",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spb_logbook_pages_06",
+      "name": "Smuggler's Logbook Page 6",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "snake_egg",
+      "name": "Snake Egg",
+      "wiki_title": "Snake Egg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a79c8a98387e49ff35a12fab",
+      "name": "Snake Egg",
+      "wiki_title": "Snake Egg",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "snake_fang",
+      "name": "Snake Fang",
+      "wiki_title": "Snake Fang",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4712575773482e89e0c14969",
+      "name": "Snake Fang",
+      "wiki_title": "Snake Fang",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "snake_skin",
+      "name": "Snake Skin",
+      "wiki_title": "Snake Skin",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3757cebe8d9509901cefb2be",
+      "name": "Snake Skin",
+      "wiki_title": "Snake Skin",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wiz_research_book",
+      "name": "Sorcerer's Codex",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spectral_dust",
+      "name": "Spectral Dust",
+      "wiki_title": "Spectral Dust",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spectral_essence",
+      "name": "Spectral Essence",
+      "wiki_title": "Spectral Essence",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spider_leg",
+      "name": "Spider Legs",
+      "wiki_title": "Spider Legs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4257c9ae8bccbcda1f9ed856",
+      "name": "Spider Legs",
+      "wiki_title": "Spider Legs",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spider_silk",
+      "name": "Spider Silk",
+      "wiki_title": "Spider Silk",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "5583a7751aeac27084d53c98",
+      "name": "Spider Silk",
+      "wiki_title": "Spider Silk",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spider_silk_head",
+      "name": "Spider Silk Cap",
+      "wiki_title": "Spider Silk Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spider_venom",
+      "name": "Spider Venom Sac",
+      "wiki_title": "Spider Venom Sac",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spiderling_eye",
+      "name": "Spiderling Eye",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "cb2afb6381b1ddeaa670d00b",
+      "name": "Spiderling Eye",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spiked_training_collar",
+      "name": "Spiked Training Collar",
+      "wiki_title": "Spiked Training Collar",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "spirit_powder",
+      "name": "Spirit Powder",
+      "wiki_title": "Spirit Powder",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "12386012aa53063207fbdb30",
+      "name": "Spirit Powder",
+      "wiki_title": "Spirit Powder",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "shm_research_tier1_1",
+      "name": "Spirit World Ch. 1",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "shm_research_tier1_5",
+      "name": "Spirit World Ch. 5",
+      "wiki_title": "Spirit World Ch. 5",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "shm_research_tier2_1",
+      "name": "Spirit World Ch. 6",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "steel_ssword",
+      "name": "Steel Shortsword",
+      "wiki_title": "Steel Shortsword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "still_elemental_core",
+      "name": "Still Elemental Core",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "83c4117eac49fb7fd762e322",
+      "name": "Sturdy Battle Axe",
+      "wiki_title": "Sturdy Battle Axe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "summoned_cureberries",
+      "name": "Summoned: Cureberries",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "summoned_bread",
+      "name": "Summoned: Slice of Bread",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "summoned_water",
+      "name": "Summoned: Water",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "b91d4603d8526220419e56cb",
+      "name": "Tattered Cloth Belt",
+      "wiki_title": "Tattered Cloth Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_belt",
+      "name": "Tattered Cloth Belt",
+      "wiki_title": "Tattered Cloth Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_feet",
+      "name": "Tattered Cloth Boots",
+      "wiki_title": "Tattered Cloth Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "96e9fc153f16f407f6c514aa",
+      "name": "Tattered Cloth Boots",
+      "wiki_title": "Tattered Cloth Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_fore",
+      "name": "Tattered Cloth Bracer",
+      "wiki_title": "Tattered Cloth Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "e0e8cf04c99554e536986a36",
+      "name": "Tattered Cloth Bracer",
+      "wiki_title": "Tattered Cloth Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7e634f0347f2755ca6bf1712",
+      "name": "Tattered Cloth Cap",
+      "wiki_title": "Tattered Cloth Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_head",
+      "name": "Tattered Cloth Cap",
+      "wiki_title": "Tattered Cloth Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_cape",
+      "name": "Tattered Cloth Cape",
+      "wiki_title": "Tattered Cloth Cape",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "daf197fd2b29e1f92c519af4",
+      "name": "Tattered Cloth Cape",
+      "wiki_title": "Tattered Cloth Cape",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "bcbfff539564fc4866f60931",
+      "name": "Tattered Cloth Gloves",
+      "wiki_title": "Tattered Cloth Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_hand",
+      "name": "Tattered Cloth Gloves",
+      "wiki_title": "Tattered Cloth Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_neck",
+      "name": "Tattered Cloth Gorget",
+      "wiki_title": "Tattered Cloth Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "12331f1850ee94625029bc27",
+      "name": "Tattered Cloth Gorget",
+      "wiki_title": "Tattered Cloth Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_shld",
+      "name": "Tattered Cloth Mantle",
+      "wiki_title": "Tattered Cloth Mantle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "68d1d9c415aa4d0255b410f5",
+      "name": "Tattered Cloth Pantaloons",
+      "wiki_title": "Tattered Cloth Pantaloons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_legs",
+      "name": "Tattered Cloth Pantaloons",
+      "wiki_title": "Tattered Cloth Pantaloons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "eaf4513f72004256d4fccf0a",
+      "name": "Tattered Cloth Robe",
+      "wiki_title": "Tattered Cloth Robe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_robe",
+      "name": "Tattered Cloth Robe",
+      "wiki_title": "Tattered Cloth Robe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "209efe9c21be006bfeb3619e",
+      "name": "Tattered Cloth Shirt",
+      "wiki_title": "Tattered Cloth Shirt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_arms",
+      "name": "Tattered Cloth Shirt",
+      "wiki_title": "Tattered Cloth Shirt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6af654f72aafec6719f9c29f",
+      "name": "Tattered Cloth Tunic",
+      "wiki_title": "Tattered Cloth Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_vest",
+      "name": "Tattered Cloth Tunic",
+      "wiki_title": "Tattered Cloth Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_cloth_face",
+      "name": "Tattered Cloth Veil",
+      "wiki_title": "Tattered Cloth Veil",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1739f902090356c4087cac3f",
+      "name": "Tattered Cloth Veil",
+      "wiki_title": "Tattered Cloth Veil",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tf_quest_bag",
+      "name": "Tattered Field Pack",
+      "wiki_title": "Tattered Field Pack",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_belt",
+      "name": "Tattered Hide Belt",
+      "wiki_title": "Tattered Hide Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "954e5561df06ba0e39c14b0f",
+      "name": "Tattered Hide Belt",
+      "wiki_title": "Tattered Hide Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_feet",
+      "name": "Tattered Hide Boots",
+      "wiki_title": "Tattered Hide Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "12a0d9db275b9f4c3a7a8145",
+      "name": "Tattered Hide Boots",
+      "wiki_title": "Tattered Hide Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_fore",
+      "name": "Tattered Hide Bracer",
+      "wiki_title": "Tattered Hide Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1d378d2be1c2961a3a249a65",
+      "name": "Tattered Hide Bracer",
+      "wiki_title": "Tattered Hide Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_head",
+      "name": "Tattered Hide Cap",
+      "wiki_title": "Tattered Hide Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "c0b27c433e9526db1c199a7f",
+      "name": "Tattered Hide Cap",
+      "wiki_title": "Tattered Hide Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_cape",
+      "name": "Tattered Hide Cloak",
+      "wiki_title": "Tattered Hide Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "9419d5d1405090b690c05303",
+      "name": "Tattered Hide Cloak",
+      "wiki_title": "Tattered Hide Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_hand",
+      "name": "Tattered Hide Gloves",
+      "wiki_title": "Tattered Hide Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "8ff738f8efc1cab100de3f15",
+      "name": "Tattered Hide Gloves",
+      "wiki_title": "Tattered Hide Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_neck",
+      "name": "Tattered Hide Gorget",
+      "wiki_title": "Tattered Hide Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a439e01f612f78594fb4a8f3",
+      "name": "Tattered Hide Gorget",
+      "wiki_title": "Tattered Hide Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_legs",
+      "name": "Tattered Hide Leggings",
+      "wiki_title": "Tattered Hide Leggings",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6b78020e8870f8da4f55d910",
+      "name": "Tattered Hide Leggings",
+      "wiki_title": "Tattered Hide Leggings",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_face",
+      "name": "Tattered Hide Mask",
+      "wiki_title": "Tattered Hide Mask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7e32ab4ce05324f1979d043c",
+      "name": "Tattered Hide Mask",
+      "wiki_title": "Tattered Hide Mask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_shld",
+      "name": "Tattered Hide Shoulderpads",
+      "wiki_title": "Tattered Hide Shoulderpads",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f3095c2c19fd14bee8f94004",
+      "name": "Tattered Hide Shoulderpads",
+      "wiki_title": "Tattered Hide Shoulderpads",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_vest",
+      "name": "Tattered Hide Tunic",
+      "wiki_title": "Tattered Hide Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "2d4827acd6bdbf168ca765ea",
+      "name": "Tattered Hide Tunic",
+      "wiki_title": "Tattered Hide Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_hide_arms",
+      "name": "Tattered Hide Vest",
+      "wiki_title": "Tattered Hide Vest",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "6caed6ca66cde82c52e3cd4b",
+      "name": "Tattered Hide Vest",
+      "wiki_title": "Tattered Hide Vest",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_belt",
+      "name": "Tattered Rawhide Belt",
+      "wiki_title": "Tattered Rawhide Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_feet",
+      "name": "Tattered Rawhide Boots",
+      "wiki_title": "Tattered Rawhide Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_fore",
+      "name": "Tattered Rawhide Bracer",
+      "wiki_title": "Tattered Rawhide Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_head",
+      "name": "Tattered Rawhide Cap",
+      "wiki_title": "Tattered Rawhide Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_cape",
+      "name": "Tattered Rawhide Cloak",
+      "wiki_title": "Tattered Rawhide Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_hand",
+      "name": "Tattered Rawhide Gloves",
+      "wiki_title": "Tattered Rawhide Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_neck",
+      "name": "Tattered Rawhide Gorget",
+      "wiki_title": "Tattered Rawhide Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_legs",
+      "name": "Tattered Rawhide Leggings",
+      "wiki_title": "Tattered Rawhide Leggings",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_face",
+      "name": "Tattered Rawhide Mask",
+      "wiki_title": "Tattered Rawhide Mask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_shld",
+      "name": "Tattered Rawhide Shoulderpads",
+      "wiki_title": "Tattered Rawhide Shoulderpads",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_vest",
+      "name": "Tattered Rawhide Tunic",
+      "wiki_title": "Tattered Rawhide Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_rawhide_arms",
+      "name": "Tattered Rawhide Vest",
+      "wiki_title": "Tattered Rawhide Vest",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_belt",
+      "name": "Tattered Wool Belt",
+      "wiki_title": "Tattered Wool Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1406845a8407311abd34c963",
+      "name": "Tattered Wool Belt",
+      "wiki_title": "Tattered Wool Belt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_feet",
+      "name": "Tattered Wool Boots",
+      "wiki_title": "Tattered Wool Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "dca7bf26db93772648f0f992",
+      "name": "Tattered Wool Boots",
+      "wiki_title": "Tattered Wool Boots",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_fore",
+      "name": "Tattered Wool Bracer",
+      "wiki_title": "Tattered Wool Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "46c32b605a3419a8a6e95af3",
+      "name": "Tattered Wool Bracer",
+      "wiki_title": "Tattered Wool Bracer",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_head",
+      "name": "Tattered Wool Cap",
+      "wiki_title": "Tattered Wool Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4b314c5b8c7a867815629587",
+      "name": "Tattered Wool Cap",
+      "wiki_title": "Tattered Wool Cap",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_cape",
+      "name": "Tattered Wool Cape",
+      "wiki_title": "Tattered Wool Cape",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "3fdae3b5ecfb2b842415842a",
+      "name": "Tattered Wool Cape",
+      "wiki_title": "Tattered Wool Cape",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_hand",
+      "name": "Tattered Wool Gloves",
+      "wiki_title": "Tattered Wool Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "46d0d15c9239d5771f8adb5b",
+      "name": "Tattered Wool Gloves",
+      "wiki_title": "Tattered Wool Gloves",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_neck",
+      "name": "Tattered Wool Gorget",
+      "wiki_title": "Tattered Wool Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4145234441d5b70631d76695",
+      "name": "Tattered Wool Gorget",
+      "wiki_title": "Tattered Wool Gorget",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_shld",
+      "name": "Tattered Wool Mantle",
+      "wiki_title": "Tattered Wool Mantle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "f23526d0eb8c711a907b0914",
+      "name": "Tattered Wool Mantle",
+      "wiki_title": "Tattered Wool Mantle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_legs",
+      "name": "Tattered Wool Pantaloons",
+      "wiki_title": "Tattered Wool Pantaloons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "66f30a93097c0fc5e3cd012e",
+      "name": "Tattered Wool Pantaloons",
+      "wiki_title": "Tattered Wool Pantaloons",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_robe",
+      "name": "Tattered Wool Robe",
+      "wiki_title": "Tattered Wool Robe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "598d749e1f94b380df460b37",
+      "name": "Tattered Wool Robe",
+      "wiki_title": "Tattered Wool Robe",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_arms",
+      "name": "Tattered Wool Shirt",
+      "wiki_title": "Tattered Wool Shirt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "1bb0c9f9653723e5c641ffa0",
+      "name": "Tattered Wool Shirt",
+      "wiki_title": "Tattered Wool Shirt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_vest",
+      "name": "Tattered Wool Tunic",
+      "wiki_title": "Tattered Wool Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "7045637f1a31e8b52ea2c5e2",
+      "name": "Tattered Wool Tunic",
+      "wiki_title": "Tattered Wool Tunic",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "72544cee18fbdacc8a267d2d",
+      "name": "Tattered Wool Veil",
+      "wiki_title": "Tattered Wool Veil",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tattered_wool_face",
+      "name": "Tattered Wool Veil",
+      "wiki_title": "Tattered Wool Veil",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tin_ore",
+      "name": "Tin Ore",
+      "wiki_title": "Tin Ore",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "toma_earring",
+      "name": "Toma's Golden Earring",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "toma_ring",
+      "name": "Toma's Signet Ring",
+      "wiki_title": "Toma's Signet Ring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tomato",
+      "name": "Tomato",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    },
+    {
+      "item_hid": "24ecf5701eb7b4a0cc677f63",
+      "name": "Tomato",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "torch",
+      "name": "Torch",
+      "wiki_title": "Torch",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle",
+        "duplicateassetisolation_assets_all_bdeacb7348af9451511d510f552c49fc.bundle",
+        "zone_sea_scenes_all_196088016a1ded9a836c612f6175cb4a.bundle",
+        "zone_szuur_scenes_all_effe411043ce515d87d5abc8e7aa5d92.bundle"
+      ]
+    },
+    {
+      "item_hid": "d0a1669e39e2c90767d128b3",
+      "name": "Torch",
+      "wiki_title": "Torch",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tf_quest_cloak",
+      "name": "Torn Cloak",
+      "wiki_title": "Torn Cloak",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "trainee_candle",
+      "name": "Trainee's Candle",
+      "wiki_title": "Trainee's Candle",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "trainee_club",
+      "name": "Trainee's Club",
+      "wiki_title": "Trainee's Club",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "trainee_spear",
+      "name": "Trainee's Dirk",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "trainee_scythe",
+      "name": "Trainee's Scythe",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "trainee_sword",
+      "name": "Trainee's Sword",
+      "wiki_title": "Trainee's Sword",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "tunic_of_night",
+      "name": "Tunic of Night",
+      "wiki_title": "Tunic of Night",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ac_book_uncommon_book3",
+      "name": "Universal Magical Traversal",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ashira_faction_quest_pelt_0",
+      "name": "Unusual Jackal Pelt",
+      "wiki_title": "Unusual Jackal Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_minicrypt_spider_special_unc_ears_int_11",
+      "name": "Venomdrop Earring",
+      "wiki_title": "Venomdrop Earring",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "vibro_residue",
+      "name": "Vibroplasmic Residue",
+      "wiki_title": "Vibroplasmic Residue",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "water_flask",
+      "name": "Water Flask",
+      "wiki_title": "Water Flask",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "starter_chest",
+      "name": "Well-Worn Cloth Shirt",
+      "wiki_title": "Well-Worn Cloth Shirt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "starter_legs",
+      "name": "Well-Worn Cloth Trousers",
+      "wiki_title": "Well-Worn Cloth Trousers",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wererat_head",
+      "name": "Wererat Head",
+      "wiki_title": "Wererat Head",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wererat_pelt",
+      "name": "Wererat Pelt",
+      "wiki_title": "Wererat Pelt",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ip_wb_jakob_geffrey_cmn_neck_cha_7",
+      "name": "Whispering Hours Pendant",
+      "wiki_title": "Whispering Hours Pendant",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wicked_longbow",
+      "name": "Wicked Longbow",
+      "wiki_title": "Wicked Longbow",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wisp_dust",
+      "name": "Wisp Dust",
+      "wiki_title": "Wisp Dust",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "66323e2f7f0be050e1c27507",
+      "name": "Wolf Tooth",
+      "wiki_title": "Wolf Tooth",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "ac_book_common_book3",
+      "name": "Wondrous Summoning",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wool_padding",
+      "name": "Wool Padding",
+      "wiki_title": "Wool Padding",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wool_scraps",
+      "name": "Wool Scraps",
+      "wiki_title": "Wool Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "09a5d2baf931db48aee9cf9a",
+      "name": "Wool Scraps",
+      "wiki_title": "Wool Scraps",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "4a3a4919e69d4dfb1cb47dd7",
+      "name": "Worn Bow",
+      "wiki_title": "Worn Bow",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "worn_bow",
+      "name": "Worn Bow",
+      "wiki_title": "Worn Bow",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "31c102652f7af12bafd3a71f",
+      "name": "Worn Buckler",
+      "wiki_title": "Worn Buckler",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "worn_buckler_t1",
+      "name": "Worn Buckler",
+      "wiki_title": "Worn Buckler",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "worn_bow_t2",
+      "name": "Worn Fine Wood Bow",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "001efba0e86d287c41aecc66",
+      "name": "Worn Fine Wood Bow",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "worn_buckler_t2",
+      "name": "Worn Fine Wood Buckler",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "95b4f72185263f6418580be9",
+      "name": "Worn Fine Wood Buckler",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "worn_great_staff_t2",
+      "name": "Worn Fine Wood Great Staff",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "a778a3917487bf93015f4089",
+      "name": "Worn Fine Wood Great Staff",
+      "wiki_title": null,
+      "in_wiki": false,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "worn_great_staff",
+      "name": "Worn Great Staff",
+      "wiki_title": "Worn Great Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "09b82af058595df5df6c9af9",
+      "name": "Worn Great Staff",
+      "wiki_title": "Worn Great Staff",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "wb_timmon_neck",
+      "name": "Wyrmsbane Clergy Rosary",
+      "wiki_title": "Wyrmsbane Clergy Rosary",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "gregan_neck",
+      "name": "Wyrmsbane Lieutenant's Medallion",
+      "wiki_title": "Wyrmsbane Lieutenant's Medallion",
+      "in_wiki": true,
+      "in_client_bundles": false,
+      "bundle_hits": []
+    },
+    {
+      "item_hid": "zombie_skin",
+      "name": "Zombie Skin",
+      "wiki_title": "Zombie Skin",
+      "in_wiki": true,
+      "in_client_bundles": true,
+      "bundle_hits": [
+        "defaultlocalgroup_assets_all_b3ebcc592eb369ba308d750feb00cb3c.bundle"
+      ]
+    }
+  ],
+  "interpretation": "Zero plaintext_hid_hits is expected: item keys are Odin-serialized, not plain strings. Use Il2CppDumper + asset candidate blobs for static extraction, or runtime dump (Phase 4)."
+}

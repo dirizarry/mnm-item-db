@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Ancient Crypt",
+    "mob_count": 16,
+    "drop_count": 105
+  },
+  {
+    "name": "Blacktide Bay",
+    "mob_count": 16,
+    "drop_count": 59
+  },
+  {
+    "name": "Caves of Irem",
+    "mob_count": 0,
+    "drop_count": 1
+  },
+  {
+    "name": "Deep Dunes",
+    "mob_count": 1,
+    "drop_count": 2
+  },
+  {
+    "name": "Evershade Weald",
+    "mob_count": 58,
+    "drop_count": 118
+  },
+  {
+    "name": "Faelindral",
+    "mob_count": 11,
+    "drop_count": 9
+  },
+  {
+    "name": "Fallen Pass",
+    "mob_count": 83,
+    "drop_count": 310
+  },
+  {
+    "name": "Fallen Watch",
+    "mob_count": 0,
+    "drop_count": 1
+  },
+  {
+    "name": "GM Event",
+    "mob_count": 0,
+    "drop_count": 2
+  },
+  {
+    "name": "Glass Flats",
+    "mob_count": 58,
+    "drop_count": 171
+  },
+  {
+    "name": "Glinting Hollow",
+    "mob_count": 12,
+    "drop_count": 22
+  },
+  {
+    "name": "Grain Cellar",
+    "mob_count": 20,
+    "drop_count": 57
+  },
+  {
+    "name": "Grimtide Sanctum",
+    "mob_count": 1,
+    "drop_count": 4
+  },
+  {
+    "name": "Infested Crypt",
+    "mob_count": 2,
+    "drop_count": 14
+  },
+  {
+    "name": "Keeper's Bight",
+    "mob_count": 39,
+    "drop_count": 112
+  },
+  {
+    "name": "Night Harbor",
+    "mob_count": 185,
+    "drop_count": 605
+  },
+  {
+    "name": "Night Harbor Sewers",
+    "mob_count": 3,
+    "drop_count": 4
+  },
+  {
+    "name": "Scarwood",
+    "mob_count": 10,
+    "drop_count": 18
+  },
+  {
+    "name": "Shaded Dunes",
+    "mob_count": 38,
+    "drop_count": 189
+  },
+  {
+    "name": "Shallow Shoals",
+    "mob_count": 54,
+    "drop_count": 111
+  },
+  {
+    "name": "Sungreet Strand",
+    "mob_count": 71,
+    "drop_count": 199
+  },
+  {
+    "name": "Tel Ekir",
+    "mob_count": 55,
+    "drop_count": 297
+  },
+  {
+    "name": "Tomb of the Last Wyrmsbane",
+    "mob_count": 28,
+    "drop_count": 557
+  },
+  {
+    "name": "Unknown",
+    "mob_count": 1,
+    "drop_count": 3
+  },
+  {
+    "name": "Vale of Zintar",
+    "mob_count": 49,
+    "drop_count": 158
+  },
+  {
+    "name": "Wyrmsbane",
+    "mob_count": 0,
+    "drop_count": 1
+  },
+  {
+    "name": "valeofzintar",
+    "mob_count": 0,
+    "drop_count": 35
+  }
+]

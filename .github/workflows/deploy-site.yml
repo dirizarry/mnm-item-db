@@ -1,0 +1,69 @@
+name: Deploy static site
+
+# Rebuilds the site bundles from committed data and publishes site/ to GitHub Pages.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "data/items.json"
+      - "data/monsters.json"
+      - "data/drops.json"
+      - "data/crowd-hardcore.json"
+      - "build_site.py"
+      - "build_relations.py"
+      - "build_personal_site.py"
+      - "build_combat_site.py"
+      - "sync_manifest.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Rebuild relational DB + drop graph (with provenance/confidence)
+        run: python build_relations.py || echo "relations skipped (missing inputs)"
+
+      - name: Build static site bundles
+        run: python build_site.py
+
+      - name: Build Magnificent Hall bundle
+        run: python build_hardcore_site.py
+
+      - name: Build personal + combat overlays (if data present)
+        run: |
+          python build_personal_site.py || true
+          python build_combat_site.py || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

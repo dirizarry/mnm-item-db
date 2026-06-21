@@ -1,0 +1,655 @@
+{
+  "WAIST": [
+    {
+      "title": "Blackened Girdle",
+      "score": 91.0,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "20-40s",
+      "stats": "str+7 ac+10 haste+20"
+    },
+    {
+      "title": "Chain of the Construct",
+      "score": 79.0,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "12-25s",
+      "stats": "str+4 agi+4 dex+4 hp+25 ac+7 haste+14"
+    },
+    {
+      "title": "Cruel Mail Belt",
+      "score": 71.2,
+      "tradeable": false,
+      "unique": true,
+      "offer_band": "\u2014 not purchasable \u2014",
+      "stats": "ac+8 haste+17"
+    },
+    {
+      "title": "Coil of the Slithering",
+      "score": 27.0,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "agi+6 int+5 hp+15 mana+5 ac+10"
+    }
+  ],
+  "BACK": [
+    {
+      "title": "Cloak of the Bloodynose General",
+      "score": 42.0,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "6-15s",
+      "stats": "ac+5 haste+10"
+    },
+    {
+      "title": "Cloak of Shame",
+      "score": 34.0,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "6-15s",
+      "stats": "agi+4 dex+4 int+5 mana+20 ac+10"
+    },
+    {
+      "title": "Swift Brawler's Cloak",
+      "score": 25.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "ac+3 haste+6"
+    },
+    {
+      "title": "Sea Giant's Handkerchief",
+      "score": 22.5,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "str+5 dex+3 wis+3 hp+25 ac+8"
+    }
+  ],
+  "WRIST": [
+    {
+      "title": "Crusader's Bangle",
+      "score": 38.0,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "int+8 wis+8 cha+5 hp+10 mana+5 ac+17"
+    },
+    {
+      "title": "Branded Platinum Wristguard",
+      "score": 36.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "int+7 hp+15 mana+25 ac+13"
+    },
+    {
+      "title": "Black Feathered Bracelet",
+      "score": 31.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+4 int+5 hp+15 mana+5 ac+13"
+    },
+    {
+      "title": "Wayfarer's Vambraces",
+      "score": 28.1,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "dex+5 hp+40 mana+10 ac+14"
+    }
+  ],
+  "HEAD": [
+    {
+      "title": "Crown of King Mahraad",
+      "score": 37.3,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "6-15s",
+      "stats": "str+8 wis+8 cha+8 hp+40 ac+27"
+    },
+    {
+      "title": "Gelatinous Crown",
+      "score": 36.0,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "6-15s",
+      "stats": "int+7 wis+4 hp+10 mana+15 ac+19"
+    },
+    {
+      "title": "Steward's Coif",
+      "score": 34.9,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "int+7 mana+30 ac+16"
+    },
+    {
+      "title": "Stolen Circlet",
+      "score": 32.6,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+4 int+7 ac+14"
+    }
+  ],
+  "CHEST": [
+    {
+      "title": "Vest of the Glass Viper",
+      "score": 36.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "str+6 sta+6 dex+4 ac+33"
+    },
+    {
+      "title": "Scorched Apron",
+      "score": 35.7,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+4 dex+5 hp+20 ac+36"
+    },
+    {
+      "title": "Faylan's Gambeson",
+      "score": 31.1,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "str+6 sta+4 agi+2 hp+15 ac+36"
+    },
+    {
+      "title": "Supple Rat Skin Tunic",
+      "score": 29.1,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "agi+6 dex+5 hp+15 ac+31"
+    }
+  ],
+  "HANDS": [
+    {
+      "title": "Shipbreaker Soft Wraps",
+      "score": 35.6,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+8 int+6 ac+14"
+    },
+    {
+      "title": "Sticky Linen Gloves",
+      "score": 32.6,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+5 int+5 hp+5 mana+10 ac+16"
+    },
+    {
+      "title": "Corrupted Scout Gloves",
+      "score": 29.7,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "str+7 sta+9 ac+23"
+    },
+    {
+      "title": "Quartermire Cuffs",
+      "score": 29.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+6 int+5 ac+13"
+    }
+  ],
+  "FEET": [
+    {
+      "title": "Sandals of the Elements",
+      "score": 33.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "str+1 sta+3 int+5 hp+5 mana+25 ac+13"
+    },
+    {
+      "title": "Steward's Silk Slippers",
+      "score": 33.0,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+2 int+7 mana+15 ac+13"
+    },
+    {
+      "title": "Silentstep Slippers",
+      "score": 30.6,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "int+5 hp+40 ac+14"
+    },
+    {
+      "title": "Lunar Festival Perones",
+      "score": 26.5,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "int+5 hp+20 mana+5 ac+12"
+    }
+  ],
+  "NECK": [
+    {
+      "title": "Amulet of the Accord",
+      "score": 33.0,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "6-15s",
+      "stats": "sta+6 int+5 mana+20 ac+10"
+    },
+    {
+      "title": "Inlaid Bloodstone Platinum Necklace",
+      "score": 32.7,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+7 int+7 ac+3"
+    },
+    {
+      "title": "Platinum Badge of the Living City",
+      "score": 27.9,
+      "tradeable": false,
+      "unique": true,
+      "offer_band": "\u2014 not purchasable \u2014",
+      "stats": "str+4 agi+4 int+4 wis+4 hp+15 mana+15 ac+3"
+    },
+    {
+      "title": "Inqisitive Pendant",
+      "score": 26.6,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "int+6 hp+15 mana+10 ac+6"
+    }
+  ],
+  "EAR": [
+    {
+      "title": "Inlaid Sapphire Platinum Earring",
+      "score": 30.9,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "int+7 mana+35 ac+3"
+    },
+    {
+      "title": "Inlaid Sapphire Gold Earring",
+      "score": 23.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "int+5 mana+25 ac+5"
+    },
+    {
+      "title": "Inlaid Star Rose Quartz Platinum Earring",
+      "score": 23.1,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "int+7 wis+7"
+    },
+    {
+      "title": "Dull Golden Hoop",
+      "score": 19.9,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "1-4s",
+      "stats": "int+4 hp+20 mana+10"
+    }
+  ],
+  "SHOULDERS": [
+    {
+      "title": "Scholar's Shoulderpads",
+      "score": 54.6,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "12-25s",
+      "stats": "str+8 sta+3 int+8 hp+15 ac+36"
+    },
+    {
+      "title": "Mantle of the Sharkmother",
+      "score": 31.9,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "agi+4 dex+6 hp+25 ac+29"
+    },
+    {
+      "title": "Mantle of Zeal",
+      "score": 27.5,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+2 int+5 wis+2 mana+10 ac+16"
+    },
+    {
+      "title": "Protean Mantle",
+      "score": 26.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+5 int+5 hp+5 mana+10"
+    }
+  ],
+  "FINGER": [
+    {
+      "title": "Inlaid Pearl Platinum Ring",
+      "score": 27.3,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+7 dex+7 ac+7"
+    },
+    {
+      "title": "Blackened Bone Ring",
+      "score": 26.5,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "sta+3 int+5 hp+20 ac+5"
+    },
+    {
+      "title": "Ancient Artisan's Ring",
+      "score": 24.9,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "dex+4 int+4 wis+4 hp+10 mana+5"
+    },
+    {
+      "title": "Oathbound of House Thyrm",
+      "score": 16.5,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "1-4s",
+      "stats": "str+4 sta+5 wis+4 hp+5 mana+5 ac+3"
+    }
+  ],
+  "LEGS": [
+    {
+      "title": "Bright Silk Pantaloons",
+      "score": 32.7,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "int+6 hp+15 mana+15 ac+18"
+    },
+    {
+      "title": "Silkhem Vestments",
+      "score": 32.1,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "sta+2 int+6 cha+3 mana+10 ac+20"
+    },
+    {
+      "title": "Lunar Festival Trousers",
+      "score": 30.3,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+5 int+3 hp+15 mana+10 ac+17"
+    },
+    {
+      "title": "Trousers Of Shattered Sight",
+      "score": 29.8,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+2 int+5 hp+20 ac+17"
+    }
+  ],
+  "FACE": [
+    {
+      "title": "Gaze of Empire",
+      "score": 23.7,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "str+6 sta+5 cha+4 hp+20 ac+11"
+    },
+    {
+      "title": "Bright Silk Veil",
+      "score": 23.3,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "3-8s",
+      "stats": "sta+3 int+3 cha+4 mana+20 ac+10"
+    },
+    {
+      "title": "Faceguard of Warding",
+      "score": 19.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "1-4s",
+      "stats": "str+3 dex+4 hp+15 ac+10"
+    },
+    {
+      "title": "Veil of the Blessed Crossing",
+      "score": 16.9,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "1-4s",
+      "stats": "sta+7 hp+10 ac+9"
+    }
+  ],
+  "RANGED": [
+    {
+      "title": "Giant Bow",
+      "score": 132.4,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "30-50s (named chase weapon; top of the economy)",
+      "stats": "str+6 sta+2 dex+1 hp+10 22/37"
+    },
+    {
+      "title": "Pasha's Favor",
+      "score": 113.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "20-40s",
+      "stats": "str+5 sta+2 hp+10 19/37"
+    },
+    {
+      "title": "Skri'Var Ranger's Bow",
+      "score": 113.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "20-40s",
+      "stats": "str+4 sta+4 dex+4 hp+10 mana+10 22/50"
+    },
+    {
+      "title": "Vale Giant Shortbow",
+      "score": 106.2,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "20-40s",
+      "stats": "agi+5 dex+6 hp+10 mana+5 22/50"
+    }
+  ],
+  "AMMO": [
+    {
+      "title": "Lysandra's Flower",
+      "score": 17.8,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "1-4s",
+      "stats": "sta+6 hp+35"
+    },
+    {
+      "title": "Runestone of Pride",
+      "score": 11.4,
+      "tradeable": false,
+      "unique": true,
+      "offer_band": "\u2014 not purchasable \u2014",
+      "stats": "cha+7 hp+25 mana+15"
+    },
+    {
+      "title": "Mana Bloodstone",
+      "score": 2.5,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "<1s / favor",
+      "stats": "mana+10"
+    }
+  ],
+  "SECONDARY": [
+    {
+      "title": "Red Dragon Kite Shield",
+      "score": 79.5,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "12-25s",
+      "stats": "sta+8 agi+8 dex+8 hp+75 mana+75 ac+25"
+    },
+    {
+      "title": "Orb of the Waning Waters",
+      "score": 51.1,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "12-25s",
+      "stats": "sta+7 int+7 wis+7 hp+35 mana+35"
+    },
+    {
+      "title": "Aegis of the Dragon Crusader",
+      "score": 32.9,
+      "tradeable": true,
+      "unique": false,
+      "offer_band": "6-15s",
+      "stats": "str+6 sta+5 wis+4 hp+15 mana+5 ac+33"
+    },
+    {
+      "title": "Glimmering Ward",
+      "score": 32.8,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "6-15s",
+      "stats": "hp+30 mana+30 ac+36 mana_regen+1"
+    }
+  ],
+  "PRIMARY": [
+    {
+      "title": "Orb of the Waning Waters",
+      "score": 51.1,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "12-25s",
+      "stats": "sta+7 int+7 wis+7 hp+35 mana+35"
+    },
+    {
+      "title": "Stein of Baker's Scorn",
+      "score": 29.9,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "dex+1 int+8 ac+8"
+    },
+    {
+      "title": "Orb of the Fading Flame",
+      "score": 24.8,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "dex+3 int+3 wis+3 hp+15 mana+15"
+    },
+    {
+      "title": "Phantom Stein",
+      "score": 24.6,
+      "tradeable": true,
+      "unique": true,
+      "offer_band": "3-8s",
+      "stats": "int+6 hp+15 mana+10 ac+1"
+    }
+  ],
+  "_weapons": {
+    "config_a_1h_shield": 245.8,
+    "config_b_dual_wield": 271.0,
+    "config_c_two_hander": 300.0,
+    "offhand_damage_factor": 0.6,
+    "dps_ranking": [
+      "C two-hander",
+      "B dual-wield",
+      "A 1H+shield"
+    ],
+    "dual_wield": "confirmed in-game (off-hand 1H grants extra attacks)",
+    "best_1h_weapons": [
+      {
+        "title": "Festival Facesmasher",
+        "score": 166.3
+      },
+      {
+        "title": "Defiler's Blade",
+        "score": 139.6
+      },
+      {
+        "title": "Skinbound Staff",
+        "score": 138.4
+      },
+      {
+        "title": "Kukri of Blazing Flames",
+        "score": 133.5
+      },
+      {
+        "title": "Gilded Claw of the Gladiator",
+        "score": 133.1
+      }
+    ],
+    "best_shield": [
+      {
+        "title": "Red Dragon Kite Shield",
+        "score": 79.5
+      },
+      {
+        "title": "Shield of the Protector",
+        "score": 13.4
+      },
+      {
+        "title": "Ornate Chitin Shield",
+        "score": 10.7
+      },
+      {
+        "title": "Dark Buckler",
+        "score": 4.4
+      },
+      {
+        "title": "Dark Tower Shield",
+        "score": 4.4
+      }
+    ],
+    "best_two_handers": [
+      {
+        "title": "Shimmering Great Sword",
+        "score": 300.0,
+        "tradeable": false
+      },
+      {
+        "title": "Pestilence, Shard of the Blightspire",
+        "score": 274.5,
+        "tradeable": true
+      },
+      {
+        "title": "Lysandra's Crook",
+        "score": 179.9,
+        "tradeable": true
+      },
+      {
+        "title": "Blade of the Witchguard",
+        "score": 163.1,
+        "tradeable": true
+      },
+      {
+        "title": "Saltlash",
+        "score": 158.0,
+        "tradeable": true
+      }
+    ]
+  }
+}

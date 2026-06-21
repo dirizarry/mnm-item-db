@@ -1,0 +1,1730 @@
+[
+  {
+    "source": "mnm_0ulYPxmXaF.png",
+    "race": "Halfling",
+    "class": "Beastmaster",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 17,
+      "dex": 16,
+      "agi": 19,
+      "int": 14,
+      "wis": 22,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_0Zj2n7gvRa.png",
+    "race": "Ogre",
+    "class": "Shaman",
+    "points": 10,
+    "current": {
+      "str": 21,
+      "sta": 21,
+      "dex": 16,
+      "agi": 14,
+      "int": 16,
+      "wis": 19,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 26,
+      "dex": 24,
+      "agi": 26,
+      "int": 26,
+      "wis": 27,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_1BGdz58JT3.png",
+    "race": "Wood Elf",
+    "class": "Ranger",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 14,
+      "dex": 21,
+      "agi": 22,
+      "int": 15,
+      "wis": 19,
+      "cha": 16
+    },
+    "max": {
+      "str": 24,
+      "sta": 25,
+      "dex": 26,
+      "agi": 27,
+      "int": 24,
+      "wis": 28,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_2p1zRGuPk9.png",
+    "race": "Human",
+    "class": "Shadow Knight",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 19,
+      "dex": 16,
+      "agi": 16,
+      "int": 19,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_39T4NK8Mn6.png",
+    "race": "Wood Elf",
+    "class": "Druid",
+    "points": 10,
+    "current": {
+      "str": 14,
+      "sta": 14,
+      "dex": 18,
+      "agi": 22,
+      "int": 15,
+      "wis": 21,
+      "cha": 18
+    },
+    "max": {
+      "str": 24,
+      "sta": 23,
+      "dex": 26,
+      "agi": 27,
+      "int": 24,
+      "wis": 28,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_3X6ZSQw5A8.png",
+    "race": "Goblin",
+    "class": "Archer",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 15,
+      "dex": 23,
+      "agi": 21,
+      "int": 17,
+      "wis": 16,
+      "cha": 13
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 28,
+      "agi": 27,
+      "int": 25,
+      "wis": 24,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_4yN26P3xk1.png",
+    "race": "Ogre",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 24,
+      "sta": 22,
+      "dex": 15,
+      "agi": 15,
+      "int": 16,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 29,
+      "sta": 28,
+      "dex": 24,
+      "agi": 24,
+      "int": 26,
+      "wis": 25,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_4ZQOqS88HR.png",
+    "race": "Human",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 20,
+      "sta": 20,
+      "dex": 16,
+      "agi": 17,
+      "int": 16,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 27,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_5Jsxp5taDE.png",
+    "race": "Halfling",
+    "class": "Archer",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 17,
+      "dex": 20,
+      "agi": 19,
+      "int": 14,
+      "wis": 20,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 28,
+      "agi": 26,
+      "int": 24,
+      "wis": 25,
+      "cha": 26
+    }
+  },
+  {
+    "source": "mnm_6DFUEVfEcn.png",
+    "race": "Dwarf",
+    "class": "Bard",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 17,
+      "dex": 21,
+      "agi": 15,
+      "int": 16,
+      "wis": 16,
+      "cha": 19
+    },
+    "max": {
+      "str": 25,
+      "sta": 28,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 26
+    }
+  },
+  {
+    "source": "mnm_6JEdugZHbe.png",
+    "race": "Human",
+    "class": "Wizard",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 17,
+      "dex": 17,
+      "agi": 16,
+      "int": 20,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 27,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_7VwysgpmcR.png",
+    "race": "Halfling",
+    "class": "Ranger",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 19,
+      "agi": 19,
+      "int": 14,
+      "wis": 22,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_7y8UHqa6qT.png",
+    "race": "Goblin",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 18,
+      "dex": 19,
+      "agi": 20,
+      "int": 17,
+      "wis": 16,
+      "cha": 13
+    },
+    "max": {
+      "str": 27,
+      "sta": 27,
+      "dex": 26,
+      "agi": 27,
+      "int": 25,
+      "wis": 24,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_84Ky520e7r.png",
+    "race": "Human",
+    "class": "Ranger",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 17,
+      "dex": 19,
+      "agi": 18,
+      "int": 16,
+      "wis": 18,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_8i4MLen0gu.png",
+    "race": "Human",
+    "class": "Beastmaster",
+    "points": 10,
+    "current": {
+      "str": 20,
+      "sta": 17,
+      "dex": 16,
+      "agi": 18,
+      "int": 16,
+      "wis": 18,
+      "cha": 17
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_AHnbWs26Az.png",
+    "race": "Halfling",
+    "class": "Cleric",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 19,
+      "dex": 16,
+      "agi": 17,
+      "int": 14,
+      "wis": 23,
+      "cha": 16
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_bCGUb1XpU4.png",
+    "race": "Goblin",
+    "class": "Shaman",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 20,
+      "agi": 19,
+      "int": 17,
+      "wis": 20,
+      "cha": 13
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 26,
+      "agi": 29,
+      "int": 25,
+      "wis": 26,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_c4J0Z0PgcL.png",
+    "race": "Human",
+    "class": "Archer",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 17,
+      "dex": 20,
+      "agi": 18,
+      "int": 16,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 27,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_ctGdrpA4DO.png",
+    "race": "Goblin",
+    "class": "Ranger",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 15,
+      "dex": 22,
+      "agi": 21,
+      "int": 17,
+      "wis": 18,
+      "cha": 13
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 27,
+      "int": 25,
+      "wis": 26,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_dZeNaMh195.png",
+    "race": "Goblin",
+    "class": "Enchanter",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 15,
+      "dex": 19,
+      "agi": 19,
+      "int": 21,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 26,
+      "agi": 27,
+      "int": 27,
+      "wis": 24,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_EKUd35ruJc.png",
+    "race": "Wood Elf",
+    "class": "Rogue",
+    "points": 10,
+    "current": {
+      "str": 14,
+      "sta": 14,
+      "dex": 22,
+      "agi": 24,
+      "int": 15,
+      "wis": 17,
+      "cha": 16
+    },
+    "max": {
+      "str": 26,
+      "sta": 23,
+      "dex": 28,
+      "agi": 27,
+      "int": 24,
+      "wis": 26,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_fNP0rz6TF8.png",
+    "race": "Gnome",
+    "class": "Elementalist",
+    "points": 10,
+    "current": {
+      "str": 14,
+      "sta": 19,
+      "dex": 19,
+      "agi": 16,
+      "int": 24,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 24,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 29,
+      "wis": 24,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_FoCHHaYoo9.png",
+    "race": "Ogre",
+    "class": "Archer",
+    "points": 10,
+    "current": {
+      "str": 22,
+      "sta": 19,
+      "dex": 19,
+      "agi": 16,
+      "int": 16,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 26,
+      "dex": 26,
+      "agi": 24,
+      "int": 26,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_fs9ZYVNvFM.png",
+    "race": "Human",
+    "class": "Necromancer",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 20,
+      "agi": 16,
+      "int": 20,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_fSxSuBR7e4.png",
+    "race": "Human",
+    "class": "Elementalist",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 21,
+      "dex": 16,
+      "agi": 16,
+      "int": 20,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_fYxaS1z1dW.png",
+    "race": "Goblin",
+    "class": "Necromancer",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 15,
+      "dex": 23,
+      "agi": 19,
+      "int": 21,
+      "wis": 16,
+      "cha": 13
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 27,
+      "int": 27,
+      "wis": 24,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_g5Sv9gHtN5.png",
+    "race": "Dwarf",
+    "class": "Elementalist",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 21,
+      "dex": 18,
+      "agi": 15,
+      "int": 20,
+      "wis": 16,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 28,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_GcRQwNym2r.png",
+    "race": "Ogre",
+    "class": "Beastmaster",
+    "points": 10,
+    "current": {
+      "str": 24,
+      "sta": 19,
+      "dex": 15,
+      "agi": 16,
+      "int": 16,
+      "wis": 17,
+      "cha": 15
+    },
+    "max": {
+      "str": 29,
+      "sta": 26,
+      "dex": 24,
+      "agi": 24,
+      "int": 26,
+      "wis": 27,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_gnSTTkHlcj.png",
+    "race": "Gnome",
+    "class": "Rogue",
+    "points": 10,
+    "current": {
+      "str": 14,
+      "sta": 15,
+      "dex": 23,
+      "agi": 20,
+      "int": 20,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 26,
+      "sta": 24,
+      "dex": 29,
+      "agi": 25,
+      "int": 27,
+      "wis": 24,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_HIKIY8bHJD.png",
+    "race": "Human",
+    "class": "Cleric",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 19,
+      "dex": 16,
+      "agi": 16,
+      "int": 16,
+      "wis": 19,
+      "cha": 18
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_hRkpop5r2A.png",
+    "race": "Gnome",
+    "class": "Spellblade",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 15,
+      "dex": 22,
+      "agi": 16,
+      "int": 23,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 26,
+      "sta": 24,
+      "dex": 27,
+      "agi": 25,
+      "int": 29,
+      "wis": 24,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_i0mFOp38tm.png",
+    "race": "Dwarf",
+    "class": "Spellblade",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 17,
+      "dex": 21,
+      "agi": 15,
+      "int": 19,
+      "wis": 16,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 26,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_I92KFhnrsl.png",
+    "race": "Human",
+    "class": "Paladin",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 21,
+      "dex": 16,
+      "agi": 16,
+      "int": 16,
+      "wis": 18,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_ikKZjOuDFJ.png",
+    "race": "Gnome",
+    "class": "Necromancer",
+    "points": 10,
+    "current": {
+      "str": 14,
+      "sta": 15,
+      "dex": 23,
+      "agi": 16,
+      "int": 24,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 24,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 29,
+      "wis": 24,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_iNSn8fKKR1.png",
+    "race": "Dwarf",
+    "class": "Ranger",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 17,
+      "dex": 21,
+      "agi": 17,
+      "int": 16,
+      "wis": 18,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 28,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_jSRhNw2fyS.png",
+    "race": "Dwarf",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 21,
+      "sta": 20,
+      "dex": 18,
+      "agi": 16,
+      "int": 16,
+      "wis": 16,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 28,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_knLHntYYzM.png",
+    "race": "Human",
+    "class": "Spellblade",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 17,
+      "dex": 19,
+      "agi": 16,
+      "int": 19,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_Kx9G2RyaOX.png",
+    "race": "Halfling",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 20,
+      "dex": 16,
+      "agi": 18,
+      "int": 14,
+      "wis": 20,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 27,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_L7CmiLrZCe.png",
+    "race": "Wood Elf",
+    "class": "Bard",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 14,
+      "dex": 21,
+      "agi": 20,
+      "int": 15,
+      "wis": 17,
+      "cha": 20
+    },
+    "max": {
+      "str": 24,
+      "sta": 25,
+      "dex": 26,
+      "agi": 27,
+      "int": 24,
+      "wis": 26,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_lHfYEpuCN0.png",
+    "race": "Gnome",
+    "class": "Paladin",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 19,
+      "dex": 19,
+      "agi": 16,
+      "int": 20,
+      "wis": 17,
+      "cha": 15
+    },
+    "max": {
+      "str": 24,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 27,
+      "wis": 26,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_lkmC3HTPi8.png",
+    "race": "Goblin",
+    "class": "Druid",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 15,
+      "dex": 19,
+      "agi": 21,
+      "int": 17,
+      "wis": 20,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 26,
+      "agi": 27,
+      "int": 25,
+      "wis": 26,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_lsctaL9BQs.png",
+    "race": "Wood Elf",
+    "class": "Beastmaster",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 14,
+      "dex": 18,
+      "agi": 22,
+      "int": 15,
+      "wis": 19,
+      "cha": 16
+    },
+    "max": {
+      "str": 26,
+      "sta": 23,
+      "dex": 26,
+      "agi": 27,
+      "int": 24,
+      "wis": 28,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_mjXY4hxmee.png",
+    "race": "Human",
+    "class": "Monk",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 17,
+      "dex": 19,
+      "agi": 20,
+      "int": 16,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 27,
+      "agi": 27,
+      "int": 25,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_mjYOZGM8ew.png",
+    "race": "Gnome",
+    "class": "Wizard",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 15,
+      "dex": 20,
+      "agi": 16,
+      "int": 24,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 24,
+      "sta": 24,
+      "dex": 29,
+      "agi": 25,
+      "int": 29,
+      "wis": 24,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_muHmGOcECy.png",
+    "race": "Human",
+    "class": "Shaman",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 19,
+      "dex": 17,
+      "agi": 16,
+      "int": 16,
+      "wis": 20,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 25,
+      "agi": 27,
+      "int": 25,
+      "wis": 27,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_OGFfthsWAf.png",
+    "race": "Human",
+    "class": "Bard",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 17,
+      "dex": 19,
+      "agi": 16,
+      "int": 16,
+      "wis": 16,
+      "cha": 21
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_pOUNOephKP.png",
+    "race": "Human",
+    "class": "Druid",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 16,
+      "agi": 18,
+      "int": 16,
+      "wis": 20,
+      "cha": 19
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_pVDUlz59SH.png",
+    "race": "Goblin",
+    "class": "Shadow Knight",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 17,
+      "dex": 19,
+      "agi": 19,
+      "int": 20,
+      "wis": 16,
+      "cha": 13
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 27,
+      "int": 27,
+      "wis": 24,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_R0hoYZfsSm.png",
+    "race": "Gnome",
+    "class": "Cleric",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 19,
+      "agi": 16,
+      "int": 20,
+      "wis": 18,
+      "cha": 16
+    },
+    "max": {
+      "str": 24,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 27,
+      "wis": 26,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_R0mqxmxAKO.png",
+    "race": "Dwarf",
+    "class": "Cleric",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 19,
+      "dex": 18,
+      "agi": 15,
+      "int": 16,
+      "wis": 19,
+      "cha": 16
+    },
+    "max": {
+      "str": 25,
+      "sta": 28,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_rnLKev3nII.png",
+    "race": "Human",
+    "class": "Inquisitor",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 20,
+      "dex": 17,
+      "agi": 16,
+      "int": 18,
+      "wis": 16,
+      "cha": 18
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_TC2l6DHoW2.png",
+    "race": "Human",
+    "class": "Enchanter",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 16,
+      "agi": 16,
+      "int": 20,
+      "wis": 16,
+      "cha": 21
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_u6Zp78WZ6y.png",
+    "race": "Halfling",
+    "class": "Paladin",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 21,
+      "dex": 16,
+      "agi": 17,
+      "int": 14,
+      "wis": 22,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_UbVRIvvXuK.png",
+    "race": "Gnome",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 18,
+      "dex": 19,
+      "agi": 17,
+      "int": 20,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 26,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 27,
+      "wis": 24,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_UnXTErtSWO.png",
+    "race": "Ogre",
+    "class": "Ranger",
+    "points": 10,
+    "current": {
+      "str": 21,
+      "sta": 19,
+      "dex": 18,
+      "agi": 16,
+      "int": 16,
+      "wis": 17,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 28,
+      "dex": 24,
+      "agi": 24,
+      "int": 26,
+      "wis": 27,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_Uw7YXAwIvF.png",
+    "race": "Dwarf",
+    "class": "Enchanter",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 17,
+      "dex": 18,
+      "agi": 15,
+      "int": 20,
+      "wis": 16,
+      "cha": 19
+    },
+    "max": {
+      "str": 25,
+      "sta": 26,
+      "dex": 25,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 26
+    }
+  },
+  {
+    "source": "mnm_vg6mji5gd9.png",
+    "race": "Halfling",
+    "class": "Bard",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 19,
+      "agi": 17,
+      "int": 14,
+      "wis": 20,
+      "cha": 19
+    },
+    "max": {
+      "str": 25,
+      "sta": 27,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 25,
+      "cha": 26
+    }
+  },
+  {
+    "source": "mnm_vMgfyI5Wsb.png",
+    "race": "Wood Elf",
+    "class": "Fighter",
+    "points": 10,
+    "current": {
+      "str": 18,
+      "sta": 17,
+      "dex": 18,
+      "agi": 21,
+      "int": 15,
+      "wis": 17,
+      "cha": 16
+    },
+    "max": {
+      "str": 26,
+      "sta": 25,
+      "dex": 26,
+      "agi": 27,
+      "int": 24,
+      "wis": 26,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_VRjg3pB4gs.png",
+    "race": "Halfling",
+    "class": "Rogue",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 17,
+      "dex": 20,
+      "agi": 21,
+      "int": 14,
+      "wis": 20,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 28,
+      "agi": 26,
+      "int": 24,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_wEBSBqDQT5.png",
+    "race": "Halfling",
+    "class": "Druid",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 17,
+      "dex": 16,
+      "agi": 19,
+      "int": 14,
+      "wis": 24,
+      "cha": 17
+    },
+    "max": {
+      "str": 25,
+      "sta": 25,
+      "dex": 26,
+      "agi": 26,
+      "int": 24,
+      "wis": 27,
+      "cha": 26
+    }
+  },
+  {
+    "source": "mnm_WegynK6uwX.png",
+    "race": "Human",
+    "class": "Rogue",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 17,
+      "dex": 20,
+      "agi": 20,
+      "int": 16,
+      "wis": 16,
+      "cha": 17
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 27,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_wlZfi68bgZ.png",
+    "race": "Ogre",
+    "class": "Monk",
+    "points": 10,
+    "current": {
+      "str": 21,
+      "sta": 19,
+      "dex": 18,
+      "agi": 18,
+      "int": 16,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 26,
+      "dex": 26,
+      "agi": 26,
+      "int": 26,
+      "wis": 25,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_Wneh1aZYyt.png",
+    "race": "Goblin",
+    "class": "Beastmaster",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 15,
+      "dex": 19,
+      "agi": 21,
+      "int": 17,
+      "wis": 18,
+      "cha": 13
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 26,
+      "agi": 27,
+      "int": 25,
+      "wis": 26,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_XgQSKpiu5H.png",
+    "race": "Wood Elf",
+    "class": "Archer",
+    "points": 10,
+    "current": {
+      "str": 16,
+      "sta": 14,
+      "dex": 22,
+      "agi": 22,
+      "int": 15,
+      "wis": 17,
+      "cha": 16
+    },
+    "max": {
+      "str": 24,
+      "sta": 23,
+      "dex": 28,
+      "agi": 27,
+      "int": 24,
+      "wis": 26,
+      "cha": 27
+    }
+  },
+  {
+    "source": "mnm_xiE4RR82xH.png",
+    "race": "Gnome",
+    "class": "Enchanter",
+    "points": 10,
+    "current": {
+      "str": 14,
+      "sta": 15,
+      "dex": 19,
+      "agi": 16,
+      "int": 24,
+      "wis": 15,
+      "cha": 19
+    },
+    "max": {
+      "str": 24,
+      "sta": 24,
+      "dex": 27,
+      "agi": 25,
+      "int": 29,
+      "wis": 24,
+      "cha": 26
+    }
+  },
+  {
+    "source": "mnm_YoD3NYKbud.png",
+    "race": "Ogre",
+    "class": "Elementalist",
+    "points": 10,
+    "current": {
+      "str": 20,
+      "sta": 23,
+      "dex": 15,
+      "agi": 14,
+      "int": 20,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 28,
+      "dex": 24,
+      "agi": 24,
+      "int": 28,
+      "wis": 25,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_z1vi3Qggbu.png",
+    "race": "Goblin",
+    "class": "Rogue",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 15,
+      "dex": 23,
+      "agi": 23,
+      "int": 17,
+      "wis": 16,
+      "cha": 13
+    },
+    "max": {
+      "str": 27,
+      "sta": 25,
+      "dex": 28,
+      "agi": 27,
+      "int": 25,
+      "wis": 24,
+      "cha": 23
+    }
+  },
+  {
+    "source": "mnm_ZaWj2BHNI2.png",
+    "race": "Dwarf",
+    "class": "Paladin",
+    "points": 10,
+    "current": {
+      "str": 19,
+      "sta": 21,
+      "dex": 18,
+      "agi": 15,
+      "int": 16,
+      "wis": 18,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 28,
+      "dex": 25,
+      "agi": 25,
+      "int": 25,
+      "wis": 27,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_zPzNBkYDaA.png",
+    "race": "Dwarf",
+    "class": "Rogue",
+    "points": 10,
+    "current": {
+      "str": 17,
+      "sta": 17,
+      "dex": 22,
+      "agi": 19,
+      "int": 16,
+      "wis": 16,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 25,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_zrxxXAS0yJ.png",
+    "race": "Wood Elf",
+    "class": "Shaman",
+    "points": 10,
+    "current": {
+      "str": 15,
+      "sta": 16,
+      "dex": 19,
+      "agi": 20,
+      "int": 15,
+      "wis": 21,
+      "cha": 16
+    },
+    "max": {
+      "str": 24,
+      "sta": 23,
+      "dex": 26,
+      "agi": 29,
+      "int": 24,
+      "wis": 28,
+      "cha": 25
+    }
+  },
+  {
+    "source": "mnm_zXPrvqYaJg.png",
+    "race": "Dwarf",
+    "class": "Wizard",
+    "points": 10,
+    "current": {
+      "str": 20,
+      "sta": 17,
+      "dex": 19,
+      "agi": 15,
+      "int": 20,
+      "wis": 16,
+      "cha": 15
+    },
+    "max": {
+      "str": 25,
+      "sta": 26,
+      "dex": 27,
+      "agi": 25,
+      "int": 27,
+      "wis": 25,
+      "cha": 24
+    }
+  },
+  {
+    "source": "mnm_ZZ8n6ROgri.png",
+    "race": "Ogre",
+    "class": "Shadow Knight",
+    "points": 10,
+    "current": {
+      "str": 23,
+      "sta": 21,
+      "dex": 15,
+      "agi": 14,
+      "int": 19,
+      "wis": 15,
+      "cha": 15
+    },
+    "max": {
+      "str": 27,
+      "sta": 28,
+      "dex": 24,
+      "agi": 24,
+      "int": 28,
+      "wis": 25,
+      "cha": 23
+    }
+  }
+]

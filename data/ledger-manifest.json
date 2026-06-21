@@ -1,0 +1,712 @@
+{
+  "schema": "mnm-ledger-manifest/v1",
+  "generated_at": "2026-06-20T22:35:28.654873+00:00",
+  "locallow": "C:\\Users\\84dan\\AppData\\LocalLow\\Niche Worlds Cult\\Monsters and Memories",
+  "install_id": "9f3efa0cc804a972",
+  "characters": [
+    "Dhom",
+    "Dhomdhom",
+    "Dhomina",
+    "Dhominate",
+    "Dhomist",
+    "Dhomit",
+    "Freed",
+    "Indhomitable",
+    "Lizardwizard",
+    "Onelife"
+  ],
+  "servers": [
+    "betapvp",
+    "haradrel"
+  ],
+  "stats": {
+    "files": 95,
+    "events": 42565,
+    "drops": 1340,
+    "drop_rates": 183,
+    "heatmap": 66,
+    "kills": 3199,
+    "loot_events": 21874,
+    "ground_loot": 72,
+    "items": 800,
+    "mobs": 121,
+    "levelups": 334,
+    "trades": 319,
+    "party": 1153,
+    "vendor": 165,
+    "journal_npcs": 54,
+    "hardcore_n": 1,
+    "errors": 0
+  },
+  "file_index": {
+    "betapvp\\Dhom\\Ledger\\Dhom_Character_2026-06-09.json": {
+      "mtime": 1781049993,
+      "size": 53197
+    },
+    "betapvp\\Dhom\\Ledger\\Dhom_Character_2026-06-19.json": {
+      "mtime": 1781850088,
+      "size": 22113
+    },
+    "betapvp\\Dhomina\\Ledger\\Dhomina_Character_2026-06-19.json": {
+      "mtime": 1781915662,
+      "size": 41273
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-06.json": {
+      "mtime": 1780810803,
+      "size": 297233
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-07.json": {
+      "mtime": 1780893910,
+      "size": 235952
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-08.json": {
+      "mtime": 1780980947,
+      "size": 269289
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-09.json": {
+      "mtime": 1781068419,
+      "size": 279688
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-10.json": {
+      "mtime": 1781071141,
+      "size": 15728
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-11.json": {
+      "mtime": 1781242584,
+      "size": 33973
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-12.json": {
+      "mtime": 1781325376,
+      "size": 44878
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-13.json": {
+      "mtime": 1781332583,
+      "size": 21352
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-14.json": {
+      "mtime": 1781504213,
+      "size": 112632
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-15.json": {
+      "mtime": 1781585811,
+      "size": 32091
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-16.json": {
+      "mtime": 1781672914,
+      "size": 41270
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-17.json": {
+      "mtime": 1781767710,
+      "size": 126196
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-18.json": {
+      "mtime": 1781845589,
+      "size": 48214
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-19.json": {
+      "mtime": 1781918008,
+      "size": 3110
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Character_2026-06-20.json": {
+      "mtime": 1781994435,
+      "size": 47240
+    },
+    "betapvp\\Onelife\\Ledger\\Onelife_Character_2026-06-19.json": {
+      "mtime": 1781916474,
+      "size": 323619
+    },
+    "haradrel\\Dhom\\Ledger\\Dhom_Character_2026-05-29.json": {
+      "mtime": 1780102991,
+      "size": 32507
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Character_2026-05-29.json": {
+      "mtime": 1780114944,
+      "size": 31756
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Character_2026-05-30.json": {
+      "mtime": 1780202718,
+      "size": 97722
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Character_2026-05-31.json": {
+      "mtime": 1780275352,
+      "size": 172551
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Character_2026-06-05.json": {
+      "mtime": 1780691541,
+      "size": 18904
+    },
+    "haradrel\\Dhominate\\Ledger\\Dhominate_Character_2026-05-30.json": {
+      "mtime": 1780160149,
+      "size": 877
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-05-31.json": {
+      "mtime": 1780281151,
+      "size": 16730
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-06-01.json": {
+      "mtime": 1780380090,
+      "size": 375486
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-06-02.json": {
+      "mtime": 1780463936,
+      "size": 245668
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-06-03.json": {
+      "mtime": 1780550538,
+      "size": 245389
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-06-04.json": {
+      "mtime": 1780634005,
+      "size": 208758
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-06-05.json": {
+      "mtime": 1780722155,
+      "size": 134850
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Character_2026-06-06.json": {
+      "mtime": 1780733346,
+      "size": 32620
+    },
+    "haradrel\\Dhomit\\Ledger\\Dhomit_Character_2026-06-06.json": {
+      "mtime": 1780743486,
+      "size": 59633
+    },
+    "haradrel\\Lizardwizard\\Ledger\\Lizardwizard_Character_2026-05-29.json": {
+      "mtime": 1780105134,
+      "size": 1250
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-06.json": {
+      "mtime": 1780810821,
+      "size": 357366
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-07.json": {
+      "mtime": 1780894002,
+      "size": 353149
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-08.json": {
+      "mtime": 1780981028,
+      "size": 336180
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-09.json": {
+      "mtime": 1781068568,
+      "size": 196432
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-10.json": {
+      "mtime": 1781070018,
+      "size": 39697
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-11.json": {
+      "mtime": 1781242584,
+      "size": 175086
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-12.json": {
+      "mtime": 1781326765,
+      "size": 129899
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-13.json": {
+      "mtime": 1781332293,
+      "size": 48040
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-14.json": {
+      "mtime": 1781504473,
+      "size": 334120
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-15.json": {
+      "mtime": 1781586926,
+      "size": 221254
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-16.json": {
+      "mtime": 1781673207,
+      "size": 194909
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-17.json": {
+      "mtime": 1781766117,
+      "size": 381652
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-18.json": {
+      "mtime": 1781846102,
+      "size": 321649
+    },
+    "betapvp\\Freed\\Ledger\\Freed_Social_2026-06-20.json": {
+      "mtime": 1781994313,
+      "size": 142158
+    },
+    "betapvp\\Onelife\\Ledger\\Onelife_Social_2026-06-19.json": {
+      "mtime": 1781917062,
+      "size": 10966
+    },
+    "haradrel\\Dhom\\Ledger\\Dhom_Social_2026-05-29.json": {
+      "mtime": 1780104551,
+      "size": 59462
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Social_2026-05-29.json": {
+      "mtime": 1780115345,
+      "size": 130379
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Social_2026-05-30.json": {
+      "mtime": 1780203416,
+      "size": 306436
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Social_2026-05-31.json": {
+      "mtime": 1780275726,
+      "size": 323204
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Social_2026-06-04.json": {
+      "mtime": 1780606425,
+      "size": 2331
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Dhomdhom_Social_2026-06-05.json": {
+      "mtime": 1780691561,
+      "size": 107929
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Social_2026-06-01.json": {
+      "mtime": 1780372966,
+      "size": 341211
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Social_2026-06-02.json": {
+      "mtime": 1780464053,
+      "size": 374639
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Social_2026-06-03.json": {
+      "mtime": 1780550591,
+      "size": 293835
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Social_2026-06-04.json": {
+      "mtime": 1780640858,
+      "size": 351493
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Social_2026-06-05.json": {
+      "mtime": 1780722667,
+      "size": 292108
+    },
+    "haradrel\\Dhomist\\Ledger\\Dhomist_Social_2026-06-06.json": {
+      "mtime": 1780733664,
+      "size": 124608
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Character_archive_20260607_220844.json": {
+      "mtime": 1780888124,
+      "size": 192102
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260606_170351.json": {
+      "mtime": 1780783431,
+      "size": 179987
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260606_194922.json": {
+      "mtime": 1780793362,
+      "size": 180911
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260606_214320.json": {
+      "mtime": 1780800200,
+      "size": 184419
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260607_164300.json": {
+      "mtime": 1780868580,
+      "size": 185573
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260607_194321.json": {
+      "mtime": 1780879401,
+      "size": 188284
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260607_210742.json": {
+      "mtime": 1780884462,
+      "size": 190863
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260607_230523.json": {
+      "mtime": 1780891523,
+      "size": 192334
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260608_155014.json": {
+      "mtime": 1780951814,
+      "size": 192012
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260608_193718.json": {
+      "mtime": 1780965438,
+      "size": 190578
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260608_225949.json": {
+      "mtime": 1780977589,
+      "size": 189464
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260609_143945.json": {
+      "mtime": 1781033985,
+      "size": 192374
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260609_220656.json": {
+      "mtime": 1781060816,
+      "size": 192081
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260609_234105.json": {
+      "mtime": 1781066465,
+      "size": 188792
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260617_203610.json": {
+      "mtime": 1781746570,
+      "size": 191788
+    },
+    "betapvp\\Freed\\Ledger\\Archive\\ledger_Freed_Social_archive_20260618_020201.json": {
+      "mtime": 1781766121,
+      "size": 191701
+    },
+    "haradrel\\Dhomdhom\\Ledger\\Archive\\ledger_Dhomdhom_Social_archive_20260531_161619.json": {
+      "mtime": 1780262179,
+      "size": 192255
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Character_archive_20260601_204236.json": {
+      "mtime": 1780364556,
+      "size": 186385
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Character_archive_20260602_010132.json": {
+      "mtime": 1780380092,
+      "size": 189825
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Character_archive_20260602_174835.json": {
+      "mtime": 1780440515,
+      "size": 186212
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Character_archive_20260602_231110.json": {
+      "mtime": 1780459870,
+      "size": 188896
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Character_archive_20260604_213549.json": {
+      "mtime": 1780626949,
+      "size": 189896
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260601_203420.json": {
+      "mtime": 1780364060,
+      "size": 186770
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260602_175103.json": {
+      "mtime": 1780440663,
+      "size": 191390
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260602_203241.json": {
+      "mtime": 1780450361,
+      "size": 188148
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260602_215624.json": {
+      "mtime": 1780455384,
+      "size": 188798
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260602_231153.json": {
+      "mtime": 1780459913,
+      "size": 191647
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260603_170237.json": {
+      "mtime": 1780524157,
+      "size": 187553
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260603_181907.json": {
+      "mtime": 1780528747,
+      "size": 194119
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260603_223323.json": {
+      "mtime": 1780544003,
+      "size": 194444
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260604_144254.json": {
+      "mtime": 1780602174,
+      "size": 181165
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260604_180754.json": {
+      "mtime": 1780614474,
+      "size": 193713
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260604_225452.json": {
+      "mtime": 1780631692,
+      "size": 189082
+    },
+    "haradrel\\Dhomist\\Ledger\\Archive\\ledger_Dhomist_Social_archive_20260605_223013.json": {
+      "mtime": 1780716613,
+      "size": 188474
+    },
+    "betapvp\\Dhom\\journal\\a shifty gnome": {
+      "mtime": 1780994112,
+      "size": 107
+    },
+    "betapvp\\Dhom\\journal\\Albrecht": {
+      "mtime": 1780989830,
+      "size": 1900
+    },
+    "betapvp\\Dhom\\journal\\Captain Eilionoir": {
+      "mtime": 1780988212,
+      "size": 558
+    },
+    "betapvp\\Dhom\\journal\\Customs Inspector Bakari": {
+      "mtime": 1780988021,
+      "size": 569
+    },
+    "betapvp\\Dhom\\journal\\Dilshad Abolfazl": {
+      "mtime": 1780989281,
+      "size": 622
+    },
+    "betapvp\\Dhom\\journal\\Guard Andreu": {
+      "mtime": 1780989637,
+      "size": 271
+    },
+    "betapvp\\Dhom\\journal\\Irfan Raz": {
+      "mtime": 1780993635,
+      "size": 1665
+    },
+    "betapvp\\Dhom\\journal\\Mafeed the Butcher": {
+      "mtime": 1780989568,
+      "size": 590
+    },
+    "betapvp\\Dhom\\journal\\Nerida Thinblade": {
+      "mtime": 1780988360,
+      "size": 534
+    },
+    "betapvp\\Dhom\\journal\\Sinastin Aspenleaf": {
+      "mtime": 1780989855,
+      "size": 2312
+    },
+    "betapvp\\Dhom\\journal\\Sproggets Bedsprings": {
+      "mtime": 1780990556,
+      "size": 748
+    },
+    "betapvp\\Dhom\\journal\\Stumpy the Whistler": {
+      "mtime": 1780990359,
+      "size": 1009
+    },
+    "betapvp\\Dhom\\journal\\Whispering Wallace": {
+      "mtime": 1780992623,
+      "size": 1395
+    },
+    "betapvp\\Dhomina\\journal\\Magnificent Malkiyah": {
+      "mtime": 1781887121,
+      "size": 220
+    },
+    "betapvp\\Dhomina\\journal\\Marvion Hallows": {
+      "mtime": 1781851216,
+      "size": 519
+    },
+    "betapvp\\Dhomina\\journal\\Sekhmet": {
+      "mtime": 1781851317,
+      "size": 1004
+    },
+    "betapvp\\Freed\\journal\\a shifty gnome": {
+      "mtime": 1780772380,
+      "size": 107
+    },
+    "betapvp\\Freed\\journal\\Buckmarr Gorstagg": {
+      "mtime": 1780769925,
+      "size": 889
+    },
+    "betapvp\\Freed\\journal\\Corporal Theodora": {
+      "mtime": 1781655297,
+      "size": 1273
+    },
+    "betapvp\\Freed\\journal\\Hult Beetlewrangler": {
+      "mtime": 1780777113,
+      "size": 289
+    },
+    "betapvp\\Freed\\journal\\Jaffar Jhaym": {
+      "mtime": 1780767896,
+      "size": 703
+    },
+    "betapvp\\Freed\\journal\\Jalwa Noor": {
+      "mtime": 1780819573,
+      "size": 4786
+    },
+    "betapvp\\Freed\\journal\\Leatherworker Haiat": {
+      "mtime": 1780802175,
+      "size": 647
+    },
+    "betapvp\\Freed\\journal\\Lieutenant Jarovik Holt": {
+      "mtime": 1781768045,
+      "size": 671
+    },
+    "betapvp\\Freed\\journal\\Matheus Griswald": {
+      "mtime": 1781030072,
+      "size": 389
+    },
+    "betapvp\\Freed\\journal\\Mayana": {
+      "mtime": 1780820388,
+      "size": 1570
+    },
+    "betapvp\\Freed\\journal\\Njau Hansou": {
+      "mtime": 1780981621,
+      "size": 5678
+    },
+    "betapvp\\Freed\\journal\\Quartermaster Obaid": {
+      "mtime": 1780817119,
+      "size": 149
+    },
+    "betapvp\\Freed\\journal\\Tust Brookturner": {
+      "mtime": 1781486285,
+      "size": 2020
+    },
+    "betapvp\\Onelife\\journal\\Magnificent Malkiyah": {
+      "mtime": 1781887273,
+      "size": 694
+    },
+    "betapvp\\Onelife\\journal\\Marvion Hallows": {
+      "mtime": 1781888229,
+      "size": 519
+    },
+    "betapvp\\Onelife\\journal\\Sekhmet": {
+      "mtime": 1781888352,
+      "size": 1004
+    },
+    "haradrel\\Dhom\\journal\\a shifty gnome": {
+      "mtime": 1780086587,
+      "size": 659
+    },
+    "haradrel\\Dhom\\journal\\Bieito Brightsmile": {
+      "mtime": 1780089524,
+      "size": 958
+    },
+    "haradrel\\Dhom\\journal\\Malory Moreland": {
+      "mtime": 1780090791,
+      "size": 1329
+    },
+    "haradrel\\Dhom\\journal\\Master Wincog": {
+      "mtime": 1780093739,
+      "size": 3749
+    },
+    "haradrel\\Dhom\\journal\\Mirembe Tiifu": {
+      "mtime": 1780090015,
+      "size": 1018
+    },
+    "haradrel\\Dhom\\journal\\Pau": {
+      "mtime": 1780103875,
+      "size": 39
+    },
+    "haradrel\\Dhom\\journal\\Piia": {
+      "mtime": 1780103882,
+      "size": 122
+    },
+    "haradrel\\Dhom\\journal\\Sexton Harding": {
+      "mtime": 1780093038,
+      "size": 1233
+    },
+    "haradrel\\Dhom\\journal\\Vaclav": {
+      "mtime": 1780102033,
+      "size": 1611
+    },
+    "haradrel\\Dhomdhom\\journal\\a shifty gnome": {
+      "mtime": 1780112779,
+      "size": 378
+    },
+    "haradrel\\Dhomdhom\\journal\\Errol Shrewtender": {
+      "mtime": 1780109138,
+      "size": 1431
+    },
+    "haradrel\\Dhomdhom\\journal\\Eskander Akhtar": {
+      "mtime": 1780201971,
+      "size": 1452
+    },
+    "haradrel\\Dhomdhom\\journal\\Little Tamsah": {
+      "mtime": 1780152388,
+      "size": 227
+    },
+    "haradrel\\Dhomdhom\\journal\\Masoumeh Akhtar": {
+      "mtime": 1780156209,
+      "size": 2476
+    },
+    "haradrel\\Dhomdhom\\journal\\Old Mother Roshan": {
+      "mtime": 1780109033,
+      "size": 770
+    },
+    "haradrel\\Dhomist\\journal\\a priest of Eltindra": {
+      "mtime": 1780733488,
+      "size": 288
+    },
+    "haradrel\\Dhomist\\journal\\a shifty gnome": {
+      "mtime": 1780335813,
+      "size": 107
+    },
+    "haradrel\\Dhomist\\journal\\Adimah Starseeker": {
+      "mtime": 1780269653,
+      "size": 1580
+    },
+    "haradrel\\Dhomist\\journal\\Dalinder Grammanoot": {
+      "mtime": 1780454791,
+      "size": 77
+    },
+    "haradrel\\Dhomist\\journal\\Domas Starseeker": {
+      "mtime": 1780269591,
+      "size": 599
+    },
+    "haradrel\\Dhomist\\journal\\Gatekeeper Nusder": {
+      "mtime": 1780534455,
+      "size": 1635
+    },
+    "haradrel\\Dhomist\\journal\\Hamsar": {
+      "mtime": 1780269830,
+      "size": 748
+    },
+    "haradrel\\Dhomist\\journal\\Jabir Il-Hamar": {
+      "mtime": 1780355344,
+      "size": 3326
+    },
+    "haradrel\\Dhomist\\journal\\Lanna Ivintoria": {
+      "mtime": 1780271128,
+      "size": 830
+    },
+    "haradrel\\Dhomist\\journal\\Liyna Esueiruc": {
+      "mtime": 1780355184,
+      "size": 1358
+    },
+    "haradrel\\Dhomist\\journal\\Matheus Griswald": {
+      "mtime": 1780379477,
+      "size": 775
+    },
+    "haradrel\\Dhomist\\journal\\Medic Zafira": {
+      "mtime": 1780454831,
+      "size": 134
+    },
+    "haradrel\\Dhomist\\journal\\Olvin Viscus": {
+      "mtime": 1780271313,
+      "size": 1806
+    },
+    "haradrel\\Dhomist\\journal\\Rallin Wizzentrop": {
+      "mtime": 1780269899,
+      "size": 713
+    },
+    "haradrel\\Dhomist\\journal\\Squire Ryland": {
+      "mtime": 1780356018,
+      "size": 129
+    },
+    "haradrel\\Dhomist\\journal\\Thibald Burlond": {
+      "mtime": 1780454765,
+      "size": 75
+    },
+    "haradrel\\Dhomist\\journal\\Veygen Antorious": {
+      "mtime": 1780269157,
+      "size": 826
+    },
+    "haradrel\\Dhomit\\journal\\Buckmarr Gorstagg": {
+      "mtime": 1780739902,
+      "size": 889
+    },
+    "haradrel\\Dhomit\\journal\\Jaffar Jhaym": {
+      "mtime": 1780736865,
+      "size": 703
+    },
+    "haradrel\\Dhomit\\journal\\Njau Hansou": {
+      "mtime": 1780740221,
+      "size": 3731
+    },
+    "haradrel\\Indhomitable\\journal\\Tenebrim Tam": {
+      "mtime": 1780105949,
+      "size": 1824
+    }
+  },
+  "outputs": [
+    "ledger-drops.json",
+    "ledger-drop-rates.json",
+    "ledger-kills.json",
+    "ledger-loot.json",
+    "ledger-coin.json",
+    "ledger-kill-heatmap.json",
+    "ledger-mobs.json",
+    "ledger-items.json",
+    "ledger-vendor-prices.json",
+    "ledger-levelups.json",
+    "ledger-trades.json",
+    "ledger-party.json",
+    "ledger-journal.json",
+    "ledger-hardcore.json",
+    "ledger-report.txt"
+  ]
+}

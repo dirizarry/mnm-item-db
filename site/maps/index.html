@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&amp;M Maps — Tomb of the Last Wyrmsbane</title>
+<link rel="stylesheet" href="maps.css">
+</head>
+<body>
+<header class="mp-header">
+  <div class="mp-brand">
+    <a href="../index.html" class="mp-back">← Item DB</a>
+    <h1>M&amp;M Maps <span class="mp-proto-badge">Prototype</span></h1>
+    <div class="sub" id="zone-title">Loading…</div>
+  </div>
+  <a href="editor.html" class="mp-btn" style="text-decoration:none">3D layout editor</a>
+</header>
+
+<div class="mp-layout">
+  <aside class="mp-sidebar">
+    <div class="mp-section">
+      <h3>View</h3>
+      <div class="mp-section-body mp-controls">
+        <button class="mp-btn active" data-view="exploded">Exploded floors</button>
+        <button class="mp-btn" data-view="compact">Compact</button>
+        <button class="mp-btn" data-view="single">Single floor</button>
+        <button class="mp-btn" id="btn-fit">Fit view</button>
+      </div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Floors</h3>
+      <div class="mp-section-body mp-floor-list" id="floor-list"></div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Bosses &amp; POIs</h3>
+      <div class="mp-section-body" id="poi-list"></div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Vertical links</h3>
+      <div class="mp-section-body" id="conn-list"></div>
+    </div>
+
+    <div class="mp-section">
+      <h3>Route</h3>
+      <div class="mp-section-body">
+        <div class="mp-controls" style="margin-bottom:.5rem">
+          <button class="mp-btn" data-preset="plate-farm">Plate loop</button>
+          <button class="mp-btn" data-preset="chain-farm">Chain loop</button>
+          <button class="mp-btn" data-preset="leather-farm">Leather loop</button>
+        </div>
+        <div class="mp-route" id="route-list"></div>
+        <button class="mp-btn mp-route-clear" id="btn-route-clear">Clear route</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mp-viewport-wrap">
+    <canvas id="viewport"></canvas>
+    <div class="mp-hud">
+      <div class="mp-hud-panel">
+        <p class="mp-hud-title" id="hud-title">Tomb of the Last Wyrmsbane</p>
+        <p class="mp-hud-detail" id="hud-detail">Click a boss pin or vertical link. Double-click to add to route.</p>
+      </div>
+      <div class="mp-hud-panel mp-hud-keys">
+        Drag · orbit<br>
+        Scroll · zoom<br>
+        Click · select<br>
+        Dbl-click · route
+      </div>
+    </div>
+    <div class="mp-tooltip" id="tooltip"></div>
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

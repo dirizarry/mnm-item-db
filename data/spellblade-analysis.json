@@ -1,0 +1,634 @@
+{
+  "base_stats": {
+    "current_avg": {
+      "str": 17.666666666666668,
+      "sta": 16.333333333333332,
+      "agi": 15.666666666666666,
+      "dex": 20.666666666666668,
+      "int": 20.333333333333332,
+      "wis": 15.666666666666666,
+      "cha": 15.666666666666666
+    },
+    "max_avg": {
+      "str": 26.666666666666668,
+      "sta": 25,
+      "agi": 25,
+      "dex": 25.666666666666668,
+      "int": 27.666666666666668,
+      "wis": 24.666666666666668,
+      "cha": 24.333333333333332
+    },
+    "priority": [
+      "int",
+      "str",
+      "dex",
+      "sta",
+      "agi",
+      "wis",
+      "cha"
+    ]
+  },
+  "slots": {
+    "HEAD": [
+      {
+        "title": "Crown of King Mahraad",
+        "score": 37.3,
+        "min_source_level": null,
+        "stats": "str+8 wis+8 cha+8 hp+40 ac+27 magic",
+        "zone": "Vale of Zintar"
+      },
+      {
+        "title": "Steward's Coif",
+        "score": 34.9,
+        "min_source_level": null,
+        "stats": "int+7 mana+30 ac+16 magic",
+        "zone": "Fallen Pass"
+      },
+      {
+        "title": "Stolen Circlet",
+        "score": 32.6,
+        "min_source_level": null,
+        "stats": "sta+4 int+7 ac+14 magic",
+        "zone": "Fallen Pass; Demeter Stollen"
+      },
+      {
+        "title": "Enchanted Linen Cap",
+        "score": 30.4,
+        "min_source_level": null,
+        "stats": "sta+4 int+5 mana+15 ac+14 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Padded Leather Cap",
+        "score": 27.4,
+        "min_source_level": null,
+        "stats": "int+5 wis+5 mana+10 ac+21 magic",
+        "zone": "?"
+      }
+    ],
+    "FACE": [
+      {
+        "title": "Gaze of Empire",
+        "score": 23.7,
+        "min_source_level": null,
+        "stats": "str+6 sta+5 cha+4 hp+20 ac+11 magic",
+        "zone": "Vale of Zintar"
+      },
+      {
+        "title": "Faceguard of the Gladiator",
+        "score": 15.3,
+        "min_source_level": null,
+        "stats": "str+4 sta+3 agi+3 hp+10 ac+7 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Mask of the Gladiator",
+        "score": 11.9,
+        "min_source_level": null,
+        "stats": "str+4 sta+3 agi+2 ac+6 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Shimmering Shadow Veil",
+        "score": 11.9,
+        "min_source_level": null,
+        "stats": "sta+1 agi+4 dex+3 ac+6 magic",
+        "zone": "Shaded Dunes; a shimmering shadow"
+      },
+      {
+        "title": "Skri'Var-Sight Scarf",
+        "score": 10.1,
+        "min_source_level": null,
+        "stats": "int+2 mana+10 ac+4 magic",
+        "zone": "Blacktide Bay; a swarm leader"
+      }
+    ],
+    "EAR": [
+      {
+        "title": "Inlaid Sapphire Platinum Earring",
+        "score": 30.9,
+        "min_source_level": null,
+        "stats": "int+7 mana+35 ac+3",
+        "zone": "?"
+      },
+      {
+        "title": "Inlaid Sapphire Gold Earring",
+        "score": 23.2,
+        "min_source_level": null,
+        "stats": "int+5 mana+25 ac+5",
+        "zone": "?"
+      },
+      {
+        "title": "Inlaid Star Rose Quartz Platinum Earring",
+        "score": 23.1,
+        "min_source_level": null,
+        "stats": "int+7 wis+7",
+        "zone": "?"
+      },
+      {
+        "title": "Aashir's Earring",
+        "score": 16.1,
+        "min_source_level": null,
+        "stats": "int+3 wis+2 cha+2 mana+15 ac+2",
+        "zone": "Unknown"
+      },
+      {
+        "title": "Rakamatar Whorls",
+        "score": 15.2,
+        "min_source_level": null,
+        "stats": "int+4 hp+10 magic",
+        "zone": "Fallen Pass"
+      }
+    ],
+    "NECK": [
+      {
+        "title": "Amulet of the Accord",
+        "score": 33.0,
+        "min_source_level": null,
+        "stats": "sta+6 int+5 mana+20 ac+10 magic",
+        "zone": "High Irina"
+      },
+      {
+        "title": "Inlaid Bloodstone Platinum Necklace",
+        "score": 32.7,
+        "min_source_level": null,
+        "stats": "sta+7 int+7 ac+3",
+        "zone": "?"
+      },
+      {
+        "title": "Platinum Badge of the Living City",
+        "score": 27.9,
+        "min_source_level": null,
+        "stats": "str+4 agi+4 int+4 wis+4 hp+15 mana+15 ac+3 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Blightcaller's Beads",
+        "score": 24.8,
+        "min_source_level": null,
+        "stats": "dex+6 hp+30 mana+5 ac+10 magic",
+        "zone": "Glass Flats"
+      },
+      {
+        "title": "Inlaid Amber Mithril Necklace",
+        "score": 23.2,
+        "min_source_level": null,
+        "stats": "str+8 sta+8 ac+8",
+        "zone": "?"
+      }
+    ],
+    "SHOULDERS": [
+      {
+        "title": "Mantle of Zeal",
+        "score": 27.5,
+        "min_source_level": null,
+        "stats": "sta+2 int+5 wis+2 mana+10 ac+16 magic",
+        "zone": "Shallow Shoals; High-Mother Haathala"
+      },
+      {
+        "title": "Tora's Sneakin' Mantle",
+        "score": 22.7,
+        "min_source_level": null,
+        "stats": "sta+4 int+3 mana+10 ac+13 magic",
+        "zone": "Fallen Pass; Tora'Galdo"
+      },
+      {
+        "title": "Rimeflesh Spaulders",
+        "score": 18.9,
+        "min_source_level": null,
+        "stats": "str+6 agi+4 hp+5 ac+24 magic",
+        "zone": "Scarwood; Dregath Warwake"
+      },
+      {
+        "title": "Butcher's Shoulder Cloth",
+        "score": 17.1,
+        "min_source_level": 28,
+        "stats": "sta+3 int+3 ac+9 magic",
+        "zone": "Keeper's Bight"
+      },
+      {
+        "title": "Rotleaf Tracker Mantle",
+        "score": 16.2,
+        "min_source_level": null,
+        "stats": "sta+3 wis+4 mana+10 ac+20 magic",
+        "zone": "Fallen Pass; Kowmeh Lalen"
+      }
+    ],
+    "BACK": [
+      {
+        "title": "Cloak of the Bloodynose General",
+        "score": 42.0,
+        "min_source_level": 21,
+        "stats": "ac+5 haste+10 magic",
+        "zone": "Tel Ekir"
+      },
+      {
+        "title": "Swift Brawler's Cloak",
+        "score": 25.2,
+        "min_source_level": 10,
+        "stats": "ac+3 haste+6",
+        "zone": "Tomb of the Last Wyrmsbane"
+      },
+      {
+        "title": "Sea Giant's Handkerchief",
+        "score": 22.5,
+        "min_source_level": null,
+        "stats": "str+5 dex+3 wis+3 hp+25 ac+8 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Sand Giant's Napkin",
+        "score": 19.0,
+        "min_source_level": null,
+        "stats": "int+5 wis+5 hp+10 magic",
+        "zone": "Shaded Dunes; Fallen Pass; Maleq"
+      },
+      {
+        "title": "Frightwoven Cape",
+        "score": 15.6,
+        "min_source_level": 25,
+        "stats": "agi+1 int+3 hp+5 mana+10 ac+5 magic",
+        "zone": "Sungreet Strand"
+      }
+    ],
+    "CHEST": [
+      {
+        "title": "Vest of the Glass Viper",
+        "score": 36.2,
+        "min_source_level": null,
+        "stats": "str+6 sta+6 dex+4 ac+33 magic",
+        "zone": "Glass Flats; Malik the Glass Viper"
+      },
+      {
+        "title": "Seneschal's Tunic",
+        "score": 28.9,
+        "min_source_level": null,
+        "stats": "sta+4 int+3 wis+3 mana+15 ac+23 magic",
+        "zone": "Seneschal Kazmer"
+      },
+      {
+        "title": "Enchanted Padded Leather Tunic",
+        "score": 28.7,
+        "min_source_level": null,
+        "stats": "str+5 dex+5 hp+10 ac+28 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Vest of Shattered Duty",
+        "score": 25.0,
+        "min_source_level": null,
+        "stats": "str+4 sta+4 hp+20 ac+25 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Crimson Cauldron Apron",
+        "score": 24.4,
+        "min_source_level": null,
+        "stats": "sta+1 int+5 mana+5 ac+16 magic",
+        "zone": "Fallen Pass; Thuraya Aislingar"
+      }
+    ],
+    "WRIST": [
+      {
+        "title": "Crusader's Bangle",
+        "score": 38.0,
+        "min_source_level": null,
+        "stats": "int+8 wis+8 cha+5 hp+10 mana+5 ac+17 magic",
+        "zone": "Glass Flats"
+      },
+      {
+        "title": "Black Feathered Bracelet",
+        "score": 31.2,
+        "min_source_level": 30,
+        "stats": "sta+4 int+5 hp+15 mana+5 ac+13 magic",
+        "zone": "Glass Flats"
+      },
+      {
+        "title": "Fine Woven Wire Bracelet",
+        "score": 23.7,
+        "min_source_level": null,
+        "stats": "sta+4 int+4 wis+1 mana+20 ac+1 magic",
+        "zone": "Fallen Pass; Thuraya Aislingar"
+      },
+      {
+        "title": "Ravine-Woven Bracer",
+        "score": 21.1,
+        "min_source_level": null,
+        "stats": "sta+1 int+5 cha+1 mana+5 ac+8 magic",
+        "zone": "Scarwood; Garran Grinholdt"
+      },
+      {
+        "title": "Soul Shackle",
+        "score": 17.5,
+        "min_source_level": null,
+        "stats": "str+6 sta+4 cha+-1 hp+5 ac+11 magic",
+        "zone": "Shallow Shoals; Thrallmaker Zladen"
+      }
+    ],
+    "HANDS": [
+      {
+        "title": "Shipbreaker Soft Wraps",
+        "score": 35.6,
+        "min_source_level": null,
+        "stats": "sta+8 int+6 ac+14 magic",
+        "zone": "Vale of Zintar; Hadir the Shipbreaker"
+      },
+      {
+        "title": "Corrupted Scout Gloves",
+        "score": 29.7,
+        "min_source_level": null,
+        "stats": "str+7 sta+9 ac+23 magic",
+        "zone": "Scarwood; Yurl Rootrender"
+      },
+      {
+        "title": "Worn Linen Mitts",
+        "score": 24.9,
+        "min_source_level": null,
+        "stats": "sta+2 int+5 hp+10 ac+11 magic",
+        "zone": "Fallen Pass"
+      },
+      {
+        "title": "Umbracuff",
+        "score": 20.1,
+        "min_source_level": null,
+        "stats": "str+5 hp+30 ac+19 magic",
+        "zone": "Glinting Hollow"
+      },
+      {
+        "title": "Tough Ligament Gloves",
+        "score": 19.8,
+        "min_source_level": null,
+        "stats": "wis+6 hp+35 ac+23 magic",
+        "zone": "Shallow Shoals"
+      }
+    ],
+    "FINGER": [
+      {
+        "title": "Inlaid Pearl Platinum Ring",
+        "score": 27.3,
+        "min_source_level": null,
+        "stats": "sta+7 dex+7 ac+7",
+        "zone": "?"
+      },
+      {
+        "title": "Tarnished Tinker's Ring",
+        "score": 14.9,
+        "min_source_level": 24,
+        "stats": "int+3 wis+3 mana+15 ac+3",
+        "zone": "Fallen Pass"
+      },
+      {
+        "title": "Sangrel Ring of the Arcanist",
+        "score": 14.5,
+        "min_source_level": null,
+        "stats": "int+4 hp+5 mana+5 magic",
+        "zone": "Keeper's Bight; a Sangrel arcanist"
+      },
+      {
+        "title": "Embermoss Ring",
+        "score": 14.2,
+        "min_source_level": 28,
+        "stats": "sta+1 int+3 hp+15 magic",
+        "zone": "Vale of Zintar"
+      },
+      {
+        "title": "Duneshaper's Ring",
+        "score": 13.5,
+        "min_source_level": null,
+        "stats": "str+3 dex+5 magic",
+        "zone": "Vale of Zintar; Rami Al-Qawwaas"
+      }
+    ],
+    "WAIST": [
+      {
+        "title": "Chain of the Construct",
+        "score": 79.0,
+        "min_source_level": 20,
+        "stats": "str+4 agi+4 dex+4 hp+25 ac+7 haste+14",
+        "zone": "Tomb of the Last Wyrmsbane"
+      },
+      {
+        "title": "Sandcoated Belt",
+        "score": 19.4,
+        "min_source_level": null,
+        "stats": "sta+8 hp+15 ac+9 magic",
+        "zone": "Vale of Zintar; Haldir Shipbreaker"
+      },
+      {
+        "title": "Frayed Sash",
+        "score": 18.8,
+        "min_source_level": null,
+        "stats": "int+3 mana+20 ac+10 magic",
+        "zone": "Glass Flats"
+      },
+      {
+        "title": "Bloodstained Apron",
+        "score": 16.2,
+        "min_source_level": 28,
+        "stats": "sta+3 int+2 mana+15 ac+5 magic",
+        "zone": "Keeper's Bight"
+      },
+      {
+        "title": "Braided Leather Belt",
+        "score": 15.1,
+        "min_source_level": 22,
+        "stats": "sta+3 dex+2 hp+15 ac+7",
+        "zone": "Tel Ekir"
+      }
+    ],
+    "LEGS": [
+      {
+        "title": "Lunar Festival Trousers",
+        "score": 30.3,
+        "min_source_level": null,
+        "stats": "sta+5 int+3 hp+15 mana+10 ac+17 magic",
+        "zone": "Shallow Shoals"
+      },
+      {
+        "title": "Enchanted Linen Pants",
+        "score": 24.5,
+        "min_source_level": null,
+        "stats": "int+5 cha+4 hp+7 mana+2 ac+16 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Enchanted Padded Leather Leggings",
+        "score": 22.0,
+        "min_source_level": null,
+        "stats": "str+5 sta+3 hp+10 ac+25 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Leggings of Reckoning",
+        "score": 19.3,
+        "min_source_level": null,
+        "stats": "sta+3 agi+3 wis+4 hp+5 mana+5 ac+24 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Cinder Beetle Greaves",
+        "score": 18.6,
+        "min_source_level": null,
+        "stats": "str+5 sta+3 agi+1 hp+5 ac+20",
+        "zone": "?"
+      }
+    ],
+    "FEET": [
+      {
+        "title": "Steward's Silk Slippers",
+        "score": 33.0,
+        "min_source_level": null,
+        "stats": "sta+2 int+7 mana+15 ac+13",
+        "zone": "Seneschal Kazmer"
+      },
+      {
+        "title": "Lunar Festival Perones",
+        "score": 26.5,
+        "min_source_level": null,
+        "stats": "int+5 hp+20 mana+5 ac+12 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Tidewalker Slippers",
+        "score": 19.7,
+        "min_source_level": null,
+        "stats": "sta+3 int+4 ac+8 magic",
+        "zone": "Blacktide Bay; Admiral Blacktide"
+      },
+      {
+        "title": "Master's Slippers",
+        "score": 19.3,
+        "min_source_level": null,
+        "stats": "sta+5 int+3 ac+7 magic",
+        "zone": "Blacktide Bay; Gore"
+      },
+      {
+        "title": "Mirage Cloth Boots",
+        "score": 16.3,
+        "min_source_level": 22,
+        "stats": "sta+3 int+3 ac+7 magic",
+        "zone": "Tel Ekir"
+      }
+    ],
+    "PRIMARY": [
+      {
+        "title": "Pestilence, Shard of the Blightspire",
+        "score": 274.5,
+        "min_source_level": null,
+        "stats": "str+20 sta+20 int+20 hp+50 mana+50 27/40 magic",
+        "zone": "Fallen Pass"
+      },
+      {
+        "title": "Stablemaster's Claymore",
+        "score": 154.5,
+        "min_source_level": null,
+        "stats": "str+15 sta+2 agi+6 hp+15 24/37 magic",
+        "zone": "Fallen Pass"
+      },
+      {
+        "title": "Kukri of Blazing Flames",
+        "score": 133.5,
+        "min_source_level": null,
+        "stats": "str+8 dex+8 hp+75 mana+75 9/25",
+        "zone": "GM Event; Weakened Red Dragon"
+      },
+      {
+        "title": "Gilded Claw of the Gladiator",
+        "score": 133.1,
+        "min_source_level": null,
+        "stats": "str+7 sta+6 hp+15 17/30 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Obscure Broadsword",
+        "score": 132.9,
+        "min_source_level": null,
+        "stats": "sta+15 hp+40 mana+25 ac+8 20/44 magic",
+        "zone": "Scarwood; Dregath Warwake"
+      }
+    ],
+    "SECONDARY": [
+      {
+        "title": "Kukri of Blazing Flames",
+        "score": 133.5,
+        "min_source_level": null,
+        "stats": "str+8 dex+8 hp+75 mana+75 9/25",
+        "zone": "GM Event; Weakened Red Dragon"
+      },
+      {
+        "title": "Gilded Claw of the Gladiator",
+        "score": 133.1,
+        "min_source_level": null,
+        "stats": "str+7 sta+6 hp+15 17/30 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Debtcarver",
+        "score": 118.7,
+        "min_source_level": null,
+        "stats": "str+4 haste+12 7/21 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Festerclasp",
+        "score": 111.7,
+        "min_source_level": null,
+        "stats": "str+5 sta+3 dex+5 hp+10 13/29 magic",
+        "zone": "Vale of Zintar"
+      },
+      {
+        "title": "Iced Fang",
+        "score": 111.4,
+        "min_source_level": null,
+        "stats": "str+5 sta+1 dex+4 hp+5 11/23 magic",
+        "zone": "Glinting Hollow"
+      }
+    ],
+    "RANGED": [
+      {
+        "title": "Giant Bow",
+        "score": 132.4,
+        "min_source_level": null,
+        "stats": "str+6 sta+2 dex+1 hp+10 22/37 magic",
+        "zone": "Scarwood; Krothun Veincarver"
+      },
+      {
+        "title": "Skri'Var Ranger's Bow",
+        "score": 113.2,
+        "min_source_level": null,
+        "stats": "str+4 sta+4 dex+4 hp+10 mana+10 22/50 magic",
+        "zone": "Fallen Pass; Tora'Galdo"
+      },
+      {
+        "title": "Vale Giant Shortbow",
+        "score": 106.2,
+        "min_source_level": null,
+        "stats": "agi+5 dex+6 hp+10 mana+5 22/50 magic",
+        "zone": "Vale of Zintar; Rami Al-Qawwaas"
+      },
+      {
+        "title": "Longbow of the High Watchman",
+        "score": 105.9,
+        "min_source_level": null,
+        "stats": "agi+6 dex+7 20/45 magic",
+        "zone": "?"
+      },
+      {
+        "title": "Hunting Longbow",
+        "score": 94.7,
+        "min_source_level": null,
+        "stats": "sta+1 agi+4 dex+6 19/48 magic",
+        "zone": "Scarwood; Krev Thistlehook"
+      }
+    ],
+    "AMMO": [
+      {
+        "title": "Mana Bloodstone",
+        "score": 2.5,
+        "min_source_level": 14,
+        "stats": "mana+10 magic",
+        "zone": "Evershade Weald"
+      }
+    ]
+  }
+}

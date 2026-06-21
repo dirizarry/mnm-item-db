@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MnM Item DB — Admin / Conflict Resolution</title>
+<style>
+  :root { color-scheme: dark; }
+  body { font-family: system-ui, sans-serif; margin: 0; background: #0f1216; color: #d7dde4; }
+  header { padding: 14px 20px; background: #161b22; border-bottom: 1px solid #2a313a; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 16px; margin: 0; flex: 1; }
+  input, button, select { background: #1c232c; color: #d7dde4; border: 1px solid #2a313a; border-radius: 6px; padding: 7px 10px; font-size: 13px; }
+  button { cursor: pointer; }
+  button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+  button.ok { background: #15803d; border-color: #15803d; color: #fff; }
+  button.no { background: #b91c1c; border-color: #b91c1c; color: #fff; }
+  main { padding: 16px 20px; }
+  .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+  .stat { background: #161b22; border: 1px solid #2a313a; border-radius: 8px; padding: 10px 14px; min-width: 110px; }
+  .stat b { display: block; font-size: 20px; }
+  .stat span { color: #8b95a1; font-size: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #232a33; }
+  th { color: #8b95a1; font-weight: 600; }
+  .conf { font-variant-numeric: tabular-nums; }
+  .pill { padding: 2px 8px; border-radius: 999px; font-size: 11px; background: #1c232c; border: 1px solid #2a313a; }
+  .muted { color: #8b95a1; }
+  #msg { margin-left: auto; color: #8b95a1; font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>MnM Item DB — Conflict Resolution</h1>
+  <input id="token" type="password" placeholder="Admin token" size="28" />
+  <button id="connect" class="primary">Connect</button>
+  <button id="aggregate">Run aggregation</button>
+  <span id="msg"></span>
+</header>
+<main>
+  <div class="stats" id="stats"></div>
+  <h2 style="font-size:14px">Pending wiki write-back queue</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Mob</th><th>Zone</th><th>Edit</th><th>Conf</th><th>Obs</th><th>Reason</th><th></th></tr></thead>
+    <tbody id="queue"><tr><td colspan="8" class="muted">Connect with your admin token.</td></tr></tbody>
+  </table>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+let token = "";
+const base = ""; // same-origin
+
+function headers() { return { "Authorization": "Bearer " + token }; }
+function setMsg(t) { $("msg").textContent = t; }
+
+async function api(path, opts = {}) {
+  const res = await fetch(base + path, { ...opts, headers: { ...headers(), ...(opts.headers || {}) } });
+  if (!res.ok) throw new Error(path + " -> " + res.status);
+  return res.json();
+}
+
+async function loadStats() {
+  const s = await (await fetch(base + "/api/data/stats")).json();
+  $("stats").innerHTML = Object.entries(s).map(([k, v]) =>
+    `<div class="stat"><b>${v}</b><span>${k.replace(/_/g, " ")}</span></div>`).join("");
+}
+
+async function loadQueue() {
+  const { queue } = await api("/api/admin/wiki-queue?state=pending");
+  if (!queue.length) { $("queue").innerHTML = `<tr><td colspan="8" class="muted">Queue empty.</td></tr>`; return; }
+  $("queue").innerHTML = queue.map(q => `
+    <tr data-id="${q.id}">
+      <td>${q.item_title}</td><td>${q.mob_title}</td><td>${q.zone || ""}</td>
+      <td><span class="pill">${q.edit_kind}</span></td>
+      <td class="conf">${(q.confidence ?? 0).toFixed(2)}</td>
+      <td class="conf">${q.observations ?? ""}</td>
+      <td class="muted">${q.reason || ""}</td>
+      <td>
+        <button class="ok" onclick="decide(${q.id}, 'approved')">Approve</button>
+        <button class="no" onclick="decide(${q.id}, 'rejected')">Reject</button>
+      </td>
+    </tr>`).join("");
+}
+
+async function decide(id, state) {
+  try {
+    await api(`/api/admin/wiki-queue/${id}/decide?state=${state}`, { method: "POST" });
+    setMsg(`#${id} ${state}`);
+    await loadQueue(); await loadStats();
+  } catch (e) { setMsg(e.message); }
+}
+window.decide = decide;
+
+async function connect() {
+  token = $("token").value.trim();
+  try {
+    await api("/api/admin/wiki-queue?state=pending");
+    setMsg("connected");
+    await loadStats(); await loadQueue();
+  } catch (e) { setMsg("auth failed: " + e.message); }
+}
+
+$("connect").onclick = connect;
+$("aggregate").onclick = async () => {
+  setMsg("aggregating…");
+  try { const r = await api("/api/admin/aggregate", { method: "POST" });
+    setMsg(`aggregated: ${r.dataset_drops} drops, ${r.wiki_candidates_new} new candidates`);
+    await loadStats(); await loadQueue();
+  } catch (e) { setMsg(e.message); }
+};
+loadStats().catch(() => {});
+</script>
+</body>
+</html>

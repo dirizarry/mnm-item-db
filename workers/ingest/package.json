@@ -1,0 +1,11 @@
+{
+  "name": "mnm-ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal Cloudflare Worker ingest endpoint for MnM ledger uploads",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  }
+}

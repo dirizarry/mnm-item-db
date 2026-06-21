@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "enabled": true,
+  "description": "IL2CPP combat message layout - fill offsets from Ghidra after tracing ChatLibrary / ChatMessageEntry.",
+  "queue": {
+    "singleton_signature": "chat_message_queue",
+    "list_offset": null,
+    "items_offset": 16,
+    "size_offset": 24,
+    "max_items": 256
+  },
+  "entry": {
+    "size": null,
+    "text_offset": null,
+    "channel_offset": null,
+    "channel_is_string": true,
+    "timestamp_offset": null
+  },
+  "channel_enum": {
+    "note": "When channel_offset points to int32, map via data/combat-channels.json order or dump.cs enum."
+  },
+  "layout": "message_blob",
+  "discovered": "2026-06-21T07:57:06.411249+00:00",
+  "discovery_note": "Chronological combat records in a native message blob (used-length tail). Re-run discover after restarting the game.",
+  "buffer": {
+    "holder_ptr_hint": 2264318153392,
+    "buffer_ptr_hint": 2273891176448,
+    "data_offset": 0,
+    "capacity_offset": 32,
+    "capacity": 1344
+  },
+  "message_blob": {
+    "holder_ptr_hint": 2264395329696,
+    "blob_ptr_hint": 2286150008832,
+    "data_offset": 0,
+    "used_offset": 4,
+    "capacity_offset": 32,
+    "capacity": 576
+  }
+}

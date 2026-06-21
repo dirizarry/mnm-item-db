@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "description": "Signature patterns for resolving GameAssembly.dll anchors. Update after each client patch.",
+  "patterns": [
+    {
+      "id": "consider_string",
+      "kind": "string",
+      "module": "GameAssembly.dll",
+      "needle": "Consider",
+      "encoding": "ascii",
+      "note": "Only stable plaintext type name found in GameAssembly.dll; use as RE anchor."
+    },
+    {
+      "id": "chat_message_data_type",
+      "kind": "metadata_string",
+      "needle": "ChatMessageData",
+      "note": "Present in global-metadata.dat body; not in GameAssembly.dll as plaintext."
+    },
+    {
+      "id": "combat_damage_template",
+      "kind": "memory_text",
+      "regex": " for \\d+ points? of .*(?:damage|Damage)",
+      "note": "Formatted combat lines in heap — used by text_scan harvest mode."
+    },
+    {
+      "id": "combat_heal_template",
+      "kind": "memory_text",
+      "regex": " heals? .+ for \\d+",
+      "note": "Heal lines in heap — text_scan harvest mode."
+    }
+  ],
+  "structured_queue": {
+    "enabled": false,
+    "type": "ChatMessageEntry",
+    "notes": "Populate offsets in combat_struct.json after Ghidra RE. When enabled, harvester reads IL2CPP List<ChatMessageEntry> instead of scanning text."
+  }
+}

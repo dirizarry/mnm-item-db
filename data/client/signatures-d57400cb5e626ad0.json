@@ -1,0 +1,43 @@
+{
+  "generated": "2026-06-21T00:42:03.451249+00:00",
+  "fingerprint_id": "d57400cb5e626ad0",
+  "game_assembly": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\GameAssembly.dll",
+  "pid": 15952,
+  "resolved": [
+    {
+      "id": "consider_string",
+      "kind": "string",
+      "file_offsets": [
+        85654866,
+        85657666
+      ],
+      "file_hits": 2,
+      "runtime_addresses": [
+        140705374403922,
+        140705374406722
+      ],
+      "ok": true
+    },
+    {
+      "id": "chat_message_data_type",
+      "kind": "metadata_string",
+      "ok": true,
+      "note": "Present in global-metadata.dat body; not in GameAssembly.dll as plaintext."
+    },
+    {
+      "id": "combat_damage_template",
+      "kind": "memory_text",
+      "ok": true,
+      "note": "Formatted combat lines in heap \u2014 used by text_scan harvest mode."
+    },
+    {
+      "id": "combat_heal_template",
+      "kind": "memory_text",
+      "ok": true,
+      "note": "Heal lines in heap \u2014 text_scan harvest mode."
+    }
+  ],
+  "errors": [],
+  "ready": true,
+  "structured_enabled": false
+}

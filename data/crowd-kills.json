@@ -1,0 +1,330 @@
+[
+  {
+    "mob_name": "a skeletal warrior",
+    "kills": 456,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal fighter",
+    "kills": 282,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a rotting skeleton",
+    "kills": 276,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor",
+      "Shaded Dunes"
+    ]
+  },
+  {
+    "mob_name": "a skeletal cleric",
+    "kills": 162,
+    "contributors": 1,
+    "zones": [
+      "Ancient Crypt",
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal marksman",
+    "kills": 96,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a hired thug",
+    "kills": 71,
+    "contributors": 1,
+    "zones": [
+      "Sungreet Strand"
+    ]
+  },
+  {
+    "mob_name": "a skeletal cavalier",
+    "kills": 70,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal monk",
+    "kills": 60,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal defender",
+    "kills": 59,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a risen zombie",
+    "kills": 56,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeleton",
+    "kills": 54,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor",
+      "Shaded Dunes"
+    ]
+  },
+  {
+    "mob_name": "a Bloodynose quarreler",
+    "kills": 53,
+    "contributors": 1,
+    "zones": [
+      "Sungreet Strand",
+      "Tel Ekir"
+    ]
+  },
+  {
+    "mob_name": "a skeletal priest",
+    "kills": 47,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal guard",
+    "kills": 40,
+    "contributors": 1,
+    "zones": [
+      "Ancient Crypt"
+    ]
+  },
+  {
+    "mob_name": "a Bloodynose sergeant",
+    "kills": 38,
+    "contributors": 1,
+    "zones": [
+      "Tel Ekir"
+    ]
+  },
+  {
+    "mob_name": "a skeletal archer",
+    "kills": 38,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a dusty skeleton",
+    "kills": 38,
+    "contributors": 1,
+    "zones": [
+      "Fallen Pass"
+    ]
+  },
+  {
+    "mob_name": "a skeletal vicar",
+    "kills": 34,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal knight",
+    "kills": 33,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a skeletal deacon",
+    "kills": 21,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "an ashira scout",
+    "kills": 20,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor",
+      "Shaded Dunes"
+    ]
+  },
+  {
+    "mob_name": "an ashira shaman",
+    "kills": 19,
+    "contributors": 1,
+    "zones": [
+      "Shaded Dunes",
+      "Tel Ekir"
+    ]
+  },
+  {
+    "mob_name": "an ashira warrior",
+    "kills": 19,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor",
+      "Shaded Dunes"
+    ]
+  },
+  {
+    "mob_name": "a zombie laborer",
+    "kills": 17,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "an ashira raider",
+    "kills": 17,
+    "contributors": 1,
+    "zones": [
+      "Shaded Dunes",
+      "Tel Ekir"
+    ]
+  },
+  {
+    "mob_name": "a goon",
+    "kills": 16,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor"
+    ]
+  },
+  {
+    "mob_name": "a skeletal paladin",
+    "kills": 16,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a wererat",
+    "kills": 14,
+    "contributors": 1,
+    "zones": [
+      "Shaded Dunes"
+    ]
+  },
+  {
+    "mob_name": "a devotee",
+    "kills": 12,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor"
+    ]
+  },
+  {
+    "mob_name": "a charred acolyte",
+    "kills": 12,
+    "contributors": 1,
+    "zones": [
+      "Ancient Crypt"
+    ]
+  },
+  {
+    "mob_name": "a smarmy hunter",
+    "kills": 12,
+    "contributors": 1,
+    "zones": [
+      "Sungreet Strand"
+    ]
+  },
+  {
+    "mob_name": "an ashira ain guard",
+    "kills": 11,
+    "contributors": 1,
+    "zones": [
+      "Tel Ekir"
+    ]
+  },
+  {
+    "mob_name": "a sellsword",
+    "kills": 10,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor"
+    ]
+  },
+  {
+    "mob_name": "a lawbreaker",
+    "kills": 9,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor"
+    ]
+  },
+  {
+    "mob_name": "an enforcer",
+    "kills": 9,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor"
+    ]
+  },
+  {
+    "mob_name": "a river pirate",
+    "kills": 9,
+    "contributors": 1,
+    "zones": [
+      "Night Harbor"
+    ]
+  },
+  {
+    "mob_name": "a Wyrmsbane crusader",
+    "kills": 9,
+    "contributors": 1,
+    "zones": [
+      "Tomb of the Last Wyrmsbane"
+    ]
+  },
+  {
+    "mob_name": "a corrupted ashira",
+    "kills": 8,
+    "contributors": 1,
+    "zones": [
+      "valeofzintar"
+    ]
+  },
+  {
+    "mob_name": "an ashira lookout",
+    "kills": 7,
+    "contributors": 1,
+    "zones": [
+      "Shaded Dunes"
+    ]
+  },
+  {
+    "mob_name": "a Bloodynose frightener",
+    "kills": 7,
+    "contributors": 1,
+    "zones": [
+      "Tel Ekir"
+    ]
+  }
+]

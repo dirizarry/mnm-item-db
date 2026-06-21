@@ -1,0 +1,2403 @@
+{
+  "generated": "2026-06-21T00:42:03.438729+00:00",
+  "metadata": {
+    "metadata_path": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm\\mnm_Data\\il2cpp_data\\Metadata\\global-metadata.dat",
+    "metadata_size": 20401936,
+    "combat_type_count": 390,
+    "priority_hits": [
+      "ChatLibrary",
+      "ChatMessage",
+      "ChatMessageData",
+      "ChatMessageEntry",
+      "ChatMessageMudView",
+      "ChatMessagePersistence",
+      "PersistedMessageData",
+      "ChatMessageWithTarget",
+      "ChatMessageControls",
+      "ChatMessageFading",
+      "LogMessages",
+      "ChatFilterDescriptions",
+      "ChatFiltersSettingsSection",
+      "MudChatHandler",
+      "Consider",
+      "BuffCommandQueueItem",
+      "CmdDamageLogs",
+      "CmdCombatReport"
+    ],
+    "combat_types": [
+      {
+        "name": "ADDRESSABLES_LOG_ALL6AddressablesRuntimeBuildLog",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "AOVBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "AddBuffIcon",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "AddCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "AddCommandBufferAsync",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "AfkChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "AkChannelConfig",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "AkChannelConfigType",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "AkChannelEmitter",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "AkChannelEmitterArray",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "AkLogger",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "AkMIDIChannelAftertouch",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "AssistMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "AuctionMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "AudioMessageTrigger",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "AuthenticateLogin",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "BackgroundFpsChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "BaseChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "BaseCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BinaryStorageBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BlockableChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "BroadcastMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "BroadcastScriptingMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "BuffCommandQueueItem",
+        "tags": [
+          "buff",
+          "priority"
+        ]
+      },
+      {
+        "name": "BuffEffectCategoryHID",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BuffIcon",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BuffIconUISystem",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BuffRecord",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Buff_UI_Grid_Anchor_Type",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Buffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferAccess",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferClearing",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferDataFromPreviousBake",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferDesc",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferHandle",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferPool",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferResource",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferResourceData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferSkip",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferedData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BufferedRTHandleSystem",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Buffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BuffsView",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BuildCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "BuildCommandBufferBase",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CancelBuff",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CellStreamingScratchBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CellStreamingScratchBufferLayout",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Channel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelAbility",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelClosedException",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelConfiguration",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelCount",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelData",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelMixer",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelPattern",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelReader",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ChannelWriter",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "Channels",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "CharInfoChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatColorControl",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatColorsLookup",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatColorsSettingsSection",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatCommandLibrary",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatCommandObject",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatContextMenuHelper",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatFilterDescriptions",
+        "tags": [
+          "chat",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatFiltersSettingsSection",
+        "tags": [
+          "chat",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatLibrary",
+        "tags": [
+          "chat",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatLink",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatLinkStringHelper",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatLinks",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatMarkupNormalization",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatMessage",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessageControls",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessageData",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessageEntry",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessageFading",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessageMudView",
+        "tags": [
+          "chat",
+          "message",
+          "mudview",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessagePersistence",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatMessageWithTarget",
+        "tags": [
+          "chat",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "ChatProfanityWords",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatSanitization",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatSaveData",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatSaveManager",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatSettingsView",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatTabContainer",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatTabData",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatTabDragData",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatTabManager",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatVersionSettings",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatView",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatWindowSaveData",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ChatWindowScrolledToBottomFX",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "CinemachineBasicMultiChannelPerlin",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "CinemachineImpulseChannelPropertyAttribute",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "CircularBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ClearBuffer2D",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ClearChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ClearDebugBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ClearStencilBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ClientLedgerLog",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "CmdCombatReport",
+        "tags": [
+          "combat",
+          "priority"
+        ]
+      },
+      {
+        "name": "CmdDamage",
+        "tags": [
+          "damage"
+        ]
+      },
+      {
+        "name": "CmdDamageLogs",
+        "tags": [
+          "damage",
+          "log",
+          "priority"
+        ]
+      },
+      {
+        "name": "CmdHeal",
+        "tags": [
+          "heal"
+        ]
+      },
+      {
+        "name": "ColorBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CommandBufferHelpers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CommandBufferPool",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CommandBufferWrapper",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CommandBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ComputeCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Consider",
+        "tags": [
+          "consider",
+          "priority"
+        ]
+      },
+      {
+        "name": "ConstantBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ConstantBufferBase",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ConstantBufferSingleton",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CopyDepthBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CopyDepthBufferPassHDRP",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CopyStencilBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CustomPassAOVBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "CustomSpawners",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "DBufferNormalPatchData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DBufferOutput",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DSendMessageOptions",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "DebugLogOnUnityEvent",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "DebugUIHandlerMessageBox",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "DebugViewMaterialGBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DecalNormalBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DefaultBurstLogCallback",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "DefaultBurstRuntimeLogCallback",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "DeityChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "DestroyBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DestroyComputeBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DismountChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "DownloadHandlerBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "DynamicChatCommands",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "EdgeBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "EmoteMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "EntityBuffs",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "EntityBuffsUI",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ErrorMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "ExecuteCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "FGraphicsBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "FallDamage",
+        "tags": [
+          "damage"
+        ]
+      },
+      {
+        "name": "FilterChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "FixedBufferStringQueue",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "FpsChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "FriendChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "FriendsChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "GBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GBufferOutput",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GBufferPassData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GMChatController",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "GMChatWebSocketManager",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "GPUInstanceDataBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GPUInstanceDataBufferBuilder",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GPUInstanceDataBufferGrower",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GPUInstanceDataBufferUploader",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetBlendShapeBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetBlendShapeChannelCount",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "GetBoneWeightBufferDimension",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetBoneWeightBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetBufferFromScript",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetBufferSize",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetChannelDimension",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "GetChannelFormat",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "GetChannelOffset",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "GetChannelStream",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "GetColorBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetCommandBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetConstantBufferFromScript",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetCopyBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetCursorLogicalIndexFromPosition",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "GetCursorPositionFromLogicalIndex",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "GetDepthBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetIndexBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetLineNumberFromLogicalIndex",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "GetNativeIndexBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetNativeVertexBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetPreviousVertexBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetSpawnSystemInfo",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "GetSpawnSystemNamesFromScript",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "GetTempBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetVertexBufferCount",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetVertexBufferPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GetVertexBufferStride",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GfxBufferID",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GrabColorBufferPass",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GraphicsBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GraphicsBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "GuildMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "HGetNormalBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "HScalableBufferManager",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "HasBufferFromScript",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "HasChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "HasConstantBufferFromScript",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "HideCorpseChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "HudPopupMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "IBaseCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "IChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "IComputeCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IMeshChannelsCacheTaggingInterface",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "INetLogger",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "IRasterCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IReceiveSplineChangeMessages",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "IUnsafeCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IgnoreClientChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "IndirectBufferAllocInfo",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IndirectBufferContext",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IndirectBufferContextHandles",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IndirectBufferContextStorage",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IndirectBufferLimits",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InitBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InitComputeBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InstanceDataBufferCopyKernels",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InstanceDataBufferUploadKernels",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetGraphicsBufferCounterValue",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetGraphicsBufferData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetGraphicsBufferNativeData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetIndexBufferData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetIndexBufferDataFromArray",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetVertexBufferData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "InternalSetVertexBufferDataFromArray",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Internal_SetRayTracingBufferParam",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "Internal_SetRayTracingConstantBufferParam",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "IsValidBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "JobCopyBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "LGraphicsBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "LightingBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ListBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ListBufferExtensions",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ListIgnoredClientsChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "LogMessages",
+        "tags": [
+          "log",
+          "message",
+          "priority"
+        ]
+      },
+      {
+        "name": "LogSystem",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LogWriter",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LogarithmicAttribute",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "Logging",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "Login",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginConnection",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginController2024",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginErrorResponse",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginLegacyFaithSecret",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginPackets",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginResponse",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginScreenSettings",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "LoginView",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "Login_Secret",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "MB2_Log",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "MRTBufferManager",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "MaxGraphicsBufferSize",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "MeshBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "MeshChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "MeshChannelUtility",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "MeshChannels",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "MeshChannelsCache",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "MeshChannelsCache_NativeArray",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "MeshChannelsNativeArray",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "Message",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "MessageBox",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "Messages",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "MissShaderGBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "MnmCheckboxChatControl",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "MonoBehaviourMessagesTriggers",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "MountChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "MudChatHandler",
+        "tags": [
+          "chat",
+          "priority"
+        ]
+      },
+      {
+        "name": "NativeAkChannelEmitter",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "NativeCircularBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "NumberBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "OOCMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "ObjectLog",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "OptimizeIndexBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "OptimizeReorderVertexBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "PGraphicsBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "PackedPlayModeBuildLogs",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "PartyMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "PersistedMessageData",
+        "tags": [
+          "message",
+          "persistedmessage",
+          "priority"
+        ]
+      },
+      {
+        "name": "PetChatCommandSnippet",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "PetHealthBarGroup",
+        "tags": [
+          "heal"
+        ]
+      },
+      {
+        "name": "PlayCombatAnimation",
+        "tags": [
+          "combat"
+        ]
+      },
+      {
+        "name": "PrintErrorCantAccessChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ProBuilderLog",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "ProbeVolumeScratchBufferPool",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "PropertyWrapperBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "QuestLog",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "RasterCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RayGenGBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RayGenGBufferBinned4RayGenGBufferHalfResBinned",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RayGenGBufferHalfRes",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RaytracingGBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RegisterChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "ReleaseBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ReleaseTempBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ReliableChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "RemoveAllCommandBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RemoveBuffIcon",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RemoveCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RemoveCommandBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderBufferManager",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderDBufferPassData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderGraphLogIndent",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "RenderGraphLogger",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "RenderGraphResourceBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderingCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderingCommandBufferExtensions",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderingCommandBufferExtensions_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "RenderingCommandBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ResetPreMappedBufferMemory",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ResolveStencilBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ResourceLogInfo",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "RuntimeBuildLog",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "RuntimeDebugShadersMessageBox",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "SC_Vefects_Easy_Spawn",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "ScalableBufferManager",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ScratchBufferPool",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SearchChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "SegmentRegistrarRingBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SendColorGraphicsBufferPassData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SendGeometryBuffersPassData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SendGeometryGraphcisBuffersParameters",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SendMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "SendScriptingMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "SendScriptingMessageUpwards",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "SequencedChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "SetBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetBufferFromScript",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "SetComputeBufferParam",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetComputeConstantBufferParam",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetConstantBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetConstantBufferFromScript",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetCopyBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetGlobalBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetGlobalBufferPassData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetGlobalConstantBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetIndexBufferParams",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetLogCallbackDefined",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "SetMaximumPreMappedBufferCounts",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetRandomWriteTarget_Buffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetSpawnTime",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "SetTargetBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetVertexBufferParamsFromArray",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SetVertexBufferParamsFromPtr",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ShoutMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "ShowCorpseChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "ShowNameChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "SingleConsumerUnboundedChannel",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "SingleConsumerUnboundedChannelReader",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "SingleConsumerUnboundedChannelWriter",
+        "tags": [
+          "channel"
+        ]
+      },
+      {
+        "name": "SpawnEntity",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "SpawnEntityQueueItem",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "SpawnEntitySystem",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "SpawnOverDistance",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "Spawning",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "SplineComputeBufferScope",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SplitChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "StpConstantBufferData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "SupportsIndirectArgumentsBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "TGraphicsBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "TRenderingCommandBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "TellMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "TellMessageData",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "TempBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "TimeModChatCommand",
+        "tags": [
+          "chat"
+        ]
+      },
+      {
+        "name": "TrySendMessage",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "Type2Message",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "Type3Message",
+        "tags": [
+          "message"
+        ]
+      },
+      {
+        "name": "UnityLogWriter",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "UnsafeAppendBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "UnsafeCommandBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "UpdateHealth",
+        "tags": [
+          "heal"
+        ]
+      },
+      {
+        "name": "UpdateHealthMana",
+        "tags": [
+          "heal"
+        ]
+      },
+      {
+        "name": "UsesReversedZBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "VBufferParameters",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "VFXSpawnerState",
+        "tags": [
+          "spawn"
+        ]
+      },
+      {
+        "name": "VGetCameraBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "VGetCustomBuffers",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "VRenderingCommandBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "VolumetricMaterialDataCBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "WaterGBuffer",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "WaterGBufferData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "WaterSurfaceGBufferData",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "WwiseLogger",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "WwiseLoggerSettings",
+        "tags": [
+          "log"
+        ]
+      },
+      {
+        "name": "XRenderingCommandBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ZGraphicsBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      },
+      {
+        "name": "ZRenderingCommandBuffer_Bindings",
+        "tags": [
+          "buff"
+        ]
+      }
+    ]
+  },
+  "dump_cs_types": [],
+  "dump_cs_available": false,
+  "notes": "Combat channel ids (CombatHitMine, \u2026) live in per-character chats.json, not as plaintext in GameAssembly.dll. Chat pipeline types are in metadata string heap; full field layouts require Il2CppDumper + Ghidra."
+}

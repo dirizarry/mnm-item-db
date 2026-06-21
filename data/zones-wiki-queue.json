@@ -1,0 +1,1452 @@
+{
+  "items": [
+    "A Pinwheel",
+    "Allistaire's Journal",
+    "Amulet of the Accord",
+    "Bane of the Twin Drakes",
+    "Basilisk Hide Vest",
+    "Bone Mask Of The Servant",
+    "Boneyard Spaulders",
+    "Box of Elemental Incense",
+    "Brak'zul's Spice Pack",
+    "Brazier Visor",
+    "Broken Key Piece",
+    "Cinder-Wand Leggings",
+    "Clockwork Gauntlets",
+    "Consecrated Bracer",
+    "Copper Holy Symbol Of Eltindra",
+    "Copper Holy Symbol of Eltrindra",
+    "Cowl Of The Arch Lich",
+    "Crest of the Overwatch Commander",
+    "Crumpled Sketch of Elian",
+    "Deep Beetle Eye",
+    "Deep Sea Devourer",
+    "Dextrous Wristguard",
+    "Diseased Wolf Pelt",
+    "Doctor's Polished Pauldrons",
+    "Dragon's Vigil",
+    "Drake Claw",
+    "Duneleaf",
+    "Dusk Devotee Skull",
+    "Emissary's Veil of Persuasion",
+    "Eth-ur Geological Journal Page",
+    "Faceguard of the Torturer",
+    "Four-Clawed Goblin Hand",
+    "Gadolvine",
+    "Ghost Poppy",
+    "Giant Cinder Beetle Carapace",
+    "Giant Fire Wedding Ring",
+    "Glimmering Ward",
+    "Green Drakeling Hide",
+    "Green Drakeling Poison Duct",
+    "Green Drakeling Wing",
+    "Grotto Pauldrons",
+    "Guardsman's Ceremonial Cloak",
+    "Hill Giant Heart",
+    "Infernal Helm",
+    "Ironbind Gauntlets",
+    "Ironroot",
+    "Ivors Battle Bracer",
+    "Last Breath",
+    "Lionleaf",
+    "Magebloom",
+    "Mask of the Drowned",
+    "Medium-Quality Bear Pelt",
+    "Medium-Quality Wolf Pelt",
+    "Moonveil",
+    "Mourner's Stand",
+    "Mourner's Strand",
+    "Muurtu Breastplate",
+    "Nomad's Grace",
+    "Padded Leather Pouch",
+    "Pasha's Blade",
+    "Prowler's Mailband",
+    "Quiver of the High Watchman",
+    "Rat Ear",
+    "Raw Basa",
+    "Raw Bay Crab",
+    "Raw Grouper",
+    "Raw Thorn Sturgeon",
+    "Raw Tide Minnow",
+    "Raw Whitefish",
+    "Resolute Buckler",
+    "Ridgeland Stud",
+    "Ring of Regret",
+    "Salt-Crusted Hammer",
+    "Saltlash",
+    "Sandals of the Elements",
+    "Scavenger's Cuffs",
+    "Selstie Kelp",
+    "Seneschal's Tunic",
+    "Severed Ponytail",
+    "Shadowstitch Leggings",
+    "Silkstride Boots",
+    "Skintaker's Note",
+    "Skri'Var Bind",
+    "Skri'Var Treads",
+    "Steward's Silk Slippers",
+    "Stranglevine",
+    "Surgery Foot Guards",
+    "Sylvine",
+    "Tarweb Bindings",
+    "Tetherworn Wrap",
+    "Tolan's Torn Hide Vest",
+    "Trail Boots of the Bulwark",
+    "Trousers Of Shattered Sight",
+    "Verdant Legwraps",
+    "Vesska's Thorn",
+    "Whispering Sage",
+    "Wise Handguards",
+    "Witchlord's Cuirass"
+  ],
+  "mobs": [
+    {
+      "title": "A blister beetle",
+      "zones": [
+        "Shaded Dunes",
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "A brittle surgeon",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "A cultist",
+      "zones": [
+        "Night Harbor",
+        "Shaded Dunes"
+      ]
+    },
+    {
+      "title": "A forgotten shadow",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "A ghoulish custodian",
+      "zones": [
+        "Ancient Crypt"
+      ]
+    },
+    {
+      "title": "A hill giant bandit",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "A willowisp",
+      "zones": [
+        "Sungreet Strand",
+        "Shaded Dunes",
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Alchemist Vizyl",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Blacksmith Musafar",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Bone Construct",
+      "zones": [
+        "Tomb of the Last Wyrmsbane"
+      ]
+    },
+    {
+      "title": "Brazzic Durraim",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Brewer Gromni",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Chef Argna",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Father Rau",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Guardian of the Life Font",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Hegumenia Mariam",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Herbalism Zaarid",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "High Master Farwyn Nyxx",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Hrask",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "Lanna Ivintoria",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Layith Kharem",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Layla Faraj",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Leatherworker Haiat",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Leila al-Bahri",
+      "zones": [
+        "Grain Cellar"
+      ]
+    },
+    {
+      "title": "Leila Ghasem",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Librarian Gallier",
+      "zones": [
+        "Ancient Crypt"
+      ]
+    },
+    {
+      "title": "Lieutenant Gregan Snyde",
+      "zones": [
+        "Tomb of the Last Wyrmsbane"
+      ]
+    },
+    {
+      "title": "Lieutenant Jarovik Holt",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Little Tamsah",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Liyna Esueiruc",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Luhum the Plump",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Lumberjacking Bubir",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Lumberjacking Supplies Evershade",
+      "zones": [
+        "Evershade Weald",
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Lumberjacking Trainer Evershade",
+      "zones": [
+        "Evershade Weald",
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Magistrate Sivash",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Maleq",
+      "zones": [
+        "Shaded Dunes"
+      ]
+    },
+    {
+      "title": "Malory Moreland",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Manciple Daphne",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Mar'Tem",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Marvion Hallows",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Masonry Supplier Arthis",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Masoumeh Akhtar",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Master Khaila",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Matheus Griswald",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Mayana",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Mayor Oisin",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Medic Zafira",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Meluli Dawnglow",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Mercenary Captain Hulg",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Mercenary Foldja",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Mercenary Lord Hrrush",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Merrisam Copperhelm",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Mezzatrian Boneweaver",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Mierra Willowshade",
+      "zones": [
+        "Evershade Weald",
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Mila Dastan",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Milham the Mad",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Millicent Domaire",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Miner Falmud",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Mirella Nighthorn",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Mirembe Tiifu",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Mirrielle Brom",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Mistress Naelira",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Mistress Nephidna",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Moon Dances",
+      "zones": [
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Morthkara the Blight",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Muleda Murktoe",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Myrielle Softglade",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Nadia Al-Hakim",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Najm the Mirage",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Necroferius",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Nerguk",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Night Terror",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Nizar al-Harith",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Njau Hansou",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Noel Klares",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Noura the Tailor",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Observer Samvel",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Ojamar Antorious",
+      "zones": [
+        "Shaded Dunes"
+      ]
+    },
+    {
+      "title": "Old Mother Roshan",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Old Rankle",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Olvin Viscus",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Onis the Elder",
+      "zones": [
+        "Vale of Zintar"
+      ]
+    },
+    {
+      "title": "Orbilis the Overseer",
+      "zones": [
+        "Blacktide Bay"
+      ]
+    },
+    {
+      "title": "Outdoorsman Gahira",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Overseer Jaru'Kan",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Overseer Shuk'Naru",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Pak'Har",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Pasha Patrice",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Petra Gyle",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Piia",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Polietta Two-tone",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Quartermaster Boothroy",
+      "zones": [
+        "Tomb of the Last Wyrmsbane"
+      ]
+    },
+    {
+      "title": "Quartermaster Girault",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Raincaller Mazin",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Rais Muzari",
+      "zones": [
+        "Grain Cellar"
+      ]
+    },
+    {
+      "title": "Rallin Wizzentrop",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Rami Suresight",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Ranger Rylin",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Ranger Valegazer",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Red Mantle Quartermaster",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Redpaw",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Reeve Thurston Winter",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Researcher Fairgrove",
+      "zones": [
+        "Evershade Weald",
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Researcher Harseal",
+      "zones": [
+        "Ancient Crypt"
+      ]
+    },
+    {
+      "title": "Rhakar Vexfang",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Rider Ebraim",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Riki'Tipa",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Ripper",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Rizik Goresnout",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Roa the Huntress",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Rotfang",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Rotmuzzle",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Runner Murtazam",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Saahil the Tide Reaver",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Sahir Muzalal",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Sami Hassoun",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Samira Moonpalm",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Scout Amberward",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Scout Faeweald",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Scout Gladebow",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Scout Grimgaze",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Scout Leader Krindor",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Scout Stonebranch",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Seamas Growt",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Seamus Three-Knuckle",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Seeric of Maelsin Thrys",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Sekhmet",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Selene Brightmantle",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Sersil Tangleroot",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Servarator Vakraar",
+      "zones": [
+        "Vale of Zintar"
+      ]
+    },
+    {
+      "title": "Seshena the Lost",
+      "zones": [
+        "Vale of Zintar"
+      ]
+    },
+    {
+      "title": "Sexton Harding",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Shadowfunnel",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "Shar the Silent",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Sharkie",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Shattershriek",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Shipwright Benlink",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Sinastin Aspenleaf",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Sinder",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Sister Elara",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Sister Elsi",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Skyseer Illya",
+      "zones": [
+        "Ancient Crypt"
+      ]
+    },
+    {
+      "title": "Smelter Jadid",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Snar the Egg Collector",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Softpaws",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "Soraya the Mirage",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Spawn of Goreloch",
+      "zones": [
+        "Scarwood"
+      ]
+    },
+    {
+      "title": "Spicy Raziq",
+      "zones": [
+        "Vale of Zintar"
+      ]
+    },
+    {
+      "title": "Spinner Cligg",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Sporeweaver Underveil",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Spymaster Uzaiyn",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Squire Ryland",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Stablemaster Tomaz",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Steward Grimaldi",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Stormcaller Tabigan",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Strig",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "Sularfaan the Flamekeeper",
+      "zones": [
+        "Vale of Zintar"
+      ]
+    },
+    {
+      "title": "Survivalist Faiza",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Sylvara Winterveil",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "Sylvarya Starveil",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Sylwine Brightspirit",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Taeresh Deathcharmer",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Takalea Scaletender",
+      "zones": [
+        "Evershade Weald",
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Tanner Burhan",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Tanner Daba",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Tansy Farwinds",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Tarakhan the Boulder",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Tarek Mansur",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Tariq the Revealer",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Taskmaster Fek'Ney",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Taskmaster Gitch",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Taskmaster Nor'Tap",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Taskmaster Urka",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Tenebrim Tam",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Tessa Kentwell",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Thibald Burlond",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Thirsty Sharab",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Thoren Blackwood",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Thornbark",
+      "zones": [
+        "Glinting Hollow"
+      ]
+    },
+    {
+      "title": "Thorne Grinholdt",
+      "zones": [
+        "Scarwood"
+      ]
+    },
+    {
+      "title": "Thuraya Aislingar",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Tidal Lord Keelbiter",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Tig Pebblebank",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Timberfang",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Timmon Bell",
+      "zones": [
+        "Tomb of the Last Wyrmsbane"
+      ]
+    },
+    {
+      "title": "Tinka Roofstrider",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Tok'Nor",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Toma the Two-Faced",
+      "zones": [
+        "Shaded Dunes"
+      ]
+    },
+    {
+      "title": "Tralin",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Trey Fulton",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Tust Brookturner",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Vaclav",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Varilis Thornvine",
+      "zones": [
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Veygan Antorious",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Victualler Veera",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Vikar Brask",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Vile Will",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Vorkuul Blighteye",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "War Wizard Leonath",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Warlord Muggrah",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Watcher Aquafis",
+      "zones": [
+        "Evershade Weald"
+      ]
+    },
+    {
+      "title": "Weakened Red Dragon",
+      "zones": [
+        "Unknown"
+      ]
+    },
+    {
+      "title": "Weaponsmith Fahkri",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Whipstitch Khayyat",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Whiskey",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Widow Vethra",
+      "zones": [
+        "Keeper's Bight"
+      ]
+    },
+    {
+      "title": "Willy",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Wily Rufga",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Witcher Sayyaad",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Witchguard Hellblade",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Witchguard Kruurgal",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Witchguard Primus",
+      "zones": [
+        "Shallow Shoals"
+      ]
+    },
+    {
+      "title": "Wyrdguard Oakenpine",
+      "zones": [
+        "Evershade Weald",
+        "Faelindral"
+      ]
+    },
+    {
+      "title": "Yapala",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Yealaroth the Consumed",
+      "zones": [
+        "Glass Flats"
+      ]
+    },
+    {
+      "title": "Yezkiel the Gatekeeper",
+      "zones": [
+        "Shaded Dunes"
+      ]
+    },
+    {
+      "title": "Yorias",
+      "zones": [
+        "Night Harbor"
+      ]
+    },
+    {
+      "title": "Yvette Gardener",
+      "zones": [
+        "Fallen Pass"
+      ]
+    },
+    {
+      "title": "Zahid the Calm",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Zakariah Shriki",
+      "zones": [
+        "Grain Cellar"
+      ]
+    },
+    {
+      "title": "Zalia the Fierce",
+      "zones": [
+        "Tel Ekir"
+      ]
+    },
+    {
+      "title": "Zhakir Dunewake",
+      "zones": [
+        "Sungreet Strand"
+      ]
+    },
+    {
+      "title": "Zubair Goldtongue",
+      "zones": [
+        "Vale of Zintar"
+      ]
+    }
+  ]
+}

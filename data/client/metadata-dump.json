@@ -1,0 +1,38 @@
+{
+  "generated": "2026-06-17T08:49:09.921355+00:00",
+  "pid": 67476,
+  "encrypted_size": 20401936,
+  "on_disk_head": "9805678db0ccbc88dc1d8585b4e68381",
+  "ran": true,
+  "error": null,
+  "il2cpp_magic_hits": [],
+  "metadata_blob_hits": [
+    {
+      "address": 2759581564928,
+      "size": 20402176,
+      "magic_hex": "8d670598",
+      "head_hex": "9805678db0ccbc88dc1d8585b4e68381",
+      "protect": 2,
+      "il2cpp_magic": false
+    }
+  ],
+  "runtime_type_string_counts": {
+    "ClientItemRecord": 7,
+    "ItemRecord": 23,
+    "ItemInformation": 16,
+    "GlobalItemModelDataList": 6,
+    "ItemModelData": 42,
+    "ItemModelConfiguration": 6,
+    "LootTable": 6,
+    "RecipeRecord": 6,
+    "RecipeComponent": 2,
+    "ZoneRecord": 4,
+    "ZoneInfo": 93,
+    "Consider": 88
+  },
+  "output": "C:\\Users\\84dan\\Projects\\mnm-item-db\\client_re\\dumps\\il2cpp\\global-metadata.from-memory.dat",
+  "address": 2759581564928,
+  "magic_ok": false,
+  "source": "encrypted_mirror",
+  "note": "Metadata mirror found in memory but header is NOT 0xFAB11BAF \u2014 still encrypted/obfuscated (Unity 6000). Il2CppDumper cannot parse it yet."
+}

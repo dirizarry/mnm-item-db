@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M&amp;M Item DB</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>M&amp;M Item DB</h1>
+    <span class="tag">unofficial · data from the <a href="https://monstersandmemories.miraheze.org/wiki/Category:Items" target="_blank" rel="noopener">M&amp;M wiki</a></span>
+  </div>
+  <nav class="tabs">
+    <button class="tab active" data-tab="browse">Items</button>
+    <button class="tab" data-tab="monsters">Monsters</button>
+    <button class="tab" data-tab="bis">BiS</button>
+    <button class="tab" data-tab="characters">Characters</button>
+    <button class="tab" data-tab="gear-library">Gear</button>
+    <button class="tab" data-tab="planner">Planner</button>
+    <button class="tab" data-tab="acquire">Acquire</button>
+    <button class="tab" data-tab="guild">Guild</button>
+    <button class="tab" data-tab="contribute">Contribute</button>
+    <a class="tab" href="maps/index.html" style="display:inline-flex;align-items:center">Maps</a>
+    <a class="tab" href="stats/index.html" style="display:inline-flex;align-items:center">Play Stats</a>
+    <a class="tab" href="wiki-review/index.html" style="display:inline-flex;align-items:center">Wiki Review</a>
+    <a class="tab" href="hardcore/index.html" style="display:inline-flex;align-items:center">Magnificent Hall</a>
+  </nav>
+</header>
+
+<main>
+  <!-- BROWSE -->
+  <section id="browse" class="view active">
+    <aside class="filters">
+      <label class="f">
+        <span>Search name</span>
+        <input id="q" type="search" placeholder="e.g. bronze, gorget">
+      </label>
+      <label class="f">
+        <span>Slot</span>
+        <select id="slot"><option value="">Any</option></select>
+      </label>
+      <label class="f">
+        <span>Usable by class</span>
+        <select id="cls"><option value="">Any</option></select>
+      </label>
+      <div class="f">
+        <span>Flags</span>
+        <div class="checks">
+          <label><input type="checkbox" id="f-magic"> Magic</label>
+          <label><input type="checkbox" id="f-nodrop"> No Drop</label>
+          <label><input type="checkbox" id="f-unique"> Unique</label>
+        </div>
+      </div>
+      <div class="f">
+        <span>Minimum stat</span>
+        <div class="statmins">
+          <label>AC<input type="number" data-min="ac" min="0"></label>
+          <label>STR<input type="number" data-min="str" min="0"></label>
+          <label>STA<input type="number" data-min="sta" min="0"></label>
+          <label>INT<input type="number" data-min="int" min="0"></label>
+          <label>WIS<input type="number" data-min="wis" min="0"></label>
+          <label>HP<input type="number" data-min="hp" min="0"></label>
+          <label>Mana<input type="number" data-min="mana" min="0"></label>
+        </div>
+      </div>
+      <label class="f">
+        <input type="checkbox" id="f-resist"> Has any resist
+      </label>
+      <button id="reset" class="reset">Reset filters</button>
+    </aside>
+
+    <div class="results">
+      <div class="bar"><span id="count">—</span><span id="src" class="src"></span></div>
+      <div class="tablewrap">
+        <table id="grid">
+          <thead><tr id="head"></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- MONSTERS -->
+  <section id="monsters" class="view">
+    <div class="mob-bar">
+      <label class="f"><span>Search</span><input id="mob-q" type="search" placeholder="mob name"></label>
+      <label class="f"><span>Zone</span><select id="mob-zone"><option value="">Any zone</option></select></label>
+      <label class="f"><span>Min lv</span><input id="mob-min-lv" type="number" min="1"></label>
+      <label class="f"><span>Max lv</span><input id="mob-max-lv" type="number" min="1"></label>
+      <label class="f mob-named-toggle"><input id="mob-named-only" type="checkbox"> Named mobs only</label>
+      <span id="mob-count" class="mob-count"></span>
+    </div>
+    <div class="mob-layout">
+      <div class="tablewrap">
+        <table class="mob-grid">
+          <thead><tr>
+            <th class="mob-th" data-sort="name">Name</th>
+            <th class="mob-th" data-sort="level_min">Level</th>
+            <th class="mob-th" data-sort="zone">Zone</th>
+            <th class="mob-th" data-sort="name">Race</th>
+            <th class="mob-th" data-sort="loot">Loot</th>
+          </tr></thead>
+          <tbody id="mob-rows"></tbody>
+        </table>
+      </div>
+      <aside id="mob-detail" class="mob-detail panel hidden"></aside>
+    </div>
+  </section>
+
+  <!-- BEST IN SLOT -->
+  <section id="bis" class="view">
+    <div class="bis-controls">
+      <label class="f">
+        <span>Class</span>
+        <select id="bis-cls"></select>
+      </label>
+      <label class="f">
+        <span>Optimize for</span>
+        <select id="bis-stat">
+          <option value="ac">Armor Class</option>
+          <option value="hp">HP</option>
+          <option value="mana">Mana</option>
+          <option value="str">STR</option>
+          <option value="sta">STA</option>
+          <option value="int">INT</option>
+          <option value="wis">WIS</option>
+          <option value="dex">DEX</option>
+          <option value="agi">AGI</option>
+          <option value="cha">CHA</option>
+        </select>
+      </label>
+      <span class="bis-note">Top item per slot usable by the class, ranked by the chosen stat. <span class="pro">Planner / loadout export = premium.</span></span>
+    </div>
+    <div id="bis-grid" class="bis-grid"></div>
+  </section>
+
+  <!-- CHARACTERS -->
+  <section id="characters" class="view">
+    <div class="ch-toolbar">
+      <label>Server <select id="ch-filter-server"><option value="">All servers</option></select></label>
+      <label>Guild <select id="ch-filter-guild"><option value="">All guilds</option></select></label>
+    </div>
+    <div id="ch-list" class="ch-list"></div>
+    <div class="ch-create panel">
+      <h3>New character</h3>
+      <div class="ch-form">
+        <input id="ch-new-name" type="text" placeholder="Name">
+        <input id="ch-new-level" type="number" min="1" placeholder="Level">
+        <select id="ch-new-server"></select>
+        <select id="ch-new-race"></select>
+        <select id="ch-new-class"></select>
+        <button id="ch-create" class="primary">Create &amp; open planner</button>
+        <label class="ch-import-btn">Import screenshot <input id="ch-import-file" type="file" accept="image/*" hidden></label>
+      </div>
+    </div>
+    <div id="ch-import-panel" class="ch-import panel hidden">
+      <p id="ch-import-hint" class="muted"></p>
+      <img id="ch-import-img" class="ch-import-img hidden" alt="Character screenshot">
+      <div class="ch-form">
+        <input id="ch-imp-name" type="text" placeholder="Name">
+        <input id="ch-imp-level" type="number" min="1" placeholder="Level">
+        <select id="ch-imp-server"></select>
+        <select id="ch-imp-race"></select>
+        <select id="ch-imp-class"></select>
+        <button id="ch-import-apply" class="primary">Create from import</button>
+        <button id="ch-import-cancel">Cancel</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEAR LIBRARY -->
+  <section id="gear-library" class="view">
+    <div class="gl-toolbar">
+      <div class="gl-intent-tabs">
+        <button type="button" class="gl-intent-tab active" data-intent="">All</button>
+        <button type="button" class="gl-intent-tab" data-intent="owned">Owned</button>
+        <button type="button" class="gl-intent-tab" data-intent="desired">Desired</button>
+        <button type="button" class="gl-intent-tab" data-intent="template">Templates</button>
+      </div>
+      <label>Class <select id="gl-filter-cls"><option value="">Any</option></select></label>
+      <label>Server <select id="gl-filter-server"><option value="">Any</option></select></label>
+    </div>
+    <div id="gl-grid" class="gl-grid"></div>
+  </section>
+
+  <!-- BUILD PLANNER -->
+  <section id="planner" class="view">
+    <div id="pl-breadcrumb" class="pl-breadcrumb"></div>
+    <div class="pl-toolbar">
+      <div class="pl-row">
+        <span class="pl-rowlabel">Character</span>
+        <input id="pl-char-name" class="pl-name" type="text" placeholder="Character name">
+        <label class="inline">Lv <input id="pl-level" type="number" min="1" class="pl-lv-input"></label>
+        <label class="inline">Server <select id="pl-server"></select></label>
+        <label class="inline">Race <select id="pl-race"></select></label>
+        <label class="inline">Class <select id="pl-class"></select></label>
+        <span class="pl-actions">
+          <button id="pl-char-new">New</button>
+          <button id="pl-char-save" class="primary">Save</button>
+          <select id="pl-char-load"><option value="">Load character…</option></select>
+          <button id="pl-char-del">Delete</button>
+        </span>
+      </div>
+      <div class="pl-row">
+        <span class="pl-rowlabel">Gear set</span>
+        <input id="pl-gear-name" class="pl-name" type="text" placeholder="Gear set name">
+        <label class="inline">Intent
+          <select id="pl-intent">
+            <option value="owned">Owned</option>
+            <option value="desired" selected>Desired</option>
+            <option value="template">Template</option>
+          </select>
+        </label>
+        <span class="pl-actions">
+          <button id="pl-gear-new">New</button>
+          <button id="pl-gear-save" class="primary">Save</button>
+          <select id="pl-gear-load"><option value="">Load gear set…</option></select>
+          <button id="pl-gear-del">Delete</button>
+          <button id="pl-gear-share">Share</button>
+          <button id="pl-gear-export">Export</button>
+          <button id="pl-gear-import">Import</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="pl-grid">
+      <!-- equipment -->
+      <div class="pl-col pl-equip">
+        <h2>Equipment</h2>
+        <div id="pl-slots" class="pl-slots"></div>
+      </div>
+
+      <!-- stats + traits -->
+      <div class="pl-col">
+        <h2>Attributes</h2>
+        <table class="pl-stats" id="pl-stats"></table>
+        <h2>Traits</h2>
+        <div class="pl-traits" id="pl-traits"></div>
+        <div class="pl-racial" id="pl-racial"></div>
+      </div>
+
+      <!-- totals + bank -->
+      <div class="pl-col">
+        <h2>Totals</h2>
+        <table class="pl-totals" id="pl-totals"></table>
+        <div id="pl-detail" class="pl-detail"></div>
+        <h2>Shared bank <span class="muted pl-bank-note">(server · droppable only)</span></h2>
+        <div id="pl-bank" class="pl-bank"></div>
+        <button type="button" id="pl-bank-add" class="pl-bank-add">+ Add to bank</button>
+      </div>
+    </div>
+
+    <!-- item picker overlay (planner) -->
+    <div id="pl-picker" class="pl-picker hidden">
+      <div class="pl-picker-box">
+        <div class="pl-picker-head">
+          <strong id="pl-picker-title">Pick item</strong>
+          <span class="pl-picker-hint">Click header to sort · Shift+click to add a secondary sort</span>
+          <button id="pl-picker-close">✕</button>
+        </div>
+        <div id="pl-picker-list" class="pl-picker-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACQUIRE -->
+  <section id="acquire" class="view">
+    <div class="aq-head">
+      <h2 id="aq-title">Acquisition Checklist</h2>
+      <div class="aq-summary" id="aq-summary"></div>
+      <label class="aq-toggle"><input type="checkbox" id="aq-hide-done"> Hide acquired</label>
+    </div>
+    <div class="aq-grid">
+      <div class="aq-col">
+        <h3>Gear checklist</h3>
+        <div id="aq-list" class="aq-list"></div>
+      </div>
+      <div class="aq-col">
+        <h3>Crafting materials (rolled up)</h3>
+        <div id="aq-mats" class="aq-mats"></div>
+        <h3>Farm by zone</h3>
+        <div id="aq-zones" class="aq-zones"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUILD -->
+  <section id="guild" class="view">
+    <div class="gd-toolbar">
+      <label>Guild <select id="gd-select"></select></label>
+      <input id="gd-name" class="gd-name" type="text" placeholder="Guild name">
+      <label>Server <select id="gd-server"></select></label>
+      <button id="gd-save" class="primary">Save</button>
+      <button id="gd-new">+ New guild</button>
+      <button id="gd-add-local">+ Local character</button>
+      <button id="gd-add-share">+ Share link</button>
+      <button id="gd-export">Export</button>
+      <button id="gd-import">Import</button>
+    </div>
+    <div class="gd-summary" id="gd-summary"></div>
+    <div class="gd-layout">
+      <div class="gd-col gd-roster-col">
+        <h3>Roster</h3>
+        <div id="gd-roster" class="gd-roster"></div>
+      </div>
+      <div class="gd-col gd-agg-col">
+        <h3>Who needs what</h3>
+        <div id="gd-needs" class="gd-panel"></div>
+        <h3>Contested drops</h3>
+        <p class="gd-hint muted">Mobs where multiple members need loot — prioritize these farm nights.</p>
+        <div id="gd-contested" class="gd-panel"></div>
+        <h3>Guild crafting materials</h3>
+        <div id="gd-mats" class="gd-panel"></div>
+        <h3>Farm by zone</h3>
+        <p class="gd-hint muted">Zones ranked by how many roster items still drop there.</p>
+        <div id="gd-zones" class="gd-panel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section id="contribute" class="view">
+    <div class="ct-toolbar">
+      <button type="button" class="ct-mode active" data-mode="drop">Drop</button>
+      <button type="button" class="ct-mode" data-mode="craft">Craft</button>
+      <button type="button" class="ct-mode" data-mode="quest">Quest</button>
+      <label class="ct-upload-label">Upload screenshot <input id="ct-upload" type="file" accept="image/*" hidden></label>
+      <span id="ct-file-hint" class="muted"></span>
+    </div>
+    <img id="ct-preview" class="ct-preview hidden" alt="Screenshot preview">
+    <div class="ct-form panel">
+      <label>Item name <input id="ct-item" type="text" placeholder="Exact item name"></label>
+      <div id="ct-drop-fields">
+        <label>Zone <input id="ct-zone" type="text" placeholder="Zone name"></label>
+        <label>Mob <input id="ct-mob" type="text" placeholder="Mob name"></label>
+      </div>
+      <div id="ct-craft-fields" class="hidden">
+        <label>Tradeskill <input id="ct-skill" type="text" placeholder="Blacksmithing"></label>
+        <label>Trivial <input id="ct-trivial" type="number" min="0" placeholder="205"></label>
+        <label>Components <textarea id="ct-components" rows="3" placeholder="2 [[Copper Bar]]"></textarea></label>
+      </div>
+      <div id="ct-quest-fields" class="hidden">
+        <label>Quest <input id="ct-quest" type="text"></label>
+        <label>Quest level <input id="ct-quest-level" type="number" min="1"></label>
+      </div>
+      <div id="ct-reverse" class="ct-reverse-wrap"></div>
+      <div class="ct-actions">
+        <button type="button" id="ct-copy" class="primary">Copy wikitext</button>
+        <button type="button" id="ct-wiki">Open wiki page</button>
+      </div>
+      <pre id="ct-draft" class="ct-draft"></pre>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span id="meta"></span>
+</footer>
+
+<script src="items.js"></script>
+<script src="monsters.js"></script>
+<script src="drops.js"></script>
+<script src="personal.js"></script>
+<script src="trust.js"></script>
+<script src="traits.js"></script>
+<script src="base_stats.js"></script>
+<script src="store.js"></script>
+<script src="acq-info.js"></script>
+<script src="app.js"></script>
+<script src="mob-browse.js"></script>
+<script src="planner.js"></script>
+<script src="acquire-core.js"></script>
+<script src="acquire.js"></script>
+<script src="characters.js"></script>
+<script src="gear-library.js"></script>
+<script src="guild.js"></script>
+<script src="contribute.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "generated": "2026-06-21T00:42:03.624595+00:00",
+  "install_root": "C:\\Users\\84dan\\AppData\\Local\\Monsters & Memories\\mnm",
+  "outputs": {
+    "fingerprint": "data\\client\\build-fingerprint.json",
+    "mnmlib_types": "client_re\\mnmlib\\types.json",
+    "signatures": "data\\client\\signatures-d57400cb5e626ad0.json"
+  },
+  "lines": [
+    "Fingerprint: 235 manifest entries, Unity 6000.0.59f2",
+    "mnmlib: 390 combat types, 18 priority hits",
+    "Signatures resolved: 4 patterns OK"
+  ]
+}

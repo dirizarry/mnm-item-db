@@ -1,0 +1,33 @@
+/* 3D layout editor */
+.ed-layout .mp-sidebar { width: 300px; }
+.ed-room {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: 1px solid transparent;
+}
+.ed-room:hover { background: rgba(255,255,255,0.04); }
+.ed-room.active { border-color: var(--gold-dim); background: rgba(217,180,106,0.1); }
+.ed-swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
+.ed-pos {
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-family: ui-monospace, monospace;
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+.ed-pos input {
+  width: 52px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 4px;
+  padding: 0.15rem 0.3rem;
+  font: inherit;
+  font-size: 0.68rem;
+}
+.ed-hud-keys .mode-on { color: var(--accent); }

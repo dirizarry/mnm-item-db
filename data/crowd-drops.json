@@ -1,0 +1,4002 @@
+[
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 215,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 200,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 174,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 150,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Rat Meat",
+    "item_hid": "rat_meat",
+    "mob_name": "a large rat",
+    "zone": "Night Harbor",
+    "observations": 121,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Ear",
+    "item_hid": "rat_ear",
+    "mob_name": "a large rat",
+    "zone": "Night Harbor",
+    "observations": 117,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bat Wing",
+    "item_hid": "bat_wing",
+    "mob_name": "a desert bat",
+    "zone": "Night Harbor",
+    "observations": 116,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 115,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 111,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crypt Scarab Leg",
+    "item_hid": "7ddecab9d4f3bf624ea21d81",
+    "mob_name": "a young crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 107,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 103,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Tooth",
+    "item_hid": "rat_tooth",
+    "mob_name": "a large rat",
+    "zone": "Night Harbor",
+    "observations": 101,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 91,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 67,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 66,
+    "contributors": 1
+  },
+  {
+    "item_name": "Fire Beetle Legs",
+    "item_hid": "fbeetle_leg",
+    "mob_name": "a fire beetle",
+    "zone": "Night Harbor",
+    "observations": 65,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a spiderling",
+    "zone": "Night Harbor",
+    "observations": 64,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bat Tooth",
+    "item_hid": "bat_tooth",
+    "mob_name": "a desert bat",
+    "zone": "Night Harbor",
+    "observations": 64,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bat Fur",
+    "item_hid": "bat_fur",
+    "mob_name": "a desert bat",
+    "zone": "Night Harbor",
+    "observations": 64,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crocodile Tooth",
+    "item_hid": "gator_tooth",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Night Harbor",
+    "observations": 58,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 53,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 51,
+    "contributors": 1
+  },
+  {
+    "item_name": "Snake Fang",
+    "item_hid": "snake_fang",
+    "mob_name": "a snake",
+    "zone": "Night Harbor",
+    "observations": 48,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 46,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scarab Leg",
+    "item_hid": "scarab_leg",
+    "mob_name": "a dunes scarab",
+    "zone": "Night Harbor",
+    "observations": 44,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Beetle Meat",
+    "item_hid": "beetle_meat",
+    "mob_name": "a young crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 41,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 40,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 35,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Bat Meat",
+    "item_hid": "579a9471f975601473792884",
+    "mob_name": "a desert bat",
+    "zone": "Night Harbor",
+    "observations": 32,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 31,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crypt Scarab Eye",
+    "item_hid": "crypt_scarab_eye",
+    "mob_name": "a young crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 31,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bat Eye",
+    "item_hid": "bat_eye",
+    "mob_name": "a desert bat",
+    "zone": "Night Harbor",
+    "observations": 29,
+    "contributors": 1
+  },
+  {
+    "item_name": "Skeleton Jawbone",
+    "item_hid": "elrind_skel_jaw",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 29,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Crocodile Meat",
+    "item_hid": "gator_meat",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Night Harbor",
+    "observations": 28,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 27,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 26,
+    "contributors": 1
+  },
+  {
+    "item_name": "Snake Skin",
+    "item_hid": "snake_skin",
+    "mob_name": "a snake",
+    "zone": "Night Harbor",
+    "observations": 25,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 25,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 24,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 24,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 24,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 24,
+    "contributors": 1
+  },
+  {
+    "item_name": "Snake Egg",
+    "item_hid": "snake_egg",
+    "mob_name": "a snake",
+    "zone": "Night Harbor",
+    "observations": 24,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spiderling Eye",
+    "item_hid": "spiderling_eye",
+    "mob_name": "a spiderling",
+    "zone": "Night Harbor",
+    "observations": 24,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 23,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 20,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 19,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Foot",
+    "item_hid": "rat_foot",
+    "mob_name": "a large rat",
+    "zone": "Night Harbor",
+    "observations": 19,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 19,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 19,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 18,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 18,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Legs",
+    "item_hid": "spider_leg",
+    "mob_name": "a spiderling",
+    "zone": "Night Harbor",
+    "observations": 18,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal vicar",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 18,
+    "contributors": 1
+  },
+  {
+    "item_name": "Fish Bones",
+    "item_hid": "ce655955748a502705ce0654",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Night Harbor",
+    "observations": 18,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 18,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 17,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 17,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 17,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal vicar",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 17,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 16,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Snake Meat",
+    "item_hid": "snake_meat",
+    "mob_name": "a snake",
+    "zone": "Night Harbor",
+    "observations": 16,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 16,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 16,
+    "contributors": 1
+  },
+  {
+    "item_name": "Low-Quality Jackal Pelt",
+    "item_hid": "lowquality_jackal_pelt",
+    "mob_name": "a jackal pup",
+    "zone": "Night Harbor",
+    "observations": 16,
+    "contributors": 1
+  },
+  {
+    "item_name": "Jackal Tooth",
+    "item_hid": "jackal_tooth",
+    "mob_name": "a jackal pup",
+    "zone": "Night Harbor",
+    "observations": 16,
+    "contributors": 1
+  },
+  {
+    "item_name": "Fire Beetle Eye",
+    "item_hid": "fbeetle_eye",
+    "mob_name": "a fire beetle",
+    "zone": "Night Harbor",
+    "observations": 15,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 15,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Rat Meat",
+    "item_hid": "cooked_rat_meat",
+    "mob_name": "a large rat",
+    "zone": "Night Harbor",
+    "observations": 15,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 15,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crypt Scarab Carapace",
+    "item_hid": "crypt_scarab_carapace",
+    "mob_name": "a young crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 15,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Bow",
+    "item_hid": "worn_bow",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 14,
+    "contributors": 1
+  },
+  {
+    "item_name": "Large Bat Wing",
+    "item_hid": "large_bat_wing",
+    "mob_name": "a large dunes bat",
+    "zone": "Night Harbor",
+    "observations": 14,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crocodile Hide",
+    "item_hid": "gator_scale",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Night Harbor",
+    "observations": 14,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crypt Scarab Leg",
+    "item_hid": "crypt_scarab_leg",
+    "mob_name": "a crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 14,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gorget",
+    "item_hid": "tattered_cloth_neck",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 14,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 13,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Rat Meat",
+    "item_hid": "rat_meat",
+    "mob_name": "a cemetery rat",
+    "zone": "Night Harbor",
+    "observations": 13,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 13,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 13,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 13,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Beetle Meat",
+    "item_hid": "cooked_beetle_meat",
+    "mob_name": "a young crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 13,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 12,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 12,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "tattered_cloth_head",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 12,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Vest",
+    "item_hid": "tattered_rawhide_arms",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 12,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Bat Meat",
+    "item_hid": "cooked_bat_meat",
+    "mob_name": "a desert bat",
+    "zone": "Night Harbor",
+    "observations": 12,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scarab Eye",
+    "item_hid": "scarab_eye",
+    "mob_name": "a dunes scarab",
+    "zone": "Night Harbor",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Gorget",
+    "item_hid": "tattered_rawhide_neck",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Shoulderpads",
+    "item_hid": "tattered_rawhide_shld",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Tunic",
+    "item_hid": "tattered_rawhide_vest",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Beetle Meat",
+    "item_hid": "beetle_meat",
+    "mob_name": "a bone carver",
+    "zone": "Fallen Pass",
+    "observations": 11,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal deacon",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal guard",
+    "zone": "Ancient Crypt",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal guard",
+    "zone": "Ancient Crypt",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Bracer",
+    "item_hid": "tattered_cloth_fore",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Mask",
+    "item_hid": "tattered_rawhide_face",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crocodile Tooth",
+    "item_hid": "gator_tooth",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Shaded Dunes",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Veil",
+    "item_hid": "tattered_cloth_face",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Boots",
+    "item_hid": "tattered_rawhide_feet",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 10,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal guard",
+    "zone": "Ancient Crypt",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal paladin",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Jackal Meat",
+    "item_hid": "jackal_meat",
+    "mob_name": "a jackal pup",
+    "zone": "Night Harbor",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Gloves",
+    "item_hid": "tattered_rawhide_hand",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Fire Beetle Gland",
+    "item_hid": "fbeetle_gland",
+    "mob_name": "a fire beetle",
+    "zone": "Night Harbor",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Belt",
+    "item_hid": "tattered_rawhide_belt",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "b91d4603d8526220419e56cb",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 9,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal vicar",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spectral Dust",
+    "item_hid": "spectral_dust",
+    "mob_name": "a Wyrmsbane crusader",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Leggings",
+    "item_hid": "tattered_rawhide_legs",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Bracer",
+    "item_hid": "tattered_rawhide_fore",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cap",
+    "item_hid": "tattered_rawhide_head",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Warrior Bracer",
+    "item_hid": "ashira_war_fore",
+    "mob_name": "an ashira warrior",
+    "zone": "Shaded Dunes",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Wool Scraps",
+    "item_hid": "wool_scraps",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal deacon",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal deacon",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scarab Carapace",
+    "item_hid": "scarab_carapace",
+    "mob_name": "a dunes scarab",
+    "zone": "Night Harbor",
+    "observations": 8,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Snake Meat",
+    "item_hid": "cooked_snake_meat",
+    "mob_name": "a snake",
+    "zone": "Night Harbor",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a crypt broodmistress",
+    "zone": "Infested Crypt",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Bow",
+    "item_hid": "worn_bow",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a zombie laborer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Incarnal Residue",
+    "item_hid": "incarnal_residue",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a charred acolyte",
+    "zone": "Ancient Crypt",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Shirt",
+    "item_hid": "tattered_cloth_arms",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Large Bat Fur",
+    "item_hid": "large_bat_fur",
+    "mob_name": "a large dunes bat",
+    "zone": "Night Harbor",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Tooth",
+    "item_hid": "rat_tooth",
+    "mob_name": "a cemetery rat",
+    "zone": "Night Harbor",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Shirt",
+    "item_hid": "tattered_cloth_arms",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Shirt",
+    "item_hid": "209efe9c21be006bfeb3619e",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Veil",
+    "item_hid": "tattered_cloth_face",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 7,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a crypt guardian",
+    "zone": "Infested Crypt",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a goon",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira shaman",
+    "zone": "Shaded Dunes",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Large Bat Wing",
+    "item_hid": "large_bat_wing",
+    "mob_name": "a large desert bat",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Beetle Meat",
+    "item_hid": "beetle_meat",
+    "mob_name": "a crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Sungreet Strand",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cape",
+    "item_hid": "tattered_cloth_cape",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cape",
+    "item_hid": "tattered_cloth_cape",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a charred acolyte",
+    "zone": "Ancient Crypt",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Bat Meat",
+    "item_hid": "bat_meat",
+    "mob_name": "a large dunes bat",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira warrior",
+    "zone": "Shaded Dunes",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Bracer",
+    "item_hid": "tattered_cloth_fore",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "7e634f0347f2755ca6bf1712",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cloak",
+    "item_hid": "tattered_rawhide_cape",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Hide Scraps",
+    "item_hid": "hide_scraps",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Immature Snake Venom Sac",
+    "item_hid": "young_snake_venom",
+    "mob_name": "a snake",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Incarnal Residue",
+    "item_hid": "incarnal_residue",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Ear",
+    "item_hid": "rat_ear",
+    "mob_name": "a cemetery rat",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Ear",
+    "item_hid": "rat_ear",
+    "mob_name": "a wharf rat",
+    "zone": "Night Harbor",
+    "observations": 6,
+    "contributors": 1
+  },
+  {
+    "item_name": "Incarnal Residue",
+    "item_hid": "incarnal_residue",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira shaman",
+    "zone": "Shaded Dunes",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Veil",
+    "item_hid": "tattered_cloth_face",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Zombie Skin",
+    "item_hid": "zombie_skin",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Sungreet Strand",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a wererat",
+    "zone": "Shaded Dunes",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Gorget",
+    "item_hid": "tattered_rawhide_neck",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Mask",
+    "item_hid": "tattered_rawhide_face",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Warrior Pelt",
+    "item_hid": "ashira_warrior_pelt",
+    "mob_name": "an ashira warrior",
+    "zone": "Shaded Dunes",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Incarnal Residue",
+    "item_hid": "incarnal_residue",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Tooth",
+    "item_hid": "rat_tooth",
+    "mob_name": "a wharf rat",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a wererat",
+    "zone": "Shaded Dunes",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cape",
+    "item_hid": "tattered_cloth_cape",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "68d1d9c415aa4d0255b410f5",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Tunic",
+    "item_hid": "tattered_rawhide_vest",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "an ashira ain guard",
+    "zone": "Tel Ekir",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira lookout",
+    "zone": "Shaded Dunes",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira scout",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Rat Meat",
+    "item_hid": "cooked_rat_meat",
+    "mob_name": "a cemetery rat",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Spear",
+    "item_hid": "rusty_spear",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cape",
+    "item_hid": "tattered_cloth_cape",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Great Staff",
+    "item_hid": "worn_great_staff",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 5,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Crocodile Meat",
+    "item_hid": "gator_meat",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Shaded Dunes",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a spiderling",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a skeletal paladin",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira raider",
+    "zone": "Tel Ekir",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Tunic",
+    "item_hid": "tattered_rawhide_vest",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Beetle Meat",
+    "item_hid": "cooked_beetle_meat",
+    "mob_name": "a crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Jackal Meat",
+    "item_hid": "cooked_jackal_meat",
+    "mob_name": "a jackal pup",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Ear",
+    "item_hid": "rat_ear",
+    "mob_name": "a large diseased rat",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "Jakob Geffrey",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a Wyrmsbane crusader",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a crypt spiderling",
+    "zone": "Infested Crypt",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gorget",
+    "item_hid": "tattered_cloth_neck",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Shirt",
+    "item_hid": "tattered_cloth_arms",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Wool Scraps",
+    "item_hid": "wool_scraps",
+    "mob_name": "a devotee",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Warrior Necklace",
+    "item_hid": "ashira_necklace_war",
+    "mob_name": "an ashira warrior",
+    "zone": "Shaded Dunes",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a ghoulish scholar",
+    "zone": "Ancient Crypt",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira raider",
+    "zone": "Tel Ekir",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Beetle Meat",
+    "item_hid": "cooked_beetle_meat",
+    "mob_name": "a bone carver",
+    "zone": "Fallen Pass",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crypt Scarab Carapace",
+    "item_hid": "crypt_scarab_carapace",
+    "mob_name": "a crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rat Foot",
+    "item_hid": "rat_foot",
+    "mob_name": "a cemetery rat",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a smarmy hunter",
+    "zone": "Sungreet Strand",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Axe",
+    "item_hid": "rusty_axe",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Shattered Skeleton Femur",
+    "item_hid": "shd_skel_femurs",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Legs",
+    "item_hid": "spider_leg",
+    "mob_name": "a crypt spiderling",
+    "zone": "Infested Crypt",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a crypt creeper",
+    "zone": "Infested Crypt",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Bracer",
+    "item_hid": "tattered_cloth_fore",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gorget",
+    "item_hid": "tattered_cloth_neck",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Veil",
+    "item_hid": "tattered_cloth_face",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cloak",
+    "item_hid": "tattered_rawhide_cape",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Leggings",
+    "item_hid": "tattered_rawhide_legs",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Shoulderpads",
+    "item_hid": "tattered_rawhide_shld",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a filthy acolyte",
+    "zone": "Sungreet Strand",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a smarmy hunter",
+    "zone": "Sungreet Strand",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crypt Scarab Eye",
+    "item_hid": "crypt_scarab_eye",
+    "mob_name": "a crypt scarab",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a roving ghoul",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Kite Shield",
+    "item_hid": "rusty_kite_shield",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Long Spear",
+    "item_hid": "rusty_2spear",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal vicar",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Unusual Jackal Pelt",
+    "item_hid": "ashira_faction_quest_pelt_0",
+    "mob_name": "a curious jackal",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Bow",
+    "item_hid": "4a3a4919e69d4dfb1cb47dd7",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 4,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira ambusher",
+    "zone": "Shaded Dunes",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Scythe",
+    "item_hid": "rusty_1scythe",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a roving ghoul",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Ashira Meat",
+    "item_hid": "828599659af012394b753209",
+    "mob_name": "a corrupted warrior",
+    "zone": "valeofzintar",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Ashira Meat",
+    "item_hid": "raw_ash_meat",
+    "mob_name": "an ashira shaman",
+    "zone": "Shaded Dunes",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Shattered Skeleton Femur",
+    "item_hid": "shd_skel_femurs",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cloak",
+    "item_hid": "tattered_rawhide_cape",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Bow",
+    "item_hid": "worn_bow",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Scout Necklace",
+    "item_hid": "ashira_necklace_sct",
+    "mob_name": "an ashira lookout",
+    "zone": "Shaded Dunes",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bloodynose Goblin Ear",
+    "item_hid": "bloodynose_goblin_ear",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a drunken dockworker",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Crocodile Meat",
+    "item_hid": "cooked_gator_meat",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Rat Meat",
+    "item_hid": "cooked_rat_meat",
+    "mob_name": "a wharf rat",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Fish Bones",
+    "item_hid": "fish_bones",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Shaded Dunes",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Grandmaster's Dark Leather Hood",
+    "item_hid": "ip_wb_grandmaster_common_chain_head_10",
+    "mob_name": "Grandmaster Gildas",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Goblin Meat",
+    "item_hid": "raw_gob_meat",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a Bloodynose spooker",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a Bloodynose witch doctor",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "a skeletal researcher",
+    "zone": "Ancient Crypt",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira alpha",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Battle Axe",
+    "item_hid": "rusty_2axe",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Dagger",
+    "item_hid": "rusty_dagger",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Great Scythe",
+    "item_hid": "rusty_scythe",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Greatsword",
+    "item_hid": "rusty_2sword",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Longsword",
+    "item_hid": "rusty_lsword",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Tower Shield",
+    "item_hid": "rusty_tower_shield",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty War Lance",
+    "item_hid": "5b820d054de0d21a061071c4",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spectral Dust",
+    "item_hid": "spectral_dust",
+    "mob_name": "Timmon Bell",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "tattered_cloth_head",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gorget",
+    "item_hid": "tattered_cloth_neck",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Boots",
+    "item_hid": "tattered_rawhide_feet",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cap",
+    "item_hid": "tattered_rawhide_head",
+    "mob_name": "a skeletal guard",
+    "zone": "Ancient Crypt",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cloak",
+    "item_hid": "tattered_rawhide_cape",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cloak",
+    "item_hid": "tattered_rawhide_cape",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Buckler",
+    "item_hid": "worn_buckler_t1",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Great Staff",
+    "item_hid": "worn_great_staff",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Tail",
+    "item_hid": "ashira_tail",
+    "mob_name": "an ashira ain guard",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Tail",
+    "item_hid": "ashira_tail",
+    "mob_name": "an ashira raider",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bone Chips",
+    "item_hid": "bone_chips",
+    "mob_name": "a skeletal paladin",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a river pirate",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "Jakob Geffrey",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira warrior",
+    "zone": "Shaded Dunes",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Bat Meat",
+    "item_hid": "cooked_bat_meat",
+    "mob_name": "a large dunes bat",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Eth-ur Arboreal Journal Page",
+    "item_hid": "dru_research_tier1_1",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Hammer and Chisel",
+    "item_hid": "hammer_and_chisel",
+    "mob_name": "Quartermaster Boothroy",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Goblin Meat",
+    "item_hid": "raw_gob_meat",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Sungreet Strand",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Rat Meat",
+    "item_hid": "rat_meat",
+    "mob_name": "a large diseased rat",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "Timmon Bell",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Great Scythe",
+    "item_hid": "rusty_scythe",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Kite Shield",
+    "item_hid": "rusty_kite_shield",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Scimitar",
+    "item_hid": "rusty_scimitar",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Scythe",
+    "item_hid": "rusty_1scythe",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Warhammer",
+    "item_hid": "rusty_whammer",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spectral Dust",
+    "item_hid": "spectral_dust",
+    "mob_name": "Dario Numas",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "tattered_cloth_head",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal guard",
+    "zone": "Ancient Crypt",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gorget",
+    "item_hid": "tattered_cloth_neck",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Gloves",
+    "item_hid": "tattered_rawhide_hand",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Vest",
+    "item_hid": "tattered_rawhide_arms",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Torch",
+    "item_hid": "torch",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Bow",
+    "item_hid": "worn_bow",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Great Staff",
+    "item_hid": "worn_great_staff",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Zombie Skin",
+    "item_hid": "zombie_skin",
+    "mob_name": "a zombie laborer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 3,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Human Meat",
+    "item_hid": "0aba99615b57b2523938d9ae",
+    "mob_name": "a sellsword",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Tooth",
+    "item_hid": "e7083c39b4f931793c59de91",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "4bd63c9adfb5348a4e0832e7",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Burnt Rune Staff",
+    "item_hid": "burnt_rune_staff",
+    "mob_name": "a charred acolyte",
+    "zone": "Ancient Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "Timmon Bell",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a rotting skeleton",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Jackal Meat",
+    "item_hid": "cooked_jackal_meat",
+    "mob_name": "a jackal",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Diseased Rat Blood",
+    "item_hid": "dis_rat_blood",
+    "mob_name": "a large diseased rat",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Mushroom",
+    "item_hid": "mushroom",
+    "mob_name": "an ashira scout",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Obadiah's Marchers",
+    "item_hid": "ip_wb_grandmaster_2_common_plate_feet_10",
+    "mob_name": "Grandmaster Obadiah",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Ashira Meat",
+    "item_hid": "raw_ash_meat",
+    "mob_name": "an ashira scout",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Goblin Meat",
+    "item_hid": "raw_gob_meat",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Greatsword",
+    "item_hid": "rusty_2sword",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Spear",
+    "item_hid": "rusty_spear",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Warhammer",
+    "item_hid": "rusty_whammer",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spectral Dust",
+    "item_hid": "spectral_dust",
+    "mob_name": "Grandmaster Obadiah",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Bracer",
+    "item_hid": "tattered_rawhide_fore",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Leggings",
+    "item_hid": "tattered_rawhide_legs",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Acolyte Mantle of Ashes",
+    "item_hid": "acolyte_mantle_of_ash",
+    "mob_name": "a charred acolyte",
+    "zone": "Ancient Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bell Pepper",
+    "item_hid": "bell_pepper",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bell Pepper",
+    "item_hid": "0f46da79dcec1962cf8551e8",
+    "mob_name": "a river pirate",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bloodynose Goblin Ear",
+    "item_hid": "bloodynose_goblin_ear",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a devotee",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a skeletal porter",
+    "zone": "Ancient Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Wyrmsbane crusader",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a grave robber",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a stumbling zombie",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira wanderer",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Goblin Meat",
+    "item_hid": "cooked_gob_meat",
+    "mob_name": "a smuggler",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Chain Leggings",
+    "item_hid": "rusty_bronze_chain_legs",
+    "mob_name": "a goon",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Longsword",
+    "item_hid": "rusty_bronze_lsword",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cracked Fine Wood Staff",
+    "item_hid": "cracked_staff_t2",
+    "mob_name": "a skeletal guard",
+    "zone": "Ancient Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Crocodile Hide",
+    "item_hid": "gator_scale",
+    "mob_name": "a crocodile hatchling",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Diseased Jackal Blood",
+    "item_hid": "dis_jackal_blood",
+    "mob_name": "a diseased jackal",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Fire Beetle Carapace",
+    "item_hid": "fbeetle_shell",
+    "mob_name": "a fire beetle",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Hide Scraps",
+    "item_hid": "hide_scraps",
+    "mob_name": "a drunken dockworker",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Hide Scraps",
+    "item_hid": "hide_scraps",
+    "mob_name": "a lawbreaker",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Poor Ashira Pelt",
+    "item_hid": "69520022c780a79ea2bdbf1b",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Ashira Meat",
+    "item_hid": "raw_ash_meat",
+    "mob_name": "an ashira lookout",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Bat Meat",
+    "item_hid": "bat_meat",
+    "mob_name": "a large desert bat",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Human Meat",
+    "item_hid": "0aba99615b57b2523938d9ae",
+    "mob_name": "a devotee",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Human Meat",
+    "item_hid": "0aba99615b57b2523938d9ae",
+    "mob_name": "a loyal protector",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Human Meat",
+    "item_hid": "raw_hum_meat",
+    "mob_name": "a river pirate",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Rat Meat",
+    "item_hid": "rat_meat",
+    "mob_name": "a wharf rat",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Snake Meat",
+    "item_hid": "snake_meat",
+    "mob_name": "a rattlesnake",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira raider",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rawhide Scraps",
+    "item_hid": "rawhide_scraps",
+    "mob_name": "an ashira wanderer",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Axe",
+    "item_hid": "rusty_axe",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Axe",
+    "item_hid": "rusty_axe",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Axe",
+    "item_hid": "rusty_axe",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Battle Axe",
+    "item_hid": "rusty_2axe",
+    "mob_name": "a rotting skeleton",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Dagger",
+    "item_hid": "rusty_dagger",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Long Spear",
+    "item_hid": "rusty_2spear",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Mace",
+    "item_hid": "rusty_mace",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Maul",
+    "item_hid": "rusty_2hammer",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Maul",
+    "item_hid": "rusty_2hammer",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Rusty Spear",
+    "item_hid": "rusty_spear",
+    "mob_name": "a skeletal fighter",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Scorched Skeletal Remains",
+    "item_hid": "spb_scorched_remains",
+    "mob_name": "a skeletal paladin",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Snake Fang",
+    "item_hid": "snake_fang",
+    "mob_name": "a rattlesnake",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Legs",
+    "item_hid": "spider_leg",
+    "mob_name": "a crypt guardian",
+    "zone": "Infested Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spider Silk",
+    "item_hid": "spider_silk",
+    "mob_name": "a large crypt creeper",
+    "zone": "Infested Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Belt",
+    "item_hid": "tattered_cloth_belt",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Boots",
+    "item_hid": "tattered_cloth_feet",
+    "mob_name": "an ashira scout",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Bracer",
+    "item_hid": "tattered_cloth_fore",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "tattered_cloth_head",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "tattered_cloth_head",
+    "mob_name": "a skeletal defender",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cap",
+    "item_hid": "tattered_cloth_head",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Cape",
+    "item_hid": "tattered_cloth_cape",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gloves",
+    "item_hid": "tattered_cloth_hand",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Gorget",
+    "item_hid": "tattered_cloth_neck",
+    "mob_name": "a skeletal deacon",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Mantle",
+    "item_hid": "tattered_cloth_shld",
+    "mob_name": "a skeletal vicar",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Pantaloons",
+    "item_hid": "tattered_cloth_legs",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Robe",
+    "item_hid": "tattered_cloth_robe",
+    "mob_name": "a skeletal knight",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal deacon",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a skeleton",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Cloth Tunic",
+    "item_hid": "tattered_cloth_vest",
+    "mob_name": "a wererat",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Belt",
+    "item_hid": "tattered_rawhide_belt",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Belt",
+    "item_hid": "tattered_rawhide_belt",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Belt",
+    "item_hid": "tattered_rawhide_belt",
+    "mob_name": "a wererat",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Boots",
+    "item_hid": "tattered_rawhide_feet",
+    "mob_name": "a skeletal archer",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Boots",
+    "item_hid": "tattered_rawhide_feet",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Bracer",
+    "item_hid": "tattered_rawhide_fore",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cap",
+    "item_hid": "tattered_rawhide_head",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Cloak",
+    "item_hid": "tattered_rawhide_cape",
+    "mob_name": "a Wyrmsbane crusader",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Gloves",
+    "item_hid": "tattered_rawhide_hand",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Gloves",
+    "item_hid": "tattered_rawhide_hand",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Leggings",
+    "item_hid": "tattered_rawhide_legs",
+    "mob_name": "a Bloodynose quarreler",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Leggings",
+    "item_hid": "tattered_rawhide_legs",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Mask",
+    "item_hid": "tattered_rawhide_face",
+    "mob_name": "a skeletal cavalier",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Shoulderpads",
+    "item_hid": "tattered_rawhide_shld",
+    "mob_name": "a risen zombie",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Shoulderpads",
+    "item_hid": "tattered_rawhide_shld",
+    "mob_name": "a skeletal marksman",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Rawhide Shoulderpads",
+    "item_hid": "tattered_rawhide_shld",
+    "mob_name": "a skeletal priest",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tattered Wool Mantle",
+    "item_hid": "tattered_wool_shld",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Tomato",
+    "item_hid": "24ecf5701eb7b4a0cc677f63",
+    "mob_name": "an enforcer",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Wool Scraps",
+    "item_hid": "wool_scraps",
+    "mob_name": "an ashira ain guard",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Buckler",
+    "item_hid": "worn_buckler_t1",
+    "mob_name": "an ashira scout",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Fine Wood Buckler",
+    "item_hid": "worn_buckler_t2",
+    "mob_name": "a sea witch",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Great Staff",
+    "item_hid": "worn_great_staff",
+    "mob_name": "a skeletal cleric",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Worn Great Staff",
+    "item_hid": "worn_great_staff",
+    "mob_name": "a skeletal monk",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Warrior Pelt",
+    "item_hid": "ashira_warrior_pelt",
+    "mob_name": "an ashira warrior",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bloodied Allegiance Cuff",
+    "item_hid": "f216d5ec592f89301e3ed505",
+    "mob_name": "a loyal protector",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a Bloodynose captain",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a burning skeleton",
+    "zone": "Ancient Crypt",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Carrioncaller",
+    "item_hid": "ip_fp_boneyard_beetle_necrof_cmn_mainhand_wis_25",
+    "mob_name": "Necroferius",
+    "zone": "Fallen Pass",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Celery",
+    "item_hid": "celery",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a grave mummy",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira alpha",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira ambusher",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira raider",
+    "zone": "Shaded Dunes",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira skinner",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an ashira warrior",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Ashira Meat",
+    "item_hid": "cooked_ash_meat",
+    "mob_name": "an ashira scout",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Goblin Meat",
+    "item_hid": "cooked_gob_meat",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Chain Gorget",
+    "item_hid": "rusty_bronze_chain_neck",
+    "mob_name": "an ashira huntmaster",
+    "zone": "Tel Ekir",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Great Scythe",
+    "item_hid": "rusty_bronze_scythe",
+    "mob_name": "a dusty skeleton",
+    "zone": "Fallen Pass",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Greatsword",
+    "item_hid": "631fa166fb822f33ef4217e3",
+    "mob_name": "a devotee",
+    "zone": "Night Harbor",
+    "observations": 2,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "4bd63c9adfb5348a4e0832e7",
+    "mob_name": "an enforcer",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Human Meat",
+    "item_hid": "0aba99615b57b2523938d9ae",
+    "mob_name": "a lawbreaker",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corrupted Leather Scraps",
+    "item_hid": "6dbc3517a0b9c9a94b5a2a94",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Raw Human Meat",
+    "item_hid": "0aba99615b57b2523938d9ae",
+    "mob_name": "a scoundrel",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Spirit Powder",
+    "item_hid": "12386012aa53063207fbdb30",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Wool Scraps",
+    "item_hid": "09a5d2baf931db48aee9cf9a",
+    "mob_name": "a lawbreaker",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ancient Rotting Wyrmsbane Gloves",
+    "item_hid": "wb_leather_hand",
+    "mob_name": "Grandmaster Obadiah",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Apoptosis Journal Page",
+    "item_hid": "dru_research_tier1_5",
+    "mob_name": "a skeletal warrior",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Tail",
+    "item_hid": "ashira_tail",
+    "mob_name": "an ashira bruiser",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Tail",
+    "item_hid": "ashira_tail",
+    "mob_name": "an ashira shaman",
+    "zone": "Shaded Dunes",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Ashira Warrior Bracer",
+    "item_hid": "ashira_war_fore",
+    "mob_name": "an ashira youngling",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bat Fur",
+    "item_hid": "bat_fur",
+    "mob_name": "a desert bat",
+    "zone": "Shaded Dunes",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bell Pepper",
+    "item_hid": "0f46da79dcec1962cf8551e8",
+    "mob_name": "a corrupted adept",
+    "zone": "valeofzintar",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bell Pepper",
+    "item_hid": "0f46da79dcec1962cf8551e8",
+    "mob_name": "a lawbreaker",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bell Pepper",
+    "item_hid": "0f46da79dcec1962cf8551e8",
+    "mob_name": "an enforcer",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bloodied Allegiance Cuff",
+    "item_hid": "nh_bends_tenhooks_bracer_broken",
+    "mob_name": "an enforcer",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bloodynose Goblin Ear",
+    "item_hid": "bloodynose_goblin_ear",
+    "mob_name": "a Bloodynose fumer",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "bronze_scraps",
+    "mob_name": "a gambling foreigner",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "4bd63c9adfb5348a4e0832e7",
+    "mob_name": "a lawbreaker",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "4bd63c9adfb5348a4e0832e7",
+    "mob_name": "a ransacker",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Bronze Scraps",
+    "item_hid": "4bd63c9adfb5348a4e0832e7",
+    "mob_name": "a smuggler",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Carrot",
+    "item_hid": "carrot",
+    "mob_name": "a grave robber",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Carrot",
+    "item_hid": "carrot",
+    "mob_name": "an ashira alpha",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Celery",
+    "item_hid": "celery",
+    "mob_name": "an ashira alpha",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cheese",
+    "item_hid": "2e56d4c09d5f796d029947ec",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cheese",
+    "item_hid": "2e56d4c09d5f796d029947ec",
+    "mob_name": "a thug",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Chipped Bloodstone",
+    "item_hid": "chipped_bloodstone",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Chipped Carnelian",
+    "item_hid": "chipped_carnelian",
+    "mob_name": "an exiled researcher",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Chipped Star Rose Quartz",
+    "item_hid": "chipped_star_rose_quartz",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Chipped Topaz",
+    "item_hid": "chipped_topaz",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Chipped Turquoise",
+    "item_hid": "chipped_turquoise",
+    "mob_name": "a smarmy hunter",
+    "zone": "Sungreet Strand",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "Quartermaster Boothroy",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Bloodynose scarer",
+    "zone": "Sungreet Strand",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Bloodynose scarer",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a Bloodynose witch doctor",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "a zombie provisioner",
+    "zone": "Tomb of the Last Wyrmsbane",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cloth Scraps",
+    "item_hid": "cloth_scraps",
+    "mob_name": "an exiled researcher",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Human Meat",
+    "item_hid": "cooked_hum_meat",
+    "mob_name": "a hired thug",
+    "zone": "Sungreet Strand",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Cooked Jackal Meat",
+    "item_hid": "cooked_jackal_meat",
+    "mob_name": "a diseased jackal",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Chain Gambeson",
+    "item_hid": "1f34a9d325689320ef16fca7",
+    "mob_name": "a ransacker",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Chain Mask",
+    "item_hid": "rusty_bronze_chain_face",
+    "mob_name": "a Bloodynose sergeant",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Chain Mask",
+    "item_hid": "55d1a8395651f2c1080a93f5",
+    "mob_name": "a corrupted ashira",
+    "zone": "valeofzintar",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Chain Mask",
+    "item_hid": "55d1a8395651f2c1080a93f5",
+    "mob_name": "a loyal protector",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Great Scythe",
+    "item_hid": "rusty_bronze_scythe",
+    "mob_name": "an ashira bruiser",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Greatsword",
+    "item_hid": "rusty_bronze_2sword",
+    "mob_name": "a Bloodynose frightener",
+    "zone": "Tel Ekir",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Long Spear",
+    "item_hid": "rusty_bronze_2spear",
+    "mob_name": "a loyal protector",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Long Spear",
+    "item_hid": "59e3ceecc85569abc004fe55",
+    "mob_name": "a smuggler",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Longsword",
+    "item_hid": "rusty_bronze_lsword",
+    "mob_name": "a goon",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Longsword",
+    "item_hid": "766d1c24ab2c35bec955270d",
+    "mob_name": "a sellsword",
+    "zone": "Night Harbor",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Mace",
+    "item_hid": "rusty_bronze_mace",
+    "mob_name": "a cultist",
+    "zone": "Shaded Dunes",
+    "observations": 1,
+    "contributors": 1
+  },
+  {
+    "item_name": "Corroded Bronze Maul",
+    "item_hid": "f56eeb59d2d04886adb56685",
+    "mob_name": "a corrupted adept",
+    "zone": "valeofzintar",
+    "observations": 1,
+    "contributors": 1
+  }
+]

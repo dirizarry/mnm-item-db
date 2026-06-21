@@ -1,0 +1,216 @@
+{
+  "id": "wyrmsbane-tomb",
+  "name": "Tomb of the Last Wyrmsbane",
+  "credit": "Room shapes traced from chazsolo isometric",
+  "refImage": "ref/chazsolo-wyrmsbane.png",
+  "refPlane": { "width": 48, "depth": 36, "y": -0.02 },
+  "storageKey": "mnm-maps-wyrmsbane-3d-layout-v1",
+  "rooms": [
+    {
+      "id": "gildas-wing",
+      "name": "Grandmaster Gildas hall",
+      "poi": "Grandmaster Gildas",
+      "color": "#4a6a9a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 12, "h": 0.35, "d": 7 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 12, "h": 2.2, "d": 0.35 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 6.65, "w": 12, "h": 2.2, "d": 0.35 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 0.35, "h": 2.2, "d": 7 },
+        { "t": "wall", "x": 11.65, "y": 0.35, "z": 0, "w": 0.35, "h": 2.2, "d": 7 },
+        { "t": "pillar", "x": 2.5, "y": 0.35, "z": 2, "w": 0.7, "h": 2.8, "d": 0.7 },
+        { "t": "pillar", "x": 5.5, "y": 0.35, "z": 2, "w": 0.7, "h": 2.8, "d": 0.7 },
+        { "t": "pillar", "x": 8.5, "y": 0.35, "z": 2, "w": 0.7, "h": 2.8, "d": 0.7 },
+        { "t": "pillar", "x": 2.5, "y": 0.35, "z": 4.5, "w": 0.7, "h": 2.8, "d": 0.7 },
+        { "t": "pillar", "x": 5.5, "y": 0.35, "z": 4.5, "w": 0.7, "h": 2.8, "d": 0.7 },
+        { "t": "pillar", "x": 8.5, "y": 0.35, "z": 4.5, "w": 0.7, "h": 2.8, "d": 0.7 }
+      ]
+    },
+    {
+      "id": "gregan-hall",
+      "name": "Lt. Gregan Snyde hall",
+      "poi": "Lieutenant Gregan Snyde",
+      "color": "#9a7ad4",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 13, "h": 0.35, "d": 6.5 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 13, "h": 2.4, "d": 0.35 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 6.15, "w": 13, "h": 2.4, "d": 0.35 },
+        { "t": "pillar", "x": 2, "y": 0.35, "z": 1.8, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 4.5, "y": 0.35, "z": 1.8, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 7, "y": 0.35, "z": 1.8, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 9.5, "y": 0.35, "z": 1.8, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 2, "y": 0.35, "z": 4.2, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 4.5, "y": 0.35, "z": 4.2, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 7, "y": 0.35, "z": 4.2, "w": 0.65, "h": 2.6, "d": 0.65 },
+        { "t": "pillar", "x": 9.5, "y": 0.35, "z": 4.2, "w": 0.65, "h": 2.6, "d": 0.65 }
+      ]
+    },
+    {
+      "id": "fiona-obadiah",
+      "name": "Fiona & Obadiah wing",
+      "poi": "Fionna · Obadiah",
+      "color": "#7a5a9a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 9, "h": 0.35, "d": 8 },
+        { "t": "slab", "x": 9.5, "y": 0, "z": 1, "w": 4, "h": 0.35, "d": 5 },
+        { "t": "slab", "x": -4, "y": 0, "z": 2, "w": 4, "h": 0.35, "d": 4 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 9, "h": 2, "d": 0.3 },
+        { "t": "wall", "x": 3, "y": 0.35, "z": 7.7, "w": 3, "h": 2.2, "d": 0.3 },
+        { "t": "pool", "x": 3.5, "y": 0.36, "z": 3, "w": 2.5, "h": 0.1, "d": 2.5 }
+      ]
+    },
+    {
+      "id": "gerhardt",
+      "name": "Gerhardt Graves",
+      "poi": "Gerhardt Graves",
+      "color": "#5eb8c9",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 7.5, "h": 0.35, "d": 5.5 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 7.5, "h": 2, "d": 0.3 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 5.2, "w": 7.5, "h": 2, "d": 0.3 },
+        { "t": "pillar", "x": 2, "y": 0.35, "z": 2, "w": 0.6, "h": 2.2, "d": 0.6 },
+        { "t": "pillar", "x": 5, "y": 0.35, "z": 2, "w": 0.6, "h": 2.2, "d": 0.6 },
+        { "t": "pool", "x": 2.5, "y": 0.36, "z": 3.2, "w": 2, "h": 0.08, "d": 1.5 }
+      ]
+    },
+    {
+      "id": "bone-construct",
+      "name": "Bone Construct",
+      "poi": "Bone Construct",
+      "color": "#3a9aaa",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 6.5, "h": 0.35, "d": 5 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 6.5, "h": 2.2, "d": 0.3 },
+        { "t": "pillar", "x": 1.2, "y": 0.35, "z": 1.2, "w": 0.55, "h": 2.4, "d": 0.55 },
+        { "t": "pillar", "x": 4.8, "y": 0.35, "z": 1.2, "w": 0.55, "h": 2.4, "d": 0.55 },
+        { "t": "pillar", "x": 1.2, "y": 0.35, "z": 3.5, "w": 0.55, "h": 2.4, "d": 0.55 },
+        { "t": "pillar", "x": 4.8, "y": 0.35, "z": 3.5, "w": 0.55, "h": 2.4, "d": 0.55 },
+        { "t": "pool", "x": 2.5, "y": 0.36, "z": 2.2, "w": 1.5, "h": 0.12, "d": 1.5 }
+      ]
+    },
+    {
+      "id": "timmon-complex",
+      "name": "Timmon Bell complex",
+      "poi": "Timmon Bell",
+      "color": "#c87830",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 10, "h": 0.35, "d": 8 },
+        { "t": "slab", "x": -3, "y": 0, "z": 6, "w": 4, "h": 0.35, "d": 3 },
+        { "t": "slab", "x": 8, "y": 0, "z": 5, "w": 3.5, "h": 0.35, "d": 4 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 10, "h": 2, "d": 0.3 },
+        { "t": "altar", "x": 4, "y": 0.35, "z": 3.5, "w": 2, "h": 0.8, "d": 1.2 }
+      ]
+    },
+    {
+      "id": "crypt-hub",
+      "name": "Ancient Crypt hub",
+      "poi": "QM · Jakob · Crypt",
+      "color": "#8a7a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 11, "h": 0.35, "d": 7.5 },
+        { "t": "slab", "x": 8, "y": 0, "z": -3, "w": 4, "h": 0.35, "d": 3 },
+        { "t": "slab", "x": -3, "y": 0, "z": 2, "w": 3, "h": 0.35, "d": 4 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 11, "h": 2, "d": 0.3 },
+        { "t": "wall", "x": 8, "y": 0.35, "z": -3, "w": 4, "h": 1.8, "d": 0.3 }
+      ]
+    },
+    {
+      "id": "night-harbor",
+      "name": "Night Harbor entrance",
+      "poi": "Night Harbor",
+      "color": "#b89040",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 8, "h": 0.3, "d": 6 },
+        { "t": "slab", "x": 2, "y": 0, "z": 5, "w": 5, "h": 0.25, "d": 4 },
+        { "t": "wall", "x": 0, "y": 0.3, "z": 0, "w": 8, "h": 3, "d": 0.4 },
+        { "t": "wall", "x": 0, "y": 0.3, "z": 0, "w": 0.4, "h": 3, "d": 6 },
+        { "t": "arch", "x": 3, "y": 0.3, "z": 5.5, "w": 3, "h": 2.5, "d": 0.5 }
+      ]
+    },
+    {
+      "id": "ariblast-wing",
+      "name": "Ariblast the Wicked",
+      "poi": "Ariblast",
+      "color": "#4a8a9a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 10, "h": 0.35, "d": 9 },
+        { "t": "slab", "x": 2, "y": 2.5, "z": 2, "w": 6, "h": 0.3, "d": 5 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 10, "h": 2.5, "d": 0.35 },
+        { "t": "stairs", "x": 4, "y": 0.35, "z": 6, "w": 2, "h": 2.5, "d": 2.5 },
+        { "t": "pillar", "x": 2, "y": 0.35, "z": 2, "w": 0.6, "h": 2.2, "d": 0.6 },
+        { "t": "pillar", "x": 7, "y": 0.35, "z": 2, "w": 0.6, "h": 2.2, "d": 0.6 },
+        { "t": "pool", "x": 3.5, "y": 0.36, "z": 4, "w": 3, "h": 0.1, "d": 2 }
+      ]
+    },
+    {
+      "id": "dario-room",
+      "name": "Dario Numas",
+      "poi": "Dario Numas",
+      "color": "#5eb8c9",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 5, "h": 0.35, "d": 4.5 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 5, "h": 2, "d": 0.3 },
+        { "t": "wall", "x": 0, "y": 0.35, "z": 0, "w": 0.3, "h": 2, "d": 4.5 },
+        { "t": "wall", "x": 4.7, "y": 0.35, "z": 0, "w": 0.3, "h": 2, "d": 4.5 }
+      ]
+    },
+    {
+      "id": "link-upper-mid",
+      "name": "Corridor (upper)",
+      "color": "#5a5a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 5, "h": 0.25, "d": 2 },
+        { "t": "wall", "x": 0, "y": 0.25, "z": 0, "w": 5, "h": 1.6, "d": 0.25 },
+        { "t": "wall", "x": 0, "y": 0.25, "z": 1.75, "w": 5, "h": 1.6, "d": 0.25 }
+      ]
+    },
+    {
+      "id": "link-mid-left",
+      "name": "Corridor (mid-left)",
+      "color": "#5a5a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 9, "h": 0.25, "d": 2.2 },
+        { "t": "wall", "x": 0, "y": 0.25, "z": 0, "w": 9, "h": 1.5, "d": 0.25 }
+      ]
+    },
+    {
+      "id": "link-mid-center",
+      "name": "Corridor (center)",
+      "color": "#5a5a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 2.2, "h": 0.25, "d": 5.5 },
+        { "t": "wall", "x": 0, "y": 0.25, "z": 0, "w": 0.25, "h": 1.5, "d": 5.5 },
+        { "t": "wall", "x": 1.95, "y": 0.25, "z": 0, "w": 0.25, "h": 1.5, "d": 5.5 }
+      ]
+    },
+    {
+      "id": "link-crypt-rise",
+      "name": "Corridor (to Ariblast)",
+      "color": "#5a5a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 2, "h": 0.25, "d": 11 },
+        { "t": "stairs", "x": 0, "y": 0.25, "z": 4, "w": 2, "h": 3, "d": 3 }
+      ]
+    },
+    {
+      "id": "link-timmon-crypt",
+      "name": "Corridor (Timmon ↔ Crypt)",
+      "color": "#5a5a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 5.5, "h": 0.25, "d": 2 }
+      ]
+    },
+    {
+      "id": "link-dario-drop",
+      "name": "Corridor (Dario descent)",
+      "color": "#5a5a5a",
+      "parts": [
+        { "t": "slab", "x": 0, "y": 0, "z": 0, "w": 2, "h": 0.25, "d": 5.5 },
+        { "t": "stairs", "x": 0, "y": 0.25, "z": 2, "w": 2, "h": 2.5, "d": 2.5 }
+      ]
+    }
+  ],
+  "scatter": {
+    "spread": 28,
+    "yRange": [0, 8]
+  }
+}

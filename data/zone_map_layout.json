@@ -1,0 +1,23 @@
+{
+  "region": "Szuur (approximate)",
+  "zones": {
+    "Night Harbor": { "x": 0.12, "y": 0.62, "w": 0.18, "h": 0.14 },
+    "Fallen Pass": { "x": 0.32, "y": 0.48, "w": 0.16, "h": 0.12 },
+    "Shaded Dunes": { "x": 0.50, "y": 0.55, "w": 0.14, "h": 0.11 },
+    "Sungreet Strand": { "x": 0.66, "y": 0.58, "w": 0.14, "h": 0.10 },
+    "Tel Ekir": { "x": 0.78, "y": 0.42, "w": 0.14, "h": 0.12 },
+    "Ancient Crypt": { "x": 0.08, "y": 0.42, "w": 0.12, "h": 0.10 },
+    "Tomb of the Last Wyrmsbane": { "x": 0.22, "y": 0.28, "w": 0.20, "h": 0.14 },
+    "Infested Crypt": { "x": 0.10, "y": 0.30, "w": 0.10, "h": 0.08 },
+    "Glass Flats": { "x": 0.44, "y": 0.72, "w": 0.16, "h": 0.12 },
+    "Evershade Weald": { "x": 0.58, "y": 0.35, "w": 0.14, "h": 0.12 },
+    "Keeper's Bight": { "x": 0.04, "y": 0.78, "w": 0.12, "h": 0.10 },
+    "Scarwood": { "x": 0.70, "y": 0.72, "w": 0.12, "h": 0.10 },
+    "Shallow Shoals": { "x": 0.82, "y": 0.68, "w": 0.12, "h": 0.10 },
+    "Vale of Zintar": { "x": 0.86, "y": 0.28, "w": 0.12, "h": 0.12 },
+    "Blacktide Bay": { "x": 0.36, "y": 0.82, "w": 0.14, "h": 0.08 },
+    "Faelindral": { "x": 0.52, "y": 0.22, "w": 0.12, "h": 0.10 },
+    "Glinting Hollow": { "x": 0.64, "y": 0.18, "w": 0.10, "h": 0.08 },
+    "Grain Cellar": { "x": 0.18, "y": 0.48, "w": 0.08, "h": 0.06 }
+  }
+}

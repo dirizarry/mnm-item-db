@@ -1,0 +1,196 @@
+{
+  "id": "wyrmsbane-tomb",
+  "name": "Tomb of the Last Wyrmsbane",
+  "region": "Szuur",
+  "type": "dungeon",
+  "sources": ["HOGS v0.5.2.1", "Walabus", "chazsolo"],
+  "floorGap": 6,
+  "floors": [
+    {
+      "id": "f0",
+      "name": "Surface exit",
+      "label": "Zone line",
+      "color": "#8b6914",
+      "rooms": [
+        { "id": "nh-exit", "name": "Night Harbor (A)", "x": -4, "z": 6, "w": 8, "d": 4, "h": 0.3 }
+      ]
+    },
+    {
+      "id": "f1",
+      "name": "Entrance wing",
+      "label": "1F · Easy loot",
+      "color": "#c87830",
+      "rooms": [
+        { "id": "entry-stairs", "name": "Entry stairs", "x": -3, "z": 4, "w": 6, "d": 3, "h": 0.4 },
+        { "id": "main-hall", "name": "Main hall", "x": -5, "z": -2, "w": 10, "d": 8, "h": 0.5 },
+        { "id": "fork", "name": "Fork room", "x": -2, "z": -8, "w": 5, "d": 4, "h": 0.5 },
+        { "id": "pit-plank", "name": "Plank (trap B)", "x": 4, "z": -4, "w": 3, "d": 3, "h": 0.3 },
+        { "id": "pit-recovery", "name": "Recovery (C)", "x": 7, "z": -7, "w": 3, "d": 3, "h": 0.3 },
+        { "id": "qm", "name": "Quartermaster", "x": 8, "z": -2, "w": 5, "d": 4, "h": 0.6 },
+        { "id": "jakob", "name": "Jakob (cloth)", "x": 14, "z": -2, "w": 5, "d": 4, "h": 0.6 }
+      ]
+    },
+    {
+      "id": "f2",
+      "name": "Arena wing",
+      "label": "2F · Mixed",
+      "color": "#3a8a9a",
+      "rooms": [
+        { "id": "timmon", "name": "Timmon (cloth)", "x": -16, "z": 0, "w": 7, "d": 6, "h": 0.6 },
+        { "id": "arena", "name": "Arena hall", "x": -6, "z": -4, "w": 14, "d": 12, "h": 0.5 },
+        { "id": "arena-pit", "name": "Arena pit (K)", "x": 0, "z": 2, "w": 4, "d": 4, "h": 0.2 },
+        { "id": "arena-recovery", "name": "Arena recovery (L)", "x": -4, "z": 6, "w": 4, "d": 3, "h": 0.3 },
+        { "id": "bone", "name": "Bone Construct", "x": -2, "z": -14, "w": 8, "d": 6, "h": 0.7 },
+        { "id": "gregan", "name": "Lt. Gregan (plate)", "x": 12, "z": -4, "w": 7, "d": 6, "h": 0.7 },
+        { "id": "beetle", "name": "Beetle room", "x": -14, "z": 10, "w": 6, "d": 5, "h": 0.5 },
+        { "id": "fw-hidden", "name": "Fallen Watch (M)", "x": 2, "z": -18, "w": 5, "d": 3, "h": 0.4 }
+      ]
+    },
+    {
+      "id": "f3",
+      "name": "Chain wing",
+      "label": "3F · Chain",
+      "color": "#2d7a8c",
+      "rooms": [
+        { "id": "overpass", "name": "Overpass landing (F)", "x": -6, "z": 0, "w": 5, "d": 5, "h": 0.5 },
+        { "id": "gerhardt", "name": "Gerhardt Graves", "x": -16, "z": -2, "w": 8, "d": 7, "h": 0.7 },
+        { "id": "dario", "name": "Dario (chain)", "x": 10, "z": 0, "w": 7, "d": 6, "h": 0.7 },
+        { "id": "ariblast", "name": "Ariblast", "x": 14, "z": 8, "w": 6, "d": 5, "h": 0.6 }
+      ]
+    },
+    {
+      "id": "f4",
+      "name": "Plate & leather",
+      "label": "4F · Plate & leather",
+      "color": "#4a6a9a",
+      "rooms": [
+        { "id": "fiona", "name": "Fiona (plate)", "x": -4, "z": -2, "w": 10, "d": 8, "h": 0.7 },
+        { "id": "gildas", "name": "Grandmaster Gildas", "x": -3, "z": -14, "w": 8, "d": 6, "h": 0.7 },
+        { "id": "obadiah", "name": "Grandmaster Obadiah", "x": -3, "z": 8, "w": 8, "d": 6, "h": 0.7 },
+        { "id": "coffin-pit", "name": "Coffin pit (N)", "x": 8, "z": 0, "w": 4, "d": 4, "h": 0.3 }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "A",
+      "type": "zone_line",
+      "label": "Night Harbor",
+      "from": { "floor": "f0", "room": "nh-exit" },
+      "to": { "floor": "f1", "room": "entry-stairs" }
+    },
+    {
+      "id": "B",
+      "type": "pit_trap",
+      "label": "Plank pit trap",
+      "from": { "floor": "f1", "room": "pit-plank" },
+      "to": { "floor": "f1", "room": "pit-recovery" }
+    },
+    {
+      "id": "D",
+      "type": "stair",
+      "label": "Stair — Arena ↔ Timmon",
+      "from": { "floor": "f2", "room": "arena" },
+      "to": { "floor": "f2", "room": "timmon" }
+    },
+    {
+      "id": "E",
+      "type": "stair",
+      "label": "Stair — Arena ↔ Gregan",
+      "from": { "floor": "f2", "room": "arena" },
+      "to": { "floor": "f2", "room": "gregan" }
+    },
+    {
+      "id": "F",
+      "type": "overpass",
+      "label": "Overpass to Dario",
+      "from": { "floor": "f2", "room": "gregan" },
+      "to": { "floor": "f3", "room": "overpass" }
+    },
+    {
+      "id": "G",
+      "type": "stair",
+      "label": "Stair — Dario ↔ Fiona",
+      "from": { "floor": "f3", "room": "dario" },
+      "to": { "floor": "f4", "room": "fiona" }
+    },
+    {
+      "id": "J",
+      "type": "stair_down",
+      "label": "Stair down to Grandmasters",
+      "from": { "floor": "f4", "room": "fiona" },
+      "to": { "floor": "f4", "room": "gildas" }
+    },
+    {
+      "id": "K",
+      "type": "pit_trap",
+      "label": "Arena pit trap",
+      "from": { "floor": "f2", "room": "arena-pit" },
+      "to": { "floor": "f2", "room": "arena-recovery" }
+    },
+    {
+      "id": "M",
+      "type": "zone_line",
+      "label": "Fallen Watch (hidden above hallway)",
+      "from": { "floor": "f2", "room": "fw-hidden" },
+      "to": null,
+      "external": "Fallen Watch"
+    },
+    {
+      "id": "N",
+      "type": "pit_trap",
+      "label": "Coffin pit → caves / Zintar",
+      "from": { "floor": "f4", "room": "coffin-pit" },
+      "to": null,
+      "external": "Unfinished caves"
+    },
+    {
+      "id": "O",
+      "type": "tunnel",
+      "label": "Hidden one-way tunnel → Timmon",
+      "from": { "floor": "f1", "room": "fork" },
+      "to": { "floor": "f2", "room": "timmon" },
+      "oneWay": true
+    },
+    {
+      "id": "hub-12",
+      "type": "stair",
+      "label": "Main stairs — Entrance → Arena",
+      "from": { "floor": "f1", "room": "fork" },
+      "to": { "floor": "f2", "room": "arena" }
+    }
+  ],
+  "pois": [
+    { "id": "poi-qm", "num": 2, "name": "Quartermaster Boothroy", "floor": "f1", "room": "qm", "loot": null, "role": "vendor" },
+    { "id": "poi-jakob", "num": 3, "name": "Jakob Geffrey", "floor": "f1", "room": "jakob", "loot": "cloth", "role": "boss" },
+    { "id": "poi-timmon", "num": 4, "name": "Timmon Bell", "floor": "f2", "room": "timmon", "loot": "cloth", "role": "boss" },
+    { "id": "poi-bone", "num": 5, "name": "Bone Construct", "floor": "f2", "room": "bone", "loot": "chain", "role": "boss" },
+    { "id": "poi-gregan", "num": 6, "name": "Lt. Gregan Snyde", "floor": "f2", "room": "gregan", "loot": "plate", "role": "boss" },
+    { "id": "poi-dario", "num": 7, "name": "Dario Numas", "floor": "f3", "room": "dario", "loot": "chain", "role": "boss" },
+    { "id": "poi-gildas", "num": 8, "name": "Grandmaster Gildas", "floor": "f4", "room": "gildas", "loot": "leather", "role": "boss" },
+    { "id": "poi-obadiah", "num": 9, "name": "Grandmaster Obadiah", "floor": "f4", "room": "obadiah", "loot": "leather", "role": "boss" },
+    { "id": "poi-fiona", "num": 10, "name": "High Marshal Fionna", "floor": "f4", "room": "fiona", "loot": "plate", "role": "boss" },
+    { "id": "poi-gerhardt", "num": 11, "name": "Gerhardt Graves", "floor": "f3", "room": "gerhardt", "loot": "chain", "role": "boss" },
+    { "id": "poi-ariblast", "num": 12, "name": "Ariblast the Wicked", "floor": "f3", "room": "ariblast", "loot": null, "role": "boss" }
+  ],
+  "routes": [
+    {
+      "id": "plate-farm",
+      "name": "Plate loop (Gregan → Fiona)",
+      "stops": ["poi-gregan", "poi-fiona"],
+      "note": "Take overpass F up, stair G to Fiona wing"
+    },
+    {
+      "id": "leather-farm",
+      "name": "Leather loop (both Grandmasters)",
+      "stops": ["poi-gildas", "poi-obadiah"],
+      "note": "From Fiona, stair J branches to north/south GM rooms"
+    },
+    {
+      "id": "chain-farm",
+      "name": "Chain loop (Dario → Gerhardt)",
+      "stops": ["poi-dario", "poi-gerhardt"],
+      "note": "3F chain wing — enter via overpass F from Gregan"
+    }
+  ]
+}

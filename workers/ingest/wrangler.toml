@@ -1,0 +1,32 @@
+# Cloudflare Worker: minimal ledger ingest endpoint (Phase A, no accounts).
+#   npm i -g wrangler
+#   cd workers/ingest && wrangler deploy
+#
+# After deploy, point clients at it:
+#   MNM_UPLOAD_URL=https://mnm-ingest.<your-subdomain>.workers.dev/api/ledger/v1/ingest
+
+name = "mnm-ingest"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+
+# Raw upload payloads land here (one object per submission).
+[[r2_buckets]]
+binding = "PAYLOADS"
+bucket_name = "mnm-ledger-payloads"
+
+# Lightweight per-install rate-limit counters.
+[[kv_namespaces]]
+binding = "RATE"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+# Max accepted payload size in bytes (2 MB).
+MAX_BYTES = "2000000"
+# Submissions allowed per install per hour.
+RATE_PER_HOUR = "30"
+# Set ALLOW_ANONYMOUS = "0" and configure INGEST_TOKEN (secret) to require a token.
+ALLOW_ANONYMOUS = "1"
+
+# Optional shared secret. Set with: wrangler secret put INGEST_TOKEN
+# [secrets]
+# INGEST_TOKEN

@@ -1,0 +1,1021 @@
+{
+  "version": 1,
+  "channel_count": 106,
+  "channels": {
+    "AbilityHitBenefitMine": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": true,
+      "damage": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "AbilityHitBenefitMine",
+      "family": "AbilityHitBenefit",
+      "suffix": "Mine"
+    },
+    "AbilityHitBenefitOther": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": true,
+      "damage": true,
+      "perspective": "other",
+      "channel": "AbilityHitBenefitOther",
+      "family": "AbilityHitBenefit",
+      "suffix": "Other"
+    },
+    "AbilityHitBenefitOtherPlayer": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": true,
+      "damage": true,
+      "perspective": "other_player",
+      "channel": "AbilityHitBenefitOtherPlayer",
+      "family": "AbilityHitBenefit",
+      "suffix": "OtherPlayer"
+    },
+    "AbilityHitBenefitPet": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": true,
+      "damage": true,
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "AbilityHitBenefitPet",
+      "family": "AbilityHitBenefit",
+      "suffix": "Pet"
+    },
+    "AbilityHitBenefitVictim": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": true,
+      "damage": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "AbilityHitBenefitVictim",
+      "family": "AbilityHitBenefit",
+      "suffix": "Victim"
+    },
+    "AbilityHitDetrimentMine": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": false,
+      "damage": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "AbilityHitDetrimentMine",
+      "family": "AbilityHitDetriment",
+      "suffix": "Mine"
+    },
+    "AbilityHitDetrimentOther": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": false,
+      "damage": true,
+      "perspective": "other",
+      "channel": "AbilityHitDetrimentOther",
+      "family": "AbilityHitDetriment",
+      "suffix": "Other"
+    },
+    "AbilityHitDetrimentOtherPlayer": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": false,
+      "damage": true,
+      "perspective": "other_player",
+      "channel": "AbilityHitDetrimentOtherPlayer",
+      "family": "AbilityHitDetriment",
+      "suffix": "OtherPlayer"
+    },
+    "AbilityHitDetrimentPet": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": false,
+      "damage": true,
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "AbilityHitDetrimentPet",
+      "family": "AbilityHitDetriment",
+      "suffix": "Pet"
+    },
+    "AbilityHitDetrimentVictim": {
+      "category": "ability",
+      "subcategory": "hit",
+      "benefit": false,
+      "damage": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "AbilityHitDetrimentVictim",
+      "family": "AbilityHitDetriment",
+      "suffix": "Victim"
+    },
+    "AbilityMine": {
+      "category": "ability",
+      "subcategory": "cast",
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "AbilityMine",
+      "family": "Ability",
+      "suffix": "Mine"
+    },
+    "AbilityMissMine": {
+      "category": "ability",
+      "subcategory": "miss",
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "AbilityMissMine",
+      "family": "AbilityMiss",
+      "suffix": "Mine"
+    },
+    "AbilityMissOther": {
+      "category": "ability",
+      "subcategory": "miss",
+      "perspective": "other",
+      "channel": "AbilityMissOther",
+      "family": "AbilityMiss",
+      "suffix": "Other"
+    },
+    "AbilityMissOtherPlayer": {
+      "category": "ability",
+      "subcategory": "miss",
+      "perspective": "other_player",
+      "channel": "AbilityMissOtherPlayer",
+      "family": "AbilityMiss",
+      "suffix": "OtherPlayer"
+    },
+    "AbilityMissPet": {
+      "category": "ability",
+      "subcategory": "miss",
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "AbilityMissPet",
+      "family": "AbilityMiss",
+      "suffix": "Pet"
+    },
+    "AbilityMissVictim": {
+      "category": "ability",
+      "subcategory": "miss",
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "AbilityMissVictim",
+      "family": "AbilityMiss",
+      "suffix": "Victim"
+    },
+    "AbilityOther": {
+      "category": "ability",
+      "subcategory": "cast",
+      "perspective": "other",
+      "channel": "AbilityOther",
+      "family": "Ability",
+      "suffix": "Other"
+    },
+    "AbilityOtherPlayer": {
+      "category": "ability",
+      "subcategory": "cast",
+      "perspective": "other_player",
+      "channel": "AbilityOtherPlayer",
+      "family": "Ability",
+      "suffix": "OtherPlayer"
+    },
+    "AbilityPet": {
+      "category": "ability",
+      "subcategory": "cast",
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "AbilityPet",
+      "family": "Ability",
+      "suffix": "Pet"
+    },
+    "AbilityResistMine": {
+      "category": "ability",
+      "subcategory": "resist",
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "AbilityResistMine",
+      "family": "AbilityResist",
+      "suffix": "Mine"
+    },
+    "AbilityResistOther": {
+      "category": "ability",
+      "subcategory": "resist",
+      "perspective": "other",
+      "channel": "AbilityResistOther",
+      "family": "AbilityResist",
+      "suffix": "Other"
+    },
+    "AbilityResistOtherPlayer": {
+      "category": "ability",
+      "subcategory": "resist",
+      "perspective": "other_player",
+      "channel": "AbilityResistOtherPlayer",
+      "family": "AbilityResist",
+      "suffix": "OtherPlayer"
+    },
+    "AbilityResistPet": {
+      "category": "ability",
+      "subcategory": "resist",
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "AbilityResistPet",
+      "family": "AbilityResist",
+      "suffix": "Pet"
+    },
+    "AbilityResistVictim": {
+      "category": "ability",
+      "subcategory": "resist",
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "AbilityResistVictim",
+      "family": "AbilityResist",
+      "suffix": "Victim"
+    },
+    "AbilityStatus": {
+      "category": "ability",
+      "subcategory": "status",
+      "channel": "AbilityStatus",
+      "family": "AbilityStatus",
+      "suffix": null
+    },
+    "Action": {
+      "category": "action",
+      "subcategory": "misc",
+      "channel": "Action",
+      "family": "Action",
+      "suffix": null
+    },
+    "Auction": {
+      "category": "unknown",
+      "subcategory": "Auction",
+      "channel": "Auction",
+      "family": "Auction",
+      "suffix": null
+    },
+    "BuffApplyBenefitMine": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "BuffApplyBenefitMine",
+      "family": "BuffApplyBenefit",
+      "suffix": "Mine"
+    },
+    "BuffApplyBenefitOther": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": true,
+      "perspective": "other",
+      "channel": "BuffApplyBenefitOther",
+      "family": "BuffApplyBenefit",
+      "suffix": "Other"
+    },
+    "BuffApplyBenefitOtherPlayer": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": true,
+      "perspective": "other_player",
+      "channel": "BuffApplyBenefitOtherPlayer",
+      "family": "BuffApplyBenefit",
+      "suffix": "OtherPlayer"
+    },
+    "BuffApplyBenefitVictim": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "BuffApplyBenefitVictim",
+      "family": "BuffApplyBenefit",
+      "suffix": "Victim"
+    },
+    "BuffApplyDetrimentMine": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": false,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "BuffApplyDetrimentMine",
+      "family": "BuffApplyDetriment",
+      "suffix": "Mine"
+    },
+    "BuffApplyDetrimentOther": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": false,
+      "perspective": "other",
+      "channel": "BuffApplyDetrimentOther",
+      "family": "BuffApplyDetriment",
+      "suffix": "Other"
+    },
+    "BuffApplyDetrimentOtherPlayer": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": false,
+      "perspective": "other_player",
+      "channel": "BuffApplyDetrimentOtherPlayer",
+      "family": "BuffApplyDetriment",
+      "suffix": "OtherPlayer"
+    },
+    "BuffApplyDetrimentVictim": {
+      "category": "buff",
+      "subcategory": "apply",
+      "benefit": false,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "BuffApplyDetrimentVictim",
+      "family": "BuffApplyDetriment",
+      "suffix": "Victim"
+    },
+    "BuffFadeBenefitMine": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "BuffFadeBenefitMine",
+      "family": "BuffFadeBenefit",
+      "suffix": "Mine"
+    },
+    "BuffFadeBenefitOther": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": true,
+      "perspective": "other",
+      "channel": "BuffFadeBenefitOther",
+      "family": "BuffFadeBenefit",
+      "suffix": "Other"
+    },
+    "BuffFadeBenefitOtherPlayer": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": true,
+      "perspective": "other_player",
+      "channel": "BuffFadeBenefitOtherPlayer",
+      "family": "BuffFadeBenefit",
+      "suffix": "OtherPlayer"
+    },
+    "BuffFadeBenefitVictim": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "BuffFadeBenefitVictim",
+      "family": "BuffFadeBenefit",
+      "suffix": "Victim"
+    },
+    "BuffFadeDetrimentMine": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": false,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "BuffFadeDetrimentMine",
+      "family": "BuffFadeDetriment",
+      "suffix": "Mine"
+    },
+    "BuffFadeDetrimentOther": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": false,
+      "perspective": "other",
+      "channel": "BuffFadeDetrimentOther",
+      "family": "BuffFadeDetriment",
+      "suffix": "Other"
+    },
+    "BuffFadeDetrimentOtherPlayer": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": false,
+      "perspective": "other_player",
+      "channel": "BuffFadeDetrimentOtherPlayer",
+      "family": "BuffFadeDetriment",
+      "suffix": "OtherPlayer"
+    },
+    "BuffFadeDetrimentVictim": {
+      "category": "buff",
+      "subcategory": "fade",
+      "benefit": false,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "BuffFadeDetrimentVictim",
+      "family": "BuffFadeDetriment",
+      "suffix": "Victim"
+    },
+    "BuffTickBenefitMine": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "BuffTickBenefitMine",
+      "family": "BuffTickBenefit",
+      "suffix": "Mine"
+    },
+    "BuffTickBenefitOther": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": true,
+      "perspective": "other",
+      "channel": "BuffTickBenefitOther",
+      "family": "BuffTickBenefit",
+      "suffix": "Other"
+    },
+    "BuffTickBenefitOtherPlayer": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": true,
+      "perspective": "other_player",
+      "channel": "BuffTickBenefitOtherPlayer",
+      "family": "BuffTickBenefit",
+      "suffix": "OtherPlayer"
+    },
+    "BuffTickBenefitVictim": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "BuffTickBenefitVictim",
+      "family": "BuffTickBenefit",
+      "suffix": "Victim"
+    },
+    "BuffTickDetrimentMine": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": false,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "BuffTickDetrimentMine",
+      "family": "BuffTickDetriment",
+      "suffix": "Mine"
+    },
+    "BuffTickDetrimentOther": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": false,
+      "perspective": "other",
+      "channel": "BuffTickDetrimentOther",
+      "family": "BuffTickDetriment",
+      "suffix": "Other"
+    },
+    "BuffTickDetrimentOtherPlayer": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": false,
+      "perspective": "other_player",
+      "channel": "BuffTickDetrimentOtherPlayer",
+      "family": "BuffTickDetriment",
+      "suffix": "OtherPlayer"
+    },
+    "BuffTickDetrimentVictim": {
+      "category": "buff",
+      "subcategory": "tick",
+      "benefit": false,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "BuffTickDetrimentVictim",
+      "family": "BuffTickDetriment",
+      "suffix": "Victim"
+    },
+    "Coin": {
+      "category": "unknown",
+      "subcategory": "Coin",
+      "channel": "Coin",
+      "family": "Coin",
+      "suffix": null
+    },
+    "CombatHitMine": {
+      "category": "combat",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "CombatHitMine",
+      "family": "CombatHit",
+      "suffix": "Mine"
+    },
+    "CombatHitOther": {
+      "category": "combat",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "other",
+      "channel": "CombatHitOther",
+      "family": "CombatHit",
+      "suffix": "Other"
+    },
+    "CombatHitOtherPlayer": {
+      "category": "combat",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "other_player",
+      "channel": "CombatHitOtherPlayer",
+      "family": "CombatHit",
+      "suffix": "OtherPlayer"
+    },
+    "CombatHitPet": {
+      "category": "combat",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "CombatHitPet",
+      "family": "CombatHit",
+      "suffix": "Pet"
+    },
+    "CombatHitVictim": {
+      "category": "combat",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "CombatHitVictim",
+      "family": "CombatHit",
+      "suffix": "Victim"
+    },
+    "CombatMissMine": {
+      "category": "combat",
+      "subcategory": "miss",
+      "damage": false,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "CombatMissMine",
+      "family": "CombatMiss",
+      "suffix": "Mine"
+    },
+    "CombatMissOther": {
+      "category": "combat",
+      "subcategory": "miss",
+      "damage": false,
+      "perspective": "other",
+      "channel": "CombatMissOther",
+      "family": "CombatMiss",
+      "suffix": "Other"
+    },
+    "CombatMissOtherPlayer": {
+      "category": "combat",
+      "subcategory": "miss",
+      "damage": false,
+      "perspective": "other_player",
+      "channel": "CombatMissOtherPlayer",
+      "family": "CombatMiss",
+      "suffix": "OtherPlayer"
+    },
+    "CombatMissPet": {
+      "category": "combat",
+      "subcategory": "miss",
+      "damage": false,
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "CombatMissPet",
+      "family": "CombatMiss",
+      "suffix": "Pet"
+    },
+    "CombatMissVictim": {
+      "category": "combat",
+      "subcategory": "miss",
+      "damage": false,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "CombatMissVictim",
+      "family": "CombatMiss",
+      "suffix": "Victim"
+    },
+    "ConsiderBLUE": {
+      "category": "unknown",
+      "subcategory": "ConsiderBLUE",
+      "channel": "ConsiderBLUE",
+      "family": "ConsiderBLUE",
+      "suffix": null
+    },
+    "ConsiderGREEN": {
+      "category": "unknown",
+      "subcategory": "ConsiderGREEN",
+      "channel": "ConsiderGREEN",
+      "family": "ConsiderGREEN",
+      "suffix": null
+    },
+    "ConsiderGREY": {
+      "category": "unknown",
+      "subcategory": "ConsiderGREY",
+      "channel": "ConsiderGREY",
+      "family": "ConsiderGREY",
+      "suffix": null
+    },
+    "ConsiderLIGHTBLUE": {
+      "category": "unknown",
+      "subcategory": "ConsiderLIGHTBLUE",
+      "channel": "ConsiderLIGHTBLUE",
+      "family": "ConsiderLIGHTBLUE",
+      "suffix": null
+    },
+    "ConsiderLIGHTGREEN": {
+      "category": "unknown",
+      "subcategory": "ConsiderLIGHTGREEN",
+      "channel": "ConsiderLIGHTGREEN",
+      "family": "ConsiderLIGHTGREEN",
+      "suffix": null
+    },
+    "ConsiderRED": {
+      "category": "unknown",
+      "subcategory": "ConsiderRED",
+      "channel": "ConsiderRED",
+      "family": "ConsiderRED",
+      "suffix": null
+    },
+    "ConsiderWHITE": {
+      "category": "unknown",
+      "subcategory": "ConsiderWHITE",
+      "channel": "ConsiderWHITE",
+      "family": "ConsiderWHITE",
+      "suffix": null
+    },
+    "ConsiderYELLOW": {
+      "category": "unknown",
+      "subcategory": "ConsiderYELLOW",
+      "channel": "ConsiderYELLOW",
+      "family": "ConsiderYELLOW",
+      "suffix": null
+    },
+    "DamageShieldHitMine": {
+      "category": "damage_shield",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "DamageShieldHitMine",
+      "family": "DamageShieldHit",
+      "suffix": "Mine"
+    },
+    "DamageShieldHitOther": {
+      "category": "damage_shield",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "other",
+      "channel": "DamageShieldHitOther",
+      "family": "DamageShieldHit",
+      "suffix": "Other"
+    },
+    "DamageShieldHitOtherPlayer": {
+      "category": "damage_shield",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "other_player",
+      "channel": "DamageShieldHitOtherPlayer",
+      "family": "DamageShieldHit",
+      "suffix": "OtherPlayer"
+    },
+    "DamageShieldHitVictim": {
+      "category": "damage_shield",
+      "subcategory": "hit",
+      "damage": true,
+      "perspective": "victim",
+      "actor": "you",
+      "channel": "DamageShieldHitVictim",
+      "family": "DamageShieldHit",
+      "suffix": "Victim"
+    },
+    "DeathMe": {
+      "category": "death",
+      "subcategory": "death_me",
+      "channel": "DeathMe",
+      "family": "DeathMe",
+      "suffix": null
+    },
+    "DeathMine": {
+      "category": "death",
+      "subcategory": "kill",
+      "perspective": "mine",
+      "actor": "you",
+      "channel": "DeathMine",
+      "family": "Death",
+      "suffix": "Mine"
+    },
+    "DeathOther": {
+      "category": "death",
+      "subcategory": "kill",
+      "perspective": "other",
+      "channel": "DeathOther",
+      "family": "Death",
+      "suffix": "Other"
+    },
+    "DeathOtherPlayer": {
+      "category": "death",
+      "subcategory": "kill",
+      "perspective": "other_player",
+      "channel": "DeathOtherPlayer",
+      "family": "Death",
+      "suffix": "OtherPlayer"
+    },
+    "Emote": {
+      "category": "unknown",
+      "subcategory": "Emote",
+      "channel": "Emote",
+      "family": "Emote",
+      "suffix": null
+    },
+    "Error": {
+      "category": "unknown",
+      "subcategory": "Error",
+      "channel": "Error",
+      "family": "Error",
+      "suffix": null
+    },
+    "Experience": {
+      "category": "experience",
+      "subcategory": "gain",
+      "channel": "Experience",
+      "family": "Experience",
+      "suffix": null
+    },
+    "Faction": {
+      "category": "unknown",
+      "subcategory": "Faction",
+      "channel": "Faction",
+      "family": "Faction",
+      "suffix": null
+    },
+    "GM": {
+      "category": "unknown",
+      "subcategory": "GM",
+      "channel": "GM",
+      "family": "GM",
+      "suffix": null
+    },
+    "Guild": {
+      "category": "unknown",
+      "subcategory": "Guild",
+      "channel": "Guild",
+      "family": "Guild",
+      "suffix": null
+    },
+    "GuildOfficer": {
+      "category": "unknown",
+      "subcategory": "GuildOfficer",
+      "channel": "GuildOfficer",
+      "family": "GuildOfficer",
+      "suffix": null
+    },
+    "Hardcore": {
+      "category": "unknown",
+      "subcategory": "Hardcore",
+      "channel": "Hardcore",
+      "family": "Hardcore",
+      "suffix": null
+    },
+    "Help": {
+      "category": "unknown",
+      "subcategory": "Help",
+      "channel": "Help",
+      "family": "Help",
+      "suffix": null
+    },
+    "Information": {
+      "category": "unknown",
+      "subcategory": "Information",
+      "channel": "Information",
+      "family": "Information",
+      "suffix": null
+    },
+    "LOS": {
+      "category": "los",
+      "subcategory": "blocked",
+      "channel": "LOS",
+      "family": "LOS",
+      "suffix": null
+    },
+    "Loot": {
+      "category": "unknown",
+      "subcategory": "Loot",
+      "channel": "Loot",
+      "family": "Loot",
+      "suffix": null
+    },
+    "Mud": {
+      "category": "unknown",
+      "subcategory": "Mud",
+      "channel": "Mud",
+      "family": "Mud",
+      "suffix": null
+    },
+    "MudError": {
+      "category": "unknown",
+      "subcategory": "MudError",
+      "channel": "MudError",
+      "family": "MudError",
+      "suffix": null
+    },
+    "None": {
+      "category": "unknown",
+      "subcategory": "None",
+      "channel": "None",
+      "family": "None",
+      "suffix": null
+    },
+    "OOC": {
+      "category": "unknown",
+      "subcategory": "OOC",
+      "channel": "OOC",
+      "family": "OOC",
+      "suffix": null
+    },
+    "Party": {
+      "category": "unknown",
+      "subcategory": "Party",
+      "channel": "Party",
+      "family": "Party",
+      "suffix": null
+    },
+    "Pet": {
+      "category": "unknown",
+      "subcategory": "",
+      "perspective": "pet",
+      "actor": "pet",
+      "channel": "Pet",
+      "family": "",
+      "suffix": "Pet"
+    },
+    "Roll": {
+      "category": "unknown",
+      "subcategory": "Roll",
+      "channel": "Roll",
+      "family": "Roll",
+      "suffix": null
+    },
+    "Say": {
+      "category": "unknown",
+      "subcategory": "Say",
+      "channel": "Say",
+      "family": "Say",
+      "suffix": null
+    },
+    "Shout": {
+      "category": "unknown",
+      "subcategory": "Shout",
+      "channel": "Shout",
+      "family": "Shout",
+      "suffix": null
+    },
+    "Skill": {
+      "category": "skill",
+      "subcategory": "misc",
+      "channel": "Skill",
+      "family": "Skill",
+      "suffix": null
+    },
+    "Status": {
+      "category": "status",
+      "subcategory": "misc",
+      "channel": "Status",
+      "family": "Status",
+      "suffix": null
+    },
+    "System": {
+      "category": "unknown",
+      "subcategory": "System",
+      "channel": "System",
+      "family": "System",
+      "suffix": null
+    },
+    "Tell": {
+      "category": "unknown",
+      "subcategory": "Tell",
+      "channel": "Tell",
+      "family": "Tell",
+      "suffix": null
+    },
+    "TellSent": {
+      "category": "unknown",
+      "subcategory": "TellSent",
+      "channel": "TellSent",
+      "family": "TellSent",
+      "suffix": null
+    },
+    "Warning": {
+      "category": "unknown",
+      "subcategory": "Warning",
+      "channel": "Warning",
+      "family": "Warning",
+      "suffix": null
+    },
+    "Who": {
+      "category": "unknown",
+      "subcategory": "Who",
+      "channel": "Who",
+      "family": "Who",
+      "suffix": null
+    }
+  },
+  "roles": {
+    "meter": [
+      "CombatHitMine",
+      "CombatHitVictim",
+      "CombatHitPet",
+      "CombatHitOther",
+      "CombatHitOtherPlayer",
+      "CombatMissMine",
+      "CombatMissVictim",
+      "CombatMissPet",
+      "CombatMissOther",
+      "CombatMissOtherPlayer",
+      "AbilityHitBenefitMine",
+      "AbilityHitBenefitVictim",
+      "AbilityHitBenefitPet",
+      "AbilityHitBenefitOther",
+      "AbilityHitBenefitOtherPlayer",
+      "AbilityHitDetrimentMine",
+      "AbilityHitDetrimentVictim",
+      "AbilityHitDetrimentPet",
+      "AbilityHitDetrimentOther",
+      "AbilityHitDetrimentOtherPlayer",
+      "AbilityMissMine",
+      "AbilityMissVictim",
+      "AbilityMissPet",
+      "AbilityMissOther",
+      "AbilityMissOtherPlayer",
+      "DamageShieldHitMine",
+      "DamageShieldHitVictim",
+      "DamageShieldHitOther",
+      "DamageShieldHitOtherPlayer"
+    ],
+    "casts": [
+      "AbilityMine",
+      "AbilityOther",
+      "AbilityOtherPlayer",
+      "AbilityPet",
+      "AbilityResistMine",
+      "AbilityResistVictim",
+      "AbilityResistPet",
+      "AbilityResistOther",
+      "AbilityResistOtherPlayer",
+      "AbilityStatus",
+      "Action"
+    ],
+    "buffs": [
+      "BuffApplyBenefitMine",
+      "BuffApplyBenefitVictim",
+      "BuffApplyBenefitOther",
+      "BuffApplyBenefitOtherPlayer",
+      "BuffApplyDetrimentMine",
+      "BuffApplyDetrimentVictim",
+      "BuffApplyDetrimentOther",
+      "BuffApplyDetrimentOtherPlayer",
+      "BuffFadeBenefitMine",
+      "BuffFadeBenefitVictim",
+      "BuffFadeBenefitOther",
+      "BuffFadeBenefitOtherPlayer",
+      "BuffFadeDetrimentMine",
+      "BuffFadeDetrimentVictim",
+      "BuffFadeDetrimentOther",
+      "BuffFadeDetrimentOtherPlayer",
+      "BuffTickBenefitMine",
+      "BuffTickBenefitVictim",
+      "BuffTickBenefitOther",
+      "BuffTickBenefitOtherPlayer",
+      "BuffTickDetrimentMine",
+      "BuffTickDetrimentVictim",
+      "BuffTickDetrimentOther",
+      "BuffTickDetrimentOtherPlayer"
+    ],
+    "deaths": [
+      "DeathMine",
+      "DeathMe",
+      "DeathOther",
+      "DeathOtherPlayer",
+      "Experience"
+    ],
+    "pvp": [
+      "CombatHitVictim",
+      "CombatHitOtherPlayer",
+      "CombatMissVictim",
+      "CombatMissOtherPlayer",
+      "AbilityHitDetrimentVictim",
+      "AbilityHitDetrimentOtherPlayer",
+      "AbilityMissVictim",
+      "AbilityMissOtherPlayer",
+      "AbilityResistVictim",
+      "AbilityResistOtherPlayer",
+      "DamageShieldHitVictim",
+      "DamageShieldHitOtherPlayer",
+      "BuffApplyDetrimentVictim",
+      "BuffApplyDetrimentOtherPlayer",
+      "BuffTickDetrimentVictim",
+      "BuffTickDetrimentOtherPlayer",
+      "DeathMe",
+      "DeathOtherPlayer"
+    ],
+    "misc": [
+      "LOS",
+      "Status",
+      "Loot",
+      "ConsiderRED",
+      "ConsiderYELLOW",
+      "ConsiderWHITE",
+      "ConsiderBLUE",
+      "ConsiderGREEN",
+      "ConsiderGREY",
+      "ConsiderLIGHTBLUE",
+      "ConsiderLIGHTGREEN"
+    ]
+  },
+  "filter_ui_ref": "combat-filter-ui.json"
+}

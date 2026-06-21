@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join Magnificent Hall · M&amp;M Item DB</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="hardcore.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Join Magnificent Hall</h1>
+    <span class="tag"><a href="index.html">← Magnificent Hall</a> · <a href="../index.html">Item DB</a></span>
+  </div>
+</header>
+
+<main class="hc-main">
+  <section class="hc-panel">
+    <h2>Submit with a screenshot</h2>
+    <p class="muted">Upload your <strong>character select</strong> screen showing the <strong>Hardcore</strong> tag under your name. No local tools required — we read the screenshot in your browser, you confirm the fields, then submit to the community board.</p>
+    <p class="muted">Already use the desktop app? You can still opt in on <a href="../stats/index.html">Play Stats</a> for richer kill/level stats from your logs.</p>
+  </section>
+
+  <section class="hc-panel hc-submit-grid">
+    <div>
+      <label class="hc-upload-label">
+        Character select screenshot
+        <input id="hc-file" type="file" accept="image/*" hidden>
+        <span class="hc-btn">Choose image</span>
+      </label>
+      <img id="hc-preview" class="hc-preview hidden" alt="Screenshot preview">
+      <p id="hc-ocr-status" class="muted"></p>
+    </div>
+    <form id="hc-form" class="hc-form">
+      <label>Character name <input id="hc-character" required autocomplete="off"></label>
+      <label>Server
+        <select id="hc-server">
+          <option value="betapvp">betapvp (Beta Server PvP)</option>
+          <option value="haradrel">haradrel</option>
+        </select>
+      </label>
+      <label>Level <input id="hc-level" type="number" min="1" max="60" required></label>
+      <label>Race / class <input id="hc-race-class" placeholder="e.g. Gnome Necromancer"></label>
+      <label>Current zone <input id="hc-zone" placeholder="e.g. Night Harbor"></label>
+      <label class="hc-check"><input id="hc-hardcore" type="checkbox" disabled> Hardcore tag detected in screenshot</label>
+      <div class="hc-form-actions">
+        <button type="button" id="hc-copy" class="hc-btn">Copy submission JSON</button>
+        <button type="submit" id="hc-submit" class="hc-btn primary">Submit to community</button>
+      </div>
+      <p id="hc-submit-status" class="muted"></p>
+    </form>
+  </section>
+
+  <section class="hc-panel">
+    <h2>What we look for</h2>
+    <ul class="hc-steps">
+      <li>Character line like <code>Onidifs (4 Gnome Necromancer)</code></li>
+      <li><code>Current Zone: Night Harbor</code></li>
+      <li>The word <code>Hardcore</code> below your stats (not just “PvP” in the server name)</li>
+    </ul>
+    <p class="muted">Submissions merge into the public leaderboard after site deploy. Party grouping does <em>not</em> prove Hardcore status — only your screenshot or your own log upload counts.</p>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="submit-config.js"></script>
+<script src="submit.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.wr-main { padding: 12px 16px 24px; max-width: 1400px; margin: 0 auto; }
+.wr-empty { padding: 24px; color: var(--muted); }
+.wr-root { display: grid; grid-template-columns: 280px 1fr; gap: 16px; min-height: 70vh; }
+@media (max-width: 900px) { .wr-root { grid-template-columns: 1fr; } }
+
+.wr-sidebar { border: 1px solid var(--line); border-radius: 8px; background: #101418; overflow: hidden; display: flex; flex-direction: column; max-height: 80vh; }
+.wr-filters { padding: 10px 12px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
+.wr-filters select { width: 100%; background: #0c1014; color: var(--text); border: 1px solid var(--line); border-radius: 4px; padding: 6px; }
+.wr-list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
+.wr-list li { border-bottom: 1px solid var(--line); }
+.wr-list button { width: 100%; text-align: left; padding: 10px 12px; background: transparent; border: 0; color: var(--text); cursor: pointer; font-size: .82rem; }
+.wr-list button:hover { background: #151b22; }
+.wr-list button.active { background: #1a2430; border-left: 3px solid var(--accent); }
+.wr-list .kind { font-size: .65rem; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
+.wr-list .done { opacity: .55; }
+
+.wr-detail { border: 1px solid var(--line); border-radius: 8px; background: #101418; padding: 14px 16px; display: flex; flex-direction: column; min-height: 70vh; }
+.wr-detail-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 10px; }
+.wr-detail-head h2 { margin: 0; font-size: 1.1rem; }
+.wr-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.wr-btn { font-size: .78rem; padding: 6px 10px; border-radius: 5px; border: 1px solid var(--line); background: #151b22; color: var(--text); cursor: pointer; text-decoration: none; display: inline-block; }
+.wr-btn.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+.wr-btn.ok { background: #15803d; border-color: #15803d; color: #fff; }
+
+.wr-adds { margin-bottom: 10px; font-size: .82rem; }
+.wr-adds span { display: inline-block; margin: 2px 6px 2px 0; padding: 2px 8px; border-radius: 4px; background: #1a2a1a; border: 1px solid #2a4a2a; color: #8fd4a0; }
+
+.wr-diff-head { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: .72rem; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.wr-diff-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex: 1; min-height: 420px; }
+.wr-panel { margin: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: #0a0e12; overflow: auto; font-size: .72rem; line-height: 1.45; white-space: pre-wrap; word-break: break-word; font-family: ui-monospace, Consolas, monospace; }
+.wr-line { display: block; }
+.wr-line.add { background: #142818; color: #9fdf9f; }
+.wr-line.del { background: #281414; color: #e09090; text-decoration: line-through; opacity: .85; }
+.wr-hint { margin-top: 10px; font-size: .75rem; }
+
+.wr-api-status { margin: 0 16px 8px; font-size: .75rem; padding: 6px 10px; border-radius: 6px; }
+.wr-api-ok { background: #142818; color: #8fd4a0; border: 1px solid #2a4a2a; }
+.wr-api-warn { background: #2a2414; color: #d4c48f; border: 1px solid #4a4020; }
+.wr-api-off { background: #1a1a1a; color: var(--muted); border: 1px solid var(--line); }
+
+.wr-batch { width: 100%; margin-top: 4px; }
+.wr-queue-meta { display: block; font-size: .72rem; line-height: 1.35; margin-top: 2px; }
+.wr-list .wr-st { float: right; font-size: .62rem; text-transform: uppercase; color: var(--muted); }
+.wr-list .pushed { opacity: .45; }
+.wr-list .rejected { opacity: .4; text-decoration: line-through; }
+.wr-list button.pushed.active { border-left-color: #15803d; }
+.wr-list button.rejected.active { border-left-color: #7f1d1d; }
+
+.wr-btn.wr-reject { background: #3b1212; border-color: #5c2020; color: #e8a0a0; }
+
+.wr-log { margin-top: 10px; max-height: 180px; overflow: auto; border: 1px solid var(--line); border-radius: 6px; background: #0a0e12; }
+.wr-log pre { margin: 0; padding: 10px 12px; font-size: .7rem; line-height: 1.4; white-space: pre-wrap; font-family: ui-monospace, Consolas, monospace; }
+.wr-log-ok { color: #9fdf9f; }
+.wr-log-err { color: #e09090; }
+.wr-btn:disabled { opacity: .45; cursor: not-allowed; }

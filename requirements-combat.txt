@@ -1,0 +1,14 @@
+# Optional dependencies for combat chat OCR (Option C).
+# Windows: native OCR via winrt (recommended). Tesseract is an optional fallback.
+#
+#   pip install -r requirements-combat.txt
+
+mss>=9.0
+pillow>=10.0
+winrt-Windows.Media.Ocr>=3.2
+winrt-Windows.Graphics.Imaging>=3.2
+winrt-Windows.Storage.Streams>=3.2
+winrt-Windows.Foundation>=3.2
+winrt-Windows.Foundation.Collections>=3.2
+# Optional fallback (also requires Tesseract binary on PATH):
+# pytesseract>=0.3.10

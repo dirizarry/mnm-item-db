@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiki Loot Fix Review · M&amp;M Item DB</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="review.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Wiki Loot Fix Review</h1>
+    <span class="tag">
+      before / after diff ·
+      <a href="../index.html">← Item DB</a>
+    </span>
+  </div>
+  <p id="wr-api-status" class="wr-api-status wr-api-off">Checking push API…</p>
+</header>
+
+<main class="wr-main">
+  <p id="wr-empty" class="wr-empty hidden">
+    No pending loot fixes. Run
+    <code>python gen_wiki_loot_fixes.py --limit 20</code>
+    then refresh this page.
+  </p>
+
+  <div id="wr-root" class="wr-root hidden">
+    <aside class="wr-sidebar">
+      <div class="wr-filters">
+        <label>Filter
+          <select id="wr-filter">
+            <option value="all">All</option>
+            <option value="pending">Pending review</option>
+            <option value="mob">Mob pages</option>
+            <option value="item">Item pages</option>
+            <option value="done">Reviewed</option>
+            <option value="pushed">Pushed</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </label>
+        <span id="wr-queue-meta" class="muted wr-queue-meta"></span>
+        <span id="wr-count" class="muted"></span>
+        <button type="button" id="wr-push-reviewed" class="wr-btn primary wr-batch" data-action="push-batch" disabled>
+          Push reviewed (0)
+        </button>
+      </div>
+      <ul id="wr-list" class="wr-list"></ul>
+    </aside>
+
+    <section class="wr-detail" id="wr-detail">
+      <div class="wr-detail-head">
+        <div>
+          <h2 id="wr-title">—</h2>
+          <p id="wr-meta" class="muted"></p>
+        </div>
+        <div class="wr-actions">
+          <a id="wr-wiki" class="wr-btn" href="#" target="_blank" rel="noopener">Live wiki</a>
+          <button type="button" id="wr-dry-run" class="wr-btn" data-action="dry-run" disabled>Dry-run</button>
+          <button type="button" id="wr-push-one" class="wr-btn primary" data-action="push-one" disabled>Push this page</button>
+          <button type="button" id="wr-mark" class="wr-btn ok">Mark reviewed</button>
+          <button type="button" id="wr-reject" class="wr-btn wr-reject">Reject</button>
+        </div>
+      </div>
+
+      <div id="wr-adds" class="wr-adds"></div>
+
+      <div class="wr-diff-head">
+        <span>Before (live wiki)</span>
+        <span>After (proposed)</span>
+      </div>
+      <div class="wr-diff-panels">
+        <pre id="wr-before" class="wr-panel"></pre>
+        <pre id="wr-after" class="wr-panel"></pre>
+      </div>
+      <div id="wr-log" class="wr-log hidden"></div>
+      <p class="wr-hint muted">
+        Open via <strong>Wiki review</strong> in the desktop client or
+        <code>python wiki_review_server.py</code> so push/dry-run work in-page.
+        Regenerate without <code>--limit</code> to queue all fixes
+        (<code>python gen_wiki_loot_fixes.py</code>). Credentials:
+        <code>~/.mnm-wiki/wiki-credentials.env</code>.
+      </p>
+    </section>
+  </div>
+</main>
+
+<script src="review-data.js"></script>
+<script src="review.js"></script>
+</body>
+</html>

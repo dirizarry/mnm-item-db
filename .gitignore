@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.python-version
+
+# Environment and secrets
+.env
+*.env
+config/ledger.env
+config/*.env
+
+# User settings
+client-settings.json
+
+# PyInstaller build artifacts
+dist/
+build/
+*.spec.bak
+
+# Testing and tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# User-specific data (not committed)
+data/ledger-upload-payload.json
+data/ledger-live.json
+data/.watch-state.json
+data/crowd-inbox/
+data/combat-events.json
+data/combat-live.json
+data/combat-capture-state.json
+
+# User ledger extracts (personal play data)
+data/ledger-*.json
+!data/ledger-manifest.json
+
+# Site live data
+site/stats/ledger-live.js
+
+# Node
+node_modules/
+
+# Server database
+server/mnm_server.db
+server/*.db
+server/*.db-wal
+server/*.db-shm
+
+# Client RE working files
+client_re/dumps/
+data/client/icons/
+data/client/history/
+
+# Generated wiki fixes (can be regenerated)
+data/wiki-fixes/
+
+# User screenshot crops
+data/creation_crops/
+
+# Backup files
+*.bak-*
+
+# SQLite databases (regenerated from JSON)
+data/*.db
+
+# Report files (regenerated)
+data/*-report.txt
+data/zones-audit.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

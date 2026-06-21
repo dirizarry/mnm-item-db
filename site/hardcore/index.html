@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnificent Hall · M&amp;M Item DB</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="hardcore.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Magnificent Hall</h1>
+    <span class="tag">community leaderboard · <a href="../index.html">← Item DB</a> · <a href="../stats/index.html">Play Stats</a></span>
+  </div>
+</header>
+
+<main class="hc-main">
+  <p id="hc-empty" class="hc-empty hidden">
+    No Magnificent data bundled. Run <code>python mine_local.py</code> from the repo root, then refresh.
+  </p>
+
+  <div id="hc-root" class="hidden">
+    <section class="hc-hero">
+      <div class="hc-hero-glow"></div>
+      <div class="hc-hero-inner">
+        <p class="hc-hero-kicker">The Magnificent Few</p>
+        <h2>Magnificent Hall</h2>
+        <p class="hc-hero-sub">Committed characters show a <strong>Hardcore</strong> tag on the character select screen and earn <strong>Magnificent</strong> callouts in server announcements when you level or fall. Flex your level here — rankings update when players opt in and contribute.</p>
+      </div>
+    </section>
+
+    <section class="filter-bar hc-panel">
+      <label>Server
+        <select id="filter-server"><option value="betapvp">betapvp</option></select>
+      </label>
+      <label>View
+        <select id="filter-view">
+          <option value="crowd">Community</option>
+          <option value="local">Your characters</option>
+          <option value="all">Community + yours</option>
+        </select>
+      </label>
+      <span id="filter-summary" class="muted"></span>
+    </section>
+
+    <section id="hc-stats" class="hc-cards"></section>
+
+    <section id="hc-podium" class="hc-podium hc-panel hidden"></section>
+
+    <section class="hc-panel">
+      <div class="hc-panel-head">
+        <h2>Leaderboard</h2>
+        <button type="button" id="btn-flex" class="hc-btn" disabled>Copy flex card</button>
+      </div>
+      <div class="tablewrap">
+        <table id="hc-table">
+          <thead><tr>
+            <th>#</th><th>Character</th><th>Level</th><th>Zone</th><th>Kills</th><th>Days</th><th>Status</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="hc-milestones" class="hc-panel hidden">
+      <h2>Recent milestones</h2>
+      <ul id="hc-ticker" class="hc-ticker"></ul>
+    </section>
+
+    <section class="hc-panel hc-join">
+      <h2>Join the Hall</h2>
+      <p><a href="submit.html" class="hc-btn primary">Submit with a screenshot</a> — upload your character select showing the <strong>Hardcore</strong> tag. No local tools required.</p>
+      <p class="muted" style="margin-top:0.75rem">Want richer stats (kills, level-ups from logs)?</p>
+      <ol class="hc-steps">
+        <li>Run <code>python mine_local.py</code> to scan your game logs.</li>
+        <li>On <a href="../stats/index.html">Play Stats</a>, enable <strong>Share character names</strong> and <strong>Share Magnificent standings</strong>.</li>
+        <li>Upload your bundle — standings merge into the community leaderboard on the next site deploy.</li>
+      </ol>
+      <p class="muted">The Hardcore tag is server-side and not written to disk. Without logs, a screenshot is enough for community buy-in. Party grouping does <em>not</em> prove Hardcore — only your screenshot or your own log upload counts.</p>
+    </section>
+  </div>
+</main>
+
+<footer><span id="hc-meta"></span></footer>
+
+<script src="hardcore-data.js"></script>
+<script src="hardcore.js"></script>
+</body>
+</html>
