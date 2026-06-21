@@ -45,10 +45,48 @@ python -m pytest tests/test_provenance.py::test_score_edge_confirmed  # Single t
 ```
 
 ### Wiki Operations
+
+**Generate loot fix wikitext from crowd-confirmed drops:**
 ```bash
-python push_wiki.py --page "Item Name" --file data/wiki-fixes/your-fix.wiki
+python gen_wiki_loot_fixes.py                     # All candidates (confidence ≥ 0.5)
+python gen_wiki_loot_fixes.py --min-confidence 0.7
+python gen_wiki_loot_fixes.py --dry-run           # List candidates without writing
 ```
-Credentials: `%USERPROFILE%\.mnm-wiki\wiki-credentials.env`
+
+**Review generated fixes:**
+```bash
+python build_wiki_review.py                       # Build review bundle
+python -m http.server 8080 --directory site       # Serve review UI
+# Open http://localhost:8080/wiki-review/
+```
+
+**Push approved fixes to wiki:**
+```bash
+python push_wiki.py --page "Item Name" --file data/wiki-fixes/loot/item-name.wiki --dry-run
+python push_wiki.py --page "Item Name" --file data/wiki-fixes/loot/item-name.wiki
+```
+
+### Wiki Credentials Setup
+
+The `push_wiki.py` script requires MediaWiki bot credentials. Create a credentials file:
+
+**Windows:** `%USERPROFILE%\.mnm-wiki\wiki-credentials.env`
+**Linux/Mac:** `~/.mnm-wiki/wiki-credentials.env`
+
+```env
+WIKI_USERNAME=YourBotName@YourBotPassword
+WIKI_PASSWORD=your_bot_password_here
+```
+
+To get bot credentials:
+1. Go to [Special:BotPasswords](https://monstersandmemories.miraheze.org/wiki/Special:BotPasswords) on the wiki
+2. Create a new bot password with "Edit existing pages" and "Create, edit, and move pages" grants
+3. Use the format `Username@BotName` for WIKI_USERNAME
+
+**Environment variable alternatives (override file):**
+- `MNM_WIKI_USER` - Bot username (takes precedence over file)
+- `MNM_WIKI_BOT_PASSWORD` - Bot password
+- `MNM_WIKI_CREDENTIALS` - Custom path to credentials file
 
 ## Architecture
 
